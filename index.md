@@ -23,10 +23,10 @@ no_in_page_title: true
     <p><a class="btn btn-primary btn-lg" role="button" href="/documentation">Documentation »</a></p>
   </div>
   <div class="col-md-6">
-    <h2>MAEC Detailed Use-Cases</h2>
+    <h2>Use Cases</h2>
     <p>You can also see examples of common design patterns in MAEC and
     learn how to create and understand idiomatic MAEC content.</p>
-    <p><a class="btn btn-primary btn-lg" role="button" href="/documentation/use_cases">Detailed Use-Cases »</a></p>
+    <p><a class="btn btn-primary btn-lg" role="button" href="/documentation/use_cases">Use Cases »</a></p>
   </div>
 </div>
 
@@ -63,6 +63,6 @@ no_in_page_title: true
 		  <span class="glyphicon glyphicon-pencil">
 		  </span>
 	  </div>
-	  <p>We host occasional training sessions that are free and open to the public. Information on these can be found on the <a href="http://maec.mitre.org/training/index.html">training</a> page.</p>
+	  <p>Coming Soon!</p>
     </div>
 </div>

@@ -1,6 +1,6 @@
 # MAEC Documentation
 
-This is the MAEC documentation source code repository. Note: this is not the MAEC documentation meant for users! If you're looking to browse the MAEC documentation, please visit the [getting started page](https://github.com/MAECProject/schemas/wiki/Getting-Started-(1.1)).
+This is the MAEC documentation source code repository. Note: this is not the MAEC documentation meant for users! If you're looking to browse the MAEC documentation, please visit the [getting started page](https://github.com/MAECProject/schemas/wiki/Getting-Started).
 
 **Work in progress:** The MAEC documentation is a work in progress and will be available shortly. For the time being, please see the above getting started documentation.
 
