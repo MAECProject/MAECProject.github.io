@@ -18,7 +18,7 @@
 
 <!-- autocomplete results -->
 
-<script src="{{site.root}}/js/autocomplete-4.1.js"></script>
+<script src="{{site.root}}/js/autocomplete-{% if page.this_version %}{{page.this_version}}{% else %}{{site.current_version}}{% endif %}.js"></script>
 
 <!-- Custom JS -->
 <script src="{{site.root}}/js/main.js"></script>
