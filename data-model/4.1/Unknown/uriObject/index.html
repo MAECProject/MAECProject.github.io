@@ -1,0 +1,169 @@
+---
+layout: data_model
+title: uriObject
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>uriObject<span class="subdued">Unknown Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">
+    Uri object. Only required element is uri string itself. There are elements for each of the broken out elements.
+    The protocol should be take from the list at http://www.iana.org/assignments/port-numbers, or if not in that list have the value 'unknown'.
+    The ipProtocol should be taken from the list http://www.iana.org/assignments/protocol-numbers/.
+    
+    The elements correspond to the usual breakdown of a uri into its component domain, hostname, path, port etc, as
+    described at http://en.wikipedia.org/wiki/Uniform_Resource_Locator.
+   </p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>@id<span class="occurrence">required</span></td>
+      <td>
+        
+          NoQuestionMark
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>uriString<span class="occurrence">1..1</span></td>
+      <td>
+        
+          NoQuestionMark
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>protocol<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>      Protocol, for example http, ftp. value must match an element in the list hosted at http://www.iana.org/assignments/port-numbers.</p>
+        
+          <p>     </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>hostname<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>domain<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>port<span class="occurrence">0..1</span></td>
+      <td>
+        
+          int
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>path<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>ipProtocol<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>      IP protocol, for example. tcp, udp. value must match an element in the list hosted at http://www.iana.org/assignments/protocol-numbers/.</p>
+        
+          <p>     </p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

@@ -1,0 +1,82 @@
+---
+layout: data_model
+title: ClusterCompositionType
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>ClusterCompositionType<span class="subdued">MAEC Package Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">The <a href='/data-model/4.1/maecPackage/ClusterCompositionType'>ClusterCompositionType</a> captures the composition of a malware cluster via its edges and their respective connected nodes, as in an undirected graph.</p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>@score_type<span class="occurrence">optional</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>For clustering algorithms that may capture different types of scores, the score_type attribute specifies the type of score used to define the composition of this malware cluster.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Edge_Node_Pair<span class="occurrence">1..n</span></td>
+      <td>
+        
+          ClusterEdgeNodePairType
+        
+      </td>
+      <td>
+        
+          <p>The Cluster_Edge_Node_Pair field specifies a single edge and its connected nodes in the malware cluster, representing the similarity index between two Malware Subjects.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

@@ -1,0 +1,240 @@
+---
+layout: data_model
+title: objectsInlineType
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>objectsInlineType<span class="subdued">Unknown Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>file<span class="occurrence">0..n</span></td>
+      <td>
+        
+          fileObject
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>        Files or samples</p>
+        
+          <p>       </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>uri<span class="occurrence">0..n</span></td>
+      <td>
+        
+          uriObject
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>        URI (Uniform Resource Identifier) objects.</p>
+        
+          <p>       </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>domain<span class="occurrence">0..n</span></td>
+      <td>
+        
+          domainObject
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>        Domain names as administered by ICANN.</p>
+        
+          <p>       </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>registry<span class="occurrence">0..n</span></td>
+      <td>
+        
+          registryObject
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>        Configuration information from the registry on Microsoft Windows operating systems.</p>
+        
+          <p>       </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>ip<span class="occurrence">0..n</span></td>
+      <td>
+        
+          IPObject
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>        Internet Protocol (IP) addresses, both ipv4 and ipv6.</p>
+        
+          <p>       </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>asn<span class="occurrence">0..n</span></td>
+      <td>
+        
+          ASNObject
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>        Autonomous System (AS).</p>
+        
+          <p>       </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>entity<span class="occurrence">0..n</span></td>
+      <td>
+        
+          entityObject
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>        A corporation or other entity.</p>
+        
+          <p>       </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>classification<span class="occurrence">0..n</span></td>
+      <td>
+        
+          classificationObject
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>        Labels or names, for example detection names associated with malware samples.</p>
+        
+          <p>       </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>softwarePackage<span class="occurrence">0..n</span></td>
+      <td>
+        
+          softwarePackageObject
+        
+      </td>
+      <td>
+        
+          <p>Software packages, typically used for associating with the files that they install or create.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>digitalSignature<span class="occurrence">0..n</span></td>
+      <td>
+        
+          digitalSignatureObject
+        
+      </td>
+      <td>
+        
+          <p>Digital signatures, for use in assocating with >1 binaries that may have the same signature. If only one binary with a signature is wished to be profiled, then the digitalSignature element inside the fileObject should be utilized.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>taggant<span class="occurrence">0..n</span></td>
+      <td>
+        
+          taggantObject
+        
+      </td>
+      <td>
+        
+          <p>Digital signatures, for use in assocating with >1 binaries that may have the same signature. If only one binary with a taggant is wished to be profiled, then the taggant element inside the fileObject should be utilized.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

@@ -1,0 +1,494 @@
+---
+layout: data_model
+title: fileObject
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>fileObject<span class="subdued">Unknown Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">
+    Object definition for files. The required attribute is the id, which needs to be globally unique. 
+    By convention, the value used is a hash, the stronger the better. 
+    
+    The choice should be: use sha256 if you have it, if not use sha1, if not use md5.
+  
+    Other hashes and file sizes are recorded in the elements. 
+
+    File names are put in as properties.
+    
+   </p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>@id<span class="occurrence">required</span></td>
+      <td>
+        
+          hexBinary
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>md5<span class="occurrence">1..1</span></td>
+      <td>
+        
+          hexBinary
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>sha1<span class="occurrence">0..1</span></td>
+      <td>
+        
+          hexBinary
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>sha256<span class="occurrence">0..1</span></td>
+      <td>
+        
+          hexBinary
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>sha512<span class="occurrence">0..1</span></td>
+      <td>
+        
+          hexBinary
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>size<span class="occurrence">0..1</span></td>
+      <td>
+        
+          int
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>      The file size in bytes.</p>
+        
+          <p>     </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>crc32<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>fileType<span class="occurrence">0..n</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>      String describing the type of file, for example executable, script etc.</p>
+        
+          <p>     </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>extraHash<span class="occurrence">0..n</span></td>
+      <td>
+        
+          extraHashInlineType
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>      Element for inserting fuzzy hashes for example pehash, ssdeep. These are put in with this element, with a required attribute 'type' used</p>
+        
+          <p>      to hold the type of hash.</p>
+        
+          <p>     </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>filename<span class="occurrence">0..n</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>normalizedNativePath<span class="occurrence">0..n</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The normalized native path of the file, using standardized system path variables (for Windows see http://en.wikipedia.org/wiki/Environment_variable#System_path_variables) with prepended and appended percentage characters. E.g. %ProgramFiles%/Microsoft Visual Studio.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>filenameWithinInstaller<span class="occurrence">0..n</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The name of the file within an installer or archive.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>folderWithinInstaller<span class="occurrence">0..n</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The folder the file resides in within an installer or archive.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>vendor<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The name of the vendor, if extractable from the file.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>internalName<span class="occurrence">0..n</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The internal name(s) of hte file, if applicable.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>language<span class="occurrence">0..n</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The language(s) the file is in.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>productName<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The name of the product the file belongs to, if applicable.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>fileVersion<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>productVersion<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The version of the product the file belongs to, if applicable.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>developmentEnvironment<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The development environment used to build the file, if applicable.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>checksum<span class="occurrence">0..1</span></td>
+      <td>
+        
+          hexBinary
+        
+      </td>
+      <td>
+        
+          <p>The checksum of the file, if applicable.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>architecture<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The processor architecture of the file, if applicable.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>buildTimeDateStamp<span class="occurrence">0..1</span></td>
+      <td>
+        
+          dateTime
+        
+      </td>
+      <td>
+        
+          <p>The build timestamp of the file, if applicable.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>compilerVersion<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The version of the compiler used to compile the file, if applicable.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>linkerVersion<span class="occurrence">0..1</span></td>
+      <td>
+        
+          float
+        
+      </td>
+      <td>
+        
+          <p>The version of the linker used to link the file, if applicable.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>minOSVersionCPE<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The minimum operating system version needed to run the file, specifeid as a CPE name. The Common Platform Enumeration, or CPE, name of the package if one exists. CPE is a structured naming scheme for IT systems, software, and packages. For more information on CPE see http://cpe.mitre.org. For the official CPE dictionary see http://nvd.nist.gov/cpe.cfm.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>numberOfSections<span class="occurrence">0..1</span></td>
+      <td>
+        
+          int
+        
+      </td>
+      <td>
+        
+          <p>The number of sections in the file, if applicable.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>MIMEType<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>requiredPrivilege<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The minimum required to run the file, e.g. Administrator, if applicable.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>digitalSignature<span class="occurrence">0..1</span></td>
+      <td>
+        
+          digitalSignatureObject
+        
+      </td>
+      <td>
+        
+          <p>Information on the digital signature of the file, if applicable.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>taggant<span class="occurrence">0..1</span></td>
+      <td>
+        
+          taggantObject
+        
+      </td>
+      <td>
+        
+          <p>Information on the taggant used to tag the file, if applicable.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

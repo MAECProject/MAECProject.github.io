@@ -1,0 +1,82 @@
+---
+layout: data_model
+title: ActionEquivalenceType
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>ActionEquivalenceType<span class="subdued">MAEC Package Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">The <a href='/data-model/4.1/maecPackage/ActionEquivalenceType'>ActionEquivalenceType</a> relates any Actions that are equivalent to each other, e.g., those that were found for the same Malware Subject when using different analysis tools. It can be used as a way of referencing equivalent actions as a single unit, such as for specifying the Action composition of a Behavior.</p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>@id<span class="occurrence">required</span></td>
+      <td>
+        
+          QName
+        
+      </td>
+      <td>
+        
+          <p>The required id field specifies a unique ID for the Action Equivalence.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Action_Reference<span class="occurrence">1..n</span></td>
+      <td>
+        
+          ActionReferenceType
+        
+      </td>
+      <td>
+        
+          <p>The Action_Reference field specifies a reference to a single Action that is part of the Action Equivalency.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

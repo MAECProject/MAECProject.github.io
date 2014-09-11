@@ -1,0 +1,124 @@
+---
+layout: data_model
+title: APICallType
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>APICallType<span class="subdued">MAEC Bundle Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">The <a href='/data-model/4.1/maecBundle/APICallType'>APICallType</a> provides a method for the  characterization of API calls, including functions and their parameters.</p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>@function_name<span class="occurrence">optional</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The function_name field contains the exact name of the API function called, e.g. CreateFileEx.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@normalized_function_name<span class="occurrence">optional</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The normalized_function_name field contains the normalized name of the API function called, e.g. CreateFile.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Address<span class="occurrence">0..1</span></td>
+      <td>
+        
+          hexBinary
+        
+      </td>
+      <td>
+        
+          <p>The Address field contains the address of the API call in the binary.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Return_Value<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The Return_Value field contains the return value of the API call.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Parameters<span class="occurrence">0..1</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/ParameterListType">ParameterListType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Parameter field captures any name/value pairs of the parameters passed into the API call.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

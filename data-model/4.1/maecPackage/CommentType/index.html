@@ -1,0 +1,110 @@
+---
+layout: data_model
+title: CommentType
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>CommentType<span class="subdued">MAEC Package Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">The <a href='/data-model/4.1/maecPackage/CommentType'>CommentType</a> captures a comment relating to some MAEC field.</p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>@structuring_format<span class="occurrence">optional</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>Used to indicate a particular structuring format (e.g., HTML5) used within an instance of StructuredTextType. Note that if the markup tags used by this format would be interpreted as XML information (such as the bracket-based tags of HTML) the text area should be enclosed in a CDATA section to prevent the markup from interfering with XML validation of the CybOX document. If this attribute is absent, the implication is that no markup is being used.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@author<span class="occurrence">optional</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The author field specifies the name of the author that added the comment.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@timestamp<span class="occurrence">optional</span></td>
+      <td>
+        
+          dateTime
+        
+      </td>
+      <td>
+        
+          <p>The timestamp field specifies the date/time that the comment was added.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@observation_name<span class="occurrence">optional</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The observation_name field captures the name, type, or identifier of an observation, for comments that refer to the observation of particular entities. For example, a comment that refers to a command and control (C2) encryption key could have an observation_name of "C2 Encryption Key".</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

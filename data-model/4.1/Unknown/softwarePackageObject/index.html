@@ -1,0 +1,166 @@
+---
+layout: data_model
+title: softwarePackageObject
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>softwarePackageObject<span class="subdued">Unknown Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">Software package object, used to store information about a software package, such as the vendor and version. Intended primarily for the clean-file metadata sharing use case.</p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>@id<span class="occurrence">required</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>vendor<span class="occurrence">1..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>productgroup<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The product group that the product belongs to, e.g. Microsoft Office.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>product<span class="occurrence">1..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>version<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>update<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>edition<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>language<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>CPEname<span class="occurrence">0..1</span></td>
+      <td>
+        
+          CPEnameInlineType
+        
+      </td>
+      <td>
+        
+          <p>The Common Platform Enumeration, or CPE, name of the package if one exists. CPE is a structured naming scheme for IT systems, software, and packages. For more information on CPE see http://cpe.mitre.org. For the official CPE dictionary see http://nvd.nist.gov/cpe.cfm.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

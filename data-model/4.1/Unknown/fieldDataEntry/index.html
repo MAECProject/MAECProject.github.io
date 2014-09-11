@@ -1,0 +1,258 @@
+---
+layout: data_model
+title: fieldDataEntry
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>fieldDataEntry<span class="subdued">Unknown Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">
+     Data structure to hold prevalence information. The data includes a reference to another object (which is an xpath 
+     expression pointing to an object inside the 'ref' element), together with a time period (startDate -> endDate), 
+     an origin - where the object came from, and various location tags. This allows rich information on prevalence to be recorded.
+     
+     By convention, time periods should be wherever possible standard time periods, e.g. minute, hour, 24 hours, week, month, quarter, year. This
+     will facilitate combination of data from multiple sources.
+     
+     To represent a single entry, make startDate == endDate.
+     
+     Commonality is calculated from the sightings of malware objects (and so such calculation is easier to automate).
+     Importance is reserved for cases when “commonality” is not available or if there is a need to communicate the 
+     importance when commonality is low. 
+     
+     We define the commonality on a scale 0 to 100 (0 means “never found in the field” and 100 means “found very frequently”). Scaling commonality to 0..100 range instead of using actual sample counts is to avoid the effect of the user base size on the commonality. We derive commonality from the number of affected computers – not from the number of samples (for example, a hundred parasitic infections of the same virus on a single computer are to be counted as one).  
+     
+     To calculate the commonality we use two-stage approach and logarithmic scale:
+     -	If the number of affected users exceeds 0.1% of your user base (more frequent than 1 in a 1000) set commonality to “100”
+     -	Otherwise, calculate the ratio of infected computers amongst your user base by dividing the real number of affected computers ‘n’ by the total number ‘N’ 
+     -	Apply the following formula to get the commonality –( log2(1+n*1000/N) ) * 100
+     -	Round to the closest integer
+    
+     
+     Obviously, the calculation above can only be applied to counting of malware sightings on desktops.
+     If telemetry is collected from a fraction of such desktops then an appropriate correction should be used. 
+     For all other cases (e.g. sighting on gateways, in some network security appliance, on an ISP level, etc.) 
+     please exercise your best judgment and apply provided desktop guideline as an example to make sure
+     the commonality factor is as comparable as possible.
+     
+     For a URL object the commonality could reflect, for example, how widely it was spammed.
+     
+     “Importance” should not be used together with “commonality” (unless commonality=“0”) to avoid possible confusion. High “importance”, for example, can be assigned to samples that are over-hyped by media when their commonality is still “0”. 
+     
+     Use the following guidelines for “importance” which is also defined on a scale 0..100:
+     100 – you’d  expect your CEO and/or media to call you any second about this object
+     80 – you might get a call from your CEO and/or media
+     60 –  you’d  expect your boss to call you any second
+     40 – you might get a call from your boss
+     20 – someone is very likely to contact you about this object
+     10 – you might get contacted about this object
+     0 – you’d be surprised if anyone would ever contact you about this object
+    
+    </p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>references<span class="occurrence">1..1</span></td>
+      <td>
+        
+          referencesInlineType
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>       The objects the prevalence information pertains to.</p>
+        
+          <p>      </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>startDate<span class="occurrence">1..1</span></td>
+      <td>
+        
+          dateTime
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>       The start date for this field data entry - the start date of the period over which the prevalence (commonality) and importance is measured.</p>
+        
+          <p>      </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>endDate<span class="occurrence">1..1</span></td>
+      <td>
+        
+          dateTime
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>       The end date for this field data entry - the end date of the period over which the prevalence (commonality) and importance is measured.</p>
+        
+          <p>      </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>firstSeenDate<span class="occurrence">0..1</span></td>
+      <td>
+        
+          dateTime
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>       The date that the object was first seen by the reporting entity. </p>
+        
+          <p>      </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>origin<span class="occurrence">1..1</span></td>
+      <td>
+        
+          OriginTypeEnum
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>       An enumeration of common sources or origins of data associated with the field data.</p>
+        
+          <p>      </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>commonality<span class="occurrence">0..1</span></td>
+      <td>
+        
+          intBetween0and100
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>       Qualitative measurements of prevalence.</p>
+        
+          <p>      </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>volume<span class="occurrence">0..n</span></td>
+      <td>
+        
+          volumeInlineType
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>       Quantitive measurements of prevalence.</p>
+        
+          <p>      </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>importance<span class="occurrence">0..1</span></td>
+      <td>
+        
+          intBetween0and100
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>       Qualitative measurement of risk associated with the object.</p>
+        
+          <p>      </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>location<span class="occurrence">0..1</span></td>
+      <td>
+        
+          locationInlineType
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>       Geolocation information for prevalence.</p>
+        
+          <p>      </p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

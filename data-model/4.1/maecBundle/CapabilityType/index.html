@@ -1,0 +1,166 @@
+---
+layout: data_model
+title: CapabilityType
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>CapabilityType<span class="subdued">MAEC Bundle Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">The <a href='/data-model/4.1/maecBundle/CapabilityType'>CapabilityType</a> captures details of a Capability that may be implemented in the malware instance, along with its child Strategic and Tactical Objectives.</p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>@id<span class="occurrence">required</span></td>
+      <td>
+        
+          QName
+        
+      </td>
+      <td>
+        
+          <p>The required id field specifies a unique ID for this MAEC Capability.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@name<span class="occurrence">optional</span></td>
+      <td>
+        
+          MalwareCapabilityEnum-1.0
+        
+      </td>
+      <td>
+        
+          <p>The name field captures the name of the Capability. It uses the MalwareCapabilityEnum-1.0 enumeration from the MAEC Vocabularies schema.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Description<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The Description field captures a basic textual description of the Capability.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Property<span class="occurrence">0..n</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/CapabilityPropertyType">CapabilityPropertyType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Property field permits the capture of a single property of the Capability, as a key/value pair. More than one property can be specified via multiple occurrences of this field.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Strategic_Objective<span class="occurrence">0..n</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/CapabilityObjectiveType">CapabilityObjectiveType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Strategic_Objective field captures a single Strategic Objective that the Capability attempts to achieve. It can be considered as a more granular way of capturing the Capabilities present in the malware instance. </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Tactical_Objective<span class="occurrence">0..n</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/CapabilityObjectiveType">CapabilityObjectiveType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Tactical_Objective field captures a single Tactical Objective that the Capability attempts to achieve, typically in the context of a broader Strategic Objective. It can be considered as a way of expounding upon Strategic Objectives to capture the Capabilities of the malware instance in more detail. </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Behavior_Reference<span class="occurrence">0..n</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/BehaviorReferenceType">BehaviorReferenceType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Behavior_Reference field captures a reference to a Behavior that serves as an implementation of the Capability. For Behaviors that serve as implementations of specific Strategic or Tactical Objectives, the Behavior_Reference field under the Strategic_Objective or Tactical_Objective fields should be used, respectively.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Relationship<span class="occurrence">0..n</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/CapabilityRelationshipType">CapabilityRelationshipType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Relationship field captures a relationship from the Capability to one or more other Capabilities.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

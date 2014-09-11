@@ -1,0 +1,138 @@
+---
+layout: data_model
+title: ClusteringMetadataType
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>ClusteringMetadataType<span class="subdued">MAEC Package Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">The <a href='/data-model/4.1/maecPackage/ClusteringMetadataType'>ClusteringMetadataType</a> specifies any metadata regarding the algorithm and/or methods used for clustering the Malware Subjects in this Package, for use in the ‘clustered together’ relationship type.</p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>Algorithm_Name<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The Algorithm_Name field specifies the name of the clustering algorithm used to cluster the malware.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Algorithm_Version<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The Algorithm_Version field specifies the version of the algorithm used to cluster the malware.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Algorithm_Parameters<span class="occurrence">0..1</span></td>
+      <td>
+        
+          ClusteringAlgorithmParametersType
+        
+      </td>
+      <td>
+        
+          <p>The Algorithm_Parameters field specifies any parameters that may have been used in the clustering algorithm.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Cluster_Size<span class="occurrence">0..1</span></td>
+      <td>
+        
+          positiveInteger
+        
+      </td>
+      <td>
+        
+          <p>The Cluster_Size field specifies the size of the malware cluster.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Cluster_Description<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The Cluster_Description field provides a textual description of the malware cluster, such as information about its composition, etc.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Cluster_Composition<span class="occurrence">0..1</span></td>
+      <td>
+        
+          ClusterCompositionType
+        
+      </td>
+      <td>
+        
+          <p>The Cluster_Composition field captures the composition of the malware cluster, including the similarity indices between its members, as a collection of edges and their corresponding nodes.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

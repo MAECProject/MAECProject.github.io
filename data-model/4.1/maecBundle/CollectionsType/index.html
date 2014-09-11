@@ -1,0 +1,110 @@
+---
+layout: data_model
+title: CollectionsType
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>CollectionsType<span class="subdued">MAEC Bundle Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">The <a href='/data-model/4.1/maecBundle/CollectionsType'>CollectionsType</a> captures the various types of MAEC entity collections.</p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>Behavior_Collections<span class="occurrence">0..1</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/BehaviorCollectionListType">BehaviorCollectionListType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Behavior_Collections field captures any collections of Behaviors in the Bundle.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Action_Collections<span class="occurrence">0..1</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/ActionCollectionListType">ActionCollectionListType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Action_Collections field captures any collections of Actions in the Bundle.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Object_Collections<span class="occurrence">0..1</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/ObjectCollectionListType">ObjectCollectionListType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Objects_Collections field captures any collections of CybOX Objects in the Bundle.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Candidate_Indicator_Collections<span class="occurrence">0..1</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/CandidateIndicatorCollectionListType">CandidateIndicatorCollectionListType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Candidate_Indicator_Collections field captures any collections of Candidate Indicators in the Bundle.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

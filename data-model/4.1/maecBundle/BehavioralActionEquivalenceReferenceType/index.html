@@ -1,0 +1,82 @@
+---
+layout: data_model
+title: BehavioralActionEquivalenceReferenceType
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>BehavioralActionEquivalenceReferenceType<span class="subdued">MAEC Bundle Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">The <a href='/data-model/4.1/maecBundle/BehavioralActionEquivalenceReferenceType'>BehavioralActionEquivalenceReferenceType</a> defines an Action Equivalence reference that can be used as part of a Behavior. Since the Action Equivalency equates two or more actions to a single one, this can be thought of as specifying one of the aforementioned Actions as part of the composition of the Behavior.</p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>@action_equivalence_idref<span class="occurrence">required</span></td>
+      <td>
+        
+          QName
+        
+      </td>
+      <td>
+        
+          <p>The action_equivalence_idref field specifies the ID of an Action Equivalence contained in the same MAEC document as the Behavior that utilizes it.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@behavioral_ordering<span class="occurrence">optional</span></td>
+      <td>
+        
+          positiveInteger
+        
+      </td>
+      <td>
+        
+          <p>The behavioral_ordering field defines the ordering of the Action Equivalency with respect to the other actions that make up the behavior. So an action with a behavioral_ordering of "1" would come before an action with a behavioral_ordering of "2", etc.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

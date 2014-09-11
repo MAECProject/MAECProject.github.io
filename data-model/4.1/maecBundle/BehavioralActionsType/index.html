@@ -1,0 +1,110 @@
+---
+layout: data_model
+title: BehavioralActionsType
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>BehavioralActionsType<span class="subdued">MAEC Bundle Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">The <a href='/data-model/4.1/maecBundle/BehavioralActionsType'>BehavioralActionsType</a> is intended to capture the Actions or Action Collections that make up a Behavior.</p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>Action_Collection<span class="occurrence">1..1</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/ActionCollectionType">ActionCollectionType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Action_Collection field specifies an Action Collection that is part of the behavioral composition.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Action<span class="occurrence">1..1</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/BehavioralActionType">BehavioralActionType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Action field specifies a single Action that is part of the behavioral composition.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Action_Reference<span class="occurrence">1..1</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/BehavioralActionReferenceType">BehavioralActionReferenceType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Action_Reference field specifies a reference to a single Action that is part of the behavioral composition.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Action_Equivalence_Reference<span class="occurrence">1..1</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/BehavioralActionEquivalenceReferenceType">BehavioralActionEquivalenceReferenceType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Action_Equivalence_Reference field specifies a reference to a single Action Equivalence that is part of the behavioral composition.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

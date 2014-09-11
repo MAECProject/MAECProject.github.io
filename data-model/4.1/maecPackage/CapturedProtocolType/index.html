@@ -1,0 +1,110 @@
+---
+layout: data_model
+title: CapturedProtocolType
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>CapturedProtocolType<span class="subdued">MAEC Package Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">The <a href='/data-model/4.1/maecPackage/CapturedProtocolType'>CapturedProtocolType</a> specifies the details of a network protocol that may be captured or otherwise manipulated in the malware analysis environment.</p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>@layer7_protocol<span class="occurrence">optional</span></td>
+      <td>
+        
+          Layer7ProtocolEnum
+        
+      </td>
+      <td>
+        
+          <p>The layer7_protocol field specifies the name of the Layer 7 network protocol (OSI model) captured or manipulated by the analysis environment.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@layer4_protocol<span class="occurrence">optional</span></td>
+      <td>
+        
+          Layer4ProtocolEnum
+        
+      </td>
+      <td>
+        
+          <p>The layer4_protocol field specifies the name of the Layer 4 network protocol (OSI model) captured or manipulated by the analysis environment.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@port_number<span class="occurrence">optional</span></td>
+      <td>
+        
+          positiveInteger
+        
+      </td>
+      <td>
+        
+          <p>The port_number field specifies the port number for this network protocol that is captured or manipulated by the analysis environment.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@interaction_level<span class="occurrence">optional</span></td>
+      <td>
+        
+          InteractionLevelEnum
+        
+      </td>
+      <td>
+        
+          <p>The interaction_level field specifies the relative level of interaction that the analysis environment has with the specified network protocol.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

@@ -1,0 +1,68 @@
+---
+layout: data_model
+title: ToolListType
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>ToolListType<span class="subdued">MAEC Package Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">The ToolsType characterizes one or more tools, such as those used in the analysis of a Malware Subject.</p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>Tool<span class="occurrence">1..n</span></td>
+      <td>
+        
+          ToolInformationType
+        
+      </td>
+      <td>
+        
+          <p>The Tool field specifies a single tool in the list.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

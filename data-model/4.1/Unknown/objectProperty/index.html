@@ -1,0 +1,116 @@
+---
+layout: data_model
+title: objectProperty
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>objectProperty<span class="subdued">Unknown Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">
+     Property; a reference to the object, a timestamp and an unbounded set of properties.
+   
+    This is used to describe extra information about an object. For example, to show the url parameter strings
+    associated with a particular URI object. Or to show file names associated with a particular file.
+    
+    Properties can also be applied to relationships, by referencing the relationship by id. This allows use such as 
+    e.g. recording the post data sent in an http request between a malware (file object) and a uri (uri object).
+   </p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>@id<span class="occurrence">optional</span></td>
+      <td>
+        
+          anySimpleType
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>references<span class="occurrence">1..1</span></td>
+      <td>
+        
+          referencesInlineType
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>      The objects the properties pertain to.</p>
+        
+          <p>     </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>timestamp<span class="occurrence">1..1</span></td>
+      <td>
+        
+          dateTime
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>property<span class="occurrence">1..n</span></td>
+      <td>
+        
+          property
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

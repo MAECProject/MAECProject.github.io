@@ -1,0 +1,110 @@
+---
+layout: data_model
+title: DynamicAnalysisMetadataType
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>DynamicAnalysisMetadataType<span class="subdued">MAEC Package Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">The <a href='/data-model/4.1/maecPackage/DynamicAnalysisMetadataType'>DynamicAnalysisMetadataType</a> captures any metadata specific to the dynamic analysis of a malware instance.</p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>Command_Line<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The Command_Line field specifies the command line used to launch the subject binary. </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Analysis_Duration<span class="occurrence">0..1</span></td>
+      <td>
+        
+          float
+        
+      </td>
+      <td>
+        
+          <p>The Analysis_Duration field specifies the duration of the overall dynamic analysis process, in seconds.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Exit_Code<span class="occurrence">0..1</span></td>
+      <td>
+        
+          integer
+        
+      </td>
+      <td>
+        
+          <p>The Exit_Code field specifies the exit code with which the subject binary exited. </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Raised_Exception<span class="occurrence">0..n</span></td>
+      <td>
+        
+          MalwareExceptionType
+        
+      </td>
+      <td>
+        
+          <p>The Raised_Exception field captures a single exception that was raised (or thrown) during the execution of the malware instance. More than one exception may be captured through the use of multiple instances of this field.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

@@ -1,0 +1,138 @@
+---
+layout: data_model
+title: CapabilityObjectiveType
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>CapabilityObjectiveType<span class="subdued">MAEC Bundle Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">The <a href='/data-model/4.1/maecBundle/CapabilityObjectiveType'>CapabilityObjectiveType</a> captures details of a Capability Strategic or Tactical Objective.</p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>@id<span class="occurrence">required</span></td>
+      <td>
+        
+          QName
+        
+      </td>
+      <td>
+        
+          <p>The required id field specifies a unique ID for this Capability Objective.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Name<span class="occurrence">0..1</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/cyboxCommon/ControlledVocabularyStringType">ControlledVocabularyStringType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Name field captures the name of the Capability Objective. There are several default vocabularies for this usage included in the MAEC Vocabularies schema. It uses the <a href='/data-model/4.1/cyboxCommon/ControlledVocabularyStringType'>ControlledVocabularyStringType</a> from the imported CybOX Common schema.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Description<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The Description field captures a basic textual description of the Capability Objective.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Property<span class="occurrence">0..n</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/CapabilityPropertyType">CapabilityPropertyType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Property field permits the capture of a single property of the Capability Objective, as a key/value pair. More than one property can be specified via multiple occurrences of this field.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Behavior_Reference<span class="occurrence">0..n</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/BehaviorReferenceType">BehaviorReferenceType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Behavior_Reference field captures a reference to a Behavior that functions as an implementation of the Capability Objective. </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Relationship<span class="occurrence">0..n</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/CapabilityObjectiveRelationshipType">CapabilityObjectiveRelationshipType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Relationship field captures a relationship from the Capability Objective to one or more other Capability Objectives.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

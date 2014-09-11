@@ -1,0 +1,110 @@
+---
+layout: data_model
+title: ClusterEdgeNodePairType
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>ClusterEdgeNodePairType<span class="subdued">MAEC Package Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">The <a href='/data-model/4.1/maecPackage/ClusterEdgeNodePairType'>ClusterEdgeNodePairType</a> captures a single edge-node pair in a malware cluster, which is composed of the two Malware Subjects that correspond to the nodes connected to the edge (via references), and represents the similarity index between the two Malware Subjects.</p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>@similarity_index<span class="occurrence">optional</span></td>
+      <td>
+        
+          decimal
+        
+      </td>
+      <td>
+        
+          <p>The similarity_index field specifies the similarity index  between the two Malware Subjects being referenced (indicating how similar they are), as a decimal value. This value should be equivalent to 1 minus the similarity distance value (if included).</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@similarity_distance<span class="occurrence">optional</span></td>
+      <td>
+        
+          decimal
+        
+      </td>
+      <td>
+        
+          <p>The similarity_index field specifies the similarity distance between the two Malware Subjects being referenced (indicating how dissimilar they are), as a decimal value. This value should be equivalent to 1 minus the similarity index value (if included).</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Malware_Subject_Node_A<span class="occurrence">1..1</span></td>
+      <td>
+        
+          MalwareSubjectReferenceType
+        
+      </td>
+      <td>
+        
+          <p>The Malware_Subject_Node_A field represents a node connected to the edge via a reference to a Malware Subject that is part of a malware cluster.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Malware_Subject_Node_B<span class="occurrence">1..1</span></td>
+      <td>
+        
+          MalwareSubjectReferenceType
+        
+      </td>
+      <td>
+        
+          <p>The Malware_Subject_Node_B field represents a node connected to the edge via a reference to a Malware Subject that is part of a malware cluster.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

@@ -1,0 +1,139 @@
+---
+layout: data_model
+title: relationship
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>relationship<span class="subdued">Unknown Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">
+       Relationships are used to express relationships between objects, and dates. Relationships have 
+       a type (an attribute with a defined list of allowed relationships), source (a set of xpath references to the parent end of 
+       the relationship), target (xpath references to the other end of the relationship) and an optional date.
+       
+       The linking of objects with types is a powerful way of describing data. The dates can be used to provide context. 
+       
+       For example, to assign a classification to an object, that can done with an "isClassifiedAs" relationship, with the date meaning 
+       that that was the data that that classification was assigned.
+       
+       To show urls and the last visited data, this can be expressed as a "verifiedBy" relationship between the urls and the entity doing the 
+       verification, with the date interpreted as the verification date.
+       
+      </p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>@type<span class="occurrence">required</span></td>
+      <td>
+        
+          RelationshipTypeEnum
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@id<span class="occurrence">optional</span></td>
+      <td>
+        
+          anySimpleType
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>source<span class="occurrence">1..1</span></td>
+      <td>
+        
+          sourceInlineType
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>      References to objects at the parent end of the relationship.</p>
+        
+          <p>     </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>target<span class="occurrence">1..1</span></td>
+      <td>
+        
+          targetInlineType
+        
+      </td>
+      <td>
+        
+          <p></p>
+        
+          <p>      References to objects at the child end of the relationship.</p>
+        
+          <p>     </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>timestamp<span class="occurrence">1..1</span></td>
+      <td>
+        
+          dateTime
+        
+      </td>
+      <td>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

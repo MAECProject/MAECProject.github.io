@@ -1,0 +1,96 @@
+---
+layout: data_model
+title: HTTPClientRequestType
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>HTTPClientRequestType<span class="subdued">HTTP Session Object Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">The <a href='/data-model/4.1/HTTPSessionObj/HTTPClientRequestType'>HTTPClientRequestType</a> field captures the details of an HTTP client request.</p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>HTTP_Request_Line<span class="occurrence">0..1</span></td>
+      <td>
+        
+          HTTPRequestLineType
+        
+      </td>
+      <td>
+        
+          <p>The HTTP_Request_Line field specifies the HTTP request line of the HTTP client request.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>HTTP_Request_Header<span class="occurrence">0..1</span></td>
+      <td>
+        
+          HTTPRequestHeaderType
+        
+      </td>
+      <td>
+        
+          <p>The HTTP_Request_Header field specifies all of the HTTP header fields that may be found in the HTTP client request.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>HTTP_Message_Body<span class="occurrence">0..1</span></td>
+      <td>
+        
+          HTTPMessageType
+        
+      </td>
+      <td>
+        
+          <p>The HTTP_Message_Body field specifies the optional message body that may be included in the HTTP client request.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

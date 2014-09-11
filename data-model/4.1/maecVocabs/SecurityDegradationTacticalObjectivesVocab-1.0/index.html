@@ -1,0 +1,305 @@
+---
+layout: data_model
+title: SecurityDegradationTacticalObjectivesVocab-1.0
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>SecurityDegradationTacticalObjectivesVocab-1.0<span class="subdued">MAEC Vocabularies Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">The <a href='/data-model/4.1/stixVocabs/SecurityDegradationTacticalObjectivesVocab-1.0'>SecurityDegradationTacticalObjectivesVocab-1.0</a> is the default MAEC Vocabulary for Security Degradation Capability Tactical Objectives.</p>
+
+<hr />
+
+
+<h2>Vocabulary Items</h2>
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  
+    <tr>
+      <td>stop execution of security program</td>
+      <td>The 'stop execution of security program' value indicates that the malware instance is able to stop one or more security programs that may already be executing on a system.</td>
+    </tr>
+  
+    <tr>
+      <td>disable firewall</td>
+      <td>The 'disable firewall' value indicates that the malware instance is able to evade or disable the host-based firewall or otherwise prevent the blocking of network communications.</td>
+    </tr>
+  
+    <tr>
+      <td>disable access right checking</td>
+      <td>The 'disable access right checking' value indicates that the malware instance is able to bbypass, disable, or modify the access tokens or access control lists, thereby enabling the malware to read, write, or execute a file with one or more of these controls set.</td>
+    </tr>
+  
+    <tr>
+      <td>disable kernel patching protection</td>
+      <td>The 'disable kernel patch protection' value indicates that the malware instance is able to bypass or disable PatchGuard; thus it is capable of operating at the same level as the kernel and kernel mode drivers (KMD).</td>
+    </tr>
+  
+    <tr>
+      <td>prevent access to security websites</td>
+      <td>The 'prevent access to security websites' value indicates that the malware instance is able to prevent access from a system to one or more security vendor or security-related websites.</td>
+    </tr>
+  
+    <tr>
+      <td>remove sms warning messages</td>
+      <td>The 'remove sms warning messages' value indicates that the malware instance is able to capture the message body of incoming SMS messages and abort the broadcasting of a message that meets a certain criteria.</td>
+    </tr>
+  
+    <tr>
+      <td>modify security program configuration</td>
+      <td>The 'modify security program configuration' value indicates that the malware instance is able to modify the configuration of one or more security programs running on a system in order to hamper their usefulness and ability to detect the malware instance.</td>
+    </tr>
+  
+    <tr>
+      <td>prevent security program from running</td>
+      <td>The 'prevent security program from running' value indicates that the malware instance is able to prevent one or more security programs from running on a system.</td>
+    </tr>
+  
+    <tr>
+      <td>disable system update services/daemons</td>
+      <td>The 'disable system update services/daemons' value indicates that the malware instance is able to disable system update services or daemons that may be running on a system.</td>
+    </tr>
+  
+    <tr>
+      <td>disable system service pack/patch installation</td>
+      <td>The 'disable system service pack/patch installation' value indicates that the malware instance is able to disable the system's ability to install service packs or patches.</td>
+    </tr>
+  
+    <tr>
+      <td>disable system file overwrite protection</td>
+      <td>The 'disable system file overwrite protection' value indicates that the malware instance is able to bypass or disable the Windows file protection feature; thus, enabling system files to be modified or replaced.</td>
+    </tr>
+  
+    <tr>
+      <td>disable privilege limiting</td>
+      <td>The 'disable privilege limiting' value indicates that the malware instance is able to bypass controls that limit the privileges that can be granted to a user or entity.</td>
+    </tr>
+  
+    <tr>
+      <td>gather security product info</td>
+      <td>The 'gather security product info' value indicates that the malware instance is able to gather information about the security products installed or running on a system.</td>
+    </tr>
+  
+    <tr>
+      <td>disable os security alerts</td>
+      <td>The 'disable os security alerts' value indicates that the malware instance is able to evade or disable identification and/or notification of its presence by inherent features of the operating system.</td>
+    </tr>
+  
+    <tr>
+      <td>disable user account control</td>
+      <td>The 'disable user account control' value indicates that the malware instance is able to bypass or disable user account control (UAC); thus, enabling a user to run an application with elevated privileges.</td>
+    </tr>
+  
+  </tbody>
+</table>
+
+<h2>Fields</h2>
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>@condition<span class="occurrence">optional</span></td>
+      <td>
+        
+          ConditionTypeEnum
+        
+      </td>
+      <td>
+        
+          <p>This field is optional and defines the relevant condition to apply to the value.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@is_case_sensitive<span class="occurrence">optional</span></td>
+      <td>
+        
+          boolean
+        
+      </td>
+      <td>
+        
+          <p>The is_case_sensitive field is optional and should be used when specifying the case-sensitivity of a pattern which uses an Equals, DoesNotEqual, Contains, DoesNotContain, StartsWith, EndsWith, or FitsPattern condition. The default value for this field is "true" which indicates that pattern evaluations are to be considered case-sensitive.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@apply_condition<span class="occurrence">optional</span></td>
+      <td>
+        
+          ConditionApplicationEnum
+        
+      </td>
+      <td>
+        
+          <p>This field indicates how a condition should be applied when the field body contains a list of values. (Its value is moot if the field value contains only a single value - both possible values for this field would have the same behavior.) If this field is set to ANY, then a pattern is considered to be matched if the provided condition successfully evaluates for any of the values in the field body. If the field is set to ALL, then the patern only matches if the provided condition successfully evaluates for every value in the field body.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@delimiter<span class="occurrence">optional</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The delimiter field specifies the delimiter used when defining lists of values. The default value is "##comma##".</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@bit_mask<span class="occurrence">optional</span></td>
+      <td>
+        
+          hexBinary
+        
+      </td>
+      <td>
+        
+          <p>Used to specify a bit_mask in conjunction with one of the defined binary conditions (bitwiseAnd, bitwiseOr, and bitwiseXor). This bitmask is then uses as one operand in the indicated bitwise computation.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@pattern_type<span class="occurrence">optional</span></td>
+      <td>
+        
+          PatternTypeEnum
+        
+      </td>
+      <td>
+        
+          <p>This field is optional and defines the type of pattern used if one is specified for the field value. This is applicable only if the Condition field is set to 'FitsPattern'.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@regex_syntax<span class="occurrence">optional</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>This field is optional and defines the syntax format used for a regular expression, if one is specified for the field value. This is applicable only if the Condition field is set to 'FitsPattern'.</p>
+        
+          <p>Setting this attribute with an empty value (e.g., "") or omitting it entirely notifies CybOX consumers and pattern evaluators that the corresponding regular expression utilizes capabilities, character classes, escapes, and other lexical tokens defined by the CybOX Language Specification.</p>
+        
+          <p>Setting this attribute with a non-empty value notifies CybOX consumers and pattern evaluators that the corresponding regular expression utilizes capabilities not defined by the CybOX Language Specification. The regular expression must be evaluated through a compatible regular expression engine in this case.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@has_changed<span class="occurrence">optional</span></td>
+      <td>
+        
+          boolean
+        
+      </td>
+      <td>
+        
+          <p>This field is optional and conveys a targeted observation pattern of whether the associated field value has changed. This field would be leveraged within a pattern observable triggering on whether the value of a single field value has changed.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@trend<span class="occurrence">optional</span></td>
+      <td>
+        
+          boolean
+        
+      </td>
+      <td>
+        
+          <p>This field is optional and conveys a targeted observation pattern of the nature of any trend in the associated field value. This field would be leveraged within a pattern observable triggering on the matching of a specified trend in the value of a single specified field.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@vocab_name<span class="occurrence">optional</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The vocab_name field specifies the name of the controlled vocabulary.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@vocab_reference<span class="occurrence">optional</span></td>
+      <td>
+        
+          anyURI
+        
+      </td>
+      <td>
+        
+          <p>The vocab_reference field specifies the URI to the location of where the controlled vocabulary is defined, e.g., in an externally located XML schema file.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

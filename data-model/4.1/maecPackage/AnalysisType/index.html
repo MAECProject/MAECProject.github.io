@@ -1,0 +1,278 @@
+---
+layout: data_model
+title: AnalysisType
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>AnalysisType<span class="subdued">MAEC Package Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">The <a href='/data-model/4.1/maecPackage/AnalysisType'>AnalysisType</a> provides a way of capturing the information associated with the analysis of a malware instance, such as the subject, authors, start datetime, and other relevant data.</p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>@id<span class="occurrence">required</span></td>
+      <td>
+        
+          QName
+        
+      </td>
+      <td>
+        
+          <p>The required id field specifies a unique ID for this Analysis.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@type<span class="occurrence">optional</span></td>
+      <td>
+        
+          AnalysisTypeEnum
+        
+      </td>
+      <td>
+        
+          <p>The type field specifies the type of malware analysis being performed.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@method<span class="occurrence">optional</span></td>
+      <td>
+        
+          AnalysisMethodEnum
+        
+      </td>
+      <td>
+        
+          <p>The method field specifies the analysis method used in the analysis. </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@ordinal_position<span class="occurrence">optional</span></td>
+      <td>
+        
+          positiveInteger
+        
+      </td>
+      <td>
+        
+          <p>The ordinal_position field specifies the ordering of the analysis with respect to the other analyses performed on the Malware Subject.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@start_datetime<span class="occurrence">optional</span></td>
+      <td>
+        
+          dateTime
+        
+      </td>
+      <td>
+        
+          <p>The start_datetime field specifies the date/time the analysis was started.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@complete_datetime<span class="occurrence">optional</span></td>
+      <td>
+        
+          dateTime
+        
+      </td>
+      <td>
+        
+          <p>The complete_datetime field specifies the date/time the analysis was completed.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@lastupdate_datetime<span class="occurrence">optional</span></td>
+      <td>
+        
+          dateTime
+        
+      </td>
+      <td>
+        
+          <p>The lastupdate_datetime field specifies the date/time the analysis was last updated.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Source<span class="occurrence">0..1</span></td>
+      <td>
+        
+          SourceType
+        
+      </td>
+      <td>
+        
+          <p>The Source field specifies information about the internal or external source of the analysis, if applicable.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Analysts<span class="occurrence">0..1</span></td>
+      <td>
+        
+          PersonnelType
+        
+      </td>
+      <td>
+        
+          <p>The Analysts field specifies the analyst(s) who performed the analysis.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Summary<span class="occurrence">0..1</span></td>
+      <td>
+        
+          StructuredTextType
+        
+      </td>
+      <td>
+        
+          <p>The Summary field specifies a summary of the analysis that was performed.  It should be high-level and concise.  It should summarize the contents of the Report field, if present, and otherwise should provide a brief synopsis of the analysis that was performed and any highlights.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Comments<span class="occurrence">0..1</span></td>
+      <td>
+        
+          CommentListType
+        
+      </td>
+      <td>
+        
+          <p>The Comments field specifies any comments regarding the analysis that was performed. A comment should be attributable to a specific analyst and should reflect particular insights of the author that are significant from an analysis standpoint.  The contents of comments are typically not contained in the Report.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Findings_Bundle_Reference<span class="occurrence">0..n</span></td>
+      <td>
+        
+          BundleReferenceType
+        
+      </td>
+      <td>
+        
+          <p>The Findings_Bundle_Reference field specifies a reference to the Bundle which encompasses the results and output of the Analysis in terms of its corresponding MAEC entities, such as Behaviors and Actions. More than one Bundle may be referenced by using multiple occurrences of this field.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Tools<span class="occurrence">0..1</span></td>
+      <td>
+        
+          ToolListType
+        
+      </td>
+      <td>
+        
+          <p>The Tools field specifies information about the tool(s) used in the analysis, via the CybOX ToolInformationType. If only a single Tool is specified, then this implies that this tool was responsible for all of the findings contained in the Bundle referenced by the Findings_Bundle_Reference element.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Dynamic_Analysis_Metadata<span class="occurrence">0..1</span></td>
+      <td>
+        
+          DynamicAnalysisMetadataType
+        
+      </td>
+      <td>
+        
+          <p>The Dynamic_Analysis_Metadata field specifies metadata pertaining to the dynamic analysis of the subject binary, such as the command line used, the duration of the analysis, etc.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Analysis_Environment<span class="occurrence">0..1</span></td>
+      <td>
+        
+          AnalysisEnvironmentType
+        
+      </td>
+      <td>
+        
+          <p>The Analysis_Environment field specifies attributes for characterizing the analysis environment in which the analysis was performed.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Report<span class="occurrence">0..1</span></td>
+      <td>
+        
+          StructuredTextType
+        
+      </td>
+      <td>
+        
+          <p>The Report field specifies the textual report regarding the analysis performed on the malware. The Report should correspond to the human-readable prose document that captures key aspects and outcomes of the analysis.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

@@ -1,0 +1,96 @@
+---
+layout: data_model
+title: FindingsBundleListType
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>FindingsBundleListType<span class="subdued">MAEC Package Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">The <a href='/data-model/4.1/maecPackage/FindingsBundleListType'>FindingsBundleListType</a> captures a list of Bundles or external references to Bundles, along with any related meta-analysis entities.</p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>Meta_Analysis<span class="occurrence">0..1</span></td>
+      <td>
+        
+          MetaAnalysisType
+        
+      </td>
+      <td>
+        
+          <p>The Meta_Analysis field captures any meta-analysis related entities for the Bundles captured for a Malware Subject, such as equivalencies.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Bundle<span class="occurrence">0..n</span></td>
+      <td>
+        
+          BundleType
+        
+      </td>
+      <td>
+        
+          <p>The Bundle field captures a single MAEC Bundle, representing some set of characterized entities resulting from  analysis of the Malware Subject.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Bundle_External_Reference<span class="occurrence">0..n</span></td>
+      <td>
+        
+          anyURI
+        
+      </td>
+      <td>
+        
+          <p>The Bundle_External_Reference field specifies a single externally located MAEC Bundle (such as a file or URL) via a URI, representing some set of results from analysis of the Malware Subject.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

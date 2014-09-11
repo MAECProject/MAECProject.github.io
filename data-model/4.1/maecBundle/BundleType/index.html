@@ -1,0 +1,250 @@
+---
+layout: data_model
+title: BundleType
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>BundleType<span class="subdued">MAEC Bundle Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">The <a href='/data-model/4.1/maecBundle/BundleType'>BundleType</a> serves as the high-level construct which encapsulates all Bundle elements, and represents some characterized analysis data (from any arbitrary set of analyses) for a single malware instance in terms of its MAEC Components (e.g., Behaviors, Actions, Objects, etc.).</p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>@id<span class="occurrence">required</span></td>
+      <td>
+        
+          QName
+        
+      </td>
+      <td>
+        
+          <p>The required id field specifies a unique ID for this MAEC Bundle. </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@schema_version<span class="occurrence">required</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The required schema_version field specifies the version of the MAEC Bundle Schema that the document has been written in and that should be used for validation.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@defined_subject<span class="occurrence">required</span></td>
+      <td>
+        
+          boolean
+        
+      </td>
+      <td>
+        
+          <p>The required defined_subject field specifies whether the subject attributes of the characterized malware instance are included inside this Bundle (via the top-level Malware_Instance_Object_Attributes field) or elsewhere (such as a MAEC Subject in a MAEC Package).</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@content_type<span class="occurrence">optional</span></td>
+      <td>
+        
+          BundleContentTypeEnum
+        
+      </td>
+      <td>
+        
+          <p>The content_type field specifies the general type of content contained in this Bundle, e.g. static analysis tool output, dynamic analysis tool output, etc.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@timestamp<span class="occurrence">optional</span></td>
+      <td>
+        
+          dateTime
+        
+      </td>
+      <td>
+        
+          <p>The timestamp field specifies the date/time that the bundle was generated.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Malware_Instance_Object_Attributes<span class="occurrence">0..1</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/cybox/ObjectType">ObjectType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Malware_Instance_Object_Attributes field characterizes the attributes of the object (most typically a file) that represents the malware instance whose Behaviors, Actions, Objects, Process Tree, and Candidate Indicators are characterized in this Bundle. This is equivalent to the Malware_Instance_Object_Attributes inside of a Malware_Subject in the MAEC Package, and is therefore only required if this Bundle is to be used in a stand-alone fashion, i.e., without an accompanying MAEC Package and with the defined_subject field set to 'True'.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>AV_Classifications<span class="occurrence">0..1</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/AVClassificationsType">AVClassificationsType</a>
+        
+      </td>
+      <td>
+        
+          <p>The AV_Classifications field contains 1-n <a href='/data-model/4.1/maecBundle/AVClassificationType'>AVClassificationType</a> objects, which capture any Anti-Virus scanner tool classifications of the malware instance object.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Process_Tree<span class="occurrence">0..1</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/ProcessTreeType">ProcessTreeType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Process_Tree field specifies the observed process tree of execution for the malware instance, along with references to any corresponding actions that were initiated, if applicable.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Capabilities<span class="occurrence">0..1</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/CapabilityListType">CapabilityListType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Capabilities field contains 1-n <a href='/data-model/4.1/maecBundle/CapabilityType'>CapabilityType</a> objects, which serve to describe the high-level capabilities and objectives of the malware instance.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Behaviors<span class="occurrence">0..1</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/BehaviorListType">BehaviorListType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Behaviors field contains 1-n <a href='/data-model/4.1/maecBundle/BehaviorType'>BehaviorType</a> objects, which function as the MAEC representation for any behaviors that were observed for the malware instance. </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Actions<span class="occurrence">0..1</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/ActionListType">ActionListType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Actions field contains 1-n <a href='/data-model/4.1/cybox/ActionType'>ActionType</a> objects, which function as the MAEC representation for any lower-level actions that were observed for the malware instance. </p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Objects<span class="occurrence">0..1</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/ObjectListType">ObjectListType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Objects field contains 1-n <a href='/data-model/4.1/cybox/ObjectType'>ObjectType</a> objects, which function as the MAEC representation for any objects associated with the malware instance.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Candidate_Indicators<span class="occurrence">0..1</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/CandidateIndicatorListType">CandidateIndicatorListType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Candidate_Indicators field contains 1-n <a href='/data-model/4.1/maecBundle/CandidateIndicatorType'>CandidateIndicatorType</a> objects, which function as the MAEC representation of any candidate indicators associated with the malware instance.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Collections<span class="occurrence">0..1</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/CollectionsType">CollectionsType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Collections field contains the collection element types for Behaviors, Actions, Objects, and Candidate Indicators.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

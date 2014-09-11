@@ -1,0 +1,152 @@
+---
+layout: data_model
+title: BehaviorCollectionType
+this_version: 4.1
+---
+
+
+
+<div class="row">
+  <div class="col-md-10">
+    <h1>BehaviorCollectionType<span class="subdued">MAEC Bundle Schema</span></h1>
+  </div>
+
+  <div id="nav-area" class="col-md-2">
+    <p>
+      <form id="nav-version">
+        <select>
+          
+            <option value="4.1" selected="selected">STIX 4.1</option>
+          
+        </select>
+      </form>
+    </p>
+
+    
+    <p>
+      <a href="asdfg">
+        <img src="/images/python-logo.png" alt="Python" /><br />
+        API support
+      </a>
+    </p>
+    
+  </div>
+
+</div>
+
+<p class="data-model-description">The <a href='/data-model/4.1/maecBundle/BehaviorCollectionType'>BehaviorCollectionType</a> provides a Capability for characterizing collections of behaviors.</p>
+
+<hr />
+
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td>@name<span class="occurrence">optional</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The name field specifies the name of the collection.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Affinity_Type<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The Affinity_Type field provides an abstract way of characterizing how the objects in a collection are related.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Affinity_Degree<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The Affinity_Degree field is intended to provide an abstract way of characterizing the degree to which the objects in a collection are related.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Description<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The Description field contains a textual description of the collection.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>@id<span class="occurrence">required</span></td>
+      <td>
+        
+          QName
+        
+      </td>
+      <td>
+        
+          <p>The id field specifies a unique ID for this Behavior Collection.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Purpose<span class="occurrence">0..1</span></td>
+      <td>
+        
+          string
+        
+      </td>
+      <td>
+        
+          <p>The Purpose field states the intended purpose of the collection of Behaviors. Since Behaviors are not always successful, and may not be fully observed, this is meant as way of absracting the nature of the collection of Behaviors away  from its constituent Actions.</p>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td>Behavior_List<span class="occurrence">1..1</span></td>
+      <td>
+        
+          <a href="/data-model/4.1/maecBundle/BehaviorListType">BehaviorListType</a>
+        
+      </td>
+      <td>
+        
+          <p>The Behavior_List field specifies a list of Behaviors that make up the collection.</p>
+        
+      </td>
+    </tr>
+  
+  </tbody>
+</table>
