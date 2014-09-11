@@ -7,7 +7,7 @@ generate_documentation: true
 
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', "Rakefile", "LICENSE"]
 
-current_version: 0.1.0
+current_version: 4.1
 
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data", "tables"]
