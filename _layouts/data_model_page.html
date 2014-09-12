@@ -6,7 +6,7 @@ this_version: {{type.this_version}}
 
 {% if type.this_version != type.latest_version %}
 <div class="alert alert-danger bs-alert-old-docs">
-  <strong>Heads up!</strong> These docs are for STIX {{type.this_version}}, which is not the latest version ({{type.latest_version}}).{% if type.versions contains type.latest_version %} <a href="/data-model/{{type.latest_version}}/{{type.schema.prefix}}/{{type.name}}">View the latest!</a>{% endif %}
+  <strong>Heads up!</strong> These docs are for MAEC {{type.this_version}}, which is not the latest version ({{type.latest_version}}).{% if type.versions contains type.latest_version %} <a href="/data-model/{{type.latest_version}}/{{type.schema.prefix}}/{{type.name}}">View the latest!</a>{% endif %}
 </div>
 {% endif %}
 
