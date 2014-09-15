@@ -36,7 +36,7 @@ A [Behavior](/data-model/{{site.current_version}}/maecBundle/BehaviorType) is a 
 </section>
 ## Capability
 <section class="data-model-section">
-A [Capability](/data-model/{{site.current_version}}/maecBundle/CapabilityType) is a high-level MAEC entity for capturing a particular goal of the author(s) of a malware instance and used to organize groups of Behaviors.  Example: ensuring that malware is executed at start-up is a Behavior that is typically part of a “Persistence” Capability.  
+A [Capability](/data-model/{{site.current_version}}/maecBundle/CapabilityType) is a high-level MAEC entity for capturing a particular goal of the author(s) of a malware instance and used to organize groups of Behaviors.  Example: ensuring that malware is executed at start-up is a Behavior that is typically part of a :"Persistence" Capability.  
 </section>
 ## Object
 <section class="data-model-section">
