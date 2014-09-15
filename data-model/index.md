@@ -12,7 +12,7 @@ The [MAEC Package](/data-model/{{site.current_version}}/maecPackage/PackageType)
 </section>
 ## Malware Subject
 <section class="data-model-section">
-A MAEC [Malware Subject](/data-model/{{site.current_version}}/maecPackage/MalwareSubjectType) contains details of a particular malware instance (e.g., a file as identified by MD5 and/or SHA1 hash), any minor variants of the same instance that may have been observed (e.g., the same file but with different names), along with all of the analyses that were performed on the instance, any findings generated from the analyses, and any other metadata.  As such, the Malware Subject is MAEC’s representation of a malware instance and all of the known data associated with it.
+A MAEC [Malware Subject](/data-model/{{site.current_version}}/maecPackage/MalwareSubjectType) contains details of a particular malware instance (e.g., a file as identified by MD5 and/or SHA1 hash), any minor variants of the same instance that may have been observed (e.g., the same file but with different names), along with all of the analyses that were performed on the instance, any findings generated from the analyses, and any other metadata.  As such, the Malware Subject is MAEC's representation of a malware instance and all of the known data associated with it.
 </section>
 
 
