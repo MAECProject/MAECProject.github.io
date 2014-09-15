@@ -28,7 +28,7 @@ MAEC Bundles can be used in two manners:
 </section>
 ## Malware Action
 <section class="data-model-section">
-A[Malware Action](/data-model/{{site.current_version}}/maecBundle/MalwareActionType) is a CybOX entity extended by MAEC for capturing a system state change or a similar operation that represents the fundamental low-level operation of malware.  Some examples include the creation of a file, deletion of a registry key, and the sending of some data on a socket.
+A [Malware Action](/data-model/{{site.current_version}}/maecBundle/MalwareActionType) is a CybOX entity extended by MAEC for capturing a system state change or a similar operation that represents the fundamental low-level operation of malware.  Some examples include the creation of a file, deletion of a registry key, and the sending of some data on a socket.
 </section>
 ## Behavior
 <section class="data-model-section">
