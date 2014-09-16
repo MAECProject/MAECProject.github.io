@@ -28,7 +28,7 @@ A [Malware Action](/data-model/{{site.current_version}}/maecBundle/MalwareAction
 ### Behavior
 A [Behavior](/data-model/{{site.current_version}}/maecBundle/BehaviorType) is a MAEC entity for capturing the intent behind the execution of a specific set of instructions (or API calls) by a malware instance. In this manner, a Behavior can be thought of as the context (i.e., the why?) behind one or more Actions (i.e., the what?). Example: the creating a registry key (Action) may allow a malware instance to become resident at system start-up (Behavior).
 ### Capability
-A [Capability](/data-model/{{site.current_version}}/maecBundle/CapabilityType) is a high-level MAEC entity for capturing a particular goal of the author(s) of a malware instance and used to organize groups of Behaviors.  Example: ensuring that malware is executed at start-up is a Behavior that is typically part of a :"Persistence" Capability.  
+A [Capability](/data-model/{{site.current_version}}/maecBundle/CapabilityType) is a high-level MAEC entity for capturing a particular goal of the author(s) of a malware instance and used to organize groups of Behaviors.  Example: ensuring that malware is executed at start-up is a Behavior that is typically part of a "Persistence" Capability.  
 ### Object
 An [Object](/data-model/{{site.current_version}}/cybox/ObjectType) is a CybOX entity for capturing the characteristics of a specific cyber-relevant object, including its particular properties and relationships to other Objects.  Examples: file, registry key, or process (which are typically captured in MAEC using further defined object models). 
 ### Process Tree
