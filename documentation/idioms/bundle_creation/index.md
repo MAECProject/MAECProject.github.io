@@ -25,43 +25,18 @@ As indicated by the placeholders in the figure, Objects, Actions, and Behaviors 
 ## XML
 
 {% highlight xml linenos %}
-<stix:TTP xsi:type="ttp:TTPType" id="example:ttp-7d9fe1f7-429d-077e-db51-92c70b8da45a">
-    <ttp:Title>Poison Ivy Variant v4392-acc</ttp:Title>
-    <ttp:Behavior>
-        <ttp:Malware>
-            <ttp:Malware_Instance xsi:type="stix-maec:MAEC4.1InstanceType">
-                <ttp:Type xsi:type="stixVocabs:MalwareTypeVocab-1.0">Remote Access Trojan</ttp:Type>
-                <ttp:Name>Poison Ivy Variant v4392-acc</ttp:Name>
-                <stix-maec:MAEC>
-                    <!-- MAEC Content Here --> 
-                </stix-maec:MAEC>                        
-            </ttp:Malware_Instance>
-        </ttp:Malware>
-    </ttp:Behavior>
-</stix:TTP>
+<maecBundle:MAEC_Bundle
+ id="maec-example-bnd-1" schema_version="4.1">
+ </maecBundle:MAEC_Bundle>
 {% endhighlight %}
-
-[Full XML](malware-characterization-using-maec.xml)
 
 ## Python
 
 {% highlight python linenos %}
-from stix.ttp import TTP, Behavior
-from stix.extensions.malware.maec_4_1_malware import MAECInstance
+from maec.bundle.bundle import Bundle
 
-maec_malware_instance = MAECInstance()
-maec_malware_instance.add_name("Poison Ivy Variant v4392-acc")
-maec_malware_instance.add_type("Remote Access Trojan")
-maec_malware_instance.maec = __INSERT_MAEC_ETREE_HERE__
-
-ttp = TTP(title="Poison Ivy Variant v4392-acc")
-ttp.behavior = Behavior()
-ttp.behavior.add_malware_instance(maec_malware_instance)
-
-print ttp.to_xml()
+b = Bundle()
 {% endhighlight %}
-
-[Full Python](malware-characterization-using-maec.py)
 
 ## Further Reading
 
