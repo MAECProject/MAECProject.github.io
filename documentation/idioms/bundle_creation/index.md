@@ -9,7 +9,7 @@ Before looking at examples involving actual malware, we outline the general proc
 
 ## Data model
 
-<img src="MAEC_Bundle.png" alt="Empty MAEC Bundle" class="aside-text"/>
+<img src="maec_bundle.png" alt="Empty MAEC Bundle" class="aside-text"/>
 
 To begin, a [MAEC Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) is created, as shown in the figure.  A MAEC Bundle requires just two attributes:
 
