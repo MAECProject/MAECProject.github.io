@@ -43,7 +43,6 @@ Now that we've setup the proper CybOX Object/Properties hierarchy for the type o
        </maecBundle:Object>
      </maecBundle:Objects>
     </maecPackage:Bundle>
-   </maecPackage:Findings_Bundles>
 {% endhighlight %}
 
 [Full XML](malware-characterization-using-maec.xml)
