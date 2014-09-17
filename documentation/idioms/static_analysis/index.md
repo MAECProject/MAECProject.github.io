@@ -26,41 +26,41 @@ Now that we've setup the proper CybOX Object/Properties hierarchy for the type o
 ## XML
 
 {% highlight xml linenos %}
-    <maecPackage:Bundle id="maec-example-bnd-1" schema_version="4.1" defined_subject="false" content_type="static analysis tool output">
-     <maecBundle:Objects>
-      <maecBundle:Object id="maec-example-obj-1">
-        <cybox:Properties xsi:type="WinExecFileObj:WindowsExecutableFileObjectType">
-          <WinExecFileObj:Headers>
-           <WinExecFileObj:Optional_Header>
-            <WinExecFileObj:Major_Linker_Version>06</WinExecFileObj:Major_Linker_Version>
-            <WinExecFileObj:Minor_Linker_Version>00</WinExecFileObj:Minor_Linker_Version>
-            <WinExecFileObj:Address_Of_Entry_Point>036418</WinExecFileObj:Base_Of_Code>
-            <WinExecFileObj:Subsystem>Windows_GUI</WinExecFileObj:Subsystem>
-           </WinExecFileObj:Optional_Header>
-          </WinExecFileObj:Headers>
-        </cybox:Properties>
-       </maecBundle:Object>
-     </maecBundle:Objects>
-    </maecPackage:Bundle>
+<maecPackage:Bundle id="maec-example-bnd-1" schema_version="4.1" defined_subject="false" content_type="static analysis tool output">
+ <maecBundle:Objects>
+  <maecBundle:Object id="maec-example-obj-1">
+    <cybox:Properties xsi:type="WinExecFileObj:WindowsExecutableFileObjectType">
+      <WinExecFileObj:Headers>
+       <WinExecFileObj:Optional_Header>
+        <WinExecFileObj:Major_Linker_Version>06</WinExecFileObj:Major_Linker_Version>
+        <WinExecFileObj:Minor_Linker_Version>00</WinExecFileObj:Minor_Linker_Version>
+        <WinExecFileObj:Address_Of_Entry_Point>036418</WinExecFileObj:Base_Of_Code>
+        <WinExecFileObj:Subsystem>Windows_GUI</WinExecFileObj:Subsystem>
+       </WinExecFileObj:Optional_Header>
+      </WinExecFileObj:Headers>
+    </cybox:Properties>
+   </maecBundle:Object>
+ </maecBundle:Objects>
+</maecPackage:Bundle>
 {% endhighlight %}
 
 [Full XML](maec_static_analysis.xml)
 ## Python
 
 {% highlight python linenos %}
-  b.defined_subject = False
-  b.content_type = "static analysis tool output"
-  o = Object()
-  o.properties = WinExecutableFile()
-  o.properties.headers = PEHeaders()
-  o.properties.headers.optional_header = PEOptionalHeader()
-  o.properties.headers.optional_header.major_linker_version = "06"
-  o.properties.headers.optional_header.minor_linker_version = "00"
-  o.properties.headers.optional_header.address_of_entry_point = "036418"
-  o.properties.headers.optional_header.subsystem = "Windows_GUI"
+b.defined_subject = False
+b.content_type = "static analysis tool output"
+o = Object()
+o.properties = WinExecutableFile()
+o.properties.headers = PEHeaders()
+o.properties.headers.optional_header = PEOptionalHeader()
+o.properties.headers.optional_header.major_linker_version = "06"
+o.properties.headers.optional_header.minor_linker_version = "00"
+o.properties.headers.optional_header.address_of_entry_point = "036418"
+o.properties.headers.optional_header.subsystem = "Windows_GUI"
 {% endhighlight %}
 
 [Full Python](maec_static_analysis.py)
 
 ## Further Reading
-[Creating a MAEC Bundle] (../bundle_creation)
+* [Creating a MAEC Bundle] (../bundle_creation)
