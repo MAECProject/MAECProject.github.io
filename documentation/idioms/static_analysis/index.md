@@ -38,14 +38,13 @@ Now that we've setup the proper CybOX Object/Properties hierarchy for the type o
             <WinExecFileObj:Subsystem>Windows_GUI</WinExecFileObj:Subsystem>
            </WinExecFileObj:Optional_Header>
           </WinExecFileObj:Headers>
-          <WinExecFileObj:Type>Executable</WinExecFileObj:Type>
         </cybox:Properties>
        </maecBundle:Object>
      </maecBundle:Objects>
     </maecPackage:Bundle>
 {% endhighlight %}
 
-[Full XML](malware-characterization-using-maec.xml)
+[Full XML](maec_static_analysis.xml)
 ## Python
 
 {% highlight python linenos %}
@@ -53,6 +52,8 @@ from maec.bundle.bundle import Bundle
 
 b = Bundle()
 {% endhighlight %}
+
+[Full XML](maec_static_analysis.xml)
 
 ## Further Reading
 
