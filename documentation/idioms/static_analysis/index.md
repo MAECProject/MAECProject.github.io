@@ -48,12 +48,19 @@ Now that we've setup the proper CybOX Object/Properties hierarchy for the type o
 ## Python
 
 {% highlight python linenos %}
-from maec.bundle.bundle import Bundle
-
-b = Bundle()
+  b.defined_subject = False
+  b.content_type = "static analysis tool output"
+  o = Object()
+  o.properties = WinExecutableFile()
+  o.properties.headers = PEHeaders()
+  o.properties.headers.optional_header = PEOptionalHeader()
+  o.properties.headers.optional_header.major_linker_version = "06"
+  o.properties.headers.optional_header.minor_linker_version = "00"
+  o.properties.headers.optional_header.address_of_entry_point = "036418"
+  o.properties.headers.optional_header.subsystem = "Windows_GUI"
 {% endhighlight %}
 
-[Full XML](maec_static_analysis.xml)
+[Full Python](maec_static_analysis.py)
 
 ## Further Reading
-
+[Creating a MAEC Bundle] (../bundle_creation)
