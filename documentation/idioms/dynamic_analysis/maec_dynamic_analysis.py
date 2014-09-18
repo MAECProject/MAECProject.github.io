@@ -4,14 +4,12 @@ from maec.package.malware_subject import MalwareSubject
 from maec.package.analysis import Analysis
 from maec.bundle.bundle import Bundle
 from maec.bundle.malware_action import MalwareAction
-from maec.utils import IDGenerator, set_id_method
 from cybox.core import Object, AssociatedObject, AssociatedObjects
 from cybox.objects.win_executable_file_object import WinExecutableFile
 from cybox.objects.win_mutex_object import WinMutex
 from cybox.common import ToolInformation, VocabString
 
 # Set up the necessary Package, Malware Subject, Analysis Bundle Instances
-set_id_method(IDGenerator.METHOD_INT)
 p = Package()
 ms = MalwareSubject()
 b = Bundle()
