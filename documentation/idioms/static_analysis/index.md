@@ -26,22 +26,22 @@ Now that we've setup the proper CybOX Object/Properties hierarchy for the type o
 ## XML
 
 {% highlight xml linenos %}
-<maecPackage:Bundle id="maec-example-bnd-1" schema_version="4.1" defined_subject="false" content_type="static analysis tool output">
- <maecBundle:Objects>
-  <maecBundle:Object id="maec-example-obj-1">
-    <cybox:Properties xsi:type="WinExecFileObj:WindowsExecutableFileObjectType">
-      <WinExecFileObj:Headers>
-       <WinExecFileObj:Optional_Header>
-        <WinExecFileObj:Major_Linker_Version>06</WinExecFileObj:Major_Linker_Version>
-        <WinExecFileObj:Minor_Linker_Version>00</WinExecFileObj:Minor_Linker_Version>
-        <WinExecFileObj:Address_Of_Entry_Point>036418</WinExecFileObj:Base_Of_Code>
-        <WinExecFileObj:Subsystem>Windows_GUI</WinExecFileObj:Subsystem>
-       </WinExecFileObj:Optional_Header>
-      </WinExecFileObj:Headers>
-    </cybox:Properties>
-   </maecBundle:Object>
- </maecBundle:Objects>
-</maecPackage:Bundle>
+    <maecPackage:Bundle id="example:bundle-704fd16d-486b-4797-b84c-167e1401c7c4" schema_version="4.1" defined_subject="false" content_type="static analysis tool output">
+     <maecBundle:Objects>
+      <maecBundle:Object id="example:object-0ad05b6d-3971-463d-80e2-dfa2d607d6d9">
+        <cybox:Properties xsi:type="WinExecFileObj:WindowsExecutableFileObjectType">
+          <WinExecFileObj:Headers>
+           <WinExecFileObj:Optional_Header>
+            <WinExecFileObj:Major_Linker_Version>06</WinExecFileObj:Major_Linker_Version>
+            <WinExecFileObj:Minor_Linker_Version>00</WinExecFileObj:Minor_Linker_Version>
+            <WinExecFileObj:Address_Of_Entry_Point>036418</WinExecFileObj:Address_Of_Entry_Point>
+            <WinExecFileObj:Subsystem>Windows_GUI</WinExecFileObj:Subsystem>
+           </WinExecFileObj:Optional_Header>
+          </WinExecFileObj:Headers>
+        </cybox:Properties>
+       </maecBundle:Object>
+     </maecBundle:Objects>
+    </maecPackage:Bundle>
 {% endhighlight %}
 
 [Full XML](maec_static_analysis.xml)
