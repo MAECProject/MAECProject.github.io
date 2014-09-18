@@ -1,75 +1,81 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!--
- MAEC Package Static Triage Analysis Example
- -Demonstrates how basic static triage for a malware instance can be captured in a Malware Subject in a Package
- -Based on SANS Reading Room Paper: A Detailed Analysis of an Advanced Persistent Threat Malware, by Frankie Li. http://www.sans.org/reading_room/whitepapers/malicious/detailed-analysis-advanced-persistent-threat-malware_33814
+ MAEC Package Dynamic Triage Analysis Example
+ -Demonstrates how basic dynamic triage for a malware instance can be captured in a Malware Subject in a Package
 -->
-<maecPackage:MAEC_Package
- xmlns:maecPackage="http://maec.mitre.org/XMLSchema/maec-package-2"
- xmlns:maecBundle="http://maec.mitre.org/XMLSchema/maec-bundle-4"
- xmlns:maecVocabs="http://maec.mitre.org/default_vocabularies-1"
- xmlns:cybox="http://cybox.mitre.org/cybox-2"
- xmlns:cyboxCommon="http://cybox.mitre.org/common-2"
- xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2"
- xmlns:FileObj="http://cybox.mitre.org/objects#FileObject-2"
- xmlns:WinExecFileObj="http://cybox.mitre.org/objects#WinExecutableFileObject-2"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://maec.mitre.org/XMLSchema/maec-package-2 http://maec.mitre.org/language/version4.1/maec_package_schema.xsd
- http://maec.mitre.org/default_vocabularies-1 http://maec.mitre.org/language/version4.1/maec_default_vocabularies.xsd
- http://cybox.mitre.org/default_vocabularies-2 http://cybox.mitre.org/XMLSchema/default_vocabularies/2.1/cybox_default_vocabularies.xsd 
- http://cybox.mitre.org/objects#WinExecutableFileObject http://cybox.mitre.org/XMLSchema/objects/Win_Executable_File/2.1/Win_Executable_File_Object.xsd" 
- id="maec-example-pkg-1" schema_version="2.1">
-
- <maecPackage:Malware_Subjects>
-  <maecPackage:Malware_Subject id="maec-example-sub-1">
-   <maecPackage:Malware_Instance_Object_Attributes>
-     <cybox:Properties xsi:type="WinExecFileObj:WindowsExecutableFileObjectType">
-      <FileObj:File_Name>dg003_improve_8080_V132.exe</FileObj:File_Name>
-      <FileObj:Size_In_Bytes>196608</FileObj:Size_In_Bytes>
-      <FileObj:Hashes>
-       <cyboxCommon:Hash>
-        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
-        <cyboxCommon:Simple_Hash_Value>4EC0027BEF4D7E1786A04D021FA8A67F</cyboxCommon:Simple_Hash_Value>
-       </cyboxCommon:Hash>
-      </FileObj:Hashes>
-     </cybox:Properties>
-   </maecPackage:Malware_Instance_Object_Attributes>
-   
-   <maecPackage:Analyses>
-    <maecPackage:Analysis id="maec-example-ana-1" method="static" type="triage">
-     <maecPackage:Source>
-      <maecPackage:Name>Frankie Li</maecPackage:Name>
-      <maecPackage:URL>http://www.sans.org/reading_room/whitepapers/malicious/detailed-analysis-advanced-persistent-threat-malware_33814</maecPackage:URL>
-     </maecPackage:Source>
-     <maecPackage:Summary>A basic static triage of the subject binary using PEiD.</maecPackage:Summary>
-     <maecPackage:Findings_Bundle_Reference bundle_idref="maec-example-bnd-1"/>
-     <maecPackage:Tools>
-      <maecPackage:Tool id="analysis-tool-1">
-       <cyboxCommon:Name>PEiD</cyboxCommon:Name>
-       <cyboxCommon:Version>0.94</cyboxCommon:Version>
-      </maecPackage:Tool>
-     </maecPackage:Tools>
-    </maecPackage:Analysis>
-   </maecPackage:Analyses>
-   
-   <maecPackage:Findings_Bundles>
-    <maecPackage:Bundle id="maec-example-bnd-1" schema_version="4.1" defined_subject="false" content_type="static analysis tool output">
-     <maecBundle:Objects>
-      <maecBundle:Object id="maec-example-obj-1">
-        <cybox:Properties xsi:type="WinExecFileObj:WindowsExecutableFileObjectType">
-          <WinExecFileObj:Headers>
-           <WinExecFileObj:Optional_Header>
-            <WinExecFileObj:Major_Linker_Version>06</WinExecFileObj:Major_Linker_Version>
-            <WinExecFileObj:Minor_Linker_Version>00</WinExecFileObj:Minor_Linker_Version>
-            <WinExecFileObj:Address_Of_Entry_Point>036418</WinExecFileObj:Address_Of_Entry_Point>
-            <WinExecFileObj:Subsystem>Windows_GUI</WinExecFileObj:Subsystem>
-           </WinExecFileObj:Optional_Header>
-          </WinExecFileObj:Headers>
-        </cybox:Properties>
-       </maecBundle:Object>
-     </maecBundle:Objects>
-    </maecPackage:Bundle>
-   </maecPackage:Findings_Bundles>
-  </maecPackage:Malware_Subject>
- </maecPackage:Malware_Subjects>
+<maecPackage:MAEC_Package 
+	xmlns:cyboxCommon="http://cybox.mitre.org/common-2"
+	xmlns:cybox="http://cybox.mitre.org/cybox-2"
+	xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2"
+	xmlns:FileObj="http://cybox.mitre.org/objects#FileObject-2"
+	xmlns:URIObj="http://cybox.mitre.org/objects#URIObject-2"
+	xmlns:WinExecutableFileObj="http://cybox.mitre.org/objects#WinExecutableFileObject-2"
+	xmlns:WinFileObj="http://cybox.mitre.org/objects#WinFileObject-2"
+	xmlns:MutexObj="http://cybox.mitre.org/objects#MutexObject-2"
+	xmlns:WinMutexObj="http://cybox.mitre.org/objects#WinMutexObject-2"
+	xmlns:maecBundle="http://maec.mitre.org/XMLSchema/maec-bundle-4"
+	xmlns:maecPackage="http://maec.mitre.org/XMLSchema/maec-package-2"
+	xmlns:maecVocabs="http://maec.mitre.org/default_vocabularies-1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:ThreatExpertToMAEC="https://github.com/MAECProject/threatexpert-to-maec"
+	xsi:schemaLocation="http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd http://cybox.mitre.org/cybox-2 http://cybox.mitre.org/XMLSchema/core/2.1/cybox_core.xsd http://cybox.mitre.org/default_vocabularies-2 http://cybox.mitre.org/XMLSchema/default_vocabularies/2.1/cybox_default_vocabularies.xsd http://cybox.mitre.org/objects#FileObject-2 http://cybox.mitre.org/XMLSchema/objects/File/2.1/File_Object.xsd http://cybox.mitre.org/objects#ProcessObject-2 http://cybox.mitre.org/XMLSchema/objects/Process/2.1/Process_Object.xsd http://cybox.mitre.org/objects#URIObject-2 http://cybox.mitre.org/XMLSchema/objects/URI/2.1/URI_Object.xsd http://cybox.mitre.org/objects#WinExecutableFileObject-2 http://cybox.mitre.org/XMLSchema/objects/Win_Executable_File/2.1/Win_Executable_File_Object.xsd http://cybox.mitre.org/objects#WinFileObject-2 http://cybox.mitre.org/XMLSchema/objects/Win_File/2.1/Win_File_Object.xsd http://cybox.mitre.org/objects#WinProcessObject-2 http://cybox.mitre.org/XMLSchema/objects/Win_Process/2.1/Win_Process_Object.xsd http://cybox.mitre.org/objects#WinRegistryKeyObject-2 http://cybox.mitre.org/XMLSchema/objects/Win_Registry_Key/2.1/Win_Registry_Key_Object.xsd http://maec.mitre.org/XMLSchema/maec-bundle-4 http://maec.mitre.org/language/version4.1/maec_bundle_schema.xsd http://maec.mitre.org/XMLSchema/maec-package-2 http://maec.mitre.org/language/version4.1/maec_package_schema.xsd http://maec.mitre.org/default_vocabularies-1 http://maec.mitre.org/language/version4.1/maec_default_vocabularies.xsd http://cybox.mitre.org/objects#WinMutexObject-2 http://cybox.mitre.org/XMLSchema/objects/Win_Mutex/2.1/Win_Mutex_Object.xsd" id="ThreatExpertToMAEC:package-1" schema_version="2.1">
+    <maecPackage:Malware_Subjects>
+        <maecPackage:Malware_Subject id="ThreatExpertToMAEC:malware_subject-1">
+            <maecPackage:Malware_Instance_Object_Attributes id="ThreatExpertToMAEC:object-1">
+                <cybox:Properties xsi:type="WinExecutableFileObj:WindowsExecutableFileObjectType">
+                    <FileObj:Size_In_Bytes>210564</FileObj:Size_In_Bytes>
+                    <FileObj:Hashes>
+                        <cyboxCommon:Hash>
+                            <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type>
+                            <cyboxCommon:Simple_Hash_Value>B6C39FF68346DCC8B67AA060DEFE40C2</cyboxCommon:Simple_Hash_Value>
+                        </cyboxCommon:Hash>
+                        <cyboxCommon:Hash>
+                            <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA1</cyboxCommon:Type>
+                            <cyboxCommon:Simple_Hash_Value>D55B0FB96FAD96D203D10850469489FC03E6F2F7</cyboxCommon:Simple_Hash_Value>
+                        </cyboxCommon:Hash>
+                    </FileObj:Hashes>
+                </cybox:Properties>
+            </maecPackage:Malware_Instance_Object_Attributes>
+            <maecPackage:Analyses>
+                <maecPackage:Analysis method="dynamic" type="triage" id="ThreatExpertToMAEC:analysis-1">
+                    <maecPackage:Findings_Bundle_Reference bundle_idref="ThreatExpertToMAEC:bundle-1"/>
+                    <maecPackage:Tools>
+                        <maecPackage:Tool id="ThreatExpertToMAEC:tool-1">
+                            <cyboxCommon:Name>ThreatExpert</cyboxCommon:Name>
+                            <cyboxCommon:Vendor>ThreatExpert</cyboxCommon:Vendor>
+                        </maecPackage:Tool>
+                    </maecPackage:Tools>
+                </maecPackage:Analysis>
+            </maecPackage:Analyses>
+            <maecPackage:Findings_Bundles>
+                <maecPackage:Bundle defined_subject="false" id="ThreatExpertToMAEC:bundle-1" schema_version="4.1" content_type="dynamic analysis tool output">
+                    <maecBundle:Actions>
+                        <maecBundle:Action id="ThreatExpertToMAEC:action-1">
+                            <cybox:Name xsi:type="maecVocabs:FileActionNameVocab-1.0">create file</cybox:Name>
+                            <cybox:Associated_Objects>
+                                <cybox:Associated_Object>
+                                    <cybox:Properties xsi:type="WinExecutableFileObj:WindowsExecutableFileObjectType">
+                                        <FileObj:File_Name>Zcxaxz.exe</FileObj:File_Name>
+                                        <FileObj:Size_In_Bytes>332288</FileObj:Size_In_Bytes>
+                                    </cybox:Properties>
+                                    <cybox:Association_Type xsi:type="maecVocabs:ActionObjectAssociationTypeVocab-1.0">output</cybox:Association_Type>
+                                </cybox:Associated_Object>
+                            </cybox:Associated_Objects>
+                        </maecBundle:Action>
+                        <maecBundle:Action id="ThreatExpertToMAEC:action-2">
+                            <cybox:Name xsi:type="maecVocabs:SynchronizationActionNameVocab-1.0">create mutex</cybox:Name>
+                            <cybox:Associated_Objects>
+                                <cybox:Associated_Object>
+                                    <cybox:Properties xsi:type="WinMutexObj:WindowsMutexObjectType" named="true">
+                                        <MutexObj:Name>redem-Mutex</MutexObj:Name>
+                                    </cybox:Properties>
+                                    <cybox:Association_Type xsi:type="maecVocabs:ActionObjectAssociationTypeVocab-1.0">output</cybox:Association_Type>
+                                </cybox:Associated_Object>
+                            </cybox:Associated_Objects>
+                        </maecBundle:Action> 
+                    </maecBundle:Actions>
+                </maecPackage:Bundle>
+            </maecPackage:Findings_Bundles>
+        </maecPackage:Malware_Subject>
+    </maecPackage:Malware_Subjects>
 </maecPackage:MAEC_Package>
