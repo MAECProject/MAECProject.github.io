@@ -93,4 +93,5 @@ act2.associated_objects.append(o2)
 
 ## Further Reading
 * [Creating a MAEC Bundle] (../bundle_creation)
+* [Creating a MAEC Package] (../package_creation)
 * [Capturing Static Analysis Results] (../static_analysis)
