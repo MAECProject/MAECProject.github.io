@@ -50,7 +50,7 @@ This is but a small portion of what a MAEC Package and Malware Subject are able 
 </maecPackage:Malware_Subject>
 {% endhighlight %}
 
-[Full XML](maec_basic_analysis.xml)
+[Full XML](maec_basic_package.xml)
 ## Python
 
 {% highlight python linenos %}
@@ -69,6 +69,7 @@ ms.malware_instance_object_attributes.properties.add_hash("B6C39FF68346DCC8B67AA
 p.add_malware_subject(ms)
 {% endhighlight %}
 
+[Full Python](maec_basic_package.py)
 ## Further Reading
 * [Creating a MAEC Bundle] (../bundle_creation)
 * [Capturing Dynamic Analysis Results] (../dynamic_analysis)
