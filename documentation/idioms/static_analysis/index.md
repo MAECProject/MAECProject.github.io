@@ -64,3 +64,4 @@ o.properties.headers.optional_header.subsystem = "Windows_GUI"
 
 ## Further Reading
 * [Creating a MAEC Bundle] (../bundle_creation)
+* [Capturing Dynamic Analysis Results] (../dynamic_analysis)
