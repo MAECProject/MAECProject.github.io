@@ -28,32 +28,32 @@ With these two actions created, the remaining task is to add them to the [Bundle
 ## XML
 
 {% highlight xml linenos %}
-<maecPackage:Bundle id="maec-example-bnd-1" schema_version="4.1" defined_subject="false" content_type="static analysis tool output">
-  <maecBundle:Actions>
-    <maecBundle:Action id="maec-example-act-1">
-     <cybox:Name xsi:type="maecVocabs:FileActionNameVocab-1.0">create file</cybox:Name>
-     <cybox:Associated_Objects>
-      <cybox:Associated_Object>
-       <cybox:Properties xsi:type="WinExecutableFileObj:WindowsExecutableFileObjectType">
-        <FileObj:File_Name>Zcxaxz.exe</FileObj:File_Name>
-        <FileObj:Size_In_Bytes>332288</FileObj:Size_In_Bytes>
-       </cybox:Properties>
-      <cybox:Association_Type xsi:type="maecVocabs:ActionObjectAssociationTypeVocab-1.0">output</cybox:Association_Type>
-     </cybox:Associated_Object>
-    </cybox:Associated_Objects>
-   </maecBundle:Action>
-   <maecBundle:Action id="maec-example-act-2">
-    <cybox:Name xsi:type="maecVocabs:SynchronizationActionNameVocab-1.0">create mutex</cybox:Name>
-    <cybox:Associated_Objects>
-     <cybox:Associated_Object>
-      <cybox:Properties xsi:type="WinMutexObj:WindowsMutexObjectType" named="true">
-       <MutexObj:Name>redem-Mutex</MutexObj:Name>
-      </cybox:Properties>
-      <cybox:Association_Type xsi:type="maecVocabs:ActionObjectAssociationTypeVocab-1.0">output</cybox:Association_Type>
-     </cybox:Associated_Object>
-    </cybox:Associated_Objects>
-   </maecBundle:Action>   
- </maecBundle:Actions>
+<maecPackage:Bundle defined_subject="false" id="example:bundle-24e932a3-5508-4128-b800-32b35bfab0b2" schema_version="4.1" content_type="dynamic analysis tool output">
+	<maecBundle:Actions>
+		<maecBundle:Action id="example:action-e6ecdda7-6a70-4320-8e54-5c956c778b7b">
+			<cybox:Name xsi:type="maecVocabs:FileActionNameVocab-1.0">create file</cybox:Name>
+			<cybox:Associated_Objects>
+				<cybox:Associated_Object>
+					<cybox:Properties xsi:type="WinExecutableFileObj:WindowsExecutableFileObjectType">
+						<FileObj:File_Name>Zcxaxz.exe</FileObj:File_Name>
+						<FileObj:Size_In_Bytes>332288</FileObj:Size_In_Bytes>
+					</cybox:Properties>
+					<cybox:Association_Type xsi:type="maecVocabs:ActionObjectAssociationTypeVocab-1.0">output</cybox:Association_Type>
+				</cybox:Associated_Object>
+			</cybox:Associated_Objects>
+		</maecBundle:Action>
+		<maecBundle:Action id="example:action-e5e6fd60-77ea-4489-a801-f2b56bfccb22">
+			<cybox:Name xsi:type="maecVocabs:SynchronizationActionNameVocab-1.0">create mutex</cybox:Name>
+			<cybox:Associated_Objects>
+				<cybox:Associated_Object>
+					<cybox:Properties xsi:type="WinMutexObj:WindowsMutexObjectType" named="true">
+						<MutexObj:Name>redem-Mutex</MutexObj:Name>
+					</cybox:Properties>
+					<cybox:Association_Type xsi:type="maecVocabs:ActionObjectAssociationTypeVocab-1.0">output</cybox:Association_Type>
+				</cybox:Associated_Object>
+			</cybox:Associated_Objects>
+		</maecBundle:Action> 
+	</maecBundle:Actions>
 </maecPackage:Bundle>
 {% endhighlight %}
 
