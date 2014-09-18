@@ -2,14 +2,12 @@
 from maec.package.package import Package
 from maec.package.malware_subject import MalwareSubject
 from maec.package.analysis import Analysis, Source
-from maec.utils import IDGenerator, set_id_method
 from cybox.core import Object
 from cybox.objects.win_executable_file_object import WinExecutableFile, PEHeaders, PEOptionalHeader
 from cybox.common import ToolInformation
 from maec.bundle.bundle import Bundle
 
 # Set up the necessary Package, Malware Subject, Analysis Bundle Instances
-set_id_method(IDGenerator.METHOD_INT)
 p = Package()
 ms = MalwareSubject()
 b = Bundle()
