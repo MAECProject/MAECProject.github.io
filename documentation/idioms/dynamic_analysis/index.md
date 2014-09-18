@@ -22,7 +22,7 @@ The first action reported by the sandbox involved the creation of a particular f
 
 The second action reported by the sandbox involved the creation of a particular mutex, and is created in much the same fashion as the first. Thus, the first thing to set on this action is set the value of the "Name" field, which makes use of MAEC's default vocabularies to specify the name of the action that was performed. In this case, we'll use the "create mutex" value from the [Synchronization Action Name Vocabulary](/data-model/{{site.current_version}}/maecVocabs/SynchronizationActionNameVocab-1-1.1), since it corresponds directly to the action. Next, we need to capture the particular Objects that the action operated on, which is achieved through the use of the [Associated Objects](/data-model/{{site.current_version}}/cybox/AssociatedObjectsType) field in the action. Specifically, we'll want to add an [Associated Object](/data-model/{{site.current_version}}/cybox/AssociatedObjectType) to this list, for specifying the properties of the Object that this "create mutex" action operated on. To do so, we'll populate the [Properties](/data-model/{{site.current_version}}/cyboxCommon/ObjectPropertiesType) extension point of the Associated Object using a CybOX defined object that corresponds to the type of object used in the action. In this case, we'll use the [CybOX Windows Mutex Object](/data-model/{{site.current_version}}/WinMutexObj/WindowsMutexObjectType), since this is the corresponding Mutex Object for Windows.  After setting the corresponding "Name" field (capturing the name of the mutex) on the Properties of the Associated Object, as reported by the sandbox, we also need to capture the relationship between the Action and Associated Object. This is achieved by setting the "Association_Type" field on the Associated Object, which uses the "maecVocabs:ActionObjectAssociationTypeVocab-1.0" as its default vocabulary. Thus, since the mutex in this case is created, or in other words ends up as the output of the action, we should also use a value of "output" for the "Association_Type" field.   
 
-With these two actions created, the remaining task is to add them to the [Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) that was previously created. To do this, we simply need to use the [Actions](/data-model/{{site.current_version}}/maecBundle/ActionListType) field at the root level of the Bundle, to which we'll add the "create file" and "create mutex" actions.
+With these two actions created, the remaining task is to add them to the [Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) that was previously created. To do this, we simply need to use the [Actions](/data-model/{{site.current_version}}/maecBundle/ActionListType) field at the root level of the Bundle, to which we'll add the "create file" and "create mutex" actions that we previously created.
 
 
 ## XML
@@ -57,23 +57,39 @@ With these two actions created, the remaining task is to add them to the [Bundle
 </maecPackage:Bundle>
 {% endhighlight %}
 
-[Full XML](maec_static_analysis.xml)
+[Full XML](maec_dynamic_analysis.xml)
 ## Python
 
 {% highlight python linenos %}
-b.defined_subject = False
-b.content_type = "static analysis tool output"
-o = Object()
-o.properties = WinExecutableFile()
-o.properties.headers = PEHeaders()
-o.properties.headers.optional_header = PEOptionalHeader()
-o.properties.headers.optional_header.major_linker_version = "06"
-o.properties.headers.optional_header.minor_linker_version = "00"
-o.properties.headers.optional_header.address_of_entry_point = "036418"
-o.properties.headers.optional_header.subsystem = "Windows_GUI"
+# Create the first, create file action
+act1 = MalwareAction()
+act1.name = "create file"
+act1.name.xsi_type = "FileActionNameVocab-1.1"
+act1.associated_objects = AssociatedObjects()
+o1 = AssociatedObject()
+o1.properties = WinExecutableFile()
+o1.properties.file_name = "Zcxaxz.exe"
+o1.properties.size_in_bytes = "332288"
+o1.association_type = VocabString()
+o1.association_type.value = "output"
+o1.association_type.xsi_type = "maecVocabs:ActionObjectAssociationTypeVocab-1.0"
+act1.associated_objects.append(o1)
+
+# Create the second, create mutex action
+act2 = MalwareAction()
+act2.name = "create mutex"
+act2.name.xsi_type = "SynchronizationActionNameVocab-1.0"
+act2.associated_objects = AssociatedObjects()
+o2 = AssociatedObject()
+o2.properties = WinMutex()
+o2.properties.name = "redem-Mutex"
+o2.association_type = VocabString()
+o2.association_type.value = "output"
+o2.association_type.xsi_type = "maecVocabs:ActionObjectAssociationTypeVocab-1.0"
+act2.associated_objects.append(o2)
 {% endhighlight %}
 
-[Full Python](maec_static_analysis.py)
+[Full Python](maec_dynamic_analysis.py)
 
 ## Further Reading
 * [Creating a MAEC Bundle] (../bundle_creation)
