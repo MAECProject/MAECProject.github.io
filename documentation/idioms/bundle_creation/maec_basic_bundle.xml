@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MAEC Basic Standalone Bundle Example -->
+<maecBundle:MAEC_Bundle
+ xmlns:maecBundle="http://maec.mitre.org/XMLSchema/maec-bundle-4"
+ xmlns:cybox="http://cybox.mitre.org/cybox-2"
+ xmlns:FileObj="http://cybox.mitre.org/objects#FileObject-2"
+ xmlns:PDFFileObj="http://cybox.mitre.org/objects#PDFFileObject-1"
+ xmlns:example="example.com"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation=
+ "http://maec.mitre.org/XMLSchema/maec-bundle-4 http://maec.mitre.org/language/version4.1/maec_bundle_schema.xsd 
+ http://cybox.mitre.org/objects#PDFFileObject-1 http://cybox.mitre.org/XMLSchema/objects/PDF_File/1.1/PDF_File_Object.xsd" 
+ id="example:bundle-262d625d-61b5-4a92-ad76-3a3ac23fbac7" schema_version="4.1" defined_subject="true">
+<maecBundle:Malware_Instance_Object_Attributes>
+ <cybox:Properties xsi:type="PDFFileObj:PDFFileObjectType">
+  <FileObj:File_Name>User_Manual.pdf</FileObj:File_Name>
+  <FileObj:Size_In_Bytes>509328</FileObj:Size_In_Bytes>
+  <PDFFileObj:Version>1.6</PDFFileObj:Version>
+ </cybox:Properties>
+</maecBundle:Malware_Instance_Object_Attributes>
+</maecBundle:MAEC_Bundle>
