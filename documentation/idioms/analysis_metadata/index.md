@@ -54,7 +54,7 @@ After creating the base [Analysis](/data-model/{{site.current_version}}/maecPack
 
 1.	The type of analysis performed, via the "type" field in the Analysis. Since Anubis is an automated tool that doesn't typically correspond to in-depth manual analysis, we'll want to use the value of "triage" for this field from the corresponding AnalysisTypeEnum.
 
-2.	The particular analysis method that was used, via the "method" field in the Analysis. Since Anubis is a dynamic analysis tool, as which executes the subject binary, we'll want to use the value of "static" for this field from the corresponding AnalysisMethodEnum.
+2.	The particular analysis method that was used, via the "method" field in the Analysis. Since Anubis is a dynamic analysis tool, which executes the subject binary, we'll want to use the value of "static" for this field from the corresponding AnalysisMethodEnum.
 
 3.	The information about the tool(s) used, via the "Tools" field in the Analysis. Since the "Tools" field is a list type that encompasses one or more [Tool](/data-model/{{site.current_version}}/cyboxCommon/ToolInformationType) fields, we'll want to create a single [Tool](/data-model/{{site.current_version}}/cyboxCommon/ToolInformationType) entry to capture the information about the PEiD tool. Inside this entry, we'll use the "Name" and "Version" fields to capture the name of the tool and its version, respectively.
 
