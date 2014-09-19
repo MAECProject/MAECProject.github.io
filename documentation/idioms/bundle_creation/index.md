@@ -44,7 +44,7 @@ Also, note that a Bundle embedded in a [Malware Subject](/data-model/{{site.curr
 ## XML
 
 {% highlight xml linenos %}
-<maecBundle:MAEC_Bundle id="maec-example-bnd-1" schema_version="4.1" defined_subject="true">
+<maecBundle:MAEC_Bundle id="example:bundle-262d625d-61b5-4a92-ad76-3a3ac23fbac7" schema_version="4.1" defined_subject="true">
 <maecBundle:Malware_Instance_Object_Attributes>
  <cybox:Properties xsi:type="PDFFileObj:PDFFileObjectType">
   <FileObj:File_Name>User_Manual.pdf</FileObj:File_Name>
@@ -60,10 +60,19 @@ Also, note that a Bundle embedded in a [Malware Subject](/data-model/{{site.curr
 ## Python
 
 {% highlight python linenos %}
-from maec.bundle.bundle import Bundle
-
+# Instantiate the Bundle and populate its required attributes
+# The ID generation is handled automatically by python-maec
 b = Bundle()
+b.defined_subject = "True"
+
+# Populate the Malware_Instance_Object_Attributes of the Bundle with the properties of the PDF file
+b.malware_instance_object_attributes = Object()
+b.malware_instance_object_attributes.properties = PDFFile()
+b.malware_instance_object_attributes.properties.file_name = "User_Manual.pdf"
+b.malware_instance_object_attributes.properties.size_in_bytes = "509328"
+b.malware_instance_object_attributes.properties.version = "1.6"
 {% endhighlight %}
 
+[Full Python](maec_basic_bundle.py)
 ## Further Reading
 * [Creating a MAEC Package] (../package_creation)
