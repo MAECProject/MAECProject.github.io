@@ -22,6 +22,7 @@ Since we're dealing with a PE file, we should use the defined [CybOX Windows Exe
 
 Now that we've setup the proper CybOX Object/Properties hierarchy for the type of data that we're capturing, we can begin capturing the individual data points.As we mentioned before, we'll be capturing the entrypoint of the file, as well as the subsystem information and linker version. Since these are all properties stored in the headers of a PE File, we'll use the [Headers](/data-model/{{site.current_version}}/WinExecutableFileObj/PEHeadersType) field as the root for the capture of this data. Furthermore, since these properties are all part of the PE Optional Header, we'll use the corresponding [Optional Header](/data-model/{{site.current_version}}/WinExecutableFileObj/PEOptionalHeaderType) field in the Headers field to capture them. Specifically, we'll use the "Major_Linker_Version" and "Minor_Linker_Version" fields for the linker version, the "Subsystem" field for the subsystem information, and the "Address_Of_Entry_Point" field for the entry point information.
 
+With the [Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) populated with the results of the static analysis, the final step is to add it to the Malware Subject. To do, we'll use the [Findings_Bundles](/data-model/{{site.current_version}}/maecPackage/FindingsBundleListType) field, and specifically will populate its child "Bundle" field with the Bundle that we've constructed.
 
 ## XML
 
