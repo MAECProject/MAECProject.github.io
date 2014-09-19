@@ -1,10 +1,10 @@
 ---
 layout: flat
 title: Creating a MAEC Bundle
-summary: The MAEC Bundle is the primary entity for capturing the output of analyses performed on a malware instance, such as through one or more tools. We'll discuss the creation of a basic MAEC Bundle in the two supported forms, including that in a standalone capacity, as well as part of a Malware Subject in a MAEC Package.
+summary: The MAEC Bundle is the primary entity for capturing the output of analyses performed on a malware instance, such as through one or more tools. In this idiom, we'll discuss the creation of a basic MAEC Bundle and describe its two supported forms, including standalone Bundles, as well as those that are part of a Malware Subject in a MAEC Package.
 ---
 
-The MAEC Bundle is the primary entity for capturing the output of analyses performed on a malware instance, such as through one or more tools. We'll discuss the creation of a basic MAEC Bundle in the two supported forms, including that in a standalone capacity, as well as part of a Malware Subject in a MAEC Package.
+The MAEC Bundle is the primary entity for capturing the output of analyses performed on a malware instance, such as through one or more tools. In this idiom, we'll discuss the creation of a basic MAEC Bundle and describe its two supported forms, including standalone Bundles, as well as those that are part of a Malware Subject in a MAEC Package.
 
 ## Uses
 The [MAEC Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) can be used in two distinct ways:
