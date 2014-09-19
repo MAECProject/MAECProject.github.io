@@ -7,7 +7,7 @@ title: Idioms
   <div class="col-md-6">
     <div class="well">
       <h4><a href="bundle_creation">Bundle Creation</a></h4>
-      <p>The MAEC Bundle is the fundamental entity that captures analysis-derived information about a malware instance. This Idiom explores the creation of a basic Bundle.</p>
+      <p>The MAEC Bundle is the primary entity for capturing the output of analyses performed on a malware instance, such as through one or more tools. In this idiom, we'll discuss the creation of a basic MAEC Bundle and describe its two supported forms, including standalone Bundles, as well as those that are part of a Malware Subject in a MAEC Package.</p>
       <a class="btn btn-primary" href="bundle_creation">Go »</a>
     </div>
 	<div class="well">
