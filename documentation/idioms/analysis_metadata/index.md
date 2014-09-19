@@ -85,16 +85,21 @@ After creating the base [Analysis](/data-model/{{site.current_version}}/maecPack
 ## Python
 
 {% highlight python linenos %}
-b.defined_subject = False
-b.content_type = "static analysis tool output"
-o = Object()
-o.properties = WinExecutableFile()
-o.properties.headers = PEHeaders()
-o.properties.headers.optional_header = PEOptionalHeader()
-o.properties.headers.optional_header.major_linker_version = "06"
-o.properties.headers.optional_header.minor_linker_version = "00"
-o.properties.headers.optional_header.address_of_entry_point = "036418"
-o.properties.headers.optional_header.subsystem = "Windows_GUI"
+# Populate the PeID Analysis with its corresponding metadata
+a1.method = "static"
+a1.type_ = "triage"
+t1 = ToolInformation()
+t1.name = "PEiD"
+t1.version = "0.94"
+a1.add_tool(t1)
+
+# Populate the Anubis Analysis with its corresponding metadata
+a2.method = "dynamic"
+a2.type_ = "triage"
+t2 = ToolInformation()
+t2.name = "Anubis"
+t2.version = "1.68.0"
+a2.add_tool(t2)
 {% endhighlight %}
 
 [Full Python](maec_analysis_metadata.py)
