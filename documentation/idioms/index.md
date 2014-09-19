@@ -15,6 +15,11 @@ title: Idioms
       <p>This Idiom demonstrates how to capture basic information about a single malware instance using the MAEC Package, through the use of its Malware Subject entity.</p>
       <a class="btn btn-primary" href="package_creation">Go »</a>
     </div>
+	<div class="well">
+      <h4><a href="analysis_metadata">Analysis Metadata Capture</a></h4>
+      <p>This Idiom describes the process of capturing the metadata and results associated with a particular analysis performed on a malware instance.</p>
+      <a class="btn btn-primary" href="analysis_metadata">Go »</a>
+    </div>
     <div class="well">
       <h4><a href="static_analysis">Static Analysis Capture</a></h4>
       <p>This Idiom describes the process of capturing the results of static analysis performed on some malware instance, such as through the use of a PE file analysis tool.</p>
