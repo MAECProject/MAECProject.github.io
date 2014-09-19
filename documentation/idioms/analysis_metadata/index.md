@@ -63,22 +63,22 @@ After creating the base [Analysis](/data-model/{{site.current_version}}/maecPack
 ## XML
 
 {% highlight xml linenos %}
-    <maecPackage:Bundle id="example:bundle-704fd16d-486b-4797-b84c-167e1401c7c4" schema_version="4.1" defined_subject="false" content_type="static analysis tool output">
-     <maecBundle:Objects>
-      <maecBundle:Object id="example:object-0ad05b6d-3971-463d-80e2-dfa2d607d6d9">
-        <cybox:Properties xsi:type="WinExecFileObj:WindowsExecutableFileObjectType">
-          <WinExecFileObj:Headers>
-           <WinExecFileObj:Optional_Header>
-            <WinExecFileObj:Major_Linker_Version>06</WinExecFileObj:Major_Linker_Version>
-            <WinExecFileObj:Minor_Linker_Version>00</WinExecFileObj:Minor_Linker_Version>
-            <WinExecFileObj:Address_Of_Entry_Point>036418</WinExecFileObj:Address_Of_Entry_Point>
-            <WinExecFileObj:Subsystem>Windows_GUI</WinExecFileObj:Subsystem>
-           </WinExecFileObj:Optional_Header>
-          </WinExecFileObj:Headers>
-        </cybox:Properties>
-       </maecBundle:Object>
-     </maecBundle:Objects>
-    </maecPackage:Bundle>
+<maecPackage:Analysis id="example:analysis-181c7d30-9f22-42f3-996a-ebfde66eeed6" method="static" type="triage">
+	<maecPackage:Tools>
+		<maecPackage:Tool id="example:tool-49fd2bca-7631-4619-ba9f-2ab32b819122">
+			<cyboxCommon:Name>PEiD</cyboxCommon:Name>
+			<cyboxCommon:Version>0.94</cyboxCommon:Version>
+		</maecPackage:Tool>
+	</maecPackage:Tools>
+</maecPackage:Analysis>
+<maecPackage:Analysis id="example:analysis-f30ce041-ee2f-410d-9c14-2418d6e475aa" method="dynamic" type="triage">
+	<maecPackage:Tools>
+		<maecPackage:Tool id="example:tool-7882ca14-39ac-43c0-b2b0-086a24d36c2a">
+			<cyboxCommon:Name>Anubis</cyboxCommon:Name>
+			<cyboxCommon:Vendor>1.68.0</cyboxCommon:Vendor>
+		</maecPackage:Tool>
+	</maecPackage:Tools>
+</maecPackage:Analysis>
 {% endhighlight %}
 
 [Full XML](maec_analysis_metadata.xml)
