@@ -39,14 +39,6 @@ With the [Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) po
 <maecPackage:Bundle defined_subject="false" id="example:bundle-c374ea27-8520-4ab7-9fba-3f18050d4e1c" schema_version="4.1" content_type="static analysis tool output">
 	<maecBundle:AV_Classifications>
 	 <maecBundle:AV_Classification>
-	  <cyboxCommon:Name>AhnLab-V3</cyboxCommon:Name>
-	  <maecBundle:Classification_Name>Win32/IRCBot.worm.variant</maecBundle:Classification_Name>
-	 </maecBundle:AV_Classification>
-	 <maecBundle:AV_Classification>
-	  <cyboxCommon:Name>Kaspersky</cyboxCommon:Name>
-	  <maecBundle:Classification_Name>Packed.Win32.Katusha.a</maecBundle:Classification_Name>
-	 </maecBundle:AV_Classification>
-	 <maecBundle:AV_Classification>
 	  <cyboxCommon:Name>Microsoft</cyboxCommon:Name>
 	  <maecBundle:Classification_Name>PWS:Win32/Zbot.gen!B</maecBundle:Classification_Name>
 	 </maecBundle:AV_Classification>
