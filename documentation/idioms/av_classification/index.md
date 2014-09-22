@@ -58,35 +58,24 @@ With the [Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) po
 ## Python
 
 {% highlight python linenos %}
-# Create the first, create file action
-act1 = MalwareAction()
-act1.name = "create file"
-act1.name.xsi_type = "FileActionNameVocab-1.1"
-act1.associated_objects = AssociatedObjects()
-o1 = AssociatedObject()
-o1.properties = WinExecutableFile()
-o1.properties.file_name = "Zcxaxz.exe"
-o1.properties.size_in_bytes = "332288"
-o1.association_type = VocabString()
-o1.association_type.value = "output"
-o1.association_type.xsi_type = "maecVocabs:ActionObjectAssociationTypeVocab-1.0"
-act1.associated_objects.append(o1)
+# Create the AV Classifications
+av1 = AVClassification()
+av1.name = "Microsoft"
+av1.classification_name = "PWS:Win32/Zbot.gen!B"
+av2 = AVClassification()
+av2.name = "Symantec"
+av2.classification_name = "Backdoor.Paproxy"
+av3 = AVClassification()
+av3.name = "TrendMicro"
+av3.classification_name = "TSPY_ZBOT.TD"
 
-# Create the second, create mutex action
-act2 = MalwareAction()
-act2.name = "create mutex"
-act2.name.xsi_type = "SynchronizationActionNameVocab-1.0"
-act2.associated_objects = AssociatedObjects()
-o2 = AssociatedObject()
-o2.properties = WinMutex()
-o2.properties.name = "redem-Mutex"
-o2.association_type = VocabString()
-o2.association_type.value = "output"
-o2.association_type.xsi_type = "maecVocabs:ActionObjectAssociationTypeVocab-1.0"
-act2.associated_objects.append(o2)
+# Add the AV classifications to the Bundle
+b.add_av_classification(av1)
+b.add_av_classification(av2)
+b.add_av_classification(av3)
 {% endhighlight %}
 
-[Full Python](maec_dynamic_analysis.py)
+[Full Python](maec_av_classification.py)
 
 ## Further Reading
 * [Creating a MAEC Bundle] (../bundle_creation)
