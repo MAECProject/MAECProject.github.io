@@ -75,7 +75,7 @@ After creating the base [Analysis](/data-model/{{site.current_version}}/maecPack
 	<maecPackage:Tools>
 		<maecPackage:Tool id="example:tool-7882ca14-39ac-43c0-b2b0-086a24d36c2a">
 			<cyboxCommon:Name>Anubis</cyboxCommon:Name>
-			<cyboxCommon:Vendor>1.68.0</cyboxCommon:Vendor>
+			<cyboxCommon:Version>1.68.0</cyboxCommon:Vendor>
 		</maecPackage:Tool>
 	</maecPackage:Tools>
 </maecPackage:Analysis>
