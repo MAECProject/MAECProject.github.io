@@ -35,5 +35,10 @@ title: Idioms
       <p>This Idiom describes the process of capturing the results of dynamic analysis performed on some malware instance, such as through the use of a malware sandbox tool.</p>
       <a class="btn btn-primary" href="dynamic_analysis">Go »</a>
     </div>
+	    <div class="well">
+      <h4><a href="process_tree">Process Tree Capture</a></h4>
+      <p> This Idiom describes the process of an observed process tree of execution for a malware instance, as reported through a dynamic analysis or similar tool.</p>
+      <a class="btn btn-primary" href="process_tree">Go »</a>
+    </div>
   </div>
 </div>
