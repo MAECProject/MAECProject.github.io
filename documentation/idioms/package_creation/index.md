@@ -11,9 +11,9 @@ This Idiom demonstrates how to capture information about a single malware instan
 
 <img src="maec_package.png" alt="Package and Malware Subject Overview" class="aside-text"/>
 
-To begin, we create a [MAEC Package](/data-model/{{site.current_version}}/maecPackage/PackageType).  A MAEC Package has two required attributes:
+To begin, we create a [MAEC Package](/data-model/{{site.current_version}}/maecPackage/PackageType), which is the container that encompasses Malware Subjects.  A MAEC Package has two required attributes:
 
-1.	*id*. The id field captures a globally unique identifier for the Package. The recommended form for MAEC identifier attributes is "maec-namespace-entity_type-unique_identifier" where the namespace is optional and specified by the producer.  It is recommended that the namespace be meaningful and that the identifier be a globally unique ID (GUID).  For example, the identifier "maec-anubis_to_maec-act-1" uses the namespace "anubis_to_maec" to specify that the Anubis to MAEC translator tool  was used to create the MAEC output.  It is also recommended that the same namespace be used throughout a Package, although this is not required.
+1.	*id*. The id field captures a globally unique identifier for the Package. The recommended form for MAEC identifier attributes is "maec-namespace-package-unique_identifier" where the namespace is optional and specified by the producer.  It is recommended that the namespace be meaningful and that the identifier be a globally unique ID (GUID).  For example, the identifier "maec-anubis_to_maec-act-49fd2bca-7631-4619-ba9f-2ab32b819122" uses the namespace "anubis_to_maec" to specify that the Anubis to MAEC translator tool was used to create the MAEC output.  It is also recommended that the same namespace be used throughout a Package, although this is not required.
 
 2.	*schema_version*. The schema_version field specifies the version of the schema used to create the Package.
 
@@ -21,7 +21,7 @@ As indicated by the figure, a MAEC Package encompasses one or more [Malware Subj
 
 Next, let's create a basic [Malware Subject](/data-model/{{site.current_version}}/maecPackage/MalwareSubjectType), for capturing the identity of some malware instance. This will require populating two fields:
 
-1.	*id*. As with the Package, the id field is required and should follow the form "maec-namespace-entity_type-unique_identifier".
+1.	*id*. As with the Package, the id field is required and should follow the form "maec-namespace-malware_subject-unique_identifier".
 
 2.	*Malware_Instance_Object_Attributes*. The [Malware_Instance_Object_Attributes](/data-model/{{site.current_version}}/cybox/ObjectType) field captures the identity of the malware instance that the Malware Subject characterizes.  Its base type is the [CybOX ObjectType](/data-model/{{site.current_version}}/cybox/ObjectType), and therefore it has an extension point via its [Properties](/data-model/{{site.current_version}}/cyboxCommon/ObjectPropertiesType) field where the properties of one of the CybOX defined objects may be used. 
 
