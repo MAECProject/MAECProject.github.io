@@ -25,6 +25,7 @@ ms.malware_instance_object_attributes.properties.add_hash("D55B0FB96FAD96D203D10
 # Populate the Analysis with the metadata relating to the Analysis that was performed
 a.method = "dynamic"
 a.type_ = "triage"
+a.set_findings_bundle(b.id_)
 t = ToolInformation()
 t.name = "ThreatExpert"
 t.vendor = "ThreatExpert"
