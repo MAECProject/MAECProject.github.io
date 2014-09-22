@@ -27,7 +27,7 @@ Let's discuss the [Process Tree Node](/data-model/{{site.current_version}}/maecB
 
 Additionally, the following fields are extensions added in the [Process Tree Node](/data-model/{{site.current_version}}/maecBundle/ProcessTreeNodeType):
 
-1.	*Initated_Actions*. The Initiated_Actions field captures, via references, the actions (found inside the top-level Actions element, or an Action Collection inside the top-level Collections element) initiated by the Process.
+1.	*Initiated_Actions*. The Initiated_Actions field captures, via references, the actions (found inside the top-level Actions element, or an Action Collection inside the top-level Collections element) initiated by the Process.
 
 2.	*Spawned_Process*. The Spawned_Process field captures a single child process spawned by this process.
 
