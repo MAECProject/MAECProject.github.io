@@ -1,10 +1,10 @@
 ---
 layout: flat
 title: Creating a MAEC Bundle
-summary: The MAEC Bundle is the primary entity for capturing the output of analyses performed on a malware instance, such as through one or more tools. In this idiom, we'll discuss the creation of a basic MAEC Bundle and describe its two supported forms, including standalone Bundles, as well as those that are part of a Malware Subject in a MAEC Package.
+summary: The MAEC Bundle is the primary entity for capturing the output of analyses performed on a malware instance, such as through one or more tools. In this idiom, we'll discuss the creation of a basic MAEC Bundle and describe its two supported uses, including in a standalone capacity, as well as part of a Malware Subject in a MAEC Package.
 ---
 
-The MAEC Bundle is the primary entity for capturing the output of analyses performed on a malware instance, such as through one or more tools. In this idiom, we'll discuss the creation of a basic MAEC Bundle and describe its two supported forms, including standalone Bundles, as well as those that are part of a Malware Subject in a MAEC Package.
+The MAEC Bundle is the primary entity for capturing the output of analyses performed on a malware instance, such as through one or more tools. In this idiom, we'll discuss the creation of a basic MAEC Bundle and describe its two supported uses, including in a standalone capacity, as well as part of a Malware Subject in a MAEC Package.
 
 ## Uses
 The [MAEC Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) can be used in two distinct ways:
@@ -14,11 +14,11 @@ The [MAEC Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) ca
 2.	As part of a [Malware Subject](/data-model/{{site.current_version}}/maecPackage/MalwareSubjectType) in a [MAEC Package](/data-model/{{site.current_version}}/maecPackage/PackageType). When embedded in a Malware Subject, a Bundle serves to capture the output of some particular analysis performed on a malware instance, such as the execution of a static analysis tool. Thus, multiple Bundles may be embedded in this manner, to enable the more granular capture of malware analysis output. This is the more common usage, as it is often useful to share the associated metadata that the [Malware Subject](/data-model/{{site.current_version}}/maecPackage/MalwareSubjectType) can capture. In this form, the Bundle SHOULD NOT capture the identity of the malware instance whose data it characterizes, as this is achieved through the identical Malware_Instance_Object_Attributes field on the Malware Subject.
 
 ## Data model
-A [MAEC Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) has three required attributes:
+The [MAEC Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) has three required attributes:
 
 <img src="maec_bundle.png" alt="Empty MAEC Bundle" class="aside-text"/>
 
-1.  *id*. The "id" field is intended to capture a globally unique identifier for the Bundle. The recommended form for MAEC identifier attributes is "maec-namespace-entity_type-unique_identifier" where the namespace is optional and specified by the producer.  It is recommended that the namespace be meaningful and that the identifier portion be a globally unique ID (GUID).  For example, the identifier "maec-anubis_to_maec-action-5cbf19d5-9067-4202-8424-b3676f51b606" uses the namespace "anubis_to_maec" to specify that the Anubis to MAEC translator tool  was used to create the MAEC output.  It is also recommended that the same namespace be used throughout a Bundle, although this is not required. 
+1.  *id*. The "id" field is intended to capture a globally unique identifier for the Bundle. The recommended form for MAEC identifier attributes is "maec-namespace-bundle-unique_identifier" where the namespace is optional and specified by the producer.  It is recommended that the namespace be meaningful and that the identifier portion be a globally unique ID (GUID).  For example, the identifier "maec-anubis_to_maec-bundle-5cbf19d5-9067-4202-8424-b3676f51b606" uses the namespace "anubis_to_maec" to specify that the Anubis to MAEC translator tool  was used to create the MAEC output.  It is also recommended that the same namespace be used throughout a Bundle, although this is not required. 
 
 2.	*schema_version*.  The "schema_version" field specifies the version of the MAEC Bundle schema used to create the Bundle. 
 
