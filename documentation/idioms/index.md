@@ -11,7 +11,7 @@ title: Idioms
       <a class="btn btn-primary" href="bundle_creation">Go »</a>
     </div>
 	<div class="well">
-      <h4><a href="package_creation">Malware Instance Characterization</a></h4>
+      <h4><a href="package_creation">Basic Malware Instance Characterization</a></h4>
       <p>This Idiom demonstrates how to capture basic information about a single malware instance using the MAEC Package, through the use of its Malware Subject entity.</p>
       <a class="btn btn-primary" href="package_creation">Go »</a>
     </div>
