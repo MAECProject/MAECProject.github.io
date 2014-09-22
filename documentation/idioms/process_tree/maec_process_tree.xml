@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+ MAEC Package Process Tree Example
+ -Demonstrates how a process tree for a malware instance may be captured in a Malware Subject in a Package
+-->
+<maecPackage:MAEC_Package 
+	xmlns:cyboxCommon="http://cybox.mitre.org/common-2"
+	xmlns:cybox="http://cybox.mitre.org/cybox-2"
+	xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2"
+	xmlns:FileObj="http://cybox.mitre.org/objects#FileObject-2"
+	xmlns:ProcessObj="http://cybox.mitre.org/objects#ProcessObject-2"
+	xmlns:WinExecutableFileObj="http://cybox.mitre.org/objects#WinExecutableFileObject-2"
+	xmlns:WinFileObj="http://cybox.mitre.org/objects#WinFileObject-2"
+	xmlns:maecBundle="http://maec.mitre.org/XMLSchema/maec-bundle-4"
+	xmlns:maecPackage="http://maec.mitre.org/XMLSchema/maec-package-2"
+	xmlns:maecVocabs="http://maec.mitre.org/default_vocabularies-1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:example="example.com"
+	xsi:schemaLocation="http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd http://cybox.mitre.org/cybox-2 http://cybox.mitre.org/XMLSchema/core/2.1/cybox_core.xsd http://cybox.mitre.org/default_vocabularies-2 http://cybox.mitre.org/XMLSchema/default_vocabularies/2.1/cybox_default_vocabularies.xsd http://cybox.mitre.org/objects#FileObject-2 http://cybox.mitre.org/XMLSchema/objects/File/2.1/File_Object.xsd http://cybox.mitre.org/objects#ProcessObject-2 http://cybox.mitre.org/XMLSchema/objects/Process/2.1/Process_Object.xsd http://cybox.mitre.org/objects#URIObject-2 http://cybox.mitre.org/XMLSchema/objects/URI/2.1/URI_Object.xsd http://cybox.mitre.org/objects#WinExecutableFileObject-2 http://cybox.mitre.org/XMLSchema/objects/Win_Executable_File/2.1/Win_Executable_File_Object.xsd http://maec.mitre.org/XMLSchema/maec-bundle-4 http://maec.mitre.org/language/version4.1/maec_bundle_schema.xsd http://maec.mitre.org/XMLSchema/maec-package-2 http://maec.mitre.org/language/version4.1/maec_package_schema.xsd http://maec.mitre.org/default_vocabularies-1 http://maec.mitre.org/language/version4.1/maec_default_vocabularies.xsd" id="example:package-67e60891-5910-4c84-853d-53feacf11125" schema_version="2.1">
+    <maecPackage:Malware_Subjects>
+        <maecPackage:Malware_Subject id="example:malware_subject-1677b32a-ed18-49ad-b52d-d88a362d16d4">
+            <maecPackage:Malware_Instance_Object_Attributes id="example:object-985d640f-67c2-4f45-97b6-3d292fee15f3">
+                <cybox:Properties xsi:type="WinExecutableFileObj:WindowsExecutableFileObjectType">
+                    <FileObj:Size_In_Bytes>251904</FileObj:Size_In_Bytes>
+                    <FileObj:Hashes>
+                        <cyboxCommon:Hash>
+                            <cyboxCommon:Type>MD5</cyboxCommon:Type>
+                            <cyboxCommon:Simple_Hash_Value>5247001dafe411802b1a40e763d9a221</cyboxCommon:Simple_Hash_Value>
+                        </cyboxCommon:Hash>
+                        <cyboxCommon:Hash>
+                            <cyboxCommon:Type>SHA1</cyboxCommon:Type>
+                            <cyboxCommon:Simple_Hash_Value>7ff89166e226845e9fc52cb711eb5b37d004a0e5</cyboxCommon:Simple_Hash_Value>
+                        </cyboxCommon:Hash>
+                    </FileObj:Hashes>
+                </cybox:Properties>
+            </maecPackage:Malware_Instance_Object_Attributes>
+            <maecPackage:Analyses>
+                <maecPackage:Analysis method="dynamic" type="triage" id="example:analysis-fe2208ee-30d7-4700-9c11-c40eeb09455c">
+                    <maecPackage:Findings_Bundle_Reference bundle_idref="example:bundle-e3546065-2661-40c6-b41e-68d25fe4b39b"/>
+                    <maecPackage:Tools>
+                        <maecPackage:Tool id="example:tool-1">
+                            <cyboxCommon:Name>Anubis</cyboxCommon:Name>
+                            <cyboxCommon:Vendor>ISECLab</cyboxCommon:Vendor>
+                        </maecPackage:Tool>
+                    </maecPackage:Tools>
+                </maecPackage:Analysis>
+            </maecPackage:Analyses>
+            <maecPackage:Findings_Bundles>
+                <maecPackage:Bundle defined_subject="false" id="example:bundle-4d1aee47-974c-4c27-a3d0-2b1890cb483d" schema_version="4.1" content_type="dynamic analysis tool output">
+                    <maecBundle:Process_Tree>
+                        <maecBundle:Root_Process id="example:process-b61b6bd3-3489-4db9-8558-a148526e96be">
+                            <ProcessObj:Name>first_process.exe</ProcessObj:Name>
+                            <maecBundle:Initiated_Actions>
+                                <maecBundle:Action_Reference action_id="example:action-68f87759-45f4-4e2e-b3a1-1edf15282db5"/>
+                            </maecBundle:Initiated_Actions>
+                            <maecBundle:Spawned_Process id="example:process-d3b74b23-01e4-408e-a29f-fdb45c40bed4">
+                                <ProcessObj:Name>malproc.exe</ProcessObj:Name>
+                            </maecBundle:Spawned_Process>
+                        </maecBundle:Root_Process>
+                    </maecBundle:Process_Tree>
+                    <maecBundle:Actions>
+                        <maecBundle:Action id="example:action-68f87759-45f4-4e2e-b3a1-1edf15282db5">
+                            <cybox:Name xsi:type="maecVocabs:FileActionNameVocab-1.0">create file</cybox:Name>
+                            <cybox:Associated_Objects>
+                                <cybox:Associated_Object>
+                                    <cybox:Properties xsi:type="WinExecutableFileObj:WindowsExecutableFileObjectType">
+                                        <FileObj:File_Name>Zcxaxz.exe</FileObj:File_Name>
+                                        <FileObj:Size_In_Bytes>332288</FileObj:Size_In_Bytes>
+                                    </cybox:Properties>
+                                    <cybox:Association_Type xsi:type="maecVocabs:ActionObjectAssociationTypeVocab-1.0">output</cybox:Association_Type>
+                                </cybox:Associated_Object>
+                            </cybox:Associated_Objects>
+                        </maecBundle:Action>
+                    </maecBundle:Actions>
+                </maecPackage:Bundle>
+            </maecPackage:Findings_Bundles>
+        </maecPackage:Malware_Subject>
+    </maecPackage:Malware_Subjects>
+</maecPackage:MAEC_Package>
