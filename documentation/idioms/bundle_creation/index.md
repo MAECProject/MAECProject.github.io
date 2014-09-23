@@ -45,13 +45,13 @@ Also, note that a Bundle embedded in a [Malware Subject](/data-model/{{site.curr
 
 {% highlight xml linenos %}
 <maecBundle:MAEC_Bundle id="example:bundle-262d625d-61b5-4a92-ad76-3a3ac23fbac7" schema_version="4.1" defined_subject="true">
-<maecBundle:Malware_Instance_Object_Attributes>
- <cybox:Properties xsi:type="PDFFileObj:PDFFileObjectType">
-  <FileObj:File_Name>User_Manual.pdf</FileObj:File_Name>
-  <FileObj:Size_In_Bytes>509328</FileObj:Size_In_Bytes>
-  <PDFFileObj:Version>1.6</PDFFileObj:Version>
- </cybox:Properties>
-</maecBundle:Malware_Instance_Object_Attributes>
+  <maecBundle:Malware_Instance_Object_Attributes>
+   <cybox:Properties xsi:type="PDFFileObj:PDFFileObjectType">
+    <FileObj:File_Name>User_Manual.pdf</FileObj:File_Name>
+    <FileObj:Size_In_Bytes>509328</FileObj:Size_In_Bytes>
+    <PDFFileObj:Version>1.6</PDFFileObj:Version>
+   </cybox:Properties>
+  </maecBundle:Malware_Instance_Object_Attributes>
 </maecBundle:MAEC_Bundle>
 
 {% endhighlight %}
