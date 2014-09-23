@@ -7,7 +7,7 @@ title: Idioms
   <div class="col-md-6">
     <div class="well">
       <h4><a href="bundle_creation">Basic Analysis Data Capture</a></h4>
-      <p>The MAEC Bundle is the primary entity for capturing the output of analyses performed on a malware instance, such as through one or more tools. In this idiom, we'll discuss the creation of a basic MAEC Bundle and describe its two supported uses, including in a standalone capacity, as well as part of a Malware Subject in a MAEC Package.</p>
+      <p>This Idiom demonstrates how to capture analysis-derived data relating to a single malware instance, such as the actions that it performed, through the use of the MAEC Bundle entity.</p>
       <a class="btn btn-primary" href="bundle_creation">Go »</a>
     </div>
 	<div class="well">
@@ -16,8 +16,8 @@ title: Idioms
       <a class="btn btn-primary" href="package_creation">Go »</a>
     </div>
 	<div class="well">
-      <h4><a href="analysis_metadata">Analysis Metadata Capture</a></h4>
-      <p>This Idiom describes the process of capturing the metadata and results associated with a particular analysis performed on a malware instance.</p>
+      <h4><a href="analysis_metadata">Basic Analysis Metadata Capture</a></h4>
+      <p>This Idiom demonstrates how to capture basic metadata associated with a particular analysis performed on a malware instance, through the use of the Analysis entity.</p>
       <a class="btn btn-primary" href="analysis_metadata">Go »</a>
     </div>
   </div>
