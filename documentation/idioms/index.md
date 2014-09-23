@@ -21,9 +21,6 @@ title: Idioms
       <a class="btn btn-primary" href="analysis_metadata">Go »</a>
     </div>
   </div>
-</div>
-
-<div class="row">
   <div class="col-md-6">
     <div class="well">
       <h4><a href="static_analysis">Static Analysis Capture</a></h4>
