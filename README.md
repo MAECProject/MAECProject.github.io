@@ -1,8 +1,10 @@
-# MAEC Documentation
+# maecproject.github.io
 
-This is the MAEC documentation source code repository. Note: this is not the MAEC documentation meant for users! If you're looking to browse the MAEC documentation, please visit the [getting started page](https://github.com/MAECProject/schemas/wiki/Getting-Started).
+This repository is used to build http://maecproject.github.io. If you're looking for documentation about MAEC, you should head over there now, or go straight to the [Getting Started page](http://maecproject.github.io/getting-started/).
 
-**Work in progress:** The MAEC documentation is a work in progress and will be available shortly. For the time being, please see the above getting started documentation.
+**Work in progress:** The MAEC documentation is still a work in progress.
+
+If you're looking for information about editing the content on the site, you're in the right place!
 
 ## Installation
 
@@ -12,11 +14,11 @@ This is the MAEC documentation source code repository. Note: this is not the MAE
 1. Run the server with `jekyll server` or a static build with `jekyll build`
 
 Note: Jekyll has some "issues" on Windows. See: [Jekyll on Windows](http://jekyllrb.com/docs/windows/#installation) for instructions. The issues I encountered (other than those covered in those instructions) were:
-* You'll need to install jekyll version 1.4.2:
+* You'll need to install jekyll version 2.3.0:
 
 ```
 gem uninstall jekyll # If you already installed it
-gem install jekyll --version "=1.4.2"
+gem install jekyll --version "=2.3.0"
 ```
 
 * You'll need to install pygments version 0.5.0:
