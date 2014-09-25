@@ -1,6 +1,6 @@
 ---
 layout: flat_for_usecases
-title: MAEC Use Cases: Cyber Threat Analysis
+title: MAEC Use Cases - Cyber Threat Analysis
 ---  
 
 <div class="row">

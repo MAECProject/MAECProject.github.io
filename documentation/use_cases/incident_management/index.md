@@ -1,6 +1,6 @@
 ---
 layout: flat_for_usecases
-title: MAEC Use Cases: Incident Management
+title: MAEC Use Cases - Incident Management
 --- 
 
 <div class="row">
