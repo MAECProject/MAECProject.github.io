@@ -1,5 +1,5 @@
 ---
-layout: flat_for_usecases
+layout: flat
 title: MAEC Use Cases - Incident Management
 --- 
 
