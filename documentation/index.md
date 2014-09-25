@@ -11,9 +11,9 @@ title: Documentation
       <a class="btn btn-primary" href="idioms">Go »</a>
     </div>
     <div class="well">
-      <h4><a href="profiles">Use Cases</a></h4>
+      <h4><a href="use_cases">Use Cases</a></h4>
       <p>MAEC use cases illustrate how MAEC can be used in cyber security.  High level use cases are provided in four general areas:  malware analysis, cyber threat analysis, intrusion detection, and incident management.</p>
-      <a class="btn btn-primary" href="idioms">Go »</a>
+      <a class="btn btn-primary" href="use_cases">Go »</a>
     </div>
   </div>
 </div>
