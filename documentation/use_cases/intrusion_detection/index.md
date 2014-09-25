@@ -1,7 +1,12 @@
 ---
+
 layout: flat
+
 title: Intrusion Detection
+
 ---
+
+
 
 Effective intrusion detection is central to keeping networks safe from malicious actors.  Using MAEC to characterize malware based on its attributes provides actionable information for malware detection and assessment: more specifically, low-level Objects and Actions, mid-level Behaviors, and high-level Capabilities enable malware detection.
 

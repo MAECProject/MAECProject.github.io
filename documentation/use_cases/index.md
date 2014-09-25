@@ -1,9 +1,9 @@
 ---
-layout: flat_for_usecases
+layout: flat
 title: MAEC Use Cases
 ---
 
-<p>At its highest level, MAEC is a domain-specific language for non-signature based malware characterization.  Because MAEC provides a common vocabulary and grammar for the malware domain, it follows that the majority of the use cases for MAEC are motivated by the unambiguous and accurate communication of malware attributes enabled by MAEC.  We provide high level use cases in the following four general areas.</p>  
+At its highest level, MAEC is a domain-specific language for non-signature based malware characterization.  Because MAEC provides a common vocabulary and grammar for the malware domain, it follows that the majority of the use cases for MAEC are motivated by the unambiguous and accurate communication of malware attributes enabled by MAEC.  We provide high level use cases in the following four general areas.  
 
 <div class="row">
   <div class="col-md-6">
