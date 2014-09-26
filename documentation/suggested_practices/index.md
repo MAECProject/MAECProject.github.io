@@ -44,8 +44,6 @@ This supports several very common MAEC use cases such as:
 * enabling individual portions of content to be externally referenced unambiguously (e.g. a report talking about a specific Campaign or Threat Actor)
 * enabling the sharing/resharing of portions of MAEC content (e.g. PartyB resharing 2 of a set of 100 Indicators received from PartyA)
 * enabling versioning of content
-* enabling the specification of potentially complex webs of interconnection and correlation between portions of MAEC content (e.g. connecting particular TTPs and Indicators to specific Campaigns over time)
-* enabling analysis pivoting on content with multiple contexts (e.g. the same IP Address seen in multiple Incidents and with connections to multiple TTPs and Indicators)
 
 
 For these reasons, it is suggested that IDs be specified for the following commonly referenced and/or reused constructs unless there is clear reason not to:
