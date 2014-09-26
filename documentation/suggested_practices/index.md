@@ -26,7 +26,7 @@ Some examples:
 In order to use this approach, you will need to define that namespace prefix in the head of your XML document:
 
 ```xml
-<stix:MAEC_Package xmlns:acme="http://acme.example.com" ...
+<maec:MAEC_Package xmlns:acme="http://acme.example.com" ...
 ```
 
 This format provides high assurance that IDs will be both unique and meaningful, because the producer namespace denotes who's producing it, the construct name denotes what it is, and the overall ID including the GUID lends a high degree of confidence in its uniqueness.
