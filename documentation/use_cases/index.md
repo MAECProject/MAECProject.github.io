@@ -13,7 +13,9 @@ At its highest level, MAEC is a domain-specific language for non-signature based
       <a class="btn btn-primary" href="malware_analysis/static_dynamic_malware_analysis">Static and Dynamic Malware Analysis »</a>
 	  <p></p>
 	  <a class="btn btn-primary" href="malware_analysis/malware_visualization">Malware Visualization »</a>
+	  <p></p>
 	  <a class="btn btn-primary" href="malware_analysis/analysis_oriented_malware_repositories">Analysis Oriented Malware Repositories »</a>
+	  <p></p>
 	  <a class="btn btn-primary" href="malware_analysis/standardized_tool_output">Standardized Tool Output »</a>
     </div>
   	<div class="well">
@@ -27,13 +29,16 @@ At its highest level, MAEC is a domain-specific language for non-signature based
       <h4>Cyber Threat Analysis</h4>
       <p>This set of use cases demonstrates how capturing cyber threat analysis information in MAEC will result in a threat being more readily understood and evaluated because the information will be more consistent across analysts and incidents.  In addition, we show how MAEC's standardized encoding of the Capabilities exhibited by a malware instance will allow for the accurate discernment of the threat that the malware poses to an organization and its infrastructureMAEC is used to visualize malware.</p>
 	  <a class="btn btn-primary" href="cyber_threat_analysis/attribution">Attribution »</a>
+	  <p></p>
       <a class="btn btn-primary" href="cyber_threat_analysis/malware_threat_scoring_system">Malware Threat Scoring System »</a>
     </div>
     <div class="well">
       <h4><a href="incident_management">Incident Management</a></h4>
       <p>This set of use cases describes how a uniform malware reporting format, standardized malware repositories, and the ability to verify remediation procedures - all based on the MAEC data model - greatly enhance malware-related incident management efforts.</p>
       <a class="btn btn-primary" href="incident_management/uniform_malware_reporting_format">Uniform Malware Reporting Format »</a>
+	  <p></p>
 	  <a class="btn btn-primary" href="incident_management/malware_repositories">Malware Repositories »</a>
+	  <p></p>
 	  <a class="btn btn-primary" href="incident_management/remediation">Remediation »</a>
     </div>
   </div>
