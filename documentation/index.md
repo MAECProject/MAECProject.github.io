@@ -15,5 +15,10 @@ title: Documentation
       <p>MAEC use cases illustrate how MAEC can be used in cyber security.  High level use cases are provided in four general areas:  malware analysis, cyber threat analysis, intrusion detection, and incident management.</p>
       <a class="btn btn-primary" href="use_cases">Go »</a>
     </div>
+    <div class="well">
+      <h4><a href="suggested_practices">Suggested Practices</a></h4>
+      <p>MAEC suggested practices illustrate ...</p>
+      <a class="btn btn-primary" href="suggested_practices">Go »</a>
+    </div>
   </div>
 </div>
