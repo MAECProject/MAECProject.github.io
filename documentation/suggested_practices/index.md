@@ -3,15 +3,15 @@ layout: flat
 title: Suggested Practices
 ---
 
-This page contains suggested practices (sometimes called best practices) for producing and consuming STIX content. Following these practices will ensure the best conformance with the design goals of STIX and the best compatibility with other STIX tools. These are not requirements, however: in some cases, technical or business requirements will mean you can't comply with them and that's fine. Think of them as "do it this way unless you have a good reason not to".
+This page contains suggested practices (sometimes called best practices) for producing and consuming MAEC content. Following these practices will ensure the best conformance with the design goals of MAEC and the best compatibility with other MAEC tools. These are not requirements, however: in some cases, technical or business requirements will mean you can't comply with them and that's fine. Think of them as "do it this way unless you have a good reason not to".
 
 ## General Practices
 
-General practices apply across STIX (and sometimes CybOX).
+General practices apply across MAEC (and sometimes CybOX).
 
 ## Formatting IDs
 
-STIX IDs are [XML QNames](http://en.wikipedia.org/wiki/QName). Each ID includes both a namespace portion (optional) and an ID portion (required) separated by a colon (:). The recommend approach to creating STIX IDs is to define a producer namespace and namespace prefix, then use the form:
+MAEC IDs are [XML QNames](http://en.wikipedia.org/wiki/QName). Each ID includes both a namespace portion (optional) and an ID portion (required) separated by a colon (:). The recommend approach to creating MAEC IDs is to define a producer namespace and namespace prefix, then use the form:
 
 `[ns prefix]:[construct type]-[GUID]`
 
@@ -26,25 +26,25 @@ Some examples:
 In order to use this approach, you will need to define that namespace prefix in the head of your XML document:
 
 ```xml
-<stix:STIX_Package xmlns:acme="http://acme.example.com" ...
+<stix:MAEC_Package xmlns:acme="http://acme.example.com" ...
 ```
 
 This format provides high assurance that IDs will be both unique and meaningful, because the producer namespace denotes who's producing it, the construct name denotes what it is, and the overall ID including the GUID lends a high degree of confidence in its uniqueness.
 
 ## Assigning IDs
 
-STIX has several constructs with the potential to assign IDs to them such that they can be unambiguously referenced from elsewhere.
+MAEC has several constructs with the potential to assign IDs to them such that they can be unambiguously referenced from elsewhere.
 
 Technically the decision to specify an ID on a given construct is optional based on the specifics of the usage context.
 
 As a simple general rule specifying IDs on particular instances of constructs enables clear referencing, relating and pivoting.
 
-This supports several very common STIX use cases such as:
+This supports several very common MAEC use cases such as:
 
 * enabling individual portions of content to be externally referenced unambiguously (e.g. a report talking about a specific Campaign or Threat Actor)
-* enabling the sharing/resharing of portions of STIX content (e.g. PartyB resharing 2 of a set of 100 Indicators received from PartyA)
+* enabling the sharing/resharing of portions of MAEC content (e.g. PartyB resharing 2 of a set of 100 Indicators received from PartyA)
 * enabling versioning of content
-* enabling the specification of potentially complex webs of interconnection and correlation between portions of STIX content (e.g. connecting particular TTPs and Indicators to specific Campaigns over time)
+* enabling the specification of potentially complex webs of interconnection and correlation between portions of MAEC content (e.g. connecting particular TTPs and Indicators to specific Campaigns over time)
 * enabling analysis pivoting on content with multiple contexts (e.g. the same IP Address seen in multiple Incidents and with connections to multiple TTPs and Indicators)
 
 
