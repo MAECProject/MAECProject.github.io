@@ -3,13 +3,14 @@ layout: flat
 title: MAEC Use Cases
 ---
 
-At its highest level, MAEC is a domain-specific language for non-signature based malware characterization.  Because MAEC provides a common vocabulary and grammar for the malware domain, it follows that the majority of the use cases for MAEC are motivated by the unambiguous and accurate communication of malware attributes enabled by MAEC.  We provide high level use cases in the following four general areas.  
+At its highest level, MAEC is a domain-specific language for non-signature based malware characterization.  Because MAEC provides a common vocabulary and grammar for the malware domain, it follows that the majority of the use cases for MAEC are motivated by the unambiguous and accurate communication of malware attributes enabled by MAEC.  
 
 <div class="row">
   <div class="col-md-6">
     <div class="well">
       <h4>Malware Analysis</h4>
-      <p>This set of use cases demonstrate how MAEC can be used to encode the data obtained from malware analysis.  In such a scenario, a malware instance is analyzed automatically or manually using either dynamic or static methods.  The results are then captured using the MAEC schema and either a single MAEC Package (with one or more MAEC Bundles) or one or more standalone MAEC Bundles are generated to communicate the analysis results.  As is also discussed, MAEC Packages and MAEC Bundles can also be used to help with visualization, to capture data for storage in analysis-oriented repositories, and as a means for standardizing tool output.</p>
+      <p>Malware analysis-related use cases demonstrate how MAEC can be used to encode the data obtained from malware analysis.  In such a scenario, a malware instance is analyzed automatically or manually using either dynamic or static methods.  The results are then captured using the MAEC schema and either a single MAEC Package (with one or more MAEC Bundles) or one or more standalone MAEC Bundles are generated to capture the analysis results.  </p>
+	  <p>MAEC Packages and MAEC Bundles can also be used to help with visualization, to capture data for storage in analysis-oriented repositories, and as a means for standardizing tool output.</p>
       ▪ <a class="btn btn-primary" href="malware_analysis/static_dynamic_malware_analysis">Static and Dynamic Malware Analysis »</a>
 	  <p></p>
 	  ▪ <a class="btn btn-primary" href="malware_analysis/malware_visualization">Malware Visualization »</a>
