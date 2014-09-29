@@ -9,7 +9,7 @@ At its highest level, MAEC is a domain-specific language for non-signature based
   <div class="col-md-6">
     <div class="well">
       <h4>Malware Analysis</h4>
-      <p>Malware analysis-related use cases demonstrate how MAEC can be used to effectively capture the data obtained from malware analysis.  In such a scenario, a malware instance is analyzed automatically or manually using either dynamic or static methods.  The results are then captured using the MAEC schema and either a single MAEC Package (with one or more MAEC Bundles) or one or more standalone MAEC Bundles.  </p>
+      <p>Malware analysis-related use cases demonstrate how MAEC can be used to effectively capture the data obtained from malware analysis.  As we illustrate in the first use case, a malware instance is analyzed automatically or manually using either dynamic or static methods.  The results are then captured using the MAEC schema and either a single MAEC Package (with one or more MAEC Bundles) or one or more standalone MAEC Bundles.  </p>
 	  ▪ <a class="btn btn-primary" href="malware_analysis/static_dynamic_malware_analysis">Static and Dynamic Malware Analysis »</a>
 	  <p></p>
 	  <p>MAEC Packages and MAEC Bundles can also be used to help with visualization, to capture data for storage in analysis-oriented repositories, and as a means for standardizing tool output.</p>
