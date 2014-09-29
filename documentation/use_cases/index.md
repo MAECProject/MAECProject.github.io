@@ -11,6 +11,7 @@ At its highest level, MAEC is a domain-specific language for non-signature based
       <h4>Malware Analysis</h4>
       <p>Malware analysis-related use cases demonstrate how MAEC can be used to effectively capture the data obtained from malware analysis.  In such a scenario, a malware instance is analyzed automatically or manually using either dynamic or static methods.  The results are then captured using the MAEC schema and either a single MAEC Package (with one or more MAEC Bundles) or one or more standalone MAEC Bundles.  </p>
 	  ▪ <a class="btn btn-primary" href="malware_analysis/static_dynamic_malware_analysis">Static and Dynamic Malware Analysis »</a>
+	  <p></p>
 	  <p>MAEC Packages and MAEC Bundles can also be used to help with visualization, to capture data for storage in analysis-oriented repositories, and as a means for standardizing tool output.</p>
       ▪ <a class="btn btn-primary" href="malware_analysis/malware_visualization">Malware Visualization »</a>
 	  <p></p>
@@ -27,7 +28,7 @@ At its highest level, MAEC is a domain-specific language for non-signature based
   <div class="col-md-6">
   	<div class="well">
       <h4>Cyber Threat Analysis</h4>
-      <p>Cyber threat analysis-related use cases demonstrate how capturing cyber threat analysis information in MAEC will result in a threat being more readily understood and evaluated because the information will be more consistent across analysts and incidents.  In addition, MAEC's standardized encoding of the Capabilities exhibited by a malware instance will allow for the accurate discernment of the threat that the malware poses to an organization and its infrastructure.</p>
+      <p>Cyber threat analysis-related use cases demonstrate how capturing cyber threat analysis information in MAEC will result in a threat being more readily understood and evaluated because the information will be more consistent across analysts and incidents.  Furthermore, MAEC's standardized encoding of the Capabilities exhibited by a malware instance will allow for the accurate discernment of the threat that the malware poses to an organization and its infrastructure.</p>
 	  ▪ <a class="btn btn-primary" href="cyber_threat_analysis/attribution">Attribution »</a>
 	  <p></p>
       ▪ <a class="btn btn-primary" href="cyber_threat_analysis/malware_threat_scoring_system">Malware Threat Scoring System »</a>
