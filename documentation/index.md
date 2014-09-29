@@ -20,5 +20,10 @@ title: Documentation
       <p>MAEC suggested practices illustrate ...</p>
       <a class="btn btn-primary" href="suggested_practices">Go »</a>
     </div>
+	    <div class="well">
+      <h4><a href="data_model_overview">Data Model Overview</a></h4>
+      <p>The MAEC data model...</p>
+      <a class="btn btn-primary" href="data_model_overview">Go »</a>
+    </div>
   </div>
 </div>
