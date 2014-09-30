@@ -44,7 +44,7 @@ The MAEC Bundle XML schema (namesake of the MAEC Bundle data model) is currently
 <figcaption><b>MAEC Bundle schema overview</b></figcaption>
 </center>
 
-A MAEC Bundle is very flexible and can be used to describe anything from a particular insertion method (composed of several low-level Actions and mid-level Behaviors) to any or all of the attributes listed in the figure.  A MAEC Bundle can contain intelligence-derived indicators as well as other signatures and patterns useful in network and host-based intrusion detection.  High level definitions of the basic components of the MAEC Bundle schema are given below.
+A MAEC Bundle is very flexible and can be used to describe anything from a particular insertion method (composed of several low-level Actions and mid-level Behaviors) to any or all of the attributes listed in the figure.  A MAEC Bundle can contain intelligence-derived indicators as well as other signatures and patterns useful in network and host-based intrusion detection.  The structure of the MAEC Bundle schema is provided in detail in the <a href="http://maec.mitre.org/language/version4.1/MAEC_Bundle_Spec_v4_1.pdf">MAEC Bundle Specification</a>, but high level definitions of the basic components are given below.
 
 <ul>
 <li><u>Malware Instance Object Attributes</u> – Captures details of the malware instance that the MAEC Bundle characterizes using its enumerations and schema. Most commonly, this is a file object with a few attributes, such as name, size, and cryptographic hashes.
