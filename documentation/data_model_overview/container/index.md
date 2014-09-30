@@ -10,7 +10,7 @@ The MAEC Container data model enables a user to share any collection of MAEC cha
 The MAEC Container XML schema is currently the standard output format that can be used to share any collection of MAEC data.  As illustrated, the content of a MAEC Container simply includes a set of MAEC Packages.
 
 <center>
-<img src="cformat.png" alt="MAEC Container data model" height="179" width="400"/>
+<img src="cformat.png" alt="MAEC Container data model" height="116" width="260"/>
 <figcaption><b>MAEC Container schema overview</b></figcaption>
 </center>
 
