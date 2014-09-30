@@ -3,7 +3,7 @@ layout: flat
 title: Overview of the MAEC Bundle Data Model
 ---
 
-The MAEC Bundle data model provides the ability to capture and share data obtained from the analysis of a single malware instance.  In terms of its most elemental structure, the MAEC Bundle data model can be thought of as having three interconnected layers, as shown in the figure.  
+The MAEC Bundle data model provides the ability to capture and share data obtained from the analysis of a single malware instance.  In terms of its most elemental structure, the MAEC Bundle data model can be thought of as having three interconnected layers.  
 
 <img src="overview.png" alt="MAEC Bundle data model" class="aside-text" height="312" width="550"/>
 
@@ -32,22 +32,15 @@ Once higher order classifications are made, we envision that the Capabilities ta
 
 ## <a name="exmap"></a> Example Mapping
 
-<table>
-<tr>
-<td>
 <img src="exmap.png" alt="MAEC mapping example" class="aside-text" height="250" width="440"/>
-</td>
-<td>
-As a very simple example of how a malicious activity can be mapped between the MAEC Bundle levels, let’s say that a malware instance calls the Windows “CreateFile“ API to create the file “xyz.dll.” This event would first be mapped to the ‘Create File’ Action, and after further investigation, we might conclude that this file was created as a means of instantiating a malicious binary on a system, thus mapping to a ‘Malicious Binary Instantiation’ Behavior.  Finally, the ‘Malicious Binary Instantiation’ Behavior could be considered part of a malware ‘Persistence’ Capability.  This is illustrated in the figure below.
-</td>
-</tr>
-</table>
+
+As a very simple example of how a malicious activity can be mapped between the MAEC Bundle levels, let’s say that a malware instance calls the Windows “CreateFile“ API to create the file “xyz.dll.” This event would first be mapped to the ‘Create File’ Action, and after further investigation, we might conclude that this file was created as a means of instantiating a malicious binary on a system, thus mapping to a ‘Malicious Binary Instantiation’ Behavior.  Finally, the ‘Malicious Binary Instantiation’ Behavior could be considered part of a malware ‘Persistence’ Capability.
 
 ## <a name="bformat"></a> The MAEC Bundle Output Format
 The MAEC Bundle XML schema (namesake of the MAEC Bundle data model) is currently the standard output format that can be used to describe a single malware instance as a MAEC Bundle schema instance.  As shown in Figure 2 4, the MAEC Bundle schema serves as a container and transport mechanism for use in storing and subsequently sharing MAEC-encoded information about malware, which may include MAEC Actions, Behaviors, and Capabilities as well as other attributes obtained from the characterization of a malware instance.
 
 <center>
-<img src="bformat.png" alt="MAEC Bundle data model" height="350" width="350"/>
+<img src="bformat.png" alt="MAEC Bundle data model" height="250" width="250"/>
 <figcaption><b>MAEC Bundle schema overview</b></figcaption>
 </center>
 
