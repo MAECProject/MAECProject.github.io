@@ -32,9 +32,16 @@ Once higher order classifications are made, we envision that the Capabilities ta
 
 ## <a name="exmap"></a> Example Mapping
 
+<table>
+<tr>
+<td>
 <img src="exmap.png" alt="MAEC mapping example" class="aside-text" height="250" width="440"/>
-
+</td>
+<td>
 As a very simple example of how a malicious activity can be mapped between the MAEC Bundle levels, let’s say that a malware instance calls the Windows “CreateFile“ API to create the file “xyz.dll.” This event would first be mapped to the ‘Create File’ Action, and after further investigation, we might conclude that this file was created as a means of instantiating a malicious binary on a system, thus mapping to a ‘Malicious Binary Instantiation’ Behavior.  Finally, the ‘Malicious Binary Instantiation’ Behavior could be considered part of a malware ‘Persistence’ Capability.  This is illustrated in the figure below.
+</td>
+</tr>
+</table>
 
 ## <a name="bformat"></a> The MAEC Bundle Output Format
 The MAEC Bundle XML schema (namesake of the MAEC Bundle data model) is currently the standard output format that can be used to describe a single malware instance as a MAEC Bundle schema instance.  As shown in Figure 2 4, the MAEC Bundle schema serves as a container and transport mechanism for use in storing and subsequently sharing MAEC-encoded information about malware, which may include MAEC Actions, Behaviors, and Capabilities as well as other attributes obtained from the characterization of a malware instance.
@@ -51,7 +58,7 @@ A MAEC Bundle is very flexible and can be used to describe anything from a parti
 <li><u>AV Classifications</u> – Captures any Anti-Virus scanner tool classifications of the malware instance.
 <li><u>Process Tree</u> – Specifies the observed process tree of execution for the malware instance.
 <li><u>Capabilities</u> – Encompasses all of the MAEC Capabilities in the MAEC Bundle.  Each Capability entity can contain information such as properties, Strategic and Tactical Objectives associated with the Capability (defined next), related Behaviors, and relationships to other Capabilities.
-<li><ul>
+<ul>
 <li><u>Strategic Objective</u> – Capture the details of a Capability with additional granularity.  A Capability can have one or more Strategic Objectives that it attempts to carry out. 
 <li><u>Tactical Objective</u> – Capture the details of a Strategic Objective with additional granularity.  A Strategic Objective can have one or more Tactical Objectives associated with it, which further define the Strategic Objective.
 </ul>
