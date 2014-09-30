@@ -20,7 +20,9 @@ title: Documentation
       <p>MAEC suggested practices illustrate ...</p>
       <a class="btn btn-primary" href="suggested_practices">Go »</a>
     </div>
-	    <div class="well">
+  </div>
+  <div class="col-md-6">
+	<div class="well">
       <h4><a href="data_model_overview">Data Model Overview</a></h4>
       <p>The MAEC Language is defined by three data models and a default set of controlled vocabularies.</p>
       <a class="btn btn-primary" href="data_model_overview">Go »</a>
