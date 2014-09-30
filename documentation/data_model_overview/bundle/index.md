@@ -79,11 +79,15 @@ A MAEC Bundle is very flexible and can be used to describe anything from a parti
 <u>Capabilities</u> – Encompasses all of the MAEC Capabilities in the MAEC Bundle.  Each Capability entity can contain information such as properties, Strategic and Tactical Objectives associated with the Capability (defined next), related Behaviors, and relationships to other Capabilities.
 </td>
 </tr>
-</table>
+<tr>
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<td>
 <table>
 <tr>
 <td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </td>
 <td>
 <u>Strategic Objective</u> – Capture the details of a Capability with additional granularity.  A Capability can have one or more Strategic Objectives that it attempts to carry out. 
@@ -91,14 +95,15 @@ A MAEC Bundle is very flexible and can be used to describe anything from a parti
 </tr>
 <tr>
 <td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </td>
 <td>
 <u>Tactical Objective</u> – Capture the details of a Strategic Objective with additional granularity.  A Strategic Objective can have one or more Tactical Objectives associated with it, which further define the Strategic Objective. 
 </td>
 </tr>
 </table>
-<table>
+</td>
+</tr>
 <tr>
 <td>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
