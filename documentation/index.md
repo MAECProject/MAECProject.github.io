@@ -22,7 +22,7 @@ title: Documentation
     </div>
 	    <div class="well">
       <h4><a href="data_model_overview">Data Model Overview</a></h4>
-      <p>The MAEC data model...</p>
+      <p>The MAEC Language is defined by three data models and a default set of controlled vocabularies.</p>
       <a class="btn btn-primary" href="data_model_overview">Go »</a>
     </div>
   </div>
