@@ -46,5 +46,5 @@ A MAEC Bundle is very flexible and can be used to describe anything from a parti
 
 High level definitions of the basic components of the MAEC Bundle schema are given below.
 
-•	<u>Malware Instance Object Attributes</u> – Captures details of the malware instance that the MAEC Bundle characterizes using its enumerations and schema. Most commonly, this is a file object with a few attributes, such as name, size, and cryptographic hashes.
+<u>Malware Instance Object Attributes</u> – Captures details of the malware instance that the MAEC Bundle characterizes using its enumerations and schema. Most commonly, this is a file object with a few attributes, such as name, size, and cryptographic hashes.
 
