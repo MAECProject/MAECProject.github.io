@@ -49,25 +49,40 @@ A MAEC Bundle is very flexible and can be used to describe anything from a parti
 <table>
 <tr>
 <td>
-▪ <u>Malware Instance Object Attributes</u> – Captures details of the malware instance that the MAEC Bundle characterizes using its enumerations and schema. Most commonly, this is a file object with a few attributes, such as name, size, and cryptographic hashes.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<td>
+<u>Malware Instance Object Attributes</u> – Captures details of the malware instance that the MAEC Bundle characterizes using its enumerations and schema. Most commonly, this is a file object with a few attributes, such as name, size, and cryptographic hashes.
 </td>
 </tr>
 <tr>
 <td>
-▪ <u>AV Classifications</u> – Captures any Anti-Virus scanner tool classifications of the malware instance.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<td>
+<u>AV Classifications</u> – Captures any Anti-Virus scanner tool classifications of the malware instance.
 </td>
 </tr>
 <tr>
 <td>
-▪ <u>Process Tree</u> – Specifies the observed process tree of execution for the malware instance.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<td>
+<u>Process Tree</u> – Specifies the observed process tree of execution for the malware instance.
 </td>
 </tr>
 <tr>
 <td>
-▪ <u>Capabilities</u> – Encompasses all of the MAEC Capabilities in the MAEC Bundle.  Each Capability entity can contain information such as properties, Strategic and Tactical Objectives associated with the Capability (defined next), related Behaviors, and relationships to other Capabilities.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<td>
+<u>Capabilities</u> – Encompasses all of the MAEC Capabilities in the MAEC Bundle.  Each Capability entity can contain information such as properties, Strategic and Tactical Objectives associated with the Capability (defined next), related Behaviors, and relationships to other Capabilities.
 </td>
 </tr>
 <tr>
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
 <td>
 <table>
 <tr>
@@ -91,27 +106,42 @@ A MAEC Bundle is very flexible and can be used to describe anything from a parti
 </tr>
 <tr>
 <td>
-▪ <u>Behaviors</u> – Encompasses all of the MAEC Behaviors in the MAEC Bundle.  Each Behavior entity can contain information such as a textual description of the Behavior, related Actions, and relationships to other Behaviors.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<td>
+<u>Behaviors</u> – Encompasses all of the MAEC Behaviors in the MAEC Bundle.  Each Behavior entity can contain information such as a textual description of the Behavior, related Actions, and relationships to other Behaviors.
 </td>
 </tr>
 <tr>
 <td>
-▪ <u>Actions</u> – Encompasses all of the MAEC Actions in the MAEC Bundle.  Each Action entity can contain information such as the type of Action that it represents (e.g., ‘create file’, ‘copy file’), discovery method and associated tools, and relationships to other Actions.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<td>
+<u>Actions</u> – Encompasses all of the MAEC Actions in the MAEC Bundle.  Each Action entity can contain information such as the type of Action that it represents (e.g., ‘create file’, ‘copy file’), discovery method and associated tools, and relationships to other Actions.
 </td>
 </tr>
 <tr>
 <td>
-▪ <u>Objects</u> – Encompasses all of the MAEC Objects in the MAEC Bundle.  Each Object entity can contain information such as the type of Object that it represents (e.g., ‘file’, ‘process’), specific properties of the Object (e.g., ‘file name’, ‘process name’), and relationships to other Objects.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<td>
+<u>Objects</u> – Encompasses all of the MAEC Objects in the MAEC Bundle.  Each Object entity can contain information such as the type of Object that it represents (e.g., ‘file’, ‘process’), specific properties of the Object (e.g., ‘file name’, ‘process name’), and relationships to other Objects.
 </td>
 </tr>
 <tr>
 <td>
-▪ <u>Candidate Indicators</u> – Encompasses all of the MAEC Candidate Indicators in the Bundle.  Each Candidate Indicator entity can contain information such as importance, author, description, and target information.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<td>
+<u>Candidate Indicators</u> – Encompasses all of the MAEC Candidate Indicators in the Bundle.  Each Candidate Indicator entity can contain information such as importance, author, description, and target information.
 </td>
 </tr>
 <tr>
 <td>
-▪ <u>Collections</u> – Encompasses all of the MAEC Collections in the MAEC Bundle: Behavior Collections, Action Collections, Object Collections, and Candidate Indicator Collections.  Each Collection entity can contain information such as a text description of the Collection, a characterization of how the elements are related, and a list of the Behaviors/Actions/Objects/Candidate Indicators themselves.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<td>
+<u>Collections</u> – Encompasses all of the MAEC Collections in the MAEC Bundle: Behavior Collections, Action Collections, Object Collections, and Candidate Indicator Collections.  Each Collection entity can contain information such as a text description of the Collection, a characterization of how the elements are related, and a list of the Behaviors/Actions/Objects/Candidate Indicators themselves.
 </td>
 </tr>
 </table>
