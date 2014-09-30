@@ -31,14 +31,15 @@ For example, ensuring that a malware instance is executed at start-up (e.g., by 
 Once higher order classifications are made, we envision that the Capabilities taxonomy will have “views” intended for different target audiences. For example, forensic analysts may only be interested in looking at malware payload Capabilities and Behaviors, while a SOC analyst might want to view Capabilities and Behaviors related to command and control.
 
 ## <a name="exmap"></a> Example Mapping
-As a very simple example of how a malicious activity can be mapped between the MAEC Bundle levels, let’s say that a malware instance calls the Windows “CreateFile“ API to create the file “xyz.dll.” This event would first be mapped to the ‘Create File’ Action, and after further investigation, we might conclude that this file was created as a means of instantiating a malicious binary on a system, thus mapping to a ‘Malicious Binary Instantiation’ Behavior.  Finally, the ‘Malicious Binary Instantiation’ Behavior could be considered part of a malware ‘Persistence’ Capability.  This is illustrated in the figure below.
 
-<img src="exmap.png" alt="MAEC mapping example" align="middle" height="312" width="550"/>
+<img src="exmap.png" alt="MAEC mapping example" class="aside-text" height="312" width="550"/>
+
+As a very simple example of how a malicious activity can be mapped between the MAEC Bundle levels, let’s say that a malware instance calls the Windows “CreateFile“ API to create the file “xyz.dll.” This event would first be mapped to the ‘Create File’ Action, and after further investigation, we might conclude that this file was created as a means of instantiating a malicious binary on a system, thus mapping to a ‘Malicious Binary Instantiation’ Behavior.  Finally, the ‘Malicious Binary Instantiation’ Behavior could be considered part of a malware ‘Persistence’ Capability.  This is illustrated in the figure below.
 
 ## <a name="bformat"></a> The MAEC Bundle Output Format
 The MAEC Bundle XML schema (namesake of the MAEC Bundle data model) is currently the standard output format that can be used to describe a single malware instance as a MAEC Bundle schema instance.  As shown in Figure 2 4, the MAEC Bundle schema serves as a container and transport mechanism for use in storing and subsequently sharing MAEC-encoded information about malware, which may include MAEC Actions, Behaviors, and Capabilities as well as other attributes obtained from the characterization of a malware instance.
 
-<img src="bformat.png" alt="MAEC Bundle data model" align="center" height="350" width="350"/>
+<img src="bformat.png" alt="MAEC Bundle data model" height="350" width="350"/>
 <figcaption>MAEC Bundle schema overview</figcaption>
 
 A MAEC Bundle is very flexible and can be used to describe anything from a particular insertion method (composed of several low-level Actions and mid-level Behaviors) to any or all of the attributes listed in the figure.  A MAEC Bundle can contain intelligence-derived indicators as well as other signatures and patterns useful in network and host-based intrusion detection.
@@ -46,14 +47,23 @@ A MAEC Bundle is very flexible and can be used to describe anything from a parti
 High level definitions of the basic components of the MAEC Bundle schema are given below.
 
 ▪ <u>Malware Instance Object Attributes</u> – Captures details of the malware instance that the MAEC Bundle characterizes using its enumerations and schema. Most commonly, this is a file object with a few attributes, such as name, size, and cryptographic hashes.
+
 ▪ <u>AV Classifications</u> – Captures any Anti-Virus scanner tool classifications of the malware instance.
+
 ▪ <u>Process Tree</u> – Specifies the observed process tree of execution for the malware instance.
+
 ▪ <u>Capabilities</u> – Encompasses all of the MAEC Capabilities in the MAEC Bundle.  Each Capability entity can contain information such as properties, Strategic and Tactical Objectives associated with the Capability (defined next), related Behaviors, and relationships to other Capabilities.
+
 <p class="tab"></p><u>Strategic Objectives</u> – Capture the details of a Capability with additional granularity.  A Capability can have one or more Strategic Objectives that it attempts to carry out. 
+
 ▪ <u>Behaviors</u> – Encompasses all of the MAEC Behaviors in the MAEC Bundle.  Each Behavior entity can contain information such as a textual description of the Behavior, related Actions, and relationships to other Behaviors.
+
 ▪ <u>Actions</u> – Encompasses all of the MAEC Actions in the MAEC Bundle.  Each Action entity can contain information such as the type of Action that it represents (e.g., ‘create file’, ‘copy file’), discovery method and associated tools, and relationships to other Actions.
+
 ▪ <u>Objects</u> – Encompasses all of the MAEC Objects in the MAEC Bundle.  Each Object entity can contain information such as the type of Object that it represents (e.g., ‘file’, ‘process’), specific properties of the Object (e.g., ‘file name’, ‘process name’), and relationships to other Objects.
+
 ▪ <u>Candidate Indicators</u> – Encompasses all of the MAEC Candidate Indicators in the Bundle.  Each Candidate Indicator entity can contain information such as importance, author, description, and target information.
+
 ▪ <u>Collections</u> – Encompasses all of the MAEC Collections in the MAEC Bundle: Behavior Collections, Action Collections, Object Collections, and Candidate Indicator Collections.  Each Collection entity can contain information such as a text description of the Collection, a characterization of how the elements are related, and a list of the Behaviors/Actions/Objects/Candidate Indicators themselves.
 
 A MAEC Bundle can be used to encompass a set of malware attributes with a particular significance (e.g., a persistence-related Behavior), or it can simply serve as a generic container for MAEC-characterized malware data pertaining to a single malware instance. Therefore, it can be used with as little or as much information as desired; any further meaning beyond the explicit data stored in the MAEC Bundle is determined by its producer.
