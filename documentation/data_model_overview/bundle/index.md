@@ -46,26 +46,38 @@ The MAEC Bundle XML schema (namesake of the MAEC Bundle data model) is currently
 
 A MAEC Bundle is very flexible and can be used to describe anything from a particular insertion method (composed of several low-level Actions and mid-level Behaviors) to any or all of the attributes listed in the figure.  A MAEC Bundle can contain intelligence-derived indicators as well as other signatures and patterns useful in network and host-based intrusion detection.  High level definitions of the basic components of the MAEC Bundle schema are given below.
 
+<table>
+<tr>
 ▪ <u>Malware Instance Object Attributes</u> – Captures details of the malware instance that the MAEC Bundle characterizes using its enumerations and schema. Most commonly, this is a file object with a few attributes, such as name, size, and cryptographic hashes.
-
+</tr>
+<tr>
 ▪ <u>AV Classifications</u> – Captures any Anti-Virus scanner tool classifications of the malware instance.
-
+</tr>
+<tr>
 ▪ <u>Process Tree</u> – Specifies the observed process tree of execution for the malware instance.
-
+</tr>
+<tr>
 ▪ <u>Capabilities</u> – Encompasses all of the MAEC Capabilities in the MAEC Bundle.  Each Capability entity can contain information such as properties, Strategic and Tactical Objectives associated with the Capability (defined next), related Behaviors, and relationships to other Capabilities.
-
+</tr>
+<tr>
 <p class="tab"><u>▪ Strategic Objectives</u> – Capture the details of a Capability with additional granularity.  A Capability can have one or more Strategic Objectives that it attempts to carry out.</p> 
-
+</tr>
+<tr>
 ▪ <u>Behaviors</u> – Encompasses all of the MAEC Behaviors in the MAEC Bundle.  Each Behavior entity can contain information such as a textual description of the Behavior, related Actions, and relationships to other Behaviors.
-
+</tr>
+<tr>
 ▪ <u>Actions</u> – Encompasses all of the MAEC Actions in the MAEC Bundle.  Each Action entity can contain information such as the type of Action that it represents (e.g., ‘create file’, ‘copy file’), discovery method and associated tools, and relationships to other Actions.
-
+</tr>
+<tr>
 ▪ <u>Objects</u> – Encompasses all of the MAEC Objects in the MAEC Bundle.  Each Object entity can contain information such as the type of Object that it represents (e.g., ‘file’, ‘process’), specific properties of the Object (e.g., ‘file name’, ‘process name’), and relationships to other Objects.
-
+</tr>
+<tr>
 ▪ <u>Candidate Indicators</u> – Encompasses all of the MAEC Candidate Indicators in the Bundle.  Each Candidate Indicator entity can contain information such as importance, author, description, and target information.
-
+</tr>
+<tr>
 ▪ <u>Collections</u> – Encompasses all of the MAEC Collections in the MAEC Bundle: Behavior Collections, Action Collections, Object Collections, and Candidate Indicator Collections.  Each Collection entity can contain information such as a text description of the Collection, a characterization of how the elements are related, and a list of the Behaviors/Actions/Objects/Candidate Indicators themselves.
-
+</tr>
+</table>
 A MAEC Bundle can be used to encompass a set of malware attributes with a particular significance (e.g., a persistence-related Behavior), or it can simply serve as a generic container for MAEC-characterized malware data pertaining to a single malware instance. Therefore, it can be used with as little or as much information as desired; any further meaning beyond the explicit data stored in the MAEC Bundle is determined by its producer.
 
 Note that instead of capturing all malware attributes associated with a malware instance in a single MAEC Bundle, a user may have a need to use multiple MAEC Bundles.  For example, a user may choose to use several different tools in the analysis of the malware instance, each of which creates a separate MAEC Bundle. In this case, the collection of MAEC Bundles can be shared as part of a MAEC Package, described next in Section 2.2. However, it is also perfectly valid to merge multiple MAEC Bundles into a single MAEC Bundle, if so desired.  Identifiers should be preserved so that after merging, it will be possible to determine the original source Bundle of a particular entity through its identifier.
