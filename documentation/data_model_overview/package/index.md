@@ -17,7 +17,7 @@ As shown in the figure, a MAEC Package encompasses one or more Malware Subjects,
 The MAEC Package XML schema is currently the standard output format that can be used to describe one or more Malware Subjects using MAEC’s enumerations and schema.  As illustrated, the content of a MAEC Package includes a set of Malware Subjects and Grouping Relationship information, where the content of a Malware Subject includes additional information:  Malware Instance Object Attributes, labels, configuration details, development environment details, minor variant information, field data, analysis information, MAEC Bundles associated with the Malware Subject, information about the relationships between the Malware Subject of focus and other Malware Subjects, and compatible platform information.  In essence, a MAEC Package enables MAEC Bundle management, allowing users to share multiple MAEC Bundles and associated metadata for one or more Malware Subjects.
 
 <center>
-<img src="pformat.png" alt="MAEC Package data model" class="aside-text" height="443" width="400"/>
+<img src="pformat.png" alt="MAEC Package data model" height="443" width="400"/>
 <figcaption><b>MAEC Package schema overview</b></figcaption>
 </center>
 
