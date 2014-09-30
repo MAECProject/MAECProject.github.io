@@ -32,19 +32,19 @@ Once higher order classifications are made, we envision that the Capabilities ta
 
 ## <a name="exmap"></a> Example Mapping
 
-<img src="exmap.png" alt="MAEC mapping example" class="aside-text" height="312" width="550"/>
+<img src="exmap.png" alt="MAEC mapping example" class="aside-text" height="250" width="440"/>
 
 As a very simple example of how a malicious activity can be mapped between the MAEC Bundle levels, let’s say that a malware instance calls the Windows “CreateFile“ API to create the file “xyz.dll.” This event would first be mapped to the ‘Create File’ Action, and after further investigation, we might conclude that this file was created as a means of instantiating a malicious binary on a system, thus mapping to a ‘Malicious Binary Instantiation’ Behavior.  Finally, the ‘Malicious Binary Instantiation’ Behavior could be considered part of a malware ‘Persistence’ Capability.  This is illustrated in the figure below.
 
 ## <a name="bformat"></a> The MAEC Bundle Output Format
 The MAEC Bundle XML schema (namesake of the MAEC Bundle data model) is currently the standard output format that can be used to describe a single malware instance as a MAEC Bundle schema instance.  As shown in Figure 2 4, the MAEC Bundle schema serves as a container and transport mechanism for use in storing and subsequently sharing MAEC-encoded information about malware, which may include MAEC Actions, Behaviors, and Capabilities as well as other attributes obtained from the characterization of a malware instance.
 
+<center>
 <img src="bformat.png" alt="MAEC Bundle data model" height="350" width="350"/>
-<figcaption>MAEC Bundle schema overview</figcaption>
+<figcaption><b>MAEC Bundle schema overview</b></figcaption>
+</center>
 
-A MAEC Bundle is very flexible and can be used to describe anything from a particular insertion method (composed of several low-level Actions and mid-level Behaviors) to any or all of the attributes listed in the figure.  A MAEC Bundle can contain intelligence-derived indicators as well as other signatures and patterns useful in network and host-based intrusion detection.
-
-High level definitions of the basic components of the MAEC Bundle schema are given below.
+A MAEC Bundle is very flexible and can be used to describe anything from a particular insertion method (composed of several low-level Actions and mid-level Behaviors) to any or all of the attributes listed in the figure.  A MAEC Bundle can contain intelligence-derived indicators as well as other signatures and patterns useful in network and host-based intrusion detection.  High level definitions of the basic components of the MAEC Bundle schema are given below.
 
 ▪ <u>Malware Instance Object Attributes</u> – Captures details of the malware instance that the MAEC Bundle characterizes using its enumerations and schema. Most commonly, this is a file object with a few attributes, such as name, size, and cryptographic hashes.
 
@@ -54,7 +54,7 @@ High level definitions of the basic components of the MAEC Bundle schema are giv
 
 ▪ <u>Capabilities</u> – Encompasses all of the MAEC Capabilities in the MAEC Bundle.  Each Capability entity can contain information such as properties, Strategic and Tactical Objectives associated with the Capability (defined next), related Behaviors, and relationships to other Capabilities.
 
-<p class="tab"></p><u>Strategic Objectives</u> – Capture the details of a Capability with additional granularity.  A Capability can have one or more Strategic Objectives that it attempts to carry out. 
+<p class="tab"><u>▪ Strategic Objectives</u> – Capture the details of a Capability with additional granularity.  A Capability can have one or more Strategic Objectives that it attempts to carry out.</p> 
 
 ▪ <u>Behaviors</u> – Encompasses all of the MAEC Behaviors in the MAEC Bundle.  Each Behavior entity can contain information such as a textual description of the Behavior, related Actions, and relationships to other Behaviors.
 
