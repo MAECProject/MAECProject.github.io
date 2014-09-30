@@ -68,9 +68,16 @@ A MAEC Bundle is very flexible and can be used to describe anything from a parti
 </td>
 </tr>
 <tr>
+<table>
+<tr>
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
 <td>
 ▪ <u>Strategic Objectives</u> – Capture the details of a Capability with additional granularity.  A Capability can have one or more Strategic Objectives that it attempts to carry out. 
 </td>
+</tr>
+</table>
 </tr>
 <tr>
 <td>
