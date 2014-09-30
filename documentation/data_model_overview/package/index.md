@@ -10,7 +10,7 @@ Before we discuss the MAEC Package data model, we must define the Malware Subjec
 The MAEC Package data model enables a user to share MAEC characterized data for one or more Malware Subjects; in most such cases, the Malware Subjects are related in some manner.  For example, the Malware Subjects captured in a MAEC Package might include files that are created or dropped during a dynamic analysis, variants of the same malware family, or files that are identified as being similar by a clustering algorithm.  In addition to encompassing a collection of MAEC Bundles associated with each of the Malware Subjects, the MAEC Package data model also defines elements that enable the sharing of analysis and relationship information. 
 
 
-As shown in the figure, a MAEC Package encompasses one or more Malware Subjects, each which includes its own analysis metadata and MAEC Bundles (i.e., Findings Bundles, defined below). Also captured within the MAEC Package are any relationships between pairs of Malware Subjects, along with   relationship information for the entire collection of Malware Subjects (i.e., Grouping Relationships, defined below.
+As shown in the figure, a MAEC Package encompasses one or more Malware Subjects, each of which includes its own analysis metadata and MAEC Bundles (i.e., Findings Bundles, defined below). Also captured within the MAEC Package are any relationships between pairs of Malware Subjects, along with   relationship information for the entire collection of Malware Subjects (i.e., Grouping Relationships, defined below).
 
 ## The MAEC Package Output Format
 
@@ -24,7 +24,7 @@ The MAEC Package XML schema is currently the standard output format that can be 
 The structure of the MAEC Package schema is provided in detail in the <a href="http://maec.mitre.org/language/version4.1/MAEC_Package_Spec_v2_1.pdf">MAEC Package Specification</a>, but we give high level definitions for the basic components below:
 
 <ul>
-<li><u>Malware Subject</u> – represents a single malware object (most commonly a file) and its associated metadata:
+<li><u>Malware Subject</u> – Represents a single malware object (most commonly a file) and its associated metadata:
 <ul>
 <li><u>Malware Instance Object Attributes</u> – Contains details of the specific properties of the malware instance characterized by the Malware Subject; for example, its MD5 hash.  Note that this information may be repeated in a MAEC Bundle if the MAEC Bundle is to be self-contained. 
 <li><u>Label</u> – Specifies a commonly accepted label to describe the Malware Subject, e.g., "worm." More than one label may be specified through the use of multiple instances of this field.
