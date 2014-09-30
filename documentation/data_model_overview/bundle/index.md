@@ -40,7 +40,7 @@ As a very simple example of how a malicious activity can be mapped between the M
 The MAEC Bundle XML schema (namesake of the MAEC Bundle data model) is currently the standard output format that can be used to describe a single malware instance as a MAEC Bundle schema instance.  As shown in Figure 2 4, the MAEC Bundle schema serves as a container and transport mechanism for use in storing and subsequently sharing MAEC-encoded information about malware, which may include MAEC Actions, Behaviors, and Capabilities as well as other attributes obtained from the characterization of a malware instance.
 
 <center>
-<img src="bformat.png" alt="MAEC Bundle data model" height="250" width="250"/>
+<img src="bformat.png" alt="MAEC Bundle data model" height="394" width="400"/>
 <figcaption><b>MAEC Bundle schema overview</b></figcaption>
 </center>
 
