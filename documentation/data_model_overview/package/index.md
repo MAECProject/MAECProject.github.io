@@ -5,19 +5,21 @@ title: Overview of the MAEC Package Data Model
 
 Before we discuss the MAEC Package data model, we must define the Malware Subject entity.  A Malware Subject contains details of a particular malware instance (e.g., a file as identified by MD5 and/or SHA1 hash), any minor variants of the same instance that may have been observed (e.g., the same file but with different names), along with all of the analyses that were performed on the instance, any findings generated from the analyses, and any other metadata.  As such, the Malware Subject is MAEC’s representation of a malware instance and all of the known data associated with it.
 
+<img src="overview.png" alt="MAEC Package data model" class="aside-text" height="330" width="600"/>
+
 The MAEC Package data model enables a user to share MAEC characterized data for one or more Malware Subjects; in most such cases, the Malware Subjects are related in some manner.  For example, the Malware Subjects captured in a MAEC Package might include files that are created or dropped during a dynamic analysis, variants of the same malware family, or files that are identified as being similar by a clustering algorithm.  In addition to encompassing a collection of MAEC Bundles associated with each of the Malware Subjects, the MAEC Package data model also defines elements that enable the sharing of analysis and relationship information. 
 
 <center>
-<img src="overview.png" alt="MAEC Package data model" class="aside-text" height="330" width="600"/>
+
 </center>
 
-As shown in the figure, a MAEC Package encompasses one or more Malware Subjects, each which includes its own analysis metadata and MAEC Bundles (i.e., Findings Bundles, defined below). Also captured within the MAEC Package are any relationships between pairs of Malware Subjects, along with   relationship information for the entire collection of Malware Subjects (i.e., Grouping Relationships, defined <a href="#grprel">below</a>).
+As shown in the figure, a MAEC Package encompasses one or more Malware Subjects, each which includes its own analysis metadata and MAEC Bundles (i.e., Findings Bundles, defined below). Also captured within the MAEC Package are any relationships between pairs of Malware Subjects, along with   relationship information for the entire collection of Malware Subjects (i.e., Grouping Relationships, defined below.
 
-## <a name="bformat"></a> The MAEC Package Output Format
+## The MAEC Package Output Format
 The MAEC Package XML schema is currently the standard output format that can be used to describe one or more Malware Subjects using MAEC’s enumerations and schema.  As illustrated, the content of a MAEC Package includes a set of Malware Subjects and Grouping Relationship information, where the content of a Malware Subject includes additional information:  Malware Instance Object Attributes, labels, configuration details, development environment details, minor variant information, field data, analysis information, MAEC Bundles associated with the Malware Subject, information about the relationships between the Malware Subject of focus and other Malware Subjects, and compatible platform information.  In essence, a MAEC Package enables MAEC Bundle management, allowing users to share multiple MAEC Bundles and associated metadata for one or more Malware Subjects
 
 <center>
-<img src="pformat.png" alt="MAEC Package data model" height="300" width="300"/>
+<img src="pformat.png" alt="MAEC Package data model" height="443" width="400"/>
 <figcaption><b>MAEC Package schema overview</b></figcaption>
 </center>
 

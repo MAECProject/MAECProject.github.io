@@ -52,8 +52,8 @@ A MAEC Bundle is very flexible and can be used to describe anything from a parti
 <li><u>Process Tree</u> – Specifies the observed process tree of execution for the malware instance.
 <li><u>Capabilities</u> – Encompasses all of the MAEC Capabilities in the MAEC Bundle.  Each Capability entity can contain information such as properties, Strategic and Tactical Objectives associated with the Capability (defined next), related Behaviors, and relationships to other Capabilities.
 <ul>
-<li><u>Strategic Objective</u> – Capture the details of a Capability with additional granularity.  A Capability can have one or more Strategic Objectives that it attempts to carry out. 
-<li><u>Tactical Objective</u> – Capture the details of a Strategic Objective with additional granularity.  A Strategic Objective can have one or more Tactical Objectives associated with it, which further define the Strategic Objective.
+<li><u>Strategic Objective</u> – Captures the details of a Capability with additional granularity.  A Capability can have one or more Strategic Objectives that it attempts to carry out. 
+<li><u>Tactical Objective</u> – Captures the details of a Strategic Objective with additional granularity.  A Strategic Objective can have one or more Tactical Objectives associated with it, which further define the Strategic Objective.
 </ul>
 <li><u>Behaviors</u> – Encompasses all of the MAEC Behaviors in the MAEC Bundle.  Each Behavior entity can contain information such as a textual description of the Behavior, related Actions, and relationships to other Behaviors.
 <li><u>Actions</u> – Encompasses all of the MAEC Actions in the MAEC Bundle.  Each Action entity can contain information such as the type of Action that it represents (e.g., ‘create file’, ‘copy file’), discovery method and associated tools, and relationships to other Actions.
