@@ -17,7 +17,7 @@ title: Documentation
     </div>
     <div class="well">
       <h4><a href="suggested_practices">Suggested Practices</a></h4>
-      <p>MAEC suggested practices illustrate ...</p>
+      <p>MAEC suggested practices (often called best practices) are guidelines that will help you create MAEC content that conforms to the MAEC design goals and ensures the best compatibility with other MAEC tooling.</p>
       <a class="btn btn-primary" href="suggested_practices">Go »</a>
     </div>
   </div>
