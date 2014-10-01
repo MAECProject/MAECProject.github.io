@@ -118,18 +118,9 @@ hr.separator {
   margin-left: 15px;
 }
 
-.small-aside-text {
+.sm-aside-text {
   float: right;
-  margin-left: 5px;
-}
-
-.left-aside-text {
-  float: left;
-  margin-right: 5px;
-}
-
-tbody{
-border-top:0;
+  margin-left: 0px;
 }
 
 h1, h2 {
