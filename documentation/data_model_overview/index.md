@@ -5,9 +5,16 @@ title: Overview of the MAEC Data Models
 
 The MAEC Language is defined by three data models, each of which is implemented in its own XML schema.  There is also a default vocabularies schema, which defines a default set of controlled vocabularies used within MAEC.  
 
-<img src="datamodels.png" alt="MAEC data models" class="small-aside-text" height="235" width="350"/>
-
-As illustrated above, “MAEC Bundle” is the (lowest) Tier 1 data model; “MAEC Package” is the (middle) Tier 2 data model; and “MAEC Container” is the (highest) Tier 3 data model.  All three data models offer a stand-alone output format, so a lower level model can be used without the higher tier data model (although each model level requires all lower tiers).  This three-tiered structure provides flexibility in the type and amount of information that can be shared.  
+<table>
+<tr>
+As illustrated, “MAEC Bundle” is the (lowest) Tier 1 data model; “MAEC Package” is the (middle) Tier 2 data model; and “MAEC Container” is the (highest) Tier 3 data model.  All three data models offer a stand-alone output format, so a lower level model can be used without the higher tier data model (although each model level requires all lower tiers).  This three-tiered structure provides flexibility in the type and amount of information that can be shared.
+<td>
+</td>
+<td>
+<img src="datamodels.png" alt="MAEC data models" height="235" width="350"/>
+</td>
+</tr>
+</table>  
 
 <p></p>
 
