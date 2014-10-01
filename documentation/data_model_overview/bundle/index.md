@@ -5,7 +5,7 @@ title: Overview of the MAEC Bundle Data Model
 
 The MAEC Bundle data model provides the ability to capture and share data obtained from the analysis of a single malware instance.  In terms of its most elemental structure, the MAEC Bundle data model can be thought of as having three interconnected layers as illustrated in the figure.
 
-<img src="overview.png" alt="MAEC Bundle data model" class="small-aside-text" height="312" width="550"/>
+<img src="overview.png" alt="MAEC Bundle data model" class="aside-text" height="312" width="550"/>
 
 While the MAEC Bundle data model also includes other components, the Actions, Behaviors, and Capabilities are the central pieces of its underlying structure, and so we discuss each in further detail below.  
 
