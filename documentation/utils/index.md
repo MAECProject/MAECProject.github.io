@@ -29,10 +29,12 @@ The `Anubis to MAEC` utility generates MAEC Package output from an [Anubis](http
 Compatibility:  MAEC schema v4.1 and CybOX 2.1
 
 ### GFI Sandbox to MAEC
+The `GFI Sandbox to MAEC` utility generates MAEC Package output from a GFI Sandbox v4 XML file.
+
+Compatibility:  MAEC schema v4.1 and CybOX 2.1
 
 ### pefile to MAEC 
-
-The `pefile to MAEC` utility is a Java FX application, which can perform STIX XML Schema validation via a graphical user interface.
+The `pefile to MAEC` utility...
 
 * Compatibility:  MAEC v4.1 and CybOX 2.1  
 * Dependencies:  [python-maec](https://github.com/MAECProject/python-maec), [python-cybox](https://github.com/CybOXProject/python-cybox)
@@ -55,14 +57,10 @@ Compatibility:  MAEC v4.1 and CybOX 2.1
 * [Source Code](https://github.com/MAECProject/vt-to-maec)
 
 ## Programmatic Support
-The STIX project develops and maintains APIs which aid developers in parsing, creating, and manipulating MAEC content.
+The MAEC project develops and maintains APIs which aid developers in parsing, creating, and manipulating MAEC content.
 
 ### Python APIs (python-maec)
 
-The `python-maec` APIs provide [machine-generated bindings and higher-level APIs](http://stix.readthedocs.org/en/latest/api_vs_bindings/index.html) which aid in the creation, consumption, and manipulation of STIX content. STIX documents can be serialized to and from Python dictionaries, JSON, and schema-valid XML documents.
+The `python-maec` APIs provide machine-generated bindings and higher-level APIs that aid in the creation, consumption, and manipulation of MAEC content.
 
-Our hope is to lift developers above the XML and allow them to focus on creating and parsing cyber threat intelligence as STIX without having to worry about things like XML namespaces, document ordering of elements, or schema locations.
-
-* [Source Code](https://github.com/STIXProject/python-stix)
-* [Releases](https://pypi.python.org/pypi/stix/)
-* [Documentation](http://stix.readthedocs.org/en/latest/)
+* [Source Code](https://github.com/MAECProject/python-maec)
