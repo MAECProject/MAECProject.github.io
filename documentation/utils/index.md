@@ -9,9 +9,7 @@ Output modification utilities help abstract away the current MAEC XML implementa
 ### STIX to HTML (MAEC to HTML)
 <i>The `MAEC to HTML` utility to convert MAEC XML to HTML has been deprecated, and the functionality of the utility has been incorporated into the STIX-to-HTML utility.</i>
 
-`STIX to HTML` is an XSLT stylesheet that can transform a STIX XML document (with MAEC content) into a human-readable HTML view. It was designed to be leveraged by developers, either as a mechanism for batch rendering STIX (MAEC) documents or to be embedded as a visualization component within a STIX-capable application.  For example, the `STIX to HTML`  transform is leveraged by [STIXViz](http://stixproject.github.io/documentation/utilities/#stixviz) to display the contents and details of individual components.
-
-Because `STIX to HTML` is an XSLT stylesheet, users must be familiar with XSLT or XSLT processing libraries/engines (e.g., Saxon or libxslt) in order to use it. Users not familiar with XSLT or how to run it against XML should download [STIXViz](http://stixproject.github.io/documentation/utilities/#stixviz) and leverage the `STIX to HTML` output that it includes.
+`STIX to HTML` is an XSLT stylesheet that can transform a STIX XML document (with MAEC content) into a human-readable HTML view. It was designed to be leveraged by developers, either as a mechanism for batch rendering STIX (MAEC) documents or to be embedded as a visualization component within a STIX-capable application.  Because `STIX to HTML` is an XSLT stylesheet, users must be familiar with XSLT or XSLT processing libraries/engines (e.g., Saxon or libxslt) in order to use it. 
 
 `STIX to HTML` was created by and for developers, and therefore, customization and extension capabilities have been prioritized. Documentation on how to customize `STIX to HTML` to fit your application or operational needs can be found in the usage guide.
 
@@ -84,7 +82,7 @@ The MAEC project develops and maintains an API to aid developers in parsing, cre
 ### python-maec
 The `python-maec` library provides two levels of APIs to help in the creation, consumption, and manipulation of MAEC content.  
 
-A low-level API is provided by auto-generated XML Schema-Python class bindings. Using these bindings, any CybOX content can be parsed from or written to XML, but the use of the bindings requires some knowledge of the actual MAEC schemas.
+A low-level API is provided by auto-generated XML Schema-Python class bindings. Using these bindings, any MAEC content can be parsed from or written to XML, but the use of the bindings requires some knowledge of the actual MAEC schemas.
 
 A higher-level API consists of manually designed Python classes. These "native classes" are intended to behave more like Python programmers would expect. Because they are designed manually, they currently do not support the entire MAEC standard; instead, they support only those Object types expected to be used most frequently. These "native classes" also support exporting their content as Python dictionaries and lists, which can easily be converted to JSON.  Importing from JSON is also supported.
 
