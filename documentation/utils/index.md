@@ -7,7 +7,7 @@ title: Utilities & Developer Resources
 Output modification utilities help abstract away the current MAEC XML implementation to provide alternate views for working with MAEC that either do not require XML knowledge or that translate MAEC into another standard language.
 
 ### STIX to HTML (MAEC to HTML)
-<i>The `MAEC to HTML` utility that converted MAEC XML to HTML has been deprecated, and the functionality of the utility has been incorporated into the STIX-to-HTML utility.</i>
+<i>The `MAEC to HTML` utility to convert MAEC XML to HTML has been deprecated, and the functionality of the utility has been incorporated into the STIX-to-HTML utility.</i>
 
 `STIX to HTML` is an XSLT stylesheet that can transform a STIX XML document (with MAEC content) into a human-readable HTML view. It was designed to be leveraged by developers, either as a mechanism for batch rendering STIX (MAEC) documents or to be embedded as a visualization component within a STIX-capable application.  For example, the `STIX to HTML`  transform is leveraged by [STIXViz](http://stixproject.github.io/documentation/utilities/#stixviz) to display the contents and details of individual components.
 
@@ -30,7 +30,7 @@ The utility is at the proof of concept stage of development.
 MAEC modules enable other malware analysis tools to natively generate MAEC content. 
 
 ### Cuckoo Sandbox
-[Cuckoo Sandbox](http://www.cuckoosandbox.org) is an automated dynamic malware analysis system.  The MAEC Cuckoo module enables Cuckoo to output MAEC output natively.  I.e., the module is available as a Cuckoo "reporting" module.
+[Cuckoo Sandbox](http://www.cuckoosandbox.org) is an automated dynamic malware analysis system.  The MAEC Cuckoo module enables Cuckoo to output MAEC output natively (i.e., the module is available as a Cuckoo "reporting" module).
 
 * [Source Code](https://github.com/MAECProject/cuckoo)
 * [Source Code](https://github.com/cuckoobox/cuckoo/tree/master/modules/reporting) (Cuckoo site)
