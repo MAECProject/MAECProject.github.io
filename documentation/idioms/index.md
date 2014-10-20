@@ -32,6 +32,11 @@ title: Idioms
       <p>This Idiom describes the process of capturing the results of dynamic analysis performed on some malware instance, such as through the use of a malware sandbox tool.</p>
       <a class="btn btn-primary" href="dynamic_analysis">Go »</a>
     </div>
+	    <div class="well">
+      <h4><a href="higher_level_analysis">Capturing Higher-level Analysis Results</a></h4>
+      <p>This Idiom describes the process of capturing higher-level malware analysis results, such as those that refer to the capabilities or behaviors exhibited by the malware.</p>
+      <a class="btn btn-primary" href="higher_level_analysis">Go »</a>
+    </div>
   </div>
   <div class="col-md-4">
 	<div class="well">
