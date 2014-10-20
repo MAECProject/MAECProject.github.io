@@ -1,10 +1,10 @@
 ---
 layout: flat
 title: Capturing Higher-level Analysis Results
-summary: This Idiom describes the process of capturing higher-level malware analysis results, such as those that refer to the capabilities or behaviors exhibited by the malware.
+summary: This Idiom describes the process of capturing results of in-depth malware analysis, such as that which characterizes the capabilities or behaviors exhibited by the malware.
 ---
 
-This Idiom describes the process of capturing higher-level malware analysis results, such as those that refer to the capabilities or behaviors exhibited by the malware. As with all analysis-derived results, those that encompass higher-level results can be captured through the use of a [MAEC Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType). 
+This Idiom describes the process of capturing results of in-depth malware analysis, such as that which characterizes the capabilities or behaviors exhibited by the malware. 
 
 ## Scenario
 
