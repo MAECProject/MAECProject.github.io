@@ -4,7 +4,7 @@ title: Idioms
 ---
 
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <div class="well">
       <h4><a href="bundle_creation">Basic Analysis Data Capture</a></h4>
       <p>This Idiom demonstrates how to capture analysis-derived data relating to a single malware instance, such as the actions that it performed, through the use of the MAEC Bundle entity.</p>
@@ -21,7 +21,7 @@ title: Idioms
       <a class="btn btn-primary" href="analysis_metadata">Go »</a>
     </div>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-4">
     <div class="well">
       <h4><a href="static_analysis">Static Analysis Capture</a></h4>
       <p>This Idiom describes the process of capturing the results of static analysis performed on some malware instance, such as through the use of a PE file analysis tool.</p>
@@ -33,7 +33,7 @@ title: Idioms
       <a class="btn btn-primary" href="dynamic_analysis">Go »</a>
     </div>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-4">
 	<div class="well">
       <h4><a href="av_classification">AV Classification Capture</a></h4>
       <p>This Idiom describes the process of capturing the classifications as reported by anti-virus (AV) tools when executed against a particular malware instance.</p>
