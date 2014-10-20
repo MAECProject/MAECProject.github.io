@@ -45,17 +45,31 @@ Next, let's explore the steps involved in capturing the keylogging capability; a
 ## XML
 
 {% highlight xml linenos %}
-
+<maecBundle:Capabilities>
+  <maecBundle:Capability id="example:capability-dc4a7c3a-4c54-45f5-8110-7e4fcee3b462" name="spying">
+    <maecBundle:Tactical_Objective id="example:tactical_objective-065bee75-5e43-4c66-918a-57eba1dab08c">
+      <maecBundle:Name xsi:type="maecVocabs:SpyingTacticalObjectivesVocab-1.0">capture keyboard input</maecBundle:Name>
+      <maecBundle:Behavior_Reference behavior_idref="example:behavior-cfb4d731-c6e2-4c8e-808d-111e1ba66962"/>
+    </maecBundle:Tactical_Objective>
+  </maecBundle:Capability>
+</maecBundle:Capabilities>
+<maecBundle:Behaviors>
+  <maecBundle:Behavior id="example:behavior-cfb4d731-c6e2-4c8e-808d-111e1ba66962">
+    <maecBundle:Action_Composition>
+	  <maecBundle:Action_Reference action_id="example:action-a48e58bb-f35d-4bf6-bb16-0e74061ac47e"/>
+	</maecBundle:Action_Composition>
+  </maecBundle:Behavior>
+</maecBundle:Behaviors>
 {% endhighlight %}
 
-[Full XML](maec_higher_level_analysis.xml)
+[Full XML](maec_in_depth_analysis.xml)
 ## Python
 
 {% highlight python linenos %}
 
 {% endhighlight %}
 
-[Full Python](maec_higher_level_analysis.py)
+[Full Python](maec_in_depth_analysis.py)
 
 ## Further Reading
 * [Creating a MAEC Bundle] (../bundle_creation)
