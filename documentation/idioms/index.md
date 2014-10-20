@@ -33,9 +33,9 @@ title: Idioms
       <a class="btn btn-primary" href="dynamic_analysis">Go »</a>
     </div>
 	    <div class="well">
-      <h4><a href="higher_level_analysis">Capturing Higher-level Analysis Results</a></h4>
-      <p>This Idiom describes the process of capturing higher-level malware analysis results, such as those that refer to the capabilities or behaviors exhibited by the malware.</p>
-      <a class="btn btn-primary" href="higher_level_analysis">Go »</a>
+      <h4><a href="in_depth_analysis">Capturing In-depth Analysis Results</a></h4>
+      <p>This Idiom describes the process of capturing results of in-depth malware analysis, such as that which characterizes the capabilities or behaviors exhibited by the malware.</p>
+      <a class="btn btn-primary" href="in_depth_analysis">Go »</a>
     </div>
   </div>
   <div class="col-md-4">
