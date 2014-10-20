@@ -66,7 +66,22 @@ Next, let's explore the steps involved in capturing the keylogging capability; a
 ## Python
 
 {% highlight python linenos %}
+# Create the behavior
+bhv = Behavior()
+bhv.action_composition = BehavioralActions()
+bhv.action_composition.action_reference = [BehavioralActionReference()]
+bhv.action_composition.action_reference[0].action_id = act.id_
 
+# Create the capability
+cap = Capability()
+cap.name = "spying"
+obj = CapabilityObjective()
+obj.name = VocabString()
+obj.name.value = "capture keyboard input"
+obj.name.xsi_type = "maecVocabs:SpyingTacticalObjectivesVocab-1.0"
+obj.behavior_reference = [BehaviorReference()]
+obj.behavior_reference[0].behavior_idref = bhv.id_
+cap.add_tactical_objective(obj)
 {% endhighlight %}
 
 [Full Python](maec_in_depth_analysis.py)
