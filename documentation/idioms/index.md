@@ -44,5 +44,10 @@ title: Idioms
       <p> This Idiom describes the process of an observed process tree of execution for a malware instance, as reported through a dynamic analysis or similar tool.</p>
       <a class="btn btn-primary" href="process_tree">Go »</a>
     </div>
+    <div class="well">
+      <h4><a href="related_malware">Capturing Related Malware</a></h4>
+      <p> This Idiom describes the process of characterizing multiple malware instances and the relationships between them.</p>
+      <a class="btn btn-primary" href="related_malware">Go »</a>
+    </div>
   </div>
 </div>
