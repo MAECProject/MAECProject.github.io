@@ -10,7 +10,14 @@ This Idiom describes the process of capturing the results of dynamic analysis pe
 
 In this scenario, a malicious PE binary has been analyzed through the freely available ThreatExpert sandbox service, which provides information about the low-level actions that the PE binary performs when executed. For the sake of brevity in this example, we'll focus on two actions as reported by the sandbox: the creation of a file, and the creation of a mutex.
 
-## Data model
+## Data Model
+
+The following are the important MAEC data model constructs used in this idiom:
+
+* [MAEC Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType): the Bundle entity is used to capture all of the results from a particular analysis performed on a malware instance, including dynamic analysis.
+* [Malware Action](/data-model/{{site.current_version}}/maecBundle/MalwareActionType): the Malware Action entity is used to capture a single action performed by a malware instance, such as a particular system API call; such data is commonly obtained through dynamic analysis.
+
+## Process
 As with many of the other Idioms, the first step is to create a [MAEC Package](/data-model/{{site.current_version}}/maecPackage/PackageType) with a [Malware Subject](/data-model/{{site.current_version}}/maecPackage/MalwareSubjectType) for capturing the information about the malware instance being analyzed. We should also add an [Analysis](/data-model/{{site.current_version}}/maecPackage/AnalysisType) entity to the Malware Subject to capture some details relating the particular analysis that we're performing. The information on this process is not covered in this idiom, but can be found in the corresponding [Creating a MAEC Package](../package_creation) and [Capturing Analysis Metadata](../analysis_metadata) idioms.
 
 Next, a [MAEC Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) is created. Once created, we must set the "content_type" attribute on the Bundle to define the type of content that it is characterizing.  In this case, since we're capturing the output of a dynamic analysis tool, we should set it to a value of "dynamic analysis tool output". This is one of the values contained in the BundleContentTypeEnum enumeration used by this field. Finally, we should set the defined_subject attribute on the Bundle to a value of "false", since this Bundle will be contained in a Malware Subject, which has already defined the particular malware instance being characterized.
