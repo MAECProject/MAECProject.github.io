@@ -61,14 +61,14 @@ The following practices are specific to MAEC.
 
 The MAEC schema was developed to enable analysts to capture a full gamut of information about malware. However, a MAEC Bundle is valid with very little information: it is only necessary to define a unique identifier and to specify the MAEC schema version. All other fields in MAEC are optional; however it is recommended that the following fields be captured:
 
-* Malware Instance Object Attributes field – used to provide the MAEC Bundle recipient with the information they require about the malware instance object. Note that this field is equivalent to the Malware Instance Object Attributes field that is contained inside of a Malware Subject in the MAEC Package, and is therefore only required if this MAEC Bundle is to be used in a stand-alone fashion.
+* Malware Instance Object Attributes field - used to provide the MAEC Bundle recipient with the information they require about the malware instance object. Note that this field is equivalent to the Malware Instance Object Attributes field that is contained inside of a Malware Subject in the MAEC Package, and is therefore only required if this MAEC Bundle is to be used in a stand-alone fashion.
 
-* Malware Subject Relationship Information –Malware Subject relationship information should be provided for Packages that contain more than one Malware Subject. For example, Grouping_Relationship fields might be used to indicate that the one Package contains Eyestye variants and a second Package contains Zeus variants.
+* Malware Subject Relationship Information - Malware Subject relationship information should be provided for Packages that contain more than one Malware Subject. For example, Grouping_Relationship fields might be used to indicate that the one Package contains Eyestye variants and a second Package contains Zeus variants.
 
 ### Object References
 Objects used in MAEC can be represented as embedded Objects (defined and nested inside of the entity that uses them) or as separate Objects (referenced from multiple Actions using the idref attribute).  The following recommendations are made:
 
-* In cases where multiple Actions reference the same Object, the Object should be defined separately and referenced from each Action. For example, if one Action creates a file, and another Action reads from the same file, it is recommended that the file Object is created once and then referenced by both Actions rather than being defined twice. Aside from reducing file size, referencing separately defined Objects means that any changes or additions to the Objects’ content only need to be made in one location.
+* In cases where multiple Actions reference the same Object, the Object should be defined separately and referenced from each Action. For example, if one Action creates a file, and another Action reads from the same file, it is recommended that the file Object is created once and then referenced by both Actions rather than being defined twice. Aside from reducing file size, referencing separately defined Objects means that any changes or additions to the Objects' content only need to be made in one location.
 
 * An embedded Object should be used to define the Malware Subject in the Malware_Instance_Object_Attributes entity.
 
