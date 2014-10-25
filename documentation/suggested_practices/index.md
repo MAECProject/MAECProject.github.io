@@ -61,7 +61,7 @@ The following practices are specific to MAEC.
 
 The MAEC schema was developed to enable analysts to capture a full gamut of information about malware. However, a MAEC Bundle is valid with very little information: it is only necessary to define a unique identifier and to specify the MAEC schema version. All other properties in MAEC are optional; however it is recommended that the following fields are captured:
 
-* Malware Instance Object Attributes field - this field should be used to provide the MAEC Bundle or Package recipient with the information they require about the malware instance object. Note that the Malware Instance Object Attributes field is defined in both the Bundle (BundleType) and the Malware Subject of a Package (MalwareSubjectType).  The definitions are equivalent.  The use of the BundleType should only be used if the Bundle is used in a stand-alone fashion; otherwise, only the MalwareSubjectType field should be used.
+* Malware Instance Object Attributes field - this field should be used to provide the MAEC Bundle or Package recipient with the information they require about the malware instance object. Note that the Malware Instance Object Attributes field is defined both in the Bundle (BundleType) and in the Malware Subject of a Package (MalwareSubjectType).  The definitions are equivalent.  The BundleType's Malware Instance Object Attributes field should only be used if the Bundle is used in a stand-alone fashion; otherwise, only the MalwareSubjectType's Malware Instance Object Attributes field should be used.
 
 * Grouping Relationships field - Malware Subject relationship information should be provided for Packages that contain more than one Malware Subject. For example, Grouping Relationships field might be used to indicate that the a Package contains several Zeus variants.
 
@@ -71,6 +71,12 @@ Objects used in MAEC can be represented as embedded Objects (defined and nested 
 * In cases where multiple Actions reference the same Object, the Object should be defined separately and referenced from each Action. For example, if one Action creates a file, and another Action reads from the same file, it is recommended that the file Object is created once and then referenced by both Actions rather than being defined twice. Aside from reducing file size, referencing separately defined Objects means that any changes or additions to the Objects' content only need to be made in one location.
 
 * An embedded Object should be used to define the Malware Subject in the Malware_Instance_Object_Attributes field.
+
+### Tool References
+
+* Typically, tool information should be defined in line within an Analysis field using the Tool field (of ToolInformationType defined in the CybOX Common data model).  For tools that are used in more than one analysis, there are two options: their definitions may be repeated in each Analysis field, or they may be defined once in one Analysis and then referenced in other Analyses by their ID.  We recommend the second approach to reduce duplication of data in a MAEC document.
+
+* If an Analysis involves a single tool, then the implicit assumption is that the tool specified in the Analysis is responsible for all the findings in the Bundle that it references. However, if multiple tools are defined for an Analysis, then each Action and Object associated with the Analysis should reference its relevant tool (already defined in an Analysis element) via its CybOX Discovery_Method field.  Note that a tool cannot be defined in line within an Action or Object.
 
 ### Default Vocabularies
 
