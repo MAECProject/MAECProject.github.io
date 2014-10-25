@@ -59,11 +59,11 @@ The following practices are specific to MAEC.
 
 ### Recommended Properties
 
-The MAEC schema was developed to enable analysts to capture a full gamut of information about malware. However, a MAEC Bundle is valid with very little information: it is only necessary to define a unique identifier and to specify the MAEC schema version. All other properties in MAEC are optional; however it is recommended that the following fields are captured:
+The MAEC schema was developed to enable analysts to capture a full gamut of information about malware. However, a MAEC Bundle or Package is valid with very little information: it is only necessary to define a unique identifier and to specify the MAEC schema version. While all other properties in MAEC are optional, it is recommended that the following fields are captured:
 
-* Malware Instance Object Attributes field - this field should be used to provide the MAEC Bundle or Package recipient with the information they require about the malware instance object. Note that the Malware Instance Object Attributes field is defined both in the Bundle (BundleType) and in the Malware Subject of a Package (MalwareSubjectType).  The definitions are equivalent; however, the BundleType's Malware Instance Object Attributes field should only be used if the Bundle is used in a stand-alone fashion.  Otherwise, only the Package MalwareSubjectType's Malware Instance Object Attributes field should be used (and the defined_subject field of the Bundle must be set to 'false').
+* Malware Instance Object Attributes field - this field should be used to provide the MAEC Bundle or Package recipient with the information they require about the malware instance object. Note that the Malware Instance Object Attributes field is defined both in the Bundle (BundleType) and in the Malware Subject of a Package (MalwareSubjectType).  The definitions are equivalent; however, the BundleType's Malware Instance Object Attributes field should only be used if the Bundle is used in a stand-alone fashion.  Otherwise, only the Package MalwareSubjectType's Malware Instance Object Attributes field should be used (note that when a Bundle is embedded in a Package, the defined_subject field of the Bundle must be set to 'false').
 
-* Grouping Relationships field - Malware Subject relationship information should be provided for Packages that contain more than one Malware Subject. For example, Grouping Relationships field might be used to indicate that the a Package contains several Zeus variants.
+* Grouping Relationships field - Malware Subject relationship information should be provided for Packages that contain more than one Malware Subject. For example, the Grouping Relationships field might be used to indicate that the a Package contains several Zeus variants.
 
 ### Object References
 Objects used in MAEC can be represented as embedded Objects (defined and nested inside of the fields that uses them) or as separate Objects (referenced from multiple Actions using the idref attribute).  The following recommendations are made:
@@ -86,7 +86,7 @@ MAEC defines its own maecVocabs:ActionObjectAssociationTypeVocab, which should b
 
 If numerous Actions are captured in a Bundle, the Bundle Action_Collections field should be used if the Actions can be grouped according to type (e.g., “File Actions”).  Relationships between Behaviors and Actions can then be captured using the Action_Composition field inside of a Behavior.
 
-Similarly, if numerous Objects are captured in a Bundle, the Bundle Object_Collections field should be used if Objects can be grouped according to type.  Relationships between Actions and Objects can then be captured using the Associated_Objects field inside each Action.
+Similarly, if numerous Objects are captured in a Bundle, the Bundle Object_Collections field should be used if Objects can be grouped according to type.  Relationships between Actions and Objects can then be captured using the Associated_Objects field inside of an Action.
 
 ### Extracted Features
 Extracted features should be captured in an Object created within a MAEC Bundle.  For example, to capture the output of a packer detection tool (e.g., PEiD), one could create a  Bundle with a single Cyber Observables Expression (CybOX) Object field (inside the Bundle's Objects field of type ObjectListType) that uses the FileObjectType type from the CybOX File Object data model in its Properties field to capture the packer information. 
