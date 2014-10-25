@@ -74,9 +74,9 @@ Objects used in MAEC can be represented as embedded Objects (defined and nested 
 
 ### Tool References
 
-* Typically, tool information should be defined in line within an Analysis field using the Tool field (of ToolInformationType defined in the CybOX Common data model).  For tools that are used in more than one analysis, there are two options: their definitions may be repeated in each Analysis field, or they may be defined once in one Analysis and then referenced in other Analyses by their ID.  We recommend the second approach to reduce duplication of data in a MAEC document.
+Typically, tool information should be defined in line within an Analysis field using the Tool field (of ToolInformationType defined in the CybOX Common data model).  For tools that are used in more than one analysis, there are two options: their definitions may be repeated in each Analysis field, or they may be defined once in one Analysis and then referenced in other Analyses by their ID.  We recommend the second approach to reduce duplication of data in a MAEC document.
 
-* If an Analysis involves a single tool, then the implicit assumption is that the tool specified in the Analysis is responsible for all the findings in the Bundle that it references. However, if multiple tools are defined for an Analysis, then each Action and Object associated with the Analysis should reference its relevant tool (already defined in an Analysis element) via its CybOX Discovery_Method field.  Note that a tool cannot be defined in line within an Action or Object.
+If an Analysis involves a single tool, then the implicit assumption is that the tool specified in the Analysis is responsible for all the findings in the Bundle that it references. However, if multiple tools are defined for an Analysis, then each Action and Object associated with the Analysis should reference its relevant tool (already defined in an Analysis element) via its CybOX Discovery_Method field.  Note that a tool cannot be defined in line within an Action or Object.
 
 ### Default Vocabularies
 
@@ -84,6 +84,13 @@ MAEC defines its own maecVocabs:ActionObjectAssociationTypeVocab, which should b
 
 ### Collections
 
-* If numerous Actions are captured in a Bundle, the Bundle Action_Collections field should be used if the Actions can be grouped according to type (e.g., “File Actions”).  Relationships between Behaviors and Actions can then be captured using the Action_Composition field inside of a Behavior.
+If numerous Actions are captured in a Bundle, the Bundle Action_Collections field should be used if the Actions can be grouped according to type (e.g., “File Actions”).  Relationships between Behaviors and Actions can then be captured using the Action_Composition field inside of a Behavior.
 
-* Similarly, if numerous Objects are captured in a Bundle, the Bundle Object_Collections field should be used if Objects can be grouped according to type.  Relationships between Actions and Objects can then be captured using the Associated_Objects field inside each Action.
+Similarly, if numerous Objects are captured in a Bundle, the Bundle Object_Collections field should be used if Objects can be grouped according to type.  Relationships between Actions and Objects can then be captured using the Associated_Objects field inside each Action.
+
+### Extracted Features
+Extracted features should be captured in an Object created within a MAEC Bundle.  For example, to capture the output of a packer detection tool (e.g., PEiD), one could create a  Bundle with a single Cyber Observables Expression (CybOX) Object field (inside the Bundle's Objects field of type ObjectListType) that uses the FileObjectType type from the CybOX File Object data model in its Properties field to capture the packer information. 
+
+Note that when using this method, an entire CybOX Object field is created, which should not be mistakenly identified as a newly found file: it merely captures extracted features from the file already defined inside the Malware Instance Object Attributes field. To make this explicit, the content_type attribute of the Bundle should be set to 'extracted from subject.'
+(Alternatively, although not recommended, extracted features can be defined inside of the existing File field that is contained in the Malware Instance Object Attributes field. If captured there, it would be redundant to capture the same information in a separate Object.)
+
