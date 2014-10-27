@@ -1,17 +1,13 @@
 ---
 layout: flat
-title: Suggested Practices
+title: Common Features
 ---
 
 This page contains commonly characterized features (whether statically, dynamically, or manually identified in malware), along with their mappings to MAEC/CybOX object element(s), the associated MAEC/CybOX schema, the typical MAEC schema location(s) (specified via a quasi-XPath like expression) of the object element(s) and associated attributes (captured in [square brackets]), and an explicit XML representation example. Only the most commonly used object elements are listed for each feature; please refer to the applicable schemas for the complete lists.
 
-## General Practices
-
-General practices apply across MAEC.
-
 ### File Attributes
 
-<table style="width:100%">
+<table style="width:100%" th{background-color:blue; color:white;}>
   <tr>
     <td>
 	  <table>
@@ -51,6 +47,12 @@ General practices apply across MAEC.
 	  <li>MAEC_Bundle/Collections/Object_Collections/Object_Collection/Object_List/Object/Properties[xsi:type=”{ObjectType}”]
 	</list>
 	</td>
+  </tr>
+  <tr>
+    <td><b>MAEC/CybOX XML Representation Example</b></td>
+  </tr>
+  <tr>
+  
   </tr>
 </table>
     	
