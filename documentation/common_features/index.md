@@ -9,8 +9,8 @@ This page contains commonly characterized features (whether statically, dynamica
 
 <table>
   <tr>
-    <td width="50%"><b>MAEC/CybOX Object Element(s)</b></td>
-    <td width="50%"><b>MAEC/CybOX Schema(s)</b></td>
+    <th>MAEC/CybOX Object Element(s)</th>
+    <th><b>MAEC/CybOX Schema(s)</b></th>
   </tr>
   <tr>
     <td>
@@ -29,10 +29,10 @@ This page contains commonly characterized features (whether statically, dynamica
     </td>
   </tr>
   <tr>
-    <td width="100%"><b>Typical MAEC Schema Location(s)</b></td>
+    <th colspan="2">Typical MAEC Schema Location(s)</th>
   </tr>
   <tr>
-    <td>
+    <td colspan="2">
     <list>
 	  <li> MAEC_Package/Malware_Subjects/Malware_Subject/Malware_Subject/Malware_Instance_Object_Attributes/Properties[xsi:type=”{ObjectType}”]
 	  <li>MAEC_Bundle/Malware_Instance_Object_Attributes/Properties[xsi:type=”{ObjectType}”]
