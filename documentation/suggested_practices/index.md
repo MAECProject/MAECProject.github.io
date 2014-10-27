@@ -7,7 +7,7 @@ This page contains suggested practices (sometimes called best practices) for pro
 
 ## General Practices
 
-General practices apply across MAEC (and sometimes CybOX).
+General practices apply across MAEC.
 
 ### Formatting IDs
 
@@ -52,10 +52,6 @@ Accordingly, MAEC extends or makes direct use of a number of CybOX entities. In 
 
 * [Malware Action](/data-model/{{site.current_version}}/maecBundle/MalwareActionType)
 * [CybOX Object](/data-model/{{site.current_version}}/cybox/ObjectType)
-
-## MAEC-Specific Practices
-
-The following practices are specific to MAEC.
 
 ### Recommended Properties
 
