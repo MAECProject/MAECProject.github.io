@@ -43,10 +43,10 @@ This page contains commonly characterized features (whether statically, dynamica
 	</td>
   </tr>
   <tr>
-    <td><b>MAEC/CybOX XML Representation Example</b></td>
+    <th>MAEC/CybOX XML Representation Example</th>
   </tr>
   <tr>
-  <font color: blue;>cybox:Associated_Object<font color:red;> id= </font><font color:brown;>"maec-example=obj-2"</font>></font>
+  <font color="blue">cybox:Associated_Object<font color="red"> id= </font><font color="brown">"maec-example=obj-2"</font>></font>
   </tr>
 </table>
     	
