@@ -14,18 +14,19 @@ This page contains commonly characterized features (whether statically, dynamica
   </tr>
   <tr>
     <td>
-      <list>
+      <ul>
 	    <li> File/File_Name
 		<li> File/File_Path
 		<li> File/Size_In_Bytes
-	  </list>
+	  </ul
+	  >
     </td>
     <td>
-      <list>
+      <ul>
         <li> CybOX:FileObj
    	    <li> CybOX:WinFileObj
 		<li> CybOX:WinExecFileObj
-	  </list>
+	  </ul>
     </td>
   </tr>
   <tr>
@@ -33,20 +34,21 @@ This page contains commonly characterized features (whether statically, dynamica
   </tr>
   <tr>
     <td colspan="2">
-    <list>
+    <ul>
 	  <li> MAEC_Package/Malware_Subjects/Malware_Subject/Malware_Subject/Malware_Instance_Object_Attributes/Properties[xsi:type=”{ObjectType}”]
 	  <li>MAEC_Bundle/Malware_Instance_Object_Attributes/Properties[xsi:type=”{ObjectType}”]
 	  <li>MAEC_Bundle/Actions/Action/Associated_Objects/Associated_Object/Properties[xsi:type=”{ObjectType}”]
 	  <li>MAEC_Bundle/Objects/Object/Properties[xsi:type=”{ObjectType}”] <li>MAEC_Bundle/Collections/Action_Collections/Action_Collection/Action_List/Action/Associated_Objects/Associated_Object/Properties[xsi:type=”{ObjectType}”]
 	  <li>MAEC_Bundle/Collections/Object_Collections/Object_Collection/Object_List/Object/Properties[xsi:type=”{ObjectType}”]
-	</list>
+	</ul>
 	</td>
   </tr>
   <tr>
     <th colspan="2">MAEC/CybOX XML Representation Example</th>
   </tr>
   <tr>
-    <td colspan="2"><font color="blue">&ltcybox:Associated_Object<font color="red"> id= </font><font color="brown">"maec-example=obj-2"</font>&gt</font>
+    <td colspan="2">
+<img src="FileAttr.png" alt="MAEC Container data model" height="116" width="260"/>
     </td>
   </tr>
 </table>
