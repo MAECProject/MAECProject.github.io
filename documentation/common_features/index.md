@@ -9,30 +9,24 @@ This page contains commonly characterized features (whether statically, dynamica
 
 <table style="width:100%" th{background-color:blue; color:white;}>
   <tr>
+    <td><b>MAEC/CybOX Object Element(s)</b></td>
+    <td><b>MAEC/CybOX Schema(s)</b></td>
+  </tr>
+  <tr>
     <td>
-	  <table>
-	    <tr>
-		   <td><b>MAEC/CybOX Object Element(s)</b></td>
-		   <td><b>MAEC/CybOX Schema(s)</b></td>
-		</tr>
-		<tr>
-		   <td>
-		     <list>
-		       <li> File/File_Name
-			   <li> File/File_Path
-			   <li> File/Size_In_Bytes
-			 </list>
-		   </td>
-		   <td>
-		     <list>
-		       <li> CybOX:FileObj
-			   <li> CybOX:WinFileObj
-			   <li> CybOX:WinExecFileObj
-		     </list>
-		   </td>
-		 </tr>
-	  </table>
-	</td>
+      <list>
+	    <li> File/File_Name
+		<li> File/File_Path
+		<li> File/Size_In_Bytes
+	  </list>
+    </td>
+    <td>
+      <list>
+        <li> CybOX:FileObj
+   	    <li> CybOX:WinFileObj
+		<li> CybOX:WinExecFileObj
+	  </list>
+    </td>
   </tr>
   <tr>
     <td><b>Typical MAEC Schema Location(s)</b></td>
