@@ -132,6 +132,19 @@ hr.separator {
   border-top: none; 
 }
 
+.table-border>thead>tr>th, 
+.table-border>tbody>tr>th, 
+.table-border>tfoot>tr>th, 
+.table-border>thead>tr>td, 
+.table-border>tbody>tr>td, 
+.table-border>tfoot>tr>td {
+  border: 1px solid black;
+}
+
+.table-blue>tr>td {
+  background-color: blue;
+ }
+
 h1, h2 {
   clear: both;
 }
