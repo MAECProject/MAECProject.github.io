@@ -48,7 +48,7 @@ This page contains commonly characterized features (whether statically, dynamica
   </tr>
   <tr>
     <td colspan="2">
-<img src="FileAttr.png" alt="MAEC Container data model" height="116" width="260"/>
+<img src="FileAttr1.png" alt="MAEC Container data model" height="116" width="260"/>
     </td>
   </tr>
 </table>
