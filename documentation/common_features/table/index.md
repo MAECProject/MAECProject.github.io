@@ -5,8 +5,8 @@ title: Namespace Prefixes
 
 We define MAEC and CybOX data models and namespace prefixes in the table below (the color coding indicates MAEC (blue), CybOX (pink), and CybOX Object (light pink) schemas).  These are useful to understand the <a href="http://maecproject.github.io/documentation/common_features/">common features</a>.
 
-<table>
-  <tr>
+<table class="table-border">
+  <tr class="table-blue">
     <th>MAEC/Data Model/Vocab</th>
     <th>Namespace Prefix</th>
 	<th>Description</th>
