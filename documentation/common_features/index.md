@@ -8,7 +8,7 @@ This page contains commonly characterized features (whether statically, dynamica
 ### File Attributes
 
 <table class="table-border">
-  <tr>
+  <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Element(s)</th>
     <th>MAEC/CybOX Schema(s)</th>
   </tr>
@@ -29,7 +29,7 @@ This page contains commonly characterized features (whether statically, dynamica
 	  </ul>
     </td>
   </tr>
-  <tr>
+  <tr style="background-color:#A9D0F5">
     <th colspan="2">Typical MAEC Schema Location(s)</th>
   </tr>
   <tr>
@@ -43,7 +43,7 @@ This page contains commonly characterized features (whether statically, dynamica
 	</ul>
 	</td>
   </tr>
-  <tr>
+  <tr style="background-color:#A9D0F5">
     <th colspan="2">MAEC/CybOX XML Representation Example</th>
   </tr>
   <tr>
