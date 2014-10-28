@@ -3,7 +3,7 @@ layout: flat
 title: Namespace Prefixes
 ---
 
-We define MAEC and CybOX data models and namespace prefixes in the table below (the color coding indicates MAEC (blue), CybOX (pink), and CybOX Object (light pink) schemas).  These are useful for interpreting the <a href="http://maecproject.github.io/documentation/common_features/">common feature</a> tables.
+We define MAEC and CybOX data models and namespace prefixes in the table below (the color coding indicates MAEC (blue), CybOX (orange), and CybOX Object (lavendar) schemas).  These are useful for interpreting the <a href="http://maecproject.github.io/documentation/common_features/">common feature</a> tables.
 
 <table class="table-border">
   <tr style="background-color:#D8D8D8">
@@ -26,12 +26,12 @@ We define MAEC and CybOX data models and namespace prefixes in the table below (
 	<td>maecContainer</td>
 	<td>The MAEC Container data model captures all MAEC characterized data.</td>
   </tr>
-  <tr style="background-color:#F5BCA9">
+  <tr style="background-color:#F5D0A9">
     <td>CybOX Core v2.0.1</td>
 	<td>cybox</td>
 	<td>The CybOX core data model captures all the core constructs used in CybOX.</td>
   </tr>
-  <tr style="background-color:#F8E0F1">
+  <tr style="background-color:#D0A9F5">
     <td>Code Object v2.0.1</td>
 	<td>CodeObj</td>
 	<td>The CybOX Code Object data model is intended to characterize a body of computer code.</td>
