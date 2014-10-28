@@ -3,7 +3,7 @@ layout: flat
 title: Common Features
 ---
 
-This page contains commonly characterized features (whether statically, dynamically, or manually identified in malware), along with their mappings to MAEC/CybOX object element(s), the associated MAEC/CybOX schema, the typical MAEC schema location(s) (specified via a quasi-XPath like expression) of the object element(s) and associated attributes (captured in [square brackets]), and an explicit XML representation example. Only the most commonly used object elements are listed for each feature; please refer to the applicable schemas for the complete lists.
+This page contains commonly characterized features (whether statically, dynamically, or manually identified in malware), along with their mappings to MAEC/CybOX object element(s), the associated MAEC/CybOX schema, the typical MAEC schema location(s) (specified via a quasi-XPath like expression) of the object element(s) and associated attributes (captured in [square brackets]), and an explicit XML representation example. Only the most commonly used object elements are listed for each feature; please refer to the applicable schemas for the complete lists.  For the purposes of this section, we define MAEC and CybOX data models and namespace prefixes in this <a href="http://maecproject.github.io/documentation/common_features/table/">table</a>.
 
 ### File Attributes
 
