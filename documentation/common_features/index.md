@@ -10,7 +10,7 @@ This page contains commonly characterized features (whether statically, dynamica
 <table>
   <tr>
     <th>MAEC/CybOX Object Element(s)</th>
-    <th><b>MAEC/CybOX Schema(s)</b></th>
+    <th>MAEC/CybOX Schema(s)</th>
   </tr>
   <tr>
     <td>
