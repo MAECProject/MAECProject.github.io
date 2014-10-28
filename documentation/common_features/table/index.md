@@ -7,7 +7,7 @@ We define MAEC and CybOX data models and namespace prefixes in the table below (
 
 <table class="table-border">
   <tr style="background-color:#D8D8D8">
-    <th>MAEC/Data Model/Vocab</th>
+    <th>Data Model/Vocab</th>
     <th>Namespace Prefix</th>
 	<th>Description</th>
   </tr>
@@ -53,12 +53,12 @@ We define MAEC and CybOX data models and namespace prefixes in the table below (
   </tr>
   <tr style="background-color:#E3CEF6">
     <td>System Object v2.0.1</td>
-	<td>CodeObj</td>
+	<td>SystemObj</td>
 	<td>The CybOX System Object data model is intended to characterize computer systems (as a combination of both software and hardware).</td>
   </tr>
   <tr style="background-color:#E3CEF6">
     <td>Process Object v2.0.1</td>
-	<td>CodeObj</td>
+	<td>ProcessObj</td>
 	<td>The CybOX Process Object data model is intended to characterize system processes.</td>
   </tr>
 </table>
