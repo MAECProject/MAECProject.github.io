@@ -11,7 +11,7 @@ We define MAEC and CybOX data models and namespace prefixes in the table below (
     <th>Namespace Prefix</th>
 	<th>Description</th>
   </tr>
-  <tr class="table-blue">
+  <tr style="background-color:#FF0000">
     <td>MAEC Bundle v4.0.1</td>
     <td>maecBundle</td>
 	<td>The MAEC Bundle data model captures the constructs used in a MAEC Bundle.</td>
