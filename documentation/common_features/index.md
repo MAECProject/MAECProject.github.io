@@ -23,32 +23,52 @@ This page contains commonly characterized features - whether statically, dynamic
     </td>
     <td>
       <ul>
-        <li> CybOX:FileObj
+        <li> <a href=http://maecproject.github.io/data-model/4.1/FileObj/FileObjectType/>CybOX:FileObj</a>
    	    <li> CybOX:WinFileObj
 		<li> CybOX:WinExecFileObj
 	  </ul>
     </td>
   </tr>
   <tr style="background-color:#A9D0F5">
-    <th colspan="2">Typical MAEC Schema Location(s)</th>
+    <th>Typical MAEC Schema Location(s)</th>
+	<th>Description</th>
+  </tr>
+  <tr>   
+    <td>MAEC_Package/Malware_Subjects/Malware_Subject/Malware_Subject/Malware_Instance_Object_Attributes/Properties[xsi:type=”{ObjectType}”]</td>
+	<td>Used for</td>
   </tr>
   <tr>
-    <td colspan="2">
-    <ul>
-	  <li> MAEC_Package/Malware_Subjects/Malware_Subject/Malware_Subject/Malware_Instance_Object_Attributes/Properties[xsi:type=”{ObjectType}”]
-	  <li>MAEC_Bundle/Malware_Instance_Object_Attributes/Properties[xsi:type=”{ObjectType}”]
-	  <li>MAEC_Bundle/Actions/Action/Associated_Objects/Associated_Object/Properties[xsi:type=”{ObjectType}”]
-	  <li>MAEC_Bundle/Objects/Object/Properties[xsi:type=”{ObjectType}”] <li>MAEC_Bundle/Collections/Action_Collections/Action_Collection/Action_List/Action/Associated_Objects/Associated_Object/Properties[xsi:type=”{ObjectType}”]
-	  <li>MAEC_Bundle/Collections/Object_Collections/Object_Collection/Object_List/Object/Properties[xsi:type=”{ObjectType}”]
-	</ul>
-	</td>
+	 <td>MAEC_Bundle/Malware_Instance_Object_Attributes/Properties[xsi:type=”{ObjectType}”]</td>
+	 <td></td>
+  </tr>
+  <tr>
+	 <td>MAEC_Bundle/Actions/Action/Associated_Objects/Associated_Object/Properties[xsi:type=”{ObjectType}”]</td>
+	 <td></td>
+  </tr>
+  <tr>
+	 <td>MAEC_Bundle/Objects/Object/Properties[xsi:type=”{ObjectType}”]</td>
+	 <td>Used for capturing individual files associated with a malware instance, including those that represent some extracted feature (e.g., strings).</td>
+  </tr>
+  <tr>
+    <td>MAEC_Bundle/Collections/Action_Collections/Action_Collection/Action_List/Action/Associated_Objects/Associated_Object/Properties[xsi:type=”{ObjectType}”]</td>
+	<td>Used for capturing individual files associated with an Action</td>
+  </tr>
+  <tr>
+    <td>MAEC_Bundle/Collections/Object_Collections/Object_Collection/Object_List/Object/Properties[xsi:type=”{ObjectType}”]</td>
+	<td></td>
   </tr>
   <tr style="background-color:#A9D0F5">
     <th colspan="2">MAEC/CybOX XML Representation Example</th>
   </tr>
   <tr>
     <td colspan="2">
-<img src="FileAttr.png" alt="MAEC Container data model" height="160"/>
+{% highlight xml linenos %}
+<cybox: Associated_Object id="maec-example-obj-2"> <cybox:Properties xsi:type="WinExecFileObj:WindowsExecutableFileObjectType"> <FileObj:File_Name>ws2help.PNF</FileObj:File_Name> <FileObj:File_Path condition="FitsPattern" pattern_type="Regex">^C:\Documents and
+Settings\\s+user\s+\Local Settings\Application\Data</FileObj:Full_Path>
+<FileObj:Size_In_Bytes>196608</FileObj:Size_In_Bytes> </cybox:Properties>
+</cybox: Associated_Object>
+{% endhighlight %}
+	
     </td>
   </tr>
 </table>
