@@ -30,7 +30,7 @@ This page contains commonly characterized features - whether statically, dynamic
     </td>
   </tr>
   <tr style="background-color:#A9D0F5">
-    <th width="65%">Typical MAEC Schema Location(s)</th>
+    <th width="50%">Typical MAEC Schema Location(s)</th>
 	<th>Description</th>
   </tr>
   <tr>   
@@ -70,7 +70,6 @@ This page contains commonly characterized features - whether statically, dynamic
 <FileObj:Size_In_Bytes>196608</FileObj:Size_In_Bytes> </cybox:Properties>
 </cybox: Associated_Object>
 {% endhighlight %}
-	
     </td>
   </tr>
 </table>
