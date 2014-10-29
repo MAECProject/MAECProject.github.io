@@ -49,11 +49,11 @@ This page contains commonly characterized features - whether statically, dynamic
 	 <td>Used to capture information about a single file related to an Object associated with a malware instance, including an Object that represents some extracted feature (e.g., strings).</td>
   </tr>
   <tr>   <td>MAEC_Bundle/Collections/Action_Collections/Action_Collection/Action_List/Action/Associated_Objects/Associated_Object/Properties[xsi:type=”{ObjectType}”]</td>
-	<td>Used to capture a single file related to an Action in an Action Collection.</td>
+	<td>Used to capture information about a single file related to an Action in an Action Collection.</td>
   </tr>
   <tr>
     <td>MAEC_Bundle/Collections/Object_Collections/Object_Collection/Object_List/Object/Properties[xsi:type=”{ObjectType}”]</td>
-	<td>Used to capture a single file related to an Object in an Object Collection.</td>
+	<td>Used to capture information about a single file related to an Object in an Object Collection.</td>
   </tr>
   <tr style="background-color:#A9D0F5">
     <th colspan="2">MAEC/CybOX XML Representation Example</th>
