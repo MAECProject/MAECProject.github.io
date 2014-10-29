@@ -9,8 +9,8 @@ This page contains commonly characterized features - whether statically, dynamic
 
 <table class="table-features">
   <tr style="background-color:#A9D0F5">
-    <th>MAEC/CybOX Object Element(s)</th>
-    <th>MAEC/CybOX Schema(s)</th>
+    <th>MAEC/CybOX Object Elements</th>
+    <th>MAEC/CybOX Schemas</th>
   </tr>
   <tr>
     <td>
@@ -29,7 +29,7 @@ This page contains commonly characterized features - whether statically, dynamic
     </td>
   </tr>
   <tr style="background-color:#A9D0F5">
-    <th>Typical MAEC Schema Location(s)</th>
+    <th>Typical MAEC Schema Locations</th>
 	<th>Description</th>
   </tr>
   <tr>   
