@@ -7,7 +7,7 @@ This page contains commonly characterized features - whether statically, dynamic
 
 ### File Attributes
 
-<table class="table-border">
+<table class="table-features">
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Element(s)</th>
     <th>MAEC/CybOX Schema(s)</th>
@@ -34,27 +34,27 @@ This page contains commonly characterized features - whether statically, dynamic
 	<th>Description</th>
   </tr>
   <tr>   
-    <td width="65%">MAEC_Package/Malware_Subjects/Malware_Subject/Malware_Subject/Malware_Instance_Object_Attributes/Properties[xsi:type=”{ObjectType}”]</td>
+    <td width="50%">MAEC_Package/Malware_Subjects/Malware_Subject/Malware_Subject/Malware_Instance_Object_Attributes/Properties[xsi:type=”{ObjectType}”]</td>
 	<td>Used for</td>
   </tr>
   <tr>
-	 <td width="65%">MAEC_Bundle/Malware_Instance_Object_Attributes/Properties[xsi:type=”{ObjectType}”]</td>
+	 <td width="50%">MAEC_Bundle/Malware_Instance_Object_Attributes/Properties[xsi:type=”{ObjectType}”]</td>
 	 <td></td>
   </tr>
   <tr>
-	 <td width="65%">MAEC_Bundle/Actions/Action/Associated_Objects/Associated_Object/Properties[xsi:type=”{ObjectType}”]</td>
+	 <td width="50%">MAEC_Bundle/Actions/Action/Associated_Objects/Associated_Object/Properties[xsi:type=”{ObjectType}”]</td>
 	 <td></td>
   </tr>
   <tr>
-	 <td width="65%">MAEC_Bundle/Objects/Object/Properties[xsi:type=”{ObjectType}”]</td>
+	 <td width="50%">MAEC_Bundle/Objects/Object/Properties[xsi:type=”{ObjectType}”]</td>
 	 <td>Used for capturing individual files associated with a malware instance, including those that represent some extracted feature (e.g., strings).</td>
   </tr>
   <tr>
-    <td width="65%">MAEC_Bundle/Collections/Action_Collections/Action_Collection/Action_List/Action/Associated_Objects/Associated_Object/Properties[xsi:type=”{ObjectType}”]</td>
+    <td width="50%">MAEC_Bundle/Collections/Action_Collections/Action_Collection/Action_List/Action/Associated_Objects/Associated_Object/Properties[xsi:type=”{ObjectType}”]</td>
 	<td>Used for capturing individual files associated with an Action</td>
   </tr>
   <tr>
-    <td width="65%">MAEC_Bundle/Collections/Object_Collections/Object_Collection/Object_List/Object/Properties[xsi:type=”{ObjectType}”]</td>
+    <td width="50%">MAEC_Bundle/Collections/Object_Collections/Object_Collection/Object_List/Object/Properties[xsi:type=”{ObjectType}”]</td>
 	<td></td>
   </tr>
   <tr style="background-color:#A9D0F5">
