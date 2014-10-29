@@ -18,8 +18,7 @@ This page contains commonly characterized features - whether statically, dynamic
 	    <li> File/File_Name
 		<li> File/File_Path
 		<li> File/Size_In_Bytes
-	  </ul
-	  >
+	  </ul>
     </td>
     <td>
       <ul>

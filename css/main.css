@@ -139,6 +139,7 @@ hr.separator {
 .table-features>tbody>tr>td, 
 .table-features>tfoot>tr>td {
   border: 1px solid black;
+  vertical-align: middle;
 }
 
 h1, h2 {
