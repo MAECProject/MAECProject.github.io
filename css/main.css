@@ -132,13 +132,14 @@ hr.separator {
   border-top: none; 
 }
 
-.table-border>thead>tr>th, 
-.table-border>tbody>tr>th, 
-.table-border>tfoot>tr>th, 
-.table-border>thead>tr>td, 
-.table-border>tbody>tr>td, 
-.table-border>tfoot>tr>td {
+.table-features>thead>tr>th, 
+.table-features>tbody>tr>th, 
+.table-features>tfoot>tr>th, 
+.table-features>thead>tr>td, 
+.table-features>tbody>tr>td, 
+.table-features>tfoot>tr>td {
   border: 1px solid black;
+  vertical-align: middle;
 }
 
 h1, h2 {
