@@ -34,27 +34,27 @@ This page contains commonly characterized features - whether statically, dynamic
   </tr>
   <tr>   
     <td>MAEC_Package/Malware_Subjects/Malware_Subject/Malware_Subject/Malware_Instance_Object_Attributes/Properties[xsi:type=”{ObjectType}”]</td>
-	<td>Used for</td>
+	<td>Used within a Package to capture a single file associated with a malware instance.</td>
   </tr>
   <tr>
 	 <td>MAEC_Bundle/Malware_Instance_Object_Attributes/Properties[xsi:type=”{ObjectType}”]</td>
-	 <td></td>
+	 <td>Used within a Bundle to capture a single file associated with a malware instance.</td>
   </tr>
   <tr>
 	 <td>MAEC_Bundle/Actions/Action/Associated_Objects/Associated_Object/Properties[xsi:type=”{ObjectType}”]</td>
-	 <td></td>
+	 <td>Used within a Bundle to capture a single file associated with an Action.</td>
   </tr>
   <tr>
 	 <td>MAEC_Bundle/Objects/Object/Properties[xsi:type=”{ObjectType}”]</td>
-	 <td>Used for capturing individual files associated with a malware instance, including those that represent some extracted feature (e.g., strings).</td>
+	 <td>Used within a Bundle to capture a single file associated with a malware instance, including those that represent some extracted feature (e.g., strings).</td>
   </tr>
   <tr>
     <td>MAEC_Bundle/Collections/Action_Collections/Action_Collection/Action_List/Action/Associated_Objects/Associated_Object/Properties[xsi:type=”{ObjectType}”]</td>
-	<td>Used for capturing individual files associated with an Action.</td>
+	<td>Used within a Bundle to capture a single file associated with an Action in an Action Collection.</td>
   </tr>
   <tr>
     <td>MAEC_Bundle/Collections/Object_Collections/Object_Collection/Object_List/Object/Properties[xsi:type=”{ObjectType}”]</td>
-	<td></td>
+	<td>Used within a Bundle to capture a single file as part of an Object Collection.</td>
   </tr>
   <tr style="background-color:#A9D0F5">
     <th colspan="2">MAEC/CybOX XML Representation Example</th>
