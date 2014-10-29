@@ -3,7 +3,7 @@ layout: flat
 title: Common Features
 ---
 
-This page contains commonly characterized features - whether statically, dynamically, or manually identified in malware - along with their mappings to MAEC/CybOX object element(s), the associated MAEC/CybOX schema(s), the typical MAEC schema location(s) (specified via a quasi-XPath like expression) of the object element(s) and associated attributes (captured in [square brackets]), and an explicit XML representation example. Only the most commonly used object elements are listed for each feature; please refer to the applicable schemas for the complete lists.  
+This page contains commonly characterized features - whether statically, dynamically, or manually identified in malware - along with their mappings to MAEC/CybOX object elements, the associated MAEC/CybOX schemas, the typical MAEC schema locations (specified via a quasi-XPath like expression) of the object elements and associated attributes (captured in [square brackets]), and an explicit XML representation example. Only the most commonly used object elements are listed for each feature; please refer to the applicable schemas for the complete lists.  
 
 ### File Attributes
 
@@ -50,7 +50,7 @@ This page contains commonly characterized features - whether statically, dynamic
   </tr>
   <tr>
     <td>MAEC_Bundle/Collections/Action_Collections/Action_Collection/Action_List/Action/Associated_Objects/Associated_Object/Properties[xsi:type=”{ObjectType}”]</td>
-	<td>Used for capturing individual files associated with an Action</td>
+	<td>Used for capturing individual files associated with an Action.</td>
   </tr>
   <tr>
     <td>MAEC_Bundle/Collections/Object_Collections/Object_Collection/Object_List/Object/Properties[xsi:type=”{ObjectType}”]</td>
