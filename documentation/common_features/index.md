@@ -23,8 +23,8 @@ This page contains commonly characterized features - whether statically, dynamic
     <td>
       <ul>
         <li> <a href=http://maecproject.github.io/data-model/4.1/FileObj/FileObjectType/>CybOX:FileObj</a>
-   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinFileObj/WinFileObjectType/>CybOX:WinFileObj</a>
-		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecFileObj/WinExecFileObjectType/>CybOX:WinExecFileObj</a>
+   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinFileObj/WindowsFileObjectType/>CybOX:WinFileObj</a>
+		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>CybOX:WinExecFileObj</a>
 	  </ul>
     </td>
   </tr>
