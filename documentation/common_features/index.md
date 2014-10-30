@@ -234,7 +234,7 @@ This page contains commonly characterized features - whether statically, dynamic
 
 <table class="table-features">
   <tr style="background-color:#0040FF">
-    <th colspan="2"><feature>Simple Hash (e.g., MD5)</feature></th>
+    <th colspan="2"><feature>Simple Hash</feature></th>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
     <th>MAEC/CybOX Schemas</th>
@@ -242,7 +242,7 @@ This page contains commonly characterized features - whether statically, dynamic
   <tr>
     <td>
       <ul>
-	    <li> File/Hashes/Hash/Type[xsi:type=”cyboxVocabs:HashNameVocab-1.0”]={hash name}
+	    <li> File/Hashes/Hash/Type[xsi:type=”cyboxVocabs:HashNameVocab-1.0”]={hash name} (e.g., MD5)
 		<li> File/Hashes/Hash/Simple_Hash_Value
 	  </ul>
     </td>
@@ -305,7 +305,7 @@ This page contains commonly characterized features - whether statically, dynamic
 
 <table class="table-features">
   <tr style="background-color:#0040FF">
-    <th colspan="2"><feature>Fuzzy Hash (e.g., SSDEEP)</feature></th>
+    <th colspan="2"><feature>Fuzzy Hash</feature></th>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
     <th>MAEC/CybOX Schemas</th>
@@ -313,7 +313,7 @@ This page contains commonly characterized features - whether statically, dynamic
   <tr>
     <td>
       <ul>
-	    <li> File/Hashes/Hash/Type[xsi:type=”cyboxVocabs:HashNameVocab-1.0”]={hash name}
+	    <li> File/Hashes/Hash/Type[xsi:type=”cyboxVocabs:HashNameVocab-1.0”]={hash name} (e.g., SSDEEP)
 		<li> File/Hashes/Hash/Fuzzy_Hash_Value
 	  </ul>
     </td>
@@ -369,6 +369,56 @@ This page contains commonly characterized features - whether statically, dynamic
 	</cybox:Properties> 
   </maecPackage:Malware_Instance_Object_Attributes>
 </maecPackage:Malware_Subject>
+{% endhighlight %}
+    </td>
+  </tr>
+</table>
+
+<table class="table-features">
+  <tr style="background-color:#0040FF">
+    <th colspan="2"><feature>AV Classifications</feature></th>
+  <tr style="background-color:#A9D0F5">
+    <th>MAEC/CybOX Object Elements</th>
+    <th>MAEC/CybOX Schemas</th>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+	    <li> MAEC_Bundle/AV_Classifications/AV_Classification/Engine_Version
+		<li> MAEC_Bundle/AV_Classifications/AV_Classification/Definition_Version
+		<li> MAEC_Bundle/AV_Classifications/AV_Classification/Classification_Name
+	  </ul>
+    </td>
+    <td>
+      <ul>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/maecBundle/BundleType>MAEC:maecBundle</a>
+	  </ul>
+    </td>
+  </tr>
+  <tr style="background-color:#A9D0F5">
+    <th>Typical MAEC Schema Locations</th>
+	<th>Description</th>
+  </tr>
+  <tr>   
+    <td>---</td>
+	<td>---</td>
+  </tr>
+  <tr style="background-color:#A9D0F5">
+    <th colspan="2">MAEC/CybOX XML Representation Example</th>
+  </tr>
+  <tr>
+    <td colspan="2">
+{% highlight xml %}
+<maecBundle:AV_Classifications> 
+  <maecBundle:AV_Classification> 
+    <cyboxCommon:Name>AhnLab-V3</cyboxCommon:Name> 
+	<maecBundle:Classification_Name>Win32/IRCBot.worm.variant</maecBundle:Classification_Name> 
+  </maecBundle:AV_Classification> 
+  <maecBundle:AV_Classification> 
+    <cyboxCommon:Name>Kaspersky</cyboxCommon:Name> 
+	<maecBundle:Classification_Name>Packed.Win32.Katusha.a</maecBundle:Classification_Name> 
+  </maecBundle:AV_Classification>
+<maecBundle:AV_Classifications>
 {% endhighlight %}
     </td>
   </tr>
