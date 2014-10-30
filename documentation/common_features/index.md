@@ -61,7 +61,7 @@ This page contains commonly characterized features - whether statically, dynamic
   <tr>
     <td colspan="2">
 {% highlight xml %}
-<cybox: Associated_Object id="maec-example-obj-2"> 
+<cybox:Associated_Object id="maec-example-obj-2"> 
   <cybox:Properties xsi:type="WinExecFileObj:WindowsExecutableFileObjectType"> 
     <FileObj:File_Name>ws2help.PNF</FileObj:File_Name> 
     <FileObj:File_Path>C:\Documents and Settings\user\Local Settings\Application\Data</FileObj:Full_Path>
