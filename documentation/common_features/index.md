@@ -292,7 +292,8 @@ This page contains commonly characterized features - whether statically, dynamic
     <cybox:Properties xsi:type="WinExecutableFileObj:WindowsExecutableFileObjectType"> 
 	  <FileObj:Hashes> 
 	    <cyboxCommon:Hash> 
-		  <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type> <cyboxCommon:Simple_Hash_Value>32530b68d78e5bcbd73a138276f45490</cyboxCommon:Simple_Hash_Value> 
+		  <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type> 
+		  <cyboxCommon:Simple_Hash_Value>32530b68d78e5bcbd73a138276f45490</cyboxCommon:Simple_Hash_Value> 
         </cyboxCommon:Hash> 
 	  </FileObj:Hashes> 
 	</cybox:Properties> 
@@ -363,7 +364,8 @@ This page contains commonly characterized features - whether statically, dynamic
     <cybox:Properties xsi:type="WinExecutableFileObj:WindowsExecutableFileObjectType"> 
 	  <FileObj:Hashes> 
 	    <cyboxCommon:Hash> 
-		  <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SSDEEP</cyboxCommon:Type> <cyboxCommon:Fuzzy_Hash_Value>768:McAQ8tPlH25e85Q2OiYpD08NvHmjJ97UfPMO47sekO:uN9M553OiiN/OJ9MM+e3</cyboxCommon:Fuzzy_Hash_Value> 
+		  <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SSDEEP</cyboxCommon:Type> 
+		  <cyboxCommon:Fuzzy_Hash_Value>768:McAQ8tPlH25e85Q2OiYpD08NvHmjJ97UfPMO47sekO:uN9M553OiiN/OJ9MM+e3</cyboxCommon:Fuzzy_Hash_Value> 
         </cyboxCommon:Hash> 
 	  </FileObj:Hashes> 
 	</cybox:Properties> 
@@ -419,6 +421,79 @@ This page contains commonly characterized features - whether statically, dynamic
 	<maecBundle:Classification_Name>Packed.Win32.Katusha.a</maecBundle:Classification_Name> 
   </maecBundle:AV_Classification>
 <maecBundle:AV_Classifications>
+{% endhighlight %}
+    </td>
+  </tr>
+</table>
+
+<table class="table-features">
+  <tr style="background-color:#0040FF">
+    <th colspan="2"><feature>Windows PE File Attributes</feature></th>
+  <tr style="background-color:#A9D0F5">
+    <th>MAEC/CybOX Object Elements</th>
+    <th>MAEC/CybOX Schemas</th>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+	    <li> Windows_Executable_File/Headers
+		<li> Windows_Executable_File/PE_Checksum
+		<li> Windows_Executable_File/Build_Information
+		<li> Windows_Executable_File/Type
+	  </ul>
+    </td>
+    <td>
+      <ul>
+		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>CybOX:WinExecFileObj</a>
+	  </ul>
+    </td>
+  </tr>
+  <tr style="background-color:#A9D0F5">
+    <th>Typical MAEC Schema Locations</th>
+	<th>Description</th>
+  </tr>
+  <tr>   
+    <td>MAEC_Package/Malware_Subjects/Malware_Subject/Malware_Subject/Malware_Instance_Object_Attributes</td>
+	<td>Used to capture information about a single Windows PE file associated with a malware instance.</td>
+  </tr>
+  <tr>
+	 <td>MAEC_Bundle/Malware_Instance_Object_Attributes</td>
+	 <td>Used to capture information about a single Windows PE file associated with a malware instance.</td>
+  </tr>
+  <tr>
+	 <td>MAEC_Bundle/Actions/Action/Associated_Objects/Associated_Object</td>
+	 <td>Used to capture information about a single Windows PE file related to an Action associated with a malware instance.</td>
+  </tr>
+  <tr>
+	 <td>MAEC_Bundle/Objects/Object</td>
+	 <td>Used to capture information about a single Windows PE file related to an Object associated with a malware instance, including an Object that represents some extracted feature (e.g., strings).</td>
+  </tr>
+  <tr>   <td>MAEC_Bundle/Collections/Action_Collections/Action_Collection/Action_List/Action/Associated_Objects/Associated_Object</td>
+	<td>Used to capture information about a single Windows PE file related to an Action in an Action Collection.</td>
+  </tr>
+  <tr>
+    <td>MAEC_Bundle/Collections/Object_Collections/Object_Collection/Object_List/Object</td>
+	<td>Used to capture information about a single Windows PE file related to an Object in an Object Collection.</td>
+  </tr>
+  <tr style="background-color:#A9D0F5">
+    <th colspan="2">MAEC/CybOX XML Representation Example</th>
+  </tr>
+  <tr>
+    <td colspan="2">
+{% highlight xml %}
+<maecBundle:Object id="maec-example-obj-1">
+  <cybox:Properties xsi:type="WinExecFileObj:WindowsExecutableFileObjectType"> 
+    <WinExecFileObj:Headers> 
+	  <WinExecFileObj:Optional_Header> 
+	    <WinExecFileObj:Major_Linker_Version>06</WinExecFileObj:Major_Linker_Version> 
+		<WinExecFileObj:Minor_Linker_Version>00</WinExecFileObj:Minor_Linker_Version> 
+		<WinExecFileObj:Base_Of_Code>036418</WinExecFileObj:Base_Of_Code> 
+		<WinExecFileObj:Subsystem>Windows_GUI</WinExecFileObj:Subsystem> 
+	  </WinExecFileObj:Optional_Header> 
+	</WinExecFileObj:Headers> 
+    <WinExecFileObj:Type>Executable</WinExecFileObj:Type> 
+  </cybox:Properties> 
+</maecBundle:Object>
 {% endhighlight %}
     </td>
   </tr>
