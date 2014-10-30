@@ -73,8 +73,6 @@ This page contains commonly characterized features - whether statically, dynamic
   </tr>
 </table>
 
-### Universal Resource Indicator (URI)
-
 <table class="table-features">
   <tr style="background-color:#0000FF">
     <th colspan="2"><feature>Universal Resource Indicator (URI)</feature></th>
