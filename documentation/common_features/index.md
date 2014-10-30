@@ -73,10 +73,12 @@ This page contains commonly characterized features - whether statically, dynamic
   </tr>
 </table>
 
-<br>
 ### Universal Resource Indicator (URI)
 
 <table class="table-features">
+  <tr style="background-color:#0000FF">
+    <th colspan="2"><feature>Universal Resource Indicator (URI)</feature></th>
+  </tr>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
     <th>MAEC/CybOX Schemas</th>
@@ -136,7 +138,6 @@ This page contains commonly characterized features - whether statically, dynamic
   </tr>
 </table>
 		   
-<br>
 ### CVE Identifier
 
 <table class="table-features">
@@ -182,7 +183,6 @@ This page contains commonly characterized features - whether statically, dynamic
   </tr>
 </table>
 
-<br>
 ### Code Attributes
 
 <table class="table-features">
@@ -215,6 +215,9 @@ This page contains commonly characterized features - whether statically, dynamic
   <tr>
 	 <td>MAEC_Bundle/Objects/Object</td>
 	 <td>Used to capture a code attributes related to an Object associated with a malware instance.</td>
+  </tr>
+  <tr style="background-color:#A9D0F5">
+    <th colspan="2">MAEC/CybOX XML Representation Example</th>
   </tr>
   <tr>
     <td colspan="2">
