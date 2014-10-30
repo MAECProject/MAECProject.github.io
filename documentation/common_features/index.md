@@ -73,6 +73,7 @@ This page contains commonly characterized features - whether statically, dynamic
   </tr>
 </table>
 
+<br>
 ### Universal Resource Indicator (URI)
 
 <table class="table-features">
@@ -135,3 +136,97 @@ This page contains commonly characterized features - whether statically, dynamic
   </tr>
 </table>
 		   
+<br>
+### CVE Identifier
+
+<table class="table-features">
+  <tr style="background-color:#A9D0F5">
+    <th>MAEC/CybOX Object Elements</th>
+    <th>MAEC/CybOX Schemas</th>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+	    <li> MAEC_Bundle/Behaviors/Behavior/Purpose/Vulnerability_Exploit/CVE
+	  </ul>
+    </td>
+    <td>
+      <ul>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/maecBundle/BundleType>MAEC:maecBundle</a>
+	  </ul>
+    </td>
+  </tr>
+  <tr style="background-color:#A9D0F5">
+    <th>Typical MAEC Schema Locations</th>
+	<th>Description</th>
+  </tr>
+  <tr>   
+    <td>---</td>
+	<td>---</td>
+  </tr>
+  <tr style="background-color:#A9D0F5">
+    <th colspan="2">MAEC/CybOX XML Representation Example</th>
+  </tr>
+  <tr>
+    <td colspan="2">
+{% highlight xml %}
+<maecBundle:Behavior id="maec-example-bhv-1"> 
+  <maecBundle:Purpose> 
+    <maecBundle:Vulnerability_Exploit> 
+	  <maecBundle:CVE cve_id="CVE-2010-0188"/> 
+	</maecBundle:Vulnerability_Exploit>
+  </maecBundle:Purpose> 
+</maecBundle:Behavior>
+{% endhighlight %}
+    </td>
+  </tr>
+</table>
+
+<br>
+### Code Attributes
+
+<table class="table-features">
+  <tr style="background-color:#A9D0F5">
+    <th>MAEC/CybOX Object Elements</th>
+    <th>MAEC/CybOX Schemas</th>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+	    <li> CodeObj/Purpose
+		<li> CodeObj/Code_Language
+		<li> CodeObj/Code_Segment
+	  </ul>
+    </td>
+    <td>
+      <ul>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/CodeObj/CodeObjectType/>CybOX:CodeObj</a>
+	  </ul>
+    </td>
+  </tr>
+  <tr style="background-color:#A9D0F5">
+    <th>Typical MAEC Schema Locations</th>
+	<th>Description</th>
+  </tr>
+  <tr>   
+    <td>MAEC_Bundle/Actions/Action/Associated_Objects/Associated_Object/Related_Objects/Related_Object</td>
+	<td>Used to capture code attributes related to an Action associated with a malware instance.</td>
+  </tr>
+  <tr>
+	 <td>MAEC_Bundle/Objects/Object</td>
+	 <td>Used to capture a code attributes related to an Object associated with a malware instance.</td>
+  </tr>
+  <tr>
+    <td colspan="2">
+{% highlight xml %}
+<cybox:Related_Object id="maec-example-obj-7"> 
+  <cybox:Properties xsi:type="CodeObj:CodeObjectType"> 
+    <CodeObj:Purpose>Shellcode</CodeObj:Purpose> 
+    <CodeObj:Code_Language>Assembly</CodeObj:Code_Language> 
+    <CodeObj:Code_Segment_XOR><![CDATA[76277b43e787dd1f67ebb85ed101]></CodeObj:Code_Segment_XOR> 
+  </cybox:Properties> 
+</cybox:Related_Object>
+{% endhighlight %}
+    </td>
+  </tr>
+</table>
