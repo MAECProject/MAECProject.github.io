@@ -5,8 +5,6 @@ title: Common Features
 
 This page contains commonly characterized features - whether statically, dynamically, or manually identified in malware - along with their mappings to MAEC/CybOX object elements, the associated MAEC/CybOX schemas, the typical MAEC schema locations of the object elements (specified via a quasi-XPath like expression), and an explicit XML representation example. Note that all object elements are characterized through their Properties field, and that only the most commonly used object elements are listed for each feature (please refer to the applicable schemas for the complete lists).  
 
-<br>
-
 <table class="table-features">
   <tr style="background-color:#0040FF">
     <th colspan="2"><feature>File Attributes</feature></th>
@@ -229,6 +227,148 @@ This page contains commonly characterized features - whether statically, dynamic
     <CodeObj:Code_Segment_XOR><![CDATA[76277b43e787dd1f67ebb85ed101]></CodeObj:Code_Segment_XOR> 
   </cybox:Properties> 
 </cybox:Related_Object>
+{% endhighlight %}
+    </td>
+  </tr>
+</table>
+
+<table class="table-features">
+  <tr style="background-color:#0040FF">
+    <th colspan="2"><feature>Simple Hash (e.g., MD5)</feature></th>
+  <tr style="background-color:#A9D0F5">
+    <th>MAEC/CybOX Object Elements</th>
+    <th>MAEC/CybOX Schemas</th>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+	    <li> File/Hashes/Hash/Type[xsi:type=”cyboxVocabs:HashNameVocab-1.0”]={hash name}
+		<li> File/Hashes/Hash/Simple_Hash_Value
+	  </ul>
+    </td>
+    <td>
+      <ul>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/FileObj/FileObjectType/>CybOX:FileObj</a>
+   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinFileObj/WindowsFileObjectType/>CybOX:WinFileObj</a>
+		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>CybOX:WinExecFileObj</a>
+	  </ul>
+    </td>
+  </tr>
+  <tr style="background-color:#A9D0F5">
+    <th>Typical MAEC Schema Locations</th>
+	<th>Description</th>
+  </tr>
+  <tr>   
+    <td>MAEC_Package/Malware_Subjects/Malware_Subject/Malware_Subject/Malware_Instance_Object_Attributes</td>
+	<td>Used to capture simple hash information associated with a malware instance.</td>
+  </tr>
+  <tr>
+	 <td>MAEC_Bundle/Malware_Instance_Object_Attributes</td>
+	 <td>Used to capture simple hash information associated with a malware instance.</td>
+  </tr>
+  <tr>
+	 <td>MAEC_Bundle/Actions/Action/Associated_Objects/Associated_Object</td>
+	 <td>Used to capture simple hash information related to an Action associated with a malware instance.</td>
+  </tr>
+  <tr>
+	 <td>MAEC_Bundle/Objects/Object</td>
+	 <td>Used to capture simple hash information related to an Object associated with a malware instance.</td>
+  </tr>
+  <tr>   <td>MAEC_Bundle/Collections/Action_Collections/Action_Collection/Action_List/Action/Associated_Objects/Associated_Object</td>
+	<td>Used to capture simple hash information related to an Action in an Action Collection.</td>
+  </tr>
+  <tr>
+    <td>MAEC_Bundle/Collections/Object_Collections/Object_Collection/Object_List/Object</td>
+	<td>Used to capture simple hash information related to an Object in an Object Collection.</td>
+  </tr>
+  <tr style="background-color:#A9D0F5">
+    <th colspan="2">MAEC/CybOX XML Representation Example</th>
+  </tr>
+  <tr>
+    <td colspan="2">
+{% highlight xml %}
+<maecPackage:Malware_Subject id="maec-example-sub-1">
+  <maecPackage:Malware_Instance_Object_Attributes> 
+    <cybox:Properties xsi:type="WinExecutableFileObj:WindowsExecutableFileObjectType"> 
+	  <FileObj:Hashes> 
+	    <cyboxCommon:Hash> 
+		  <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">MD5</cyboxCommon:Type> <cyboxCommon:Simple_Hash_Value>32530b68d78e5bcbd73a138276f45490</cyboxCommon:Simple_Hash_Value> 
+        </cyboxCommon:Hash> 
+	  </FileObj:Hashes> 
+	</cybox:Properties> 
+  </maecPackage:Malware_Instance_Object_Attributes>
+</maecPackage:Malware_Subject>
+{% endhighlight %}
+    </td>
+  </tr>
+</table>
+
+<table class="table-features">
+  <tr style="background-color:#0040FF">
+    <th colspan="2"><feature>Fuzzy Hash (e.g., SSDEEP)</feature></th>
+  <tr style="background-color:#A9D0F5">
+    <th>MAEC/CybOX Object Elements</th>
+    <th>MAEC/CybOX Schemas</th>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+	    <li> File/Hashes/Hash/Type[xsi:type=”cyboxVocabs:HashNameVocab-1.0”]={hash name}
+		<li> File/Hashes/Hash/Fuzzy_Hash_Value
+	  </ul>
+    </td>
+    <td>
+      <ul>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/FileObj/FileObjectType/>CybOX:FileObj</a>
+   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinFileObj/WindowsFileObjectType/>CybOX:WinFileObj</a>
+		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>CybOX:WinExecFileObj</a>
+	  </ul>
+    </td>
+  </tr>
+  <tr style="background-color:#A9D0F5">
+    <th>Typical MAEC Schema Locations</th>
+	<th>Description</th>
+  </tr>
+  <tr>   
+    <td>MAEC_Package/Malware_Subjects/Malware_Subject/Malware_Subject/Malware_Instance_Object_Attributes</td>
+	<td>Used to capture fuzzy hash information associated with a malware instance.</td>
+  </tr>
+  <tr>
+	 <td>MAEC_Bundle/Malware_Instance_Object_Attributes</td>
+	 <td>Used to capture fuzzy hash information associated with a malware instance.</td>
+  </tr>
+  <tr>
+	 <td>MAEC_Bundle/Actions/Action/Associated_Objects/Associated_Object</td>
+	 <td>Used to capture fuzzy hash information related to an Action associated with a malware instance.</td>
+  </tr>
+  <tr>
+	 <td>MAEC_Bundle/Objects/Object</td>
+	 <td>Used to capture fuzzy hash information related to an Object associated with a malware instance.</td>
+  </tr>
+  <tr>   <td>MAEC_Bundle/Collections/Action_Collections/Action_Collection/Action_List/Action/Associated_Objects/Associated_Object</td>
+	<td>Used to capture fuzzy hash information related to an Action in an Action Collection.</td>
+  </tr>
+  <tr>
+    <td>MAEC_Bundle/Collections/Object_Collections/Object_Collection/Object_List/Object</td>
+	<td>Used to capture fuzzy hash information related to an Object in an Object Collection.</td>
+  </tr>
+  <tr style="background-color:#A9D0F5">
+    <th colspan="2">MAEC/CybOX XML Representation Example</th>
+  </tr>
+  <tr>
+    <td colspan="2">
+{% highlight xml %}
+<maecPackage:Malware_Subject id="maec-example-sub-2">
+  <maecPackage:Malware_Instance_Object_Attributes> 
+    <cybox:Properties xsi:type="WinExecutableFileObj:WindowsExecutableFileObjectType"> 
+	  <FileObj:Hashes> 
+	    <cyboxCommon:Hash> 
+		  <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SSDEEP</cyboxCommon:Type> <cyboxCommon:Fuzzy_Hash_Value>768:McAQ8tPlH25e85Q2OiYpD08NvHmjJ97UfPMO47sekO:uN9M553OiiN/OJ9MM+e3</cyboxCommon:Fuzzy_Hash_Value> 
+        </cyboxCommon:Hash> 
+	  </FileObj:Hashes> 
+	</cybox:Properties> 
+  </maecPackage:Malware_Instance_Object_Attributes>
+</maecPackage:Malware_Subject>
 {% endhighlight %}
     </td>
   </tr>
