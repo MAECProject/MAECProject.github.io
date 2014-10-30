@@ -124,11 +124,11 @@ This page contains commonly characterized features - whether statically, dynamic
   </tr>
   <tr>
     <td colspan="2">
-{% highlight xml linenos %}
+{% highlight xml %}
 <maecBundle:Malware_Instance_Object_Attributes>
-<cybox:Properties xsi:type="URIObj:URIObjectType"> 
-<URIObj:Value>http://samsonikonyou.ru:8080/navigator/jueoaritjuir.php</URIObj:Value> 
-</cybox:Properties> 
+  <cybox:Properties xsi:type="URIObj:URIObjectType"> 
+    <URIObj:Value>http://samsonikonyou.ru:8080/navigator/jueoaritjuir.php</URIObj:Value> 
+  </cybox:Properties> 
 </maecBundle:Malware_Instance_Object_Attributes>
 {% endhighlight %}
     </td>
