@@ -60,13 +60,14 @@ This page contains commonly characterized features - whether statically, dynamic
   </tr>
   <tr>
     <td colspan="2">
-{% highlight xml linenos %}
+{% highlight xml %}
 <cybox: Associated_Object id="maec-example-obj-2"> 
-<cybox:Properties xsi:type="WinExecFileObj:WindowsExecutableFileObjectType"> 
-<FileObj:File_Name>ws2help.PNF</FileObj:File_Name> 
-<FileObj:File_Path condition="FitsPattern" pattern_type="Regex">^C:\Documents and Settings\\s+user\s+\Local Settings\Application\Data</FileObj:Full_Path>
-<FileObj:Size_In_Bytes>196608</FileObj:Size_In_Bytes> </cybox:Properties>
-</cybox: Associated_Object>
+  <cybox:Properties xsi:type="WinExecFileObj:WindowsExecutableFileObjectType"> 
+    <FileObj:File_Name>ws2help.PNF</FileObj:File_Name> 
+    <FileObj:File_Path>C:\Documents and Settings\user\Local Settings\Application\Data</FileObj:Full_Path>
+    <FileObj:Size_In_Bytes>196608</FileObj:Size_In_Bytes>
+  </cybox:Properties>
+</cybox:Associated_Object>
 {% endhighlight %}
     </td>
   </tr>
