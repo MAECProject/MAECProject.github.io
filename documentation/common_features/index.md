@@ -5,9 +5,11 @@ title: Common Features
 
 This page contains commonly characterized features - whether statically, dynamically, or manually identified in malware - along with their mappings to MAEC/CybOX object elements, the associated MAEC/CybOX schemas, the typical MAEC schema locations of the object elements (specified via a quasi-XPath like expression), and an explicit XML representation example. Note that all object elements are characterized through their Properties field, and that only the most commonly used object elements are listed for each feature (please refer to the applicable schemas for the complete lists).  
 
-### File Attributes
+<br>
 
 <table class="table-features">
+  <tr style="background-color:#0040FF">
+    <th colspan="2"><feature>File Attributes</feature></th>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
     <th>MAEC/CybOX Schemas</th>
@@ -74,7 +76,7 @@ This page contains commonly characterized features - whether statically, dynamic
 </table>
 
 <table class="table-features">
-  <tr style="background-color:#0000FF">
+  <tr style="background-color:#0040FF">
     <th colspan="2"><feature>Universal Resource Indicator (URI)</feature></th>
   </tr>
   <tr style="background-color:#A9D0F5">
@@ -136,9 +138,9 @@ This page contains commonly characterized features - whether statically, dynamic
   </tr>
 </table>
 		   
-### CVE Identifier
-
 <table class="table-features">
+  <tr style="background-color:#0040FF">
+    <th colspan="2"><feature>CVE Identifier</feature></th>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
     <th>MAEC/CybOX Schemas</th>
@@ -181,9 +183,9 @@ This page contains commonly characterized features - whether statically, dynamic
   </tr>
 </table>
 
-### Code Attributes
-
 <table class="table-features">
+  <tr style="background-color:#0040FF">
+    <th colspan="2"><feature>Code Attributes</feature></th>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
     <th>MAEC/CybOX Schemas</th>
