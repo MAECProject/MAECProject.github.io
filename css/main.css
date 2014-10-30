@@ -142,6 +142,11 @@ hr.separator {
   vertical-align: middle;
 }
 
+feature {
+  font-size:200%;
+  font-color:#FFFFFF;
+}
+
 h1, h2 {
   clear: both;
 }
