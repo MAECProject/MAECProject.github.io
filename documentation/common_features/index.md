@@ -22,9 +22,9 @@ This page contains commonly characterized features - whether statically, dynamic
     </td>
     <td>
       <ul>
-        <li> <a href=http://maecproject.github.io/data-model/4.1/FileObj/FileObjectType/>CybOX:FileObj</a>
-   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinFileObj/WindowsFileObjectType/>CybOX:WinFileObj</a>
-		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>CybOX:WinExecFileObj</a>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/FileObj/FileObjectType/>CybOX::FileObj</a>
+   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinFileObj/WindowsFileObjectType/>CybOX::WinFileObj</a>
+		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>CybOX::WinExecFileObj</a>
 	  </ul>
     </td>
   </tr>
@@ -89,7 +89,7 @@ This page contains commonly characterized features - whether statically, dynamic
     </td>
     <td>
       <ul>
-        <li> <a href=http://maecproject.github.io/data-model/4.1/URIObj/URIObjectType/>CybOX:URIObj</a>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/URIObj/URIObjectType/>CybOX::URIObj</a>
 	  </ul>
     </td>
   </tr>
@@ -151,7 +151,7 @@ This page contains commonly characterized features - whether statically, dynamic
     </td>
     <td>
       <ul>
-        <li> <a href=http://maecproject.github.io/data-model/4.1/maecBundle/BundleType>MAEC:maecBundle</a>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/maecBundle/BundleType>MAEC::maecBundle</a>
 	  </ul>
     </td>
   </tr>
@@ -198,7 +198,7 @@ This page contains commonly characterized features - whether statically, dynamic
     </td>
     <td>
       <ul>
-        <li> <a href=http://maecproject.github.io/data-model/4.1/CodeObj/CodeObjectType/>CybOX:CodeObj</a>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/CodeObj/CodeObjectType/>CybOX::CodeObj</a>
 	  </ul>
     </td>
   </tr>
@@ -248,9 +248,9 @@ This page contains commonly characterized features - whether statically, dynamic
     </td>
     <td>
       <ul>
-        <li> <a href=http://maecproject.github.io/data-model/4.1/FileObj/FileObjectType/>CybOX:FileObj</a>
-   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinFileObj/WindowsFileObjectType/>CybOX:WinFileObj</a>
-		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>CybOX:WinExecFileObj</a>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/FileObj/FileObjectType/>CybOX::FileObj</a>
+   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinFileObj/WindowsFileObjectType/>CybOX::WinFileObj</a>
+		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>CybOX::WinExecFileObj</a>
 	  </ul>
     </td>
   </tr>
@@ -320,9 +320,9 @@ This page contains commonly characterized features - whether statically, dynamic
     </td>
     <td>
       <ul>
-        <li> <a href=http://maecproject.github.io/data-model/4.1/FileObj/FileObjectType/>CybOX:FileObj</a>
-   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinFileObj/WindowsFileObjectType/>CybOX:WinFileObj</a>
-		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>CybOX:WinExecFileObj</a>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/FileObj/FileObjectType/>CybOX::FileObj</a>
+   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinFileObj/WindowsFileObjectType/>CybOX::WinFileObj</a>
+		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>CybOX::WinExecFileObj</a>
 	  </ul>
     </td>
   </tr>
@@ -444,7 +444,7 @@ This page contains commonly characterized features - whether statically, dynamic
     </td>
     <td>
       <ul>
-		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>CybOX:WinExecFileObj</a>
+		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>CybOX::WinExecFileObj</a>
 	  </ul>
     </td>
   </tr>
@@ -516,9 +516,9 @@ This page contains commonly characterized features - whether statically, dynamic
     </td>
     <td>
       <ul>
-		<li> <a href=http://maecproject.github.io/data-model/4.1/FileObj/FileObjectType/>CybOX:FileObj</a>
-   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinFileObj/WindowsFileObjectType/>CybOX:WinFileObj</a>
-		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>CybOX:WinExecFileObj</a>
+		<li> <a href=http://maecproject.github.io/data-model/4.1/FileObj/FileObjectType/>CybOX::FileObj</a>
+   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinFileObj/WindowsFileObjectType/>CybOX::WinFileObj</a>
+		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>CybOX::WinExecFileObj</a>
 	  </ul>
     </td>
   </tr>
@@ -575,7 +575,7 @@ This page contains commonly characterized features - whether statically, dynamic
 
 <table class="table-features">
   <tr style="background-color:#0040FF">
-    <th colspan="2"><feature>Malware Family Name <font size="2">(as a CybOX Object custom property)</font></feature></th>
+    <th colspan="2"><feature>Malware Family Name <font size="3">(as a CybOX Object custom property)</font></feature></th>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
     <th>MAEC/CybOX Schemas</th>
@@ -588,7 +588,7 @@ This page contains commonly characterized features - whether statically, dynamic
     </td>
     <td>
       <ul>
-		<li> <a href=http://maecproject.github.io/data-model/4.1/cybox/PropertiesType/>CybOX:cybox</a>
+		<li> <a href=http://maecproject.github.io/data-model/4.1/cybox/PropertiesType/>CybOX::cybox</a>
 	  </ul>
     </td>
   </tr>
@@ -610,6 +610,48 @@ This page contains commonly characterized features - whether statically, dynamic
 	</cybox:CustomProperties>
   </cybox:Properties>
 </maecBundle:Malware_Instance_Object_Attributes >
+{% endhighlight %}
+    </td>
+  </tr>
+</table>
+
+<table class="table-features">
+  <tr style="background-color:#0040FF">
+    <th colspan="2"><feature>Malware Family Name <font size="3">(as a grouping relationship)</font></feature></th>
+  <tr style="background-color:#A9D0F5">
+    <th>MAEC/CybOX Object Elements</th>
+    <th>MAEC/CybOX Schemas</th>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+	    <li> MAEC_Package/Grouping_Relationship/Type[xsi:type=”maecVocabs:GroupingRelationshipTypeVocab-1.0”]=same malware family
+		<li> MAEC_Package/Grouping_Relationships/Grouping_Relationship/ Malware_Family_Name
+	  </ul>
+    </td>
+    <td>
+      <ul>
+		<li> <a href=http://maecproject.github.io/data-model/4.1/maecPackage/GroupingRelationshipType/>MAEC::maecPackage</a>
+	  </ul>
+    </td>
+  </tr>
+  <tr style="background-color:#A9D0F5">
+    <th>Typical MAEC Schema Locations</th>
+	<th>Description</th>
+  </tr>
+  <tr>
+	 <td>--</td>
+	 <td>--</td>
+  </tr>
+  <tr>
+    <td colspan="2">
+{% highlight xml %}
+<maecPackage:Grouping_Relationships>
+  <maecPackage:Grouping_Relationship>
+    <maecPackage:Type xsi:type="maecVocabs:GroupingRelationshipTypeVocab-1.0">same malware family</maecPackage:Type>
+	<maecPackage:Malware_Family_Name>Zeus</maecPackage:Malware_Family_Name>
+  </maecPackage:Grouping_Relationship>
+</maecPackage:Grouping_Relationships>
 {% endhighlight %}
     </td>
   </tr>
