@@ -572,3 +572,45 @@ This page contains commonly characterized features - whether statically, dynamic
     </td>
   </tr>
 </table>
+
+<table class="table-features">
+  <tr style="background-color:#0040FF">
+    <th colspan="2"><feature>Malware Family Name <font size="2">(as a CybOX Object custom property)</font></feature></th>
+  <tr style="background-color:#A9D0F5">
+    <th>MAEC/CybOX Object Elements</th>
+    <th>MAEC/CybOX Schemas</th>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+	    <li> Custom_Properties/Property
+	  </ul>
+    </td>
+    <td>
+      <ul>
+		<li> <a href=http://maecproject.github.io/data-model/4.1/cybox/PropertiesType/>CybOX:cybox</a>
+	  </ul>
+    </td>
+  </tr>
+  <tr style="background-color:#A9D0F5">
+    <th>Typical MAEC Schema Locations</th>
+	<th>Description</th>
+  </tr>
+  <tr>
+	 <td>MAEC_Bundle/Malware_Instance_Object_Attributes/Properties</td>
+	 <td>Used to capture a malware family name associated with a malware instance.</td>
+  </tr>
+  <tr>
+    <td colspan="2">
+{% highlight xml %}
+<maecBundle:Malware_Instance_Object_Attributes> 
+  <cybox:Properties>
+    <cybox:CustomProperties>
+	  <cybox:Property name="Family Name" description="Zeus"/>
+	</cybox:CustomProperties>
+  </cybox:Properties>
+</maecBundle:Malware_Instance_Object_Attributes >
+{% endhighlight %}
+    </td>
+  </tr>
+</table>
