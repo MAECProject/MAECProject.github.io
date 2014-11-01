@@ -656,3 +656,67 @@ This page contains commonly characterized features - whether statically, dynamic
     </td>
   </tr>
 </table>
+
+<table class="table-features">
+  <tr style="background-color:#0040FF">
+    <th colspan="2"><feature>Registry Key Attributes</feature></th>
+  <tr style="background-color:#A9D0F5">
+    <th>MAEC/CybOX Object Elements</th>
+    <th>MAEC/CybOX Schemas</th>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+	    <li> WinRegistryKeyObj/Key
+		<li> WinRegistryKeyObj/Hive
+		<li> WinRegistryKeyObj/Values/Value/Name
+		<li> WinRegistryKeyObj/Values/Value/Data
+	  </ul>
+    </td>
+    <td>
+      <ul>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/WinRegistryKeyObj/WindowsRegistryKeyObjectType/>CybOX::WinRegistryKeyObj</a>
+	  </ul>
+    </td>
+  </tr>
+  <tr style="background-color:#A9D0F5">
+    <th>Typical MAEC Schema Locations</th>
+	<th>Description</th>
+  </tr>
+  <tr>
+	 <td>MAEC_Bundle/Actions/Action/Associated_Objects/Associated_Object</td>
+	 <td>Used to capture attributes of a single registry key related to an Action associated with a malware instance.</td>
+  </tr>
+  <tr>
+	 <td>MAEC_Bundle/Objects/Object</td>
+	 <td>Used to capture attributes of a single registry key related to an Object associated with a malware instance, including an Object that represents some extracted feature (e.g., strings).</td>
+  </tr>
+  <tr>   <td>MAEC_Bundle/Collections/Action_Collections/Action_Collection/Action_List/Action/Associated_Objects/Associated_Object</td>
+	<td>Used to capture attributes of a single registry key related to an Action in an Action Collection.</td>
+  </tr>
+  <tr>
+    <td>MAEC_Bundle/Collections/Object_Collections/Object_Collection/Object_List/Object</td>
+	<td>Used to capture attributes of a single registry key related to an Object in an Object Collection.</td>
+  </tr>
+  <tr style="background-color:#A9D0F5">
+    <th colspan="2">MAEC/CybOX XML Representation Example</th>
+  </tr>
+  <tr>
+    <td colspan="2">
+{% highlight xml %}
+<cybox:Associated_Object>
+  <cybox:Properties xsi:type="WinRegistryKeyObj:WindowsRegistryKeyObjectType">
+    <WinRegistryKeyObj:Key>Software\Microsoft\Windows\CurrentVersion\Run</WinRegistryKeyObj:Key>
+	<WinRegistryKeyObj:Hive>HKEY_CURRENT_USER</WinRegistryKeyObj:Hive>
+	<WinRegistryKeyObj:Values>
+	  <WinRegistryKeyObj:Value>
+	    <WinRegistryKeyObj:Name>Zcxaxz</WinRegistryKeyObj:Name>
+		<WinRegistryKeyObj:Data>%AppData%\Zcxaxz.exe</WinRegistryKeyObj:Data>
+	  </WinRegistryKeyObj:Value>
+	</WinRegistryKeyObj:Values>
+  </cybox:Properties>
+</cybox:Associated_Object>
+{% endhighlight %}
+    </td>
+  </tr>
+</table>
