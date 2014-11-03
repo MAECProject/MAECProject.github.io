@@ -3,14 +3,14 @@ layout: flat
 title: Common Features
 ---
 
-This page contains an alphabetized list commonly characterized features - whether statically, dynamically, or manually identified in malware - along with their mappings to MAEC/CybOX object elements, the associated MAEC/CybOX schemas, the typical MAEC schema locations of the object elements (specified via a quasi-XPath like expression), and an explicit XML representation example. Note that all object elements are characterized through their Properties field, and that only the most commonly used object elements are listed for each feature (please refer to the applicable schemas for the complete lists).  
+This page contains an alphabetized list of commonly characterized features - whether statically, dynamically, or manually identified in malware - along with their mappings to MAEC/CybOX object elements, the associated MAEC/CybOX types, the typical MAEC schema locations of the object elements (specified via a quasi-XPath like expression), and an explicit XML representation example. Note that all object elements are characterized through their Properties field, and that only the most commonly used object elements are listed for each feature (please refer to the applicable schemas for the complete lists).  
 
 <table class="table-features">
   <tr style="background-color:#0040FF">
     <th colspan="2"><feature>AV Classifications</feature></th>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
-    <th>MAEC/CybOX Schemas</th>
+    <th>MAEC/CybOX Types</th>
   </tr>
   <tr>
     <td>
@@ -22,7 +22,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     </td>
     <td>
       <ul>
-        <li> <a href=http://maecproject.github.io/data-model/4.1/maecBundle/AVClassificationType>MAEC::maecBundle</a>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/maecBundle/AVClassificationType>AVClassificationType</a>
 	  </ul>
     </td>
   </tr>
@@ -60,7 +60,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     <th colspan="2"><feature>Code Attributes</feature></th>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
-    <th>MAEC/CybOX Schemas</th>
+    <th>MAEC/CybOX Types</th>
   </tr>
   <tr>
     <td>
@@ -72,7 +72,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     </td>
     <td>
       <ul>
-        <li> <a href=http://maecproject.github.io/data-model/4.1/CodeObj/CodeObjectType/>CybOX::CodeObj</a>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/CodeObj/CodeObjectType/>CodeObjectType</a>
 	  </ul>
     </td>
   </tr>
@@ -111,7 +111,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     <th colspan="2"><feature>CVE Identifier</feature></th>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
-    <th>MAEC/CybOX Schemas</th>
+    <th>MAEC/CybOX Types</th>
   </tr>
   <tr>
     <td>
@@ -121,7 +121,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     </td>
     <td>
       <ul>
-        <li> <a href=http://maecproject.github.io/data-model/4.1/maecBundle/CVEVulnerabilityType>MAEC::maecBundle</a>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/maecBundle/CVEVulnerabilityType>CVEVulnerabilityType</a>
 	  </ul>
     </td>
   </tr>
@@ -156,7 +156,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     <th colspan="2"><feature>File Attributes</feature></th>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
-    <th>MAEC/CybOX Schemas</th>
+    <th>MAEC/CybOX Types</th>
   </tr>
   <tr>
     <td>
@@ -168,9 +168,9 @@ This page contains an alphabetized list commonly characterized features - whethe
     </td>
     <td>
       <ul>
-        <li> <a href=http://maecproject.github.io/data-model/4.1/FileObj/FileObjectType/>CybOX::FileObj</a>
-   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinFileObj/WindowsFileObjectType/>CybOX::WinFileObj</a>
-		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>CybOX::WinExecFileObj</a>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/FileObj/FileObjectType/>FileObjectType</a>
+   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinFileObj/WindowsFileObjectType/>WindowsFileObjectType</a>
+		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>WindowsExecutableFileObjectType</a>
 	  </ul>
     </td>
   </tr>
@@ -224,7 +224,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     <th colspan="2"><feature>File Attributes - Windows PE File Attributes</feature></th>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
-    <th>MAEC/CybOX Schemas</th>
+    <th>MAEC/CybOX Types</th>
   </tr>
   <tr>
     <td>
@@ -237,7 +237,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     </td>
     <td>
       <ul>
-		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>CybOX::WinExecFileObj</a>
+		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>WindowsExecutableFileObjectType</a>
 	  </ul>
     </td>
   </tr>
@@ -297,7 +297,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     <th colspan="2"><feature>Hash - Fuzzy Hash</feature></th>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
-    <th>MAEC/CybOX Schemas</th>
+    <th>MAEC/CybOX Types</th>
   </tr>
   <tr>
     <td>
@@ -308,9 +308,9 @@ This page contains an alphabetized list commonly characterized features - whethe
     </td>
     <td>
       <ul>
-        <li> <a href=http://maecproject.github.io/data-model/4.1/FileObj/FileObjectType/>CybOX::FileObj</a>
-   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinFileObj/WindowsFileObjectType/>CybOX::WinFileObj</a>
-		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>CybOX::WinExecFileObj</a>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/FileObj/FileObjectType/>FileObjectType</a>
+   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinFileObj/WindowsFileObjectType/>WindowsFileObjectType</a>
+		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>WindowsExecutableFileObjectType</a>
 	  </ul>
     </td>
   </tr>
@@ -369,7 +369,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     <th colspan="2"><feature>Hash - Simple Hash</feature></th>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
-    <th>MAEC/CybOX Schemas</th>
+    <th>MAEC/CybOX Types</th>
   </tr>
   <tr>
     <td>
@@ -380,9 +380,9 @@ This page contains an alphabetized list commonly characterized features - whethe
     </td>
     <td>
       <ul>
-        <li> <a href=http://maecproject.github.io/data-model/4.1/FileObj/FileObjectType/>CybOX::FileObj</a>
-   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinFileObj/WindowsFileObjectType/>CybOX::WinFileObj</a>
-		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>CybOX::WinExecFileObj</a>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/FileObj/FileObjectType/>FileObjectType</a>
+   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinFileObj/WindowsFileObjectType/>WindowsFileObjectType</a>
+		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>WindowsExecutableFileObjectType</a>
 	  </ul>
     </td>
   </tr>
@@ -441,7 +441,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     <th colspan="2"><feature>HTTP Session</feature></th>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
-    <th>MAEC/CybOX Schemas</th>
+    <th>MAEC/CybOX Types</th>
   </tr>
   <tr>
     <td>
@@ -454,7 +454,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     </td>
     <td>
       <ul>
-        <li> <a href=http://maecproject.github.io/data-model/4.1/HTTPSessionObj/HTTPSessionObjectType/>CybOX::HTTPSessionObj</a>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/HTTPSessionObj/HTTPSessionObjectType/>HTTPSessionObjectType</a>
 	  </ul>
     </td>
   </tr>
@@ -505,7 +505,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     <th colspan="2"><feature>Malware Family Name <font size="3">(as a CybOX Object custom property)</font></feature></th>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
-    <th>MAEC/CybOX Schemas</th>
+    <th>MAEC/CybOX Types</th>
   </tr>
   <tr>
     <td>
@@ -515,7 +515,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     </td>
     <td>
       <ul>
-		<li> <a href=http://maecproject.github.io/data-model/4.1/cybox/PropertiesType/>CybOX::cybox</a>
+		<li> <a href=http://maecproject.github.io/data-model/4.1/cybox/PropertiesType/>PropertiesType</a>
 	  </ul>
     </td>
   </tr>
@@ -547,7 +547,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     <th colspan="2"><feature>Malware Family Name <font size="3">(as a grouping relationship)</font></feature></th>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
-    <th>MAEC/CybOX Schemas</th>
+    <th>MAEC/CybOX Types</th>
   </tr>
   <tr>
     <td>
@@ -558,7 +558,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     </td>
     <td>
       <ul>
-		<li> <a href=http://maecproject.github.io/data-model/4.1/maecPackage/GroupingRelationshipType/>MAEC::maecPackage</a>
+		<li> <a href=http://maecproject.github.io/data-model/4.1/maecPackage/GroupingRelationshipType/>GroupingRelationshipType</a>
 	  </ul>
     </td>
   </tr>
@@ -589,7 +589,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     <th colspan="2"><feature>Mutex</feature></th>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
-    <th>MAEC/CybOX Schemas</th>
+    <th>MAEC/CybOX Types</th>
   </tr>
   <tr>
     <td>
@@ -599,8 +599,8 @@ This page contains an alphabetized list commonly characterized features - whethe
     </td>
     <td>
       <ul>
-        <li> <a href=http://maecproject.github.io/data-model/4.1/MutexObj/MutexObjectType/>CybOX::MutexObj</a>
-   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinMutexObj/WindowsMutexObjectType/>CybOX::WinMutexObj</a>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/MutexObj/MutexObjectType/>MutexObjectType</a>
+   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinMutexObj/WindowsMutexObjectType/WindowsMutexObjectType</a>
 	  </ul>
     </td>
   </tr>
@@ -650,7 +650,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     <th colspan="2"><feature>Packer Information</feature></th>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
-    <th>MAEC/CybOX Schemas</th>
+    <th>MAEC/CybOX Types</th>
   </tr>
   <tr>
     <td>
@@ -662,9 +662,9 @@ This page contains an alphabetized list commonly characterized features - whethe
     </td>
     <td>
       <ul>
-		<li> <a href=http://maecproject.github.io/data-model/4.1/FileObj/FileObjectType/>CybOX::FileObj</a>
-   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinFileObj/WindowsFileObjectType/>CybOX::WinFileObj</a>
-		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>CybOX::WinExecFileObj</a>
+		<li> <a href=http://maecproject.github.io/data-model/4.1/FileObj/FileObjectType/>FileObjectType</a>
+   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinFileObj/WindowsFileObjectType/>WindowsFileObjectType</a>
+		<li> <a href=http://maecproject.github.io/data-model/4.1/WinExecutableFileObj/WindowsExecutableFileObjectType/>WindowsExecutableFileObjectType</a>
 	  </ul>
     </td>
   </tr>
@@ -724,7 +724,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     <th colspan="2"><feature>Process</feature></th>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
-    <th>MAEC/CybOX Schemas</th>
+    <th>MAEC/CybOX Types</th>
   </tr>
   <tr>
     <td>
@@ -735,8 +735,8 @@ This page contains an alphabetized list commonly characterized features - whethe
     </td>
     <td>
       <ul>
-        <li> <a href=http://maecproject.github.io/data-model/4.1/ProcessObj/ProcessObjectType/>CybOX::ProcessObj</a>
-   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinProcessObj/WindowsProcessObjectType/>CybOX::WinProcessObj</a>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/ProcessObj/ProcessObjectType/>ProcessObjectType</a>
+   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinProcessObj/WindowsProcessObjectType/>WindowsProcessObjectType</a>
 	  </ul>
     </td>
   </tr>
@@ -801,7 +801,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     <th colspan="2"><feature>Raw Artifact Data</feature></th>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
-    <th>MAEC/CybOX Schemas</th>
+    <th>MAEC/CybOX Types</th>
   </tr>
   <tr>
     <td>
@@ -811,7 +811,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     </td>
     <td>
       <ul>
-        <li> <a href=http://maecproject.github.io/data-model/4.1/ArtifactObj/ArtifactObjectType/>CybOX::ArtifactObj</a>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/ArtifactObj/ArtifactObjectType/>ArtifactObjectType</a>
 	  </ul>
     </td>
   </tr>
@@ -849,7 +849,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     <th colspan="2"><feature>Registry Key Attributes</feature></th>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
-    <th>MAEC/CybOX Schemas</th>
+    <th>MAEC/CybOX Types</th>
   </tr>
   <tr>
     <td>
@@ -862,7 +862,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     </td>
     <td>
       <ul>
-        <li> <a href=http://maecproject.github.io/data-model/4.1/WinRegistryKeyObj/WindowsRegistryKeyObjectType/>CybOX::WinRegistryKeyObj</a>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/WinRegistryKeyObj/WindowsRegistryKeyObjectType/>WindowsRegistryKeyObjectType</a>
 	  </ul>
     </td>
   </tr>
@@ -914,7 +914,7 @@ This page contains an alphabetized list commonly characterized features - whethe
   </tr>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
-    <th>MAEC/CybOX Schemas</th>
+    <th>MAEC/CybOX Types</th>
   </tr>
   <tr>
     <td>
@@ -924,7 +924,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     </td>
     <td>
       <ul>
-        <li> <a href=http://maecproject.github.io/data-model/4.1/URIObj/URIObjectType/>CybOX::URIObj</a>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/URIObj/URIObjectType/>URIObjectType</a>
 	  </ul>
     </td>
   </tr>
