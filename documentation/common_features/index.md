@@ -600,7 +600,7 @@ This page contains an alphabetized list of commonly characterized features - whe
     <td>
       <ul>
         <li> <a href=http://maecproject.github.io/data-model/4.1/MutexObj/MutexObjectType/>MutexObjectType</a>
-   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinMutexObj/WindowsMutexObjectType/WindowsMutexObjectType</a>
+   	    <li> <a href=http://maecproject.github.io/data-model/4.1/WinMutexObj/WindowsMutexObjectType/>WindowsMutexObjectType</a>
 	  </ul>
     </td>
   </tr>

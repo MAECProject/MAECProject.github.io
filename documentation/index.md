@@ -29,8 +29,8 @@ title: Documentation
     </div>
 		<div class="well">
       <h4><a href="common_features">Common Malware Features</a></h4>
-      <p>Statically, dynamically, and manually identified malware features that are commonly characterized with MAEC and CybOX are defined.</p>
-      <a class="btn btn-primary" href="data_model_overview">Go »</a>
+      <p>We list statically, dynamically, and manually identified malware features that are commonly characterized with MAEC and CybOX.</p>
+      <a class="btn btn-primary" href="common_features">Go »</a>
     </div>
 	<div class="well">
       <h4><a href="utils">Utilities and Developer Resources</a></h4>
