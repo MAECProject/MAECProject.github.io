@@ -22,7 +22,7 @@ This page contains an alphabetized list commonly characterized features - whethe
     </td>
     <td>
       <ul>
-        <li> <a href=http://maecproject.github.io/data-model/4.1/maecBundle/BundleType>MAEC:maecBundle</a>
+        <li> <a href=http://maecproject.github.io/data-model/4.1/maecBundle/BundleType>MAEC::maecBundle</a>
 	  </ul>
     </td>
   </tr>
