@@ -13,7 +13,7 @@ Documented here is the MAEC Language roadmap, taking into account the current re
       </div>
       <div class="panel-body">
 		  <ul>
-			<li>Current release (Feburary 11th, 2014)
+			<li>Current release (February 11th, 2014)
 		      <ul>
 			    <li>Available <a href="http://maec.mitre.org/language/version4.1/">here</a></li>
 			  </ul>
