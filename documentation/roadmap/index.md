@@ -10,12 +10,12 @@ title: Language Roadmap
         <h3 class="panel-title">MAEC v4.1</h3>
       </div>
       <div class="panel-body">
-	  
- * Current release (Feburary 11th, 2014)
- * Initial release of Capabilities/Objectives
- * Incorporates support for CybOX v2.1
- * Minor fixes and updates
-
+		  <ul>
+			<li>Current release (Feburary 11th, 2014)</li>
+			<li>Initial release of Capabilities/Objectives</li>
+			<li>Incorporates support for CybOX v2.1</li>
+			<li>Minor fixes and updates</li>
+		  </ul>
       </div>
     </div>
   </div>
@@ -25,15 +25,17 @@ title: Language Roadmap
         <h3 class="panel-title">MAEC v5.0</h3>
       </div>
       <div class="panel-body">
-
-	    * ETA: late Spring 2015
-	    * Addition of structures for capturing function fingerprints
-        * Refactoring of several major structures
-		  * Capabilities/Objectives
-	      * Behaviors
-		* Updates to existing vocabularies
-		* Initial support for mobile malware
-
+        <ul>
+		  <li>ETA: late Spring 2015</li>
+		  <li>Addition of structures for capturing function fingerprints</li>
+		  <li>Refactoring of several major structures</li>
+		    <ul>
+			  <li>Capabilities/Objectives</li>
+			  <li>Behaviors</li>
+			</ul>
+		  <li>Updates to existing vocabularies</li>
+		  <li>Initial support for mobile malware</li>
+		</ul>
       </div>
     </div>
   </div>
