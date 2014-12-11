@@ -11,7 +11,11 @@ title: Language Roadmap
       </div>
       <div class="panel-body">
 		  <ul>
-			<li>Current release (Feburary 11th, 2014)</li>
+			<li>Current release (Feburary 11th, 2014)
+		      <ul>
+			    <li>Available <a href="http://maec.mitre.org/language/version4.1/">here</a></li>
+			  </ul>
+			</li>
 			<li>Initial release of Capabilities/Objectives</li>
 			<li>Incorporates support for CybOX v2.1</li>
 			<li>Minor fixes and updates</li>
@@ -26,15 +30,25 @@ title: Language Roadmap
       </div>
       <div class="panel-body">
         <ul>
-		  <li>ETA: late Spring 2015</li>
+		  <li>ETA: late Spring 2015
+		    <ul>
+			  <li>GitHub Milestone <a href="https://github.com/MAECProject/schemas/milestones/MAEC%205.0">here</a></li>
+			</ul>
+		  <li>
 		  <li>Addition of structures for capturing function fingerprints</li>
-		  <li>Refactoring of several major structures</li>
+		  <li>Refactoring of several major structures
 		    <ul>
 			  <li>Capabilities/Objectives</li>
 			  <li>Behaviors</li>
 			</ul>
+		  </li>
 		  <li>Updates to existing vocabularies</li>
-		  <li>Initial support for mobile malware</li>
+		  <li>Initial support for mobile malware
+		    <ul>
+			  <li>Mobile-specific Actions</li>
+			  <li>Mobile-specific Behaviors</li>
+			</ul>
+		  </li>
 		</ul>
       </div>
     </div>
