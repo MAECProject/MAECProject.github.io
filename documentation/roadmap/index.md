@@ -7,7 +7,7 @@ title: Language Roadmap
   <div class="col-md-6">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">MAEC v4.1</h3>
+        <h3 class="panel-title"><b>MAEC v4.1</b></h3>
       </div>
       <div class="panel-body">
 		  <ul>
@@ -26,7 +26,7 @@ title: Language Roadmap
   <div class="col-md-6">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">MAEC v5.0</h3>
+        <h3 class="panel-title"><b>MAEC v5.0</b></h3>
       </div>
       <div class="panel-body">
         <ul>
@@ -34,7 +34,6 @@ title: Language Roadmap
 		    <ul>
 			  <li>GitHub Milestone <a href="https://github.com/MAECProject/schemas/milestones/MAEC%205.0">here</a></li>
 			</ul>
-		  <li>
 		  <li>Addition of structures for capturing function fingerprints</li>
 		  <li>Refactoring of several major structures
 		    <ul>
