@@ -1,7 +1,9 @@
 ---
 layout: flat
-title: Language Roadmap
+title: MAEC Language Roadmap
 ---
+
+Documented here is the MAEC Language roadmap, taking into account the current release as well as our plans for the next. We welcome any feedback regarding our release plans, either at the GitHub issue tracker link below, or directly at <a href="mailto:maec@mitre.org">maec@mitre.org</a>. 
 
 <div class="row">
   <div class="col-md-6">
@@ -19,7 +21,7 @@ title: Language Roadmap
 			<li>Initial release of Capabilities/Objectives</li>
 			<li>Incorporates support for CybOX v2.1</li>
 			<li>Minor fixes and updates</li>
-		  </ul>
+		  </ul> 
       </div>
     </div>
   </div>
@@ -30,6 +32,7 @@ title: Language Roadmap
       </div>
       <div class="panel-body">
         <ul>
+		  <li>Next major release (backwards incompatible with current version)</li>
 		  <li>ETA: late Spring 2015
 		    <ul>
 			  <li>GitHub Milestone <a href="https://github.com/MAECProject/schemas/milestones/MAEC%205.0">here</a></li>
