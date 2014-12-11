@@ -11,10 +11,10 @@ title: Language Roadmap
       </div>
       <div class="panel-body">
 	  
-	    * Current release (Feburary 11th, 2014)
-		* Initial release of Capabilities/Objectives
-		* Incorporates support for CybOX v2.1
-		* Minor fixes and updates
+ * Current release (Feburary 11th, 2014)
+ * Initial release of Capabilities/Objectives
+ * Incorporates support for CybOX v2.1
+ * Minor fixes and updates
 
       </div>
     </div>
@@ -29,8 +29,8 @@ title: Language Roadmap
 	    * ETA: late Spring 2015
 	    * Addition of structures for capturing function fingerprints
         * Refactoring of several major structures
-		    * Capabilities/Objectives
-			* Behaviors
+		  * Capabilities/Objectives
+	      * Behaviors
 		* Updates to existing vocabularies
 		* Initial support for mobile malware
 
