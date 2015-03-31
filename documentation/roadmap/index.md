@@ -33,7 +33,7 @@ Documented here is the MAEC Language roadmap, taking into account the current re
       <div class="panel-body">
         <ul>
 		  <li>Next major release (backwards incompatible with current version)</li>
-		  <li>ETA: late Spring 2015
+		  <li>ETA: late Summer 2015
 		    <ul>
 			  <li>GitHub Milestone <a href="https://github.com/MAECProject/schemas/milestones/MAEC%205.0">here</a></li>
 			</ul>
