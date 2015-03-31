@@ -14,4 +14,4 @@ Please contact <maec@mitre.org> to request that your organization’s tool be ad
 |[Anubis](http://anubis.iseclab.org/)|[ISEC Lab](http://www.iseclab.org/)|Dynamic malware analysis service|Free|[Via Translator Utility](https://github.com/MAECProject/anubis-to-maec)|n/a|
 |[ThreatExpert](http://www.threatexpert.com/)|[Symantec](http://www.symantec.com/)|Dynamic malware analysis service|Free|[Via Utility](https://github.com/MAECProject/threatexpert-to-maec)|n/a|
 |[PEFile](https://code.google.com/p/pefile/)|n/a|Static malware analysis tool|Open Source|[Via Fork](https://github.com/MAECProject/pefile-to-maec)|n/a|
-|[VirusTotal](https://www.virustotal.com/)|n/a|Static malware analysis service|Free|[Via Utility](https://github.com/MAECProject/vt-to-maec)|n/a|
+|[VirusTotal](https://www.virustotal.com/)|[Google](https://www.google.com/)|Static malware analysis service|Free|[Via Utility](https://github.com/MAECProject/vt-to-maec)|n/a|
