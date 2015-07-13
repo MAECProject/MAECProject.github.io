@@ -5,6 +5,11 @@ title: Documentation
 
 <div class="row">
   <div class="col-md-6">
+  	<div class="well">
+      <h4><a href="overview/MAEC_Overview.pdf">MAEC Overview</a></h4>
+      <p>This document provides a detailed introduction to the Malware Attribute Enumeration and Characterization (MAEC™) Language, an overview of the MAEC data models, a discussion of high-level use cases, requirements for the MAEC Language, and a discussion of open issues and challenges.</p>
+      <a class="btn btn-primary" href="overview/MAEC_Overview.pdf">Go »</a>
+    </div>
      <div class="well">
       <h4><a href="specs">Specifications</a></h4>
       <p>Specification documents are available for the MAEC data models.</p>
@@ -42,7 +47,12 @@ title: Documentation
       <p>Various utilities and other developer resources have been developed for working with MAEC.  The collection includes translators as well as bindings and APIs.</p>
       <a class="btn btn-primary" href="utils">Go »</a>
     </div>
-		<div class="well">
+	<div class="well">
+      <h4><a href="characterize_malware/Characterizing_Malware_MAEC_and_STIX_v1.0.pdf">Characterizing Malware with MAEC and STIX</a></h4>
+      <p>This document describes the use of the Malware Attribute Enumeration and Characterization (MAEC™) and Structured Threat Information eXpression (STIX™) languages in the context of malware characterization and malware metadata exchange. By describing the relationships between the languages and by providing details on each language's ability to capture malware-related information, this document answers the "When should I use MAEC, when should I use STIX, and when should I use both?" questions.</p>
+      <a class="btn btn-primary" href="characterize_malware/Characterizing_Malware_MAEC_and_STIX_v1.0.pdf">Go »</a>
+    </div>
+	<div class="well">
       <h4><a href="faqs">FAQs</a></h4>
       <p>We provide answers to frequently asked questions.</p>
       <a class="btn btn-primary" href="faqs">Go »</a>
