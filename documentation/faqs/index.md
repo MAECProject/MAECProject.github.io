@@ -198,9 +198,9 @@ The [MAEC Community]() comprises members from across the international cyber sec
 <ul>
 <li>The MAEC Community Email Discussion List is where community members discuss the latest drafts of the MAEC schemas, utilities, and other items integral to the ongoing development of MAEC. </li>
 
-<li>The [MAECProject GitHub repositories](https://github.com/MAECProject) are the central location for MAEC Community members to make open-source contributions to MAEC tool and API development and manage issue tracking for the MAEC schemas, utilities, and other supporting information and items. </li>
+<li>The <a href="https://github.com/MAECProject">MAECProject GitHub repositories</a> are the central location for MAEC Community members to make open-source contributions to MAEC tool and API development and manage issue tracking for the MAEC schemas, utilities, and other supporting information and items. </li>
 
-<li>The [MAEC Development Group](https://handshake.mitre.org/) on MITRE's Handshake collaboration Web site allows the MAEC Community to more easily share and revise information and files and to post items such as example content in a more secure environment. To join Handshake and the MAEC Development group, please email us at maec@mitre.org for an invitation. </li>
+<li>The <a href="https://handshake.mitre.org/">MAEC Development Group</a> on MITRE's Handshake collaboration Web site allows the MAEC Community to more easily share and revise information and files and to post items such as example content in a more secure environment. To join Handshake and the MAEC Development group, please email us at maec@mitre.org for an invitation. </li>
 </ul>
 
 For more information on the community and how to join, please visit the [MAEC Community](https://maec.mitre.org/community/index.html) page. 
