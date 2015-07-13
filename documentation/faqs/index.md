@@ -3,7 +3,7 @@ layout: flat
 title: Frequently Asked Questions (FAQs)
 ---
 
-#### <a href="#a">General</a>
+### <a href="#a">General</a>
 <ul style="font-weight:normal; font-size:100%; list-style:none">
 
 <li><a href="#a1">A1. What is MAEC?</a></li>
@@ -62,7 +62,7 @@ MAEC?</a></li>
 
 ### <a name="a"></a>General
 
-<a name="a1"></a><b> A1. What is MAEC? </b>
+####<a name="a1"></a> A1. What is MAEC?
 
 Malware Attribute Enumeration and Characterization (MAEC™) is a structured language for encoding and communicating high fidelity information about malware based upon attributes such as behaviors, artifacts, and attack patterns.
 
