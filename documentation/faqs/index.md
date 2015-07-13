@@ -3,7 +3,7 @@ layout: flat
 title: Frequently Asked Questions (FAQs)
 ---
 
-### <a href="#a">General</a>
+#### <a href="#a">General</a>
 <ul style="font-weight:normal; font-size:100%; list-style:none">
 
 <li><a href="#a1">A1. What is MAEC?</a></li>
@@ -62,7 +62,7 @@ MAEC?</a></li>
 
 ### <a name="a"></a>General
 
-#### <a name="a1"></a> A1. What is MAEC?
+<a name="a1"></a><b> A1. What is MAEC? </b>
 
 Malware Attribute Enumeration and Characterization (MAEC™) is a structured language for encoding and communicating high fidelity information about malware based upon attributes such as behaviors, artifacts, and attack patterns.
 
@@ -196,7 +196,7 @@ The [Trusted Automated eXchange of Indicator Information (TAXII™)](http://taxi
 The [MAEC Community](https://maec.mitre.org/community/index.html) comprises members from across the international cyber security community who have come together to help build MAEC. There are multiple options available for involvement:
 
 <ul>
-<li>The [MAEC Community Email Discussion List](https://maec.mitre.org/community/discussionlist.html) is where community members discuss the latest drafts of the MAEC schemas, utilities, and other items integral to the ongoing development of MAEC. </li>
+<li>The <a href="https://maec.mitre.org/community/discussionlist.html">MAEC Community Email Discussion List</a> is where community members discuss the latest drafts of the MAEC schemas, utilities, and other items integral to the ongoing development of MAEC. </li>
 
 <li>The <a href="https://github.com/MAECProject">MAECProject GitHub repositories</a> are the central location for MAEC Community members to make open-source contributions to MAEC tool and API development and manage issue tracking for the MAEC schemas, utilities, and other supporting information and items. </li>
 
