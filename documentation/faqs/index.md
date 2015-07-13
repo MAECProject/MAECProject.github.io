@@ -3,9 +3,7 @@ layout: flat
 title: Frequently Asked Questions (FAQs)
 ---
 
-<ul style="list-style-type:font-weight:bold">
-<li>
-<a href="#a">General</a>
+### <a href="#a">General</a>
 <ul style="font-weight:normal; font-size:100%; list-style:none">
 
 <li><a href="#a1">A1. What is MAEC?</a></li>
@@ -23,10 +21,8 @@ title: Frequently Asked Questions (FAQs)
 <li><a href="#a13">A13. What is MAEC Compatibility?</a></li>
 <li><a href="#a14">A14. Is someone from MAEC available to speak or participate on panel discussion at industry-related events, meetings, etc.?</a></li>
 </ul>
-</li>
 
-<li>
-<a href="#b">MAEC Language</a>
+### <a href="#b">MAEC Language</a>
 <ul style="font-weight:normal; font-size:100%; list-style:none">
 <li><a href="#b1">B1. What is included in a MAEC release?</a></li>
 <li><a href="#b2">B2. What tools or utilities are available to help me use or develop MAEC content?</a></li>
@@ -34,10 +30,8 @@ title: Frequently Asked Questions (FAQs)
 <li><a href="#b4">B4. Are there plans to support other forms of data interchange for MAEC (e.g., JSON, YAML, etc.)?</a></li>
 <li><a href="#b5">B5. Where can I find examples of MAEC data? Are there any MAEC repositories?</a></li>
 </ul>
-</li>
 
-<li>
-<a href="#c">Using MAEC</a>
+### <a href="#c">Using MAEC</a>
 <ul style="font-weight:normal; font-size:100%; list-style:none">
 <li><a href="#c1">C1. MAEC seems complicated – is it too expansive for my use?</a></li>
 <li><a href="#c2">C2. Why are so many things optional in MAEC?</a></li>
@@ -47,20 +41,16 @@ MAEC schema?</a></li>
 <li><a href="#c5">C5. Can the same information be captured in multiple places in 
 MAEC?</a></li>
 </ul>
-</li>
 
-<li>
-<a href="#d">Relationships to Other Efforts</a>
+### <a href="#d">Relationships to Other Efforts</a>
 <ul style="font-weight:normal; font-size:100%;list-style:none">
 <li><a href="#d1">D1. What is the relationship between MAEC and CybOX?</a></li>
 <li><a href="#d2">D2. What is the relationship between MAEC and STIX?</a></li>
 <li><a href="#d3">D3. When would STIX be used to capture malware information and when would MAEC be used?</a></li>
 <li><a href="#d4">D4. What is the relationship between MAEC and TAXII?</a></li>
 </ul>
-</li>
 
-<li>
-<a href="#e">MAEC Community</a>
+### <a href="#e">MAEC Community</a>
 <ul style="font-weight:normal; font-size:100%;list-style:none">
 <li><a href="#e1">E1. What is the role of the MAEC Community and how can I join?</a></li>
 <li><a href="#e2">E2. What is MITRE?</a></li>
@@ -69,9 +59,8 @@ MAEC?</a></li>
 <li><a href="#e5">E5. Who pays for MAEC? Who is the Sponsor?</a></li>
 <li><a href="#e6">E6. What is the relationship between MAEC and DHS?</a></li>
 </ul>
-</li>
 
-## <a name="a"></a>General
+### <a name="a"></a>General
 
 #### <a name="a1"></a> A1. What is MAEC?
 
@@ -130,7 +119,7 @@ If your organization uses or is planning to use MAEC, please refer to the [MAEC 
 #### <a name="a14"></a> A14. Is someone from MAEC available to speak or participate on panel discussion at industry-related events, meetings, etc.?
 Yes, contact maec@mitre.org to have the MAEC Team present a briefing or participate in a panel discussion about MAEC and/or information sharing at your event.
 
-## <a name="b"></a> MAEC Language
+### <a name="b"></a> MAEC Language
 
 #### <a name="b1"></a> B1. What is included in a MAEC release?
 A MAEC release includes individually-versioned MAEC schemas (i.e., Bundle, Package, and Container schemas) and the latest versions of the independently-versioned MAEC vocabulary schemas. 
@@ -159,7 +148,7 @@ See the Examples page on this MAEC Web site.
 
 At present, there are no public repositories of MAEC data, nor are there plans by MITRE to establish one. However, community members interested in hosting a MAEC data repository are strongly encouraged to do so. 
 
-## <a name="c"></a> Using MAEC
+### <a name="c"></a> Using MAEC
 Some of the FAQs in this section are somewhat technical in nature. Please refer to the "MAEC Language Specification" on the Documents page of this website for further information.
 
 #### <a name="c1"></a> C1. MAEC seems complicated – is it too expansive for my use?
@@ -186,7 +175,7 @@ In addition, the MAEC development team encourages the community to engage in the
 #### <a name="c5"></a> C5. Can the same information be captured in multiple places in MAEC?
 Yes. MAEC is very flexible and there are often a multiple places that the same characterized information, e.g., a particular Action or Behavior, can be captured.
 
-## <a name="d"></a> Relationships to Other Efforts
+### <a name="d"></a> Relationships to Other Efforts
 
 #### <a name="d1"></a> D1. What is the relationship between MAEC and CybOX?
 The Cyber Observable eXpression (CybOX™) is a related U.S. Department of Homeland Security–led effort of the office of Cybersecurity and Communications that provides a structured language for describing elements within the cyber operational environment. MAEC uses components of the CybOX language for characterizing cyber observables associated with malware. In particular, MAEC makes use of CybOX's Object and Action fields (which are extended in MAEC's MalwareActionType type) to characterize malware-related system artifacts and low-level behaviors, respectively.
@@ -202,7 +191,7 @@ While there are no definite rules for what is most appropriately captured with M
 #### <a name="d4"></a> D4. What is the relationship between MAEC and TAXII?
 The Trusted Automated eXchange of Indicator Information (TAXII™) is a related U.S. Department of Homeland Security–led effort of the office of Cybersecurity and Communications to define a set of services and message exchanges for securely sharing automated cyber threat information. TAXII uses Structured Threat Information eXpression (STIX™) to represent cyber threat information in a standardized and structured manner (STIX characterizes what is being shared, while TAXII defines how the STIX payload is shared). STIX is one payload that TAXII can convey, and STIX can describe malware using MAEC.
 
-## <a name="e"></a> MAEC Community
+### <a name="e"></a> MAEC Community
 
 #### <a name="e1"></a> E1. What is the role of the MAEC Community and how can I join?
 The MAEC Community comprises members from across the international cyber security community who have come together to help build MAEC. There are multiple options available for involvement:
