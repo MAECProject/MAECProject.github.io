@@ -11,7 +11,8 @@ no_in_page_title: true
   <h2><strong>Start here if you're new to MAEC!</strong></h2>
   <p>Regardless of whether you're an analyst, developer, or manager, we have tutorials, walkthroughs, and exercises to help you become familiar
   with MAEC.</p>
-  <p><a class="btn btn-primary btn-lg" role="button" href="/getting-started">Get Started »</a></p>
+  <p><a class="btn btn-primary btn-lg" role="button" href="/about-maec">About MAEC »</a>
+  <a class="btn btn-primary btn-lg" role="button" href="/getting-started">Get Started »</a></p>
 </div>
 
 <div class="row">
