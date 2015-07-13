@@ -193,10 +193,10 @@ The [Trusted Automated eXchange of Indicator Information (TAXII™)](http://taxi
 ### <a name="e"></a> MAEC Community
 
 #### <a name="e1"></a> E1. What is the role of the MAEC Community and how can I join?
-The [MAEC Community]() comprises members from across the international cyber security community who have come together to help build MAEC. There are multiple options available for involvement:
+The [MAEC Community](https://maec.mitre.org/community/index.html) comprises members from across the international cyber security community who have come together to help build MAEC. There are multiple options available for involvement:
 
 <ul>
-<li>The MAEC Community Email Discussion List is where community members discuss the latest drafts of the MAEC schemas, utilities, and other items integral to the ongoing development of MAEC. </li>
+<li>The [MAEC Community Email Discussion List](https://maec.mitre.org/community/discussionlist.html) is where community members discuss the latest drafts of the MAEC schemas, utilities, and other items integral to the ongoing development of MAEC. </li>
 
 <li>The <a href="https://github.com/MAECProject">MAECProject GitHub repositories</a> are the central location for MAEC Community members to make open-source contributions to MAEC tool and API development and manage issue tracking for the MAEC schemas, utilities, and other supporting information and items. </li>
 
