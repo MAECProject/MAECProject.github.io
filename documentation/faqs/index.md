@@ -159,12 +159,14 @@ Aside from a unique identifier and the MAEC schema version, all objects are opti
 #### <a name="c3"></a> C3. How does the xsi:type extension mechanism work?
 The xsi:type XML schema extension mechanism works by allowing for the substitution of types that are created as derivatives of an existing abstract type. As such, one must simply include the xsi:type attribute on an element that uses the parent abstract type, and accordingly specify the name of the type that one wishes to substitute for this element inside this attribute. For example, if one wishes to use the FileObj:FileObjectType type from [Cyber Observables Expression (CybOX™)](https://cybox.mitre.org/) in the Properties element (which uses the abstract cyboxCommon:ObjectPropertiesType) of the Malware Instance Object Attributes in a MAEC Bundle, they would specify the xsi:type attribute on this element with the name of the object type inside: 
 
-&lt;maecBundle:Malware_Instance_Object_Attributes&gt;<br>
-&lt;cybox:Properties xsi:type=&quot;FileObj:FileObjectType&quot;&gt;<br>
-&lt;FileObj:File_Name&gt;dg003_improve_8080_V132.exe&lt;/FileObj:File_Name&gt;<br>
-&lt;FileObj:Size_In_Bytes&gt;196608&lt;/FileObj:Size_In_Bytes&gt;<br>
-&lt;/cybox:Properties&gt;<br>
-&lt;/maecBundle:Malware_Instance_Object_Attributes&gt;
+```xml
+<maecBundle:Malware_Instance_Object_Attributes>
+<cybox:Properties xsi:type="FileObj:FileObjectType">
+<FileObj:File_Name>dg003_improve_8080_V132.exe</FileObj:File_Name>
+<FileObj:Size_In_Bytes>196608</FileObj:Size_In_Bytes>
+</cybox:Properties>
+</maecBundle:Malware_Instance_Object_Attributes>
+```
 
 #### <a name="c4"></a> C4. What if I need to define something that isn't part of the MAEC schema?
 MAEC is very flexible and can accommodate custom fields and objects. For example, one can use the Custom Properties/Property fields at the root level of the larger [Cyber Observables Expression (CybOX™)](https://cybox.mitre.org/) ObjectType specify a set of custom attributes that are not defined elsewhere. Accordingly, it is possible to define a new type of CybOX Object that can then be plugged into the Property field of the CybOX ObjectType using the xsi:type extension mechanism (e.g., xsi:type="CustomObj:CustomObjectType"). 
