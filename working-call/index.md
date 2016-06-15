@@ -22,6 +22,8 @@ This call will focus on MAEC 5.0, and the following topics will be discussed, at
 * Your feedback/input
     * Let us know what YOU think – should we do anything differently? Are we missing key features?
 
+### Feedback
 
-
+* [MAEC Community Discussion List](https://maec.mitre.org/community/discussionlist.html)
+*  maec@mitre.org
 
