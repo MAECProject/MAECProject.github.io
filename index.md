@@ -1,11 +1,11 @@
 ---
 layout: flat
-title: MAEC Project Documentation
-tagline: User and developer documentation for MAEC
+title: MAEC - Malware Attribute Enumeration and Characterization
+tagline: A structured language for attribute-based malware characterization
 no_in_page_title: true
 ---
 
-<h1 class="site-title">MAEC Project Documentation</h1>
+<h1 class="site-title">Malware Attribute Enumeration and Characterization (MAEC™)</h1>
 
 <div class="jumbotron">
   <h2><strong>Start here if you're new to MAEC!</strong></h2>
@@ -36,5 +36,5 @@ no_in_page_title: true
 <p class="lead text-center">
 	Have questions, comments, or feedback? Want to set up a teleconference or in-person meeting?
 	<br/>
-	<strong>Reach out to us at <a href="mailto:stix-taxii@hq.dhs.gov">stix-taxii@hq.dhs.gov</a>!</strong>
+	<strong>Reach out to us at <a href="mailto:maec@mitre.org">maec@mitre.org</a>!</strong>
 </p>
