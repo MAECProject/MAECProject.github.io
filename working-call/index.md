@@ -19,7 +19,6 @@ The next MAEC working call will be held on July 20th, 2016.
 * Semantic MediaWiki demo/discussion
  
 ### Dial-in Info
-.........................................................................................................................................
 https://meet.mitre.org/ikirillov/50R7783G
  
 Join by Phone
@@ -28,5 +27,4 @@ Join by Phone
  
 Conference ID: 5269350
  
-
 
