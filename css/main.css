@@ -286,3 +286,17 @@ h5:hover .header-link,
 h6:hover .header-link {
   opacity: 1;
 }
+
+/* Fix for code block line numbers */
+.highlight .lineno {
+ white-space: pre;
+}
+.highlight .code pre {
+ white-space: pre; overflow-x: auto;
+}
+.highlight code {
+ display: block; white-space: pre; overflow-x: auto;
+}
+.highlight code table {
+ margin-bottom: 0px;
+}
