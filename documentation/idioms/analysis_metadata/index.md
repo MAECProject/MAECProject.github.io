@@ -35,7 +35,7 @@ Besides this required field, the [Analysis](/data-model/{{site.current_version}}
 5.	*Tools*. The [Tools](/data-model/{{site.current_version}}/maecPackage/ToolListType) field specifies information about the tool(s) used in the analysis, via the CybOX ToolInformationType. If only a single Tool is specified, then this implies that this tool was responsible for all of the findings contained in the Bundle referenced by the Findings_Bundle_Reference element. Tools used in an analysis are defined inline within the Analysis field rather than defined at a higher level and then referenced.  Consequently, it is valid to have the same tool be defined more than once within a Package.
 
 ## Process
-As with many of the other Idioms, the first step is to create a [MAEC Package](/data-model/{{site.current_version}}/maecPackage/PackageType) with a [Malware Subject](/data-model/{{site.current_version}}/maecPackage/MalwareSubjectType) for capturing the information about the malware instance being analyzed. Please see the [Creating a MAEC Package] (../package_creation) idiom for more details on this process.
+As with many of the other Idioms, the first step is to create a [MAEC Package](/data-model/{{site.current_version}}/maecPackage/PackageType) with a [Malware Subject](/data-model/{{site.current_version}}/maecPackage/MalwareSubjectType) for capturing the information about the malware instance being analyzed. Please see the [Creating a MAEC Package](../package_creation) idiom for more details on this process.
 
 With the [Malware Subject](/data-model/{{site.current_version}}/maecPackage/MalwareSubjectType) created and populated with the identity of the malware instance that we're characterizing, we can now focus on adding the metadata on the analyses that were performed. For this, we'll use the [Analyses](/data-model/{{site.current_version}}/maecPackage/AnalysisListType), which is a list element that captures these analyses. 
 
@@ -51,7 +51,7 @@ After creating the base [Analysis](/data-model/{{site.current_version}}/maecPack
 
 3.	The information about the tool(s) used, via the *Tools* field in the Analysis. Since the *Tools* field is a list type that encompasses one or more [Tool](/data-model/{{site.current_version}}/cyboxCommon/ToolInformationType) fields, we'll want to create a single [Tool](/data-model/{{site.current_version}}/cyboxCommon/ToolInformationType) entry to capture the information about the PEiD tool. Inside this entry, we'll use the *Name* and *Version* fields to capture the name of the tool and its version, respectively.
 
-4.	The actual output of the tool as characterized in MAEC, via the *Findings_Bundle_Reference* field, which references the particular [MAEC Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) that contains this output. The details of this process can be found in the [Capturing Static Analysis Results] (../static_analysis) idiom.
+4.	The actual output of the tool as characterized in MAEC, via the *Findings_Bundle_Reference* field, which references the particular [MAEC Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) that contains this output. The details of this process can be found in the [Capturing Static Analysis Results](../static_analysis) idiom.
 
 ### Anubis Analysis
 
@@ -63,7 +63,7 @@ After creating the base [Analysis](/data-model/{{site.current_version}}/maecPack
 
 3.	The information about the tool(s) used, via the *Tools* field in the Analysis. Since the *Tools* field is a list type that encompasses one or more [Tool](/data-model/{{site.current_version}}/cyboxCommon/ToolInformationType) fields, we'll want to create a single [Tool](/data-model/{{site.current_version}}/cyboxCommon/ToolInformationType) entry to capture the information about the PEiD tool. Inside this entry, we'll use the *Name* and *Version* fields to capture the name of the tool and its version, respectively.
 
-4.	The actual output of the tool as characterized in MAEC, via the *Findings_Bundle_Reference* field, which references the particular [MAEC Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) that contains this output. The details of this process can be found in the [Capturing Dynamic Analysis Results] (../dynamic_analysis) idiom.
+4.	The actual output of the tool as characterized in MAEC, via the *Findings_Bundle_Reference* field, which references the particular [MAEC Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) that contains this output. The details of this process can be found in the [Capturing Dynamic Analysis Results](../dynamic_analysis) idiom.
 
 ## XML
 
@@ -87,6 +87,7 @@ After creating the base [Analysis](/data-model/{{site.current_version}}/maecPack
 {% endhighlight %}
 
 [Full XML](maec_analysis_metadata.xml)
+
 ## Python
 
 {% highlight python linenos %}
@@ -110,7 +111,7 @@ a2.add_tool(t2)
 [Full Python](maec_analysis_metadata.py)
 
 ## Further Reading
-* [Creating a MAEC Bundle] (../bundle_creation)
-* [Creating a MAEC Package] (../package_creation)
-* [Capturing Static Analysis Results] (../static_analysis)
-* [Capturing Dynamic Analysis Results] (../dynamic_analysis)
+* [Creating a MAEC Bundle](../bundle_creation)
+* [Creating a MAEC Package](../package_creation)
+* [Capturing Static Analysis Results](../static_analysis)
+* [Capturing Dynamic Analysis Results](../dynamic_analysis)

@@ -55,6 +55,7 @@ With the [Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) po
 {% endhighlight %}
 
 [Full XML](maec_static_analysis.xml)
+
 ## Python
 
 {% highlight python linenos %}
@@ -73,6 +74,6 @@ o.properties.headers.optional_header.subsystem = "Windows_GUI"
 [Full Python](maec_static_analysis.py)
 
 ## Further Reading
-* [Creating a MAEC Bundle] (../bundle_creation)
-* [Creating a MAEC Package] (../package_creation)
-* [Capturing Dynamic Analysis Results] (../dynamic_analysis)
+* [Creating a MAEC Bundle](../bundle_creation)
+* [Creating a MAEC Package](../package_creation)
+* [Capturing Dynamic Analysis Results](../dynamic_analysis)

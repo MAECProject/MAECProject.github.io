@@ -28,7 +28,7 @@ Next, a [MAEC Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType
 Now that we've set up the Bundle that will capture the higher-level analysis results, we can begin to populate it with these results. Since we're capturing a malware capability and behavior in our example scenario, we'll use the corresponding MAEC [Capability](/data-model/{{site.current_version}}/maecBundle/CapabilityType) and [Behavior](/data-model/{{site.current_version}}/maecBundle/BehaviorType) entities. First, let's discuss the steps involved in capturing the Windows-hook based behavior that serves as the implementation of the keylogging capability:
 
 1.	We'll need to add an instance of a [Behavior](/data-model/{{site.current_version}}/maecBundle/BehaviorType) to the top-level [Behaviors](/data-model/{{site.current_version}}/maecBundle/BehaviorListType) list-type field found in the [Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) that we've previously defined.
-2.	Next, we'll need to capture the details of this [Behavior](/data-model/{{site.current_version}}/maecBundle/BehaviorType). In the case of this example scenario, we know that the malware instance adds a Windows-hook, the act of which can be represented with a [Malware Action](/data-model/{{site.current_version}}/maecBundle/MalwareActionType). The process of adding Actions is not captured in detail here as it is documented in the [Capturing Dynamic Analysis Results] (../dynamic_analysis) idiom. However, let's assume that we've added an "add windows hook" [Action](/data-model/{{site.current_version}}/maecBundle/MalwareActionType) to the top-level [Actions](/data-model/{{site.current_version}}/maecBundle/ActionListType) list-type entity found at the root level of the [Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) that we've previously defined. 
+2.	Next, we'll need to capture the details of this [Behavior](/data-model/{{site.current_version}}/maecBundle/BehaviorType). In the case of this example scenario, we know that the malware instance adds a Windows-hook, the act of which can be represented with a [Malware Action](/data-model/{{site.current_version}}/maecBundle/MalwareActionType). The process of adding Actions is not captured in detail here as it is documented in the [Capturing Dynamic Analysis Results](../dynamic_analysis) idiom. However, let's assume that we've added an "add windows hook" [Action](/data-model/{{site.current_version}}/maecBundle/MalwareActionType) to the top-level [Actions](/data-model/{{site.current_version}}/maecBundle/ActionListType) list-type entity found at the root level of the [Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) that we've previously defined. 
 3.	We now need to link this [Action](/data-model/{{site.current_version}}/maecBundle/MalwareActionType) to the [Behavior](/data-model/{{site.current_version}}/maecBundle/BehaviorType) in order to specify the context of how it is implemented. This is achieved by populating the [Action_Composition](/data-model/{{site.current_version}}/maecBundle/BehavioralActionsType) field in the [Behavior](/data-model/{{site.current_version}}/maecBundle/BehaviorType), which is used to express the [Actions](/data-model/{{site.current_version}}/maecBundle/MalwareActionType) that compose the [Behavior](/data-model/{{site.current_version}}/maecBundle/BehaviorType). In this case, we'll need to reference the "add windows hook" [Action](/data-model/{{site.current_version}}/maecBundle/MalwareActionType) since it is defined at the top-level of the [Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType). To do so, we'll make use of a single instance of the  [Action_Reference](/data-model/{{site.current_version}}/maecBundle/BehavioralActionReferenceType) field for this purpose; here, we will populate the *action_id* field with the ID of the [Action](/data-model/{{site.current_version}}/maecBundle/MalwareActionType) that we are referencing.
 
 ### Capturing Capabilities
@@ -63,6 +63,7 @@ Next, let's explore the steps involved in capturing the keylogging capability; a
 {% endhighlight %}
 
 [Full XML](maec_in_depth_analysis.xml)
+
 ## Python
 
 {% highlight python linenos %}
@@ -87,6 +88,6 @@ cap.add_tactical_objective(obj)
 [Full Python](maec_in_depth_analysis.py)
 
 ## Further Reading
-* [Creating a MAEC Bundle] (../bundle_creation)
-* [Creating a MAEC Package] (../package_creation)
-* [Capturing Dynamic Analysis Results] (../dynamic_analysis)
+* [Creating a MAEC Bundle](../bundle_creation)
+* [Creating a MAEC Package](../package_creation)
+* [Capturing Dynamic Analysis Results](../dynamic_analysis)

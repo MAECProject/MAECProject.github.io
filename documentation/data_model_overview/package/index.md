@@ -23,22 +23,15 @@ The MAEC Package XML schema is currently the standard output format that can be 
 
 The structure of the MAEC Package schema is provided in detail in the <a href="http://maec.mitre.org/language/version4.1/MAEC_Package_Spec_v2_1.pdf">MAEC Package Specification</a>, but we give high level definitions for the basic components below:
 
-<ul>
-<li><u>Malware Subject</u> – Represents a single malware object (most commonly a file) and its associated metadata:
-<ul>
-<li><u>Malware Instance Object Attributes</u> – Contains details of the specific properties of the malware instance characterized by the Malware Subject; for example, its MD5 hash.  Note that this information may be repeated in a MAEC Bundle if the MAEC Bundle is to be self-contained. 
-<li><u>Label</u> – Specifies a commonly accepted label to describe the Malware Subject, e.g., "worm." More than one label may be specified through the use of multiple instances of this field.
-<li><u>Configuration Details</u> – Captures details of the configuration specified for the Malware Subject, such as configuration parameters.
-<li><u>Development Environment</u> – Captures details of the development environment used in the creation of the malware instance characterized by the Malware Subject.
-<li><u>Minor Variants</u> – Captures any observed minor variants of the malware instance characterized by the Malware Subject, such as identical files with different names.
-<li><u>Field Data</u> – Captures field data and prevalence information relating to the malware instance characterized by the Malware Subject.
-<li><u>Analyses</u> – Captures analysis-related details for the Malware Subject such as analyst, source, summary, and tool information.  Analyses can reference one or more individual MAEC Bundles to denote that the findings of the analysis are captured in the Bundles.
-<li><u>Findings Bundles</u> – Set of MAEC Bundles pertaining to the Malware Subject of focus.  For example, these MAEC Bundles could capture the output of different tools, some data obtained through manual malware analysis, etc.  The term “Findings_Bundles” is used rather than simply “Bundles” to imply that the content was derived from analysis.
-<li><u>Relationships</u> – Captures uni-directional relationships between the Malware Subject of focus and other Malware Subjects.  Examples include ‘downloaded by,’ ‘dropped by,’ ‘downloads,’ and ‘drops.’
-<li><u>Compatible Platform</u> – Specifies a single platform with which the Malware Subject is compatible (i.e., on which the Malware Subject can execute). More than one compatible platform may be specified through the use of multiple instances of this field.
-</ul>
-<li><u>Grouping Relationship</u> – Specifies the particular relationship between all of the Malware Subjects encompassed in the MAEC Package.  Example relationships include ‘same malware family’ and ‘clustered together’ (possibly by a malware analysis clustering algorithm).
-</ul>
-
-
-
+* **Malware Subject** – Represents a single malware object (most commonly a file) and its associated metadata:
+  * **Malware Instance Object Attributes** – Contains details of the specific properties of the malware instance characterized by the Malware Subject; for example, its MD5 hash.  Note that this information may be repeated in a MAEC Bundle if the MAEC Bundle is to be self-contained. 
+  * **Label** – Specifies a commonly accepted label to describe the Malware Subject, e.g., "worm." More than one label may be specified through the use of multiple instances of this field.
+  * **Configuration Details** – Captures details of the configuration specified for the Malware Subject, such as configuration parameters.
+  * **Development Environment** – Captures details of the development environment used in the creation of the malware instance characterized by the Malware Subject.
+  * **Minor Variants** – Captures any observed minor variants of the malware instance characterized by the Malware Subject, such as identical files with different names.
+  * **Field Data** – Captures field data and prevalence information relating to the malware instance characterized by the Malware Subject.
+  * **Analyses** – Captures analysis-related details for the Malware Subject such as analyst, source, summary, and tool information.  Analyses can reference one or more individual MAEC Bundles to denote that the findings of the analysis are captured in the Bundles.
+  * **Findings Bundles** – Set of MAEC Bundles pertaining to the Malware Subject of focus.  For example, these MAEC Bundles could capture the output of different tools, some data obtained through manual malware analysis, etc.  The term “Findings_Bundles” is used rather than simply “Bundles” to imply that the content was derived from analysis.
+  * **Relationships** – Captures uni-directional relationships between the Malware Subject of focus and other Malware Subjects.  Examples include ‘downloaded by,’ ‘dropped by,’ ‘downloads,’ and ‘drops.’
+  * **Compatible Platform** – Specifies a single platform with which the Malware Subject is compatible (i.e., on which the Malware Subject can execute). More than one compatible platform may be specified through the use of multiple instances of this field.
+* **Grouping Relationship** – Specifies the particular relationship between all of the Malware Subjects encompassed in the MAEC Package.  Example relationships include ‘same malware family’ and ‘clustered together’ (possibly by a malware analysis clustering algorithm).

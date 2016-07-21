@@ -23,7 +23,7 @@ title: Specifications
       <a class="btn btn-primary" href="https://github.com/MAECProject/specifications/blob/master/documents/PDF/MAEC_Container_Spec_v2_1.pdf">Go »</a>
     </div>
 	<div class="well">
-      <h4><a href="https://github.com/MAECProject/specifications/blob/master/documents/PDF/MAEC_Vocabs_Spec_v1_1.pdf">MAEC Container Specification, Version 4.1</a></h4>
+      <h4><a href="https://github.com/MAECProject/specifications/blob/master/documents/PDF/MAEC_Vocabs_Spec_v1_1.pdf">MAEC Vocabularies Specification, Version 4.1</a></h4>
       <p>Provides an overview and detailed description of the MAEC Default Vocabularies Data Model used in the MAEC Language. The "MAEC Vocabularies" represent a set of default controlled vocabularies for use in MAEC content and were created to take advantage of the extension mechanisms provided by the Cyber Observable eXpression (CybOX™) Version 2.1 controlled vocabulary implementation; these vocabularies are broken out from the MAEC Bundle, Package, and Container schemas to support customized extension and replacement. June 12, 2014.</p>
       <a class="btn btn-primary" href="https://github.com/MAECProject/specifications/blob/master/documents/PDF/MAEC_Vocabs_Spec_v1_1.pdf">Go »</a>
     </div>

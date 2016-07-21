@@ -62,7 +62,7 @@ MAEC?</a></li>
 
 ### <a name="a"></a>General
 
-####<a name="a1"></a> A1. What is MAEC?
+#### <a name="a1"></a> A1. What is MAEC?
 
 Malware Attribute Enumeration and Characterization (MAEC™) is a structured language for encoding and communicating high fidelity information about malware based upon attributes such as behaviors, artifacts, and attack patterns.
 
@@ -157,7 +157,7 @@ The MAEC schema was developed to enable analysts to capture a full gamut of info
 Aside from a unique identifier and the MAEC schema version, all objects are optional in MAEC. This was done to make the language as flexible as possible: a user is able to capture exactly what they want and nothing more.
 
 #### <a name="c3"></a> C3. How does the xsi:type extension mechanism work?
-The xsi:type XML schema extension mechanism works by allowing for the substitution of types that are created as derivatives of an existing abstract type. As such, one must simply include the xsi:type attribute on an element that uses the parent abstract type, and accordingly specify the name of the type that one wishes to substitute for this element inside this attribute. For example, if one wishes to use the FileObj:FileObjectType type from [Cyber Observables Expression (CybOX™)](https://cybox.mitre.org/) in the Properties element (which uses the abstract cyboxCommon:ObjectPropertiesType) of the Malware Instance Object Attributes in a MAEC Bundle, they would specify the xsi:type attribute on this element with the name of the object type inside: 
+The xsi:type XML schema extension mechanism works by allowing for the substitution of types that are created as derivatives of an existing abstract type. As such, one must simply include the xsi:type attribute on an element that uses the parent abstract type, and accordingly specify the name of the type that one wishes to substitute for this element inside this attribute. For example, if one wishes to use the FileObj:FileObjectType type from [Cyber Observables Expression (CybOX™)](https://cyboxproject.github.io/) in the Properties element (which uses the abstract cyboxCommon:ObjectPropertiesType) of the Malware Instance Object Attributes in a MAEC Bundle, they would specify the xsi:type attribute on this element with the name of the object type inside: 
 
 ```xml
 <maecBundle:Malware_Instance_Object_Attributes>
@@ -169,7 +169,7 @@ The xsi:type XML schema extension mechanism works by allowing for the substituti
 ```
 
 #### <a name="c4"></a> C4. What if I need to define something that isn't part of the MAEC schema?
-MAEC is very flexible and can accommodate custom fields and objects. For example, one can use the Custom Properties/Property fields at the root level of the larger [Cyber Observables Expression (CybOX™)](https://cybox.mitre.org/) ObjectType specify a set of custom attributes that are not defined elsewhere. Accordingly, it is possible to define a new type of CybOX Object that can then be plugged into the Property field of the CybOX ObjectType using the xsi:type extension mechanism (e.g., xsi:type="CustomObj:CustomObjectType"). 
+MAEC is very flexible and can accommodate custom fields and objects. For example, one can use the Custom Properties/Property fields at the root level of the larger [Cyber Observables Expression (CybOX™)](https://cyboxproject.github.io/) ObjectType specify a set of custom attributes that are not defined elsewhere. Accordingly, it is possible to define a new type of CybOX Object that can then be plugged into the Property field of the CybOX ObjectType using the xsi:type extension mechanism (e.g., xsi:type="CustomObj:CustomObjectType"). 
 
 In addition, the MAEC development team encourages the community to engage in the ongoing discussion so that new fields and fields can be defined and integrated into future versions of MAEC as necessary. Please consider joining the public MAEC Community Email Discussion List and/or the MAEC Development Group on Handshake (email [maec@mitre.org](mailto:maec@mitre.org) to request access). 
 
@@ -179,31 +179,29 @@ Yes. MAEC is very flexible and there are often a multiple places that the same c
 ### <a name="d"></a> Relationships to Other Efforts
 
 #### <a name="d1"></a> D1. What is the relationship between MAEC and CybOX?
-The [Cyber Observable eXpression (CybOX™)](https://cybox.mitre.org/) is a related [U.S. Department of Homeland Security](http://www.dhs.gov/)–led effort of the office of [Cybersecurity and Communications](http://www.dhs.gov/office-cybersecurity-and-communications/) that provides a structured language for describing elements within the cyber operational environment. MAEC uses components of the CybOX language for characterizing cyber observables associated with malware. In particular, MAEC makes use of CybOX's Object and Action fields (which are extended in MAEC's MalwareActionType type) to characterize malware-related system artifacts and low-level behaviors, respectively.
+The [Cyber Observable eXpression (CybOX™)](https://cyboxproject.github.io/) is a related [U.S. Department of Homeland Security](http://www.dhs.gov/)–led effort of the office of [Cybersecurity and Communications](http://www.dhs.gov/office-cybersecurity-and-communications/) that provides a structured language for describing elements within the cyber operational environment. MAEC uses components of the CybOX language for characterizing cyber observables associated with malware. In particular, MAEC makes use of CybOX's Object and Action fields (which are extended in MAEC's MalwareActionType type) to characterize malware-related system artifacts and low-level behaviors, respectively.
 
 #### <a name="d2"></a> D2. What is the relationship between MAEC and STIX?
-The [Structured Threat Information eXpression (STIX™)](https://stix.mitre.org/) is a related [U.S. Department of Homeland Security](http://www.dhs.gov/)–led effort of the office of [Cybersecurity and Communications](http://www.dhs.gov/office-cybersecurity-and-communications/) to characterize a rich set of cyber threat information in a standardized and structured manner. STIX can describe malware using MAEC characterizations through use of the MAEC schema extension for the TTP schema and can also characterize indicators in a fashion similar to MAEC's Candidate Indicators.
+The [Structured Threat Information eXpression (STIX™)](https://stixproject.github.io/) is a related [U.S. Department of Homeland Security](http://www.dhs.gov/)–led effort of the office of [Cybersecurity and Communications](http://www.dhs.gov/office-cybersecurity-and-communications/) to characterize a rich set of cyber threat information in a standardized and structured manner. STIX can describe malware using MAEC characterizations through use of the MAEC schema extension for the TTP schema and can also characterize indicators in a fashion similar to MAEC's Candidate Indicators.
 
 #### <a name="d3"></a> D3. When would STIX be used to capture malware information and when would MAEC be used?
-[Structured Threat Information eXpression (STIX™)](https://stix.mitre.org/) is used to describe high-level cyber threat information to include indicators, as well as information about threat actors, campaigns, incidents, and other related entities. On the other hand, MAEC is used to describe malware attributes of one or more malware instances at various levels of abstraction. Certainly, there is overlap between the two languages, particularly when it comes to capturing indicator information (e.g., file sizes, file hashes) through the common use of [Cyber Observable eXpression (CybOX™)](https://cybox.mitre.org/). 
+[Structured Threat Information eXpression (STIX™)](https://stixproject.github.io/) is used to describe high-level cyber threat information to include indicators, as well as information about threat actors, campaigns, incidents, and other related entities. On the other hand, MAEC is used to describe malware attributes of one or more malware instances at various levels of abstraction. Certainly, there is overlap between the two languages, particularly when it comes to capturing indicator information (e.g., file sizes, file hashes) through the common use of [Cyber Observable eXpression (CybOX™)](https://cyboxproject.github.io/). 
 
 While there are no definite rules for what is most appropriately captured with MAEC versus STIX, MAEC will typically be used to capture malware information that is gathered through the analysis process, and STIX will be used to capture information related to the interpretation of the analysis results in a broader, threat-based context. For example, while MAEC would capture the particular details of the behaviors and artifacts associated with a malware instance, STIX would be used to capture additional details regarding the particular threat actors that may make use of the malware instance. Thus, when malware analysis information beyond simple indicator information is to be captured by STIX, the STIX schema extension for MAEC should be used to leverage the MAEC data model. 
 
 #### <a name="d4"></a> D4. What is the relationship between MAEC and TAXII?
-The [Trusted Automated eXchange of Indicator Information (TAXII™)](http://taxii.mitre.org/) is a related [U.S. Department of Homeland Security](http://www.dhs.gov/)–led effort of the office of [Cybersecurity and Communications](http://www.dhs.gov/office-cybersecurity-and-communications/) to define a set of services and message exchanges for securely sharing automated cyber threat information. TAXII uses [Structured Threat Information eXpression (STIX™)](https://stix.mitre.org/) to represent cyber threat information in a standardized and structured manner (STIX characterizes what is being shared, while TAXII defines how the STIX payload is shared). STIX is one payload that TAXII can convey, and STIX can describe malware using MAEC.
+The [Trusted Automated eXchange of Indicator Information (TAXII™)](https://taxiiproject.github.io/) is a related [U.S. Department of Homeland Security](http://www.dhs.gov/)–led effort of the office of [Cybersecurity and Communications](http://www.dhs.gov/office-cybersecurity-and-communications/) to define a set of services and message exchanges for securely sharing automated cyber threat information. TAXII uses [Structured Threat Information eXpression (STIX™)](https://stixproject.github.io/) to represent cyber threat information in a standardized and structured manner (STIX characterizes what is being shared, while TAXII defines how the STIX payload is shared). STIX is one payload that TAXII can convey, and STIX can describe malware using MAEC.
 
 ### <a name="e"></a> MAEC Community
 
 #### <a name="e1"></a> E1. What is the role of the MAEC Community and how can I join?
 The [MAEC Community](https://maec.mitre.org/community/index.html) comprises members from across the international cyber security community who have come together to help build MAEC. There are multiple options available for involvement:
 
-<ul>
-<li>The <a href="https://maec.mitre.org/community/discussionlist.html">MAEC Community Email Discussion List</a> is where community members discuss the latest drafts of the MAEC schemas, utilities, and other items integral to the ongoing development of MAEC. </li>
+* The [MAEC Community Email Discussion List](https://maec.mitre.org/community/discussionlist.html) is where community members discuss the latest drafts of the MAEC schemas, utilities, and other items integral to the ongoing development of MAEC.
 
-<li>The <a href="https://github.com/MAECProject">MAECProject GitHub repositories</a> are the central location for MAEC Community members to make open-source contributions to MAEC tool and API development and manage issue tracking for the MAEC schemas, utilities, and other supporting information and items. </li>
+* The [MAECProject GitHub repositories](https://github.com/MAECProject) are the central location for MAEC Community members to make open-source contributions to MAEC tool and API development and manage issue tracking for the MAEC schemas, utilities, and other supporting information and items.
 
-<li>The <a href="https://handshake.mitre.org/">MAEC Development Group</a> on MITRE's Handshake collaboration Web site allows the MAEC Community to more easily share and revise information and files and to post items such as example content in a more secure environment. To join Handshake and the MAEC Development group, please email us at maec@mitre.org for an invitation. </li>
-</ul>
+* The [MAEC Development Group](https://handshake.mitre.org/) on MITRE's Handshake collaboration Web site allows the MAEC Community to more easily share and revise information and files and to post items such as example content in a more secure environment. To join Handshake and the MAEC Development group, please email us at [maec@mitre.org](mailto:maec@mitre.org) for an invitation.
 
 For more information on the community and how to join, please visit the [MAEC Community](https://maec.mitre.org/community/index.html) page. 
 

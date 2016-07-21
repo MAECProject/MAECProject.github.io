@@ -75,6 +75,7 @@ With the [Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) po
 {% endhighlight %}
 
 [Full XML](maec_process_tree.xml)
+
 ## Python
 
 {% highlight python linenos %}
@@ -101,6 +102,6 @@ p_tree.set_root_process(root_p)
 [Full Python](maec_process_tree.py)
 
 ## Further Reading
-* [Creating a MAEC Bundle] (../bundle_creation)
-* [Creating a MAEC Package] (../package_creation)
-* [Capturing Dynamic Analysis Results] (../dynamic_analysis)
+* [Creating a MAEC Bundle](../bundle_creation)
+* [Creating a MAEC Package](../package_creation)
+* [Capturing Dynamic Analysis Results](../dynamic_analysis)

@@ -60,6 +60,7 @@ This is but a small portion of what a [MAEC Package](/data-model/{{site.current_
 {% endhighlight %}
 
 [Full XML](maec_basic_package.xml)
+
 ## Python
 
 {% highlight python linenos %}
@@ -79,7 +80,8 @@ p.add_malware_subject(ms)
 {% endhighlight %}
 
 [Full Python](maec_basic_package.py)
+
 ## Further Reading
-* [Creating a MAEC Bundle] (../bundle_creation)
-* [Capturing Dynamic Analysis Results] (../dynamic_analysis)
-* [Capturing Static Analysis Results] (../static_analysis)
+* [Creating a MAEC Bundle](../bundle_creation)
+* [Capturing Dynamic Analysis Results](../dynamic_analysis)
+* [Capturing Static Analysis Results](../static_analysis)

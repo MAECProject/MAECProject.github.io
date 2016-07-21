@@ -74,6 +74,7 @@ With the [Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) po
 {% endhighlight %}
 
 [Full XML](maec_dynamic_analysis.xml)
+
 ## Python
 
 {% highlight python linenos %}
@@ -108,6 +109,6 @@ act2.associated_objects.append(o2)
 [Full Python](maec_dynamic_analysis.py)
 
 ## Further Reading
-* [Creating a MAEC Bundle] (../bundle_creation)
-* [Creating a MAEC Package] (../package_creation)
-* [Capturing Static Analysis Results] (../static_analysis)
+* [Creating a MAEC Bundle](../bundle_creation)
+* [Creating a MAEC Package](../package_creation)
+* [Capturing Static Analysis Results](../static_analysis)

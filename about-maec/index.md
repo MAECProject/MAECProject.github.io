@@ -53,8 +53,8 @@ The standard method of describing malware behavior provided by MAEC will allow f
 
 ## MAEC Community
 
-MAEC is industry-endorsed by the many antivirus vendors, operating system vendors, software vendors, IT users, security services providers, and other members of the information security community that are currently participating in the MAEC effort on the [MAECProject GitHub Repositories](https://github.com/MAECProject/), MAEC Development Group on [Handshake](https://handshake.mitre.org/), and [MAEC Community Discussion List](http://maecproject.githum.io/community/discussionlist).
+MAEC is industry-endorsed by the many antivirus vendors, operating system vendors, software vendors, IT users, security services providers, and other members of the information security community that are currently participating in the MAEC effort on the [MAECProject GitHub Repositories](https://github.com/MAECProject/), MAEC Development Group on [Handshake](https://handshake.mitre.org/), and [MAEC Community Discussion List](/community#discussion-lists--archives).
 
 ### Take the Next Step
 
-We encourage you to join the [MAEC Community](http://maecproject.github.io/community/) and help build this growing, open-source industry effort.
+We encourage you to join the [MAEC Community](/community/) and help build this growing, open-source industry effort.

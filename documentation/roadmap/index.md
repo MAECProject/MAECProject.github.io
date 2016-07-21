@@ -37,6 +37,7 @@ Documented here is the MAEC Language roadmap, taking into account the current re
 		    <ul>
 			  <li>GitHub Milestone <a href="https://github.com/MAECProject/schemas/milestones/MAEC%205.0">here</a></li>
 			</ul>
+		  </li>
 		  <li>Addition of structures for capturing function fingerprints</li>
 		  <li>Refactoring of several major structures
 		    <ul>

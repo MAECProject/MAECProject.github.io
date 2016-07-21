@@ -65,6 +65,7 @@ Also, note that a Bundle embedded in a [Malware Subject](/data-model/{{site.curr
 {% endhighlight %}
 
 [Full XML](maec_basic_bundle.xml)
+
 ## Python
 
 {% highlight python linenos %}
@@ -82,5 +83,6 @@ b.malware_instance_object_attributes.properties.version = "1.6"
 {% endhighlight %}
 
 [Full Python](maec_basic_bundle.py)
+
 ## Further Reading
-* [Creating a MAEC Package] (../package_creation)
+* [Creating a MAEC Package](../package_creation)

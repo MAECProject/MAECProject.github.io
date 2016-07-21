@@ -64,6 +64,7 @@ With the [Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) po
 {% endhighlight %}
 
 [Full XML](maec_av_classification.xml)
+
 ## Python
 
 {% highlight python linenos %}
@@ -87,6 +88,6 @@ b.add_av_classification(av3)
 [Full Python](maec_av_classification.py)
 
 ## Further Reading
-* [Creating a MAEC Bundle] (../bundle_creation)
-* [Creating a MAEC Package] (../package_creation)
-* [Capturing Static Analysis Results] (../static_analysis)
+* [Creating a MAEC Bundle](../bundle_creation)
+* [Creating a MAEC Package](../package_creation)
+* [Capturing Static Analysis Results](../static_analysis)
