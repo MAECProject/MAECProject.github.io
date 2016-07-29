@@ -6,12 +6,12 @@ title: Getting Started
 <div class="row">
   <div class="col-md-6 getting-started-left">
     <h3>For Analysts & Managers</h3>
-    <p>The Analysts & Manager tutorial track will walk you through understanding the MAEC data model and how content is expressed in it at a high level. You won't have to deal with XML or Python at all.</p>
+    <p>The Analysts and Managers tutorial track will walk you through understanding the MAEC data model and how content is expressed in it at a high level. You won't have to deal with XML or Python at all.</p>
 
     <div class="well">
-      <h4><a href="http://maec.mitre.org/about/docs/MAEC_Overview.pdf" target="_blank">MAEC Overview</a></h4>
+      <h4><a href="http://maecproject.github.io/documentation/overview/MAEC_Overview.pdf" target="_blank">MAEC Overview</a></h4>
       <p>The MAEC Overview document provides a detailed introduction to the Malware Attribute Enumeration and Characterization (MAEC™) Language, an overview of the MAEC data models, a discussion of high-level use cases, requirements for the MAEC Language, and a discussion of open issues and challenges.  </p>
-      <a class="btn btn-primary" href="http://maec.mitre.org/about/docs/MAEC_Overview.pdf" target="_blank">Go »</a>
+      <a class="btn btn-primary" href="http://maecproject.github.io/documentation/overview/MAEC_Overview.pdf" target="_blank">Go »</a>
     </div>
   </div>
 
