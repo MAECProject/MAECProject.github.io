@@ -19,7 +19,7 @@ Documented here is the MAEC Language roadmap, taking into account the current re
 			  </ul>
 			</li>
 			<li>Initial release of Capabilities/Objectives</li>
-			<li>Incorporates support for CybOX v2.1</li>
+			<li>Incorporates support for <a href="http://cyboxproject.github.io/releases/2.1/">Cyber Observable eXpression (CybOX™) v2.1</a></li>
 			<li>Minor fixes and updates</li>
 		  </ul> 
       </div>
@@ -33,23 +33,19 @@ Documented here is the MAEC Language roadmap, taking into account the current re
       <div class="panel-body">
         <ul>
 		  <li>Next major release (backwards incompatible with current version)</li>
-		  <li>ETA: late Summer 2015
+		  <li>ETA: Fall 2016
 		    <ul>
 			  <li>GitHub Milestone <a href="https://github.com/MAECProject/schemas/milestones/MAEC%205.0">here</a></li>
 			</ul>
 		  </li>
-		  <li>Addition of structures for capturing function fingerprints</li>
-		  <li>Refactoring of several major structures
+		  <li>New output format: JSON
 		    <ul>
-			  <li>Capabilities/Objectives</li>
-			  <li>Behaviors</li>
+			  <li>Incorporation of CybOX 3.0</li>
 			</ul>
 		  </li>
+		  <li>Major refactoring of many structures for simplicity and ease-of-use</li>
+		  <li>Addition of structures for capturing function fingerprints</li>
 		  <li>Updates to existing vocabularies</li>
-		  <li>Initial support for mobile malware
-		    <ul>
-			  <li>Mobile-specific Actions</li>
-			  <li>Mobile-specific Behaviors</li>
 			</ul>
 		  </li>
 		</ul>
