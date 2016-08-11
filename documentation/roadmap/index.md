@@ -47,8 +47,6 @@ Documented here is the MAEC Language roadmap, taking into account the current re
 		  <li>Addition of structures for capturing function fingerprints</li>
 		  <li>Updates to existing vocabularies</li>
 			</ul>
-		  </li>
-		</ul>
       </div>
     </div>
   </div>
