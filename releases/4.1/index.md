@@ -7,7 +7,7 @@ This is the current release of MAEC.
 
 **Note:** Version 4.1 is hosted on the [MAEC Legacy Site](https://maec.mitre.org/), and all files linked to below will redirect there.
 
-####Release Notes
+### Release Notes
 
 * Added support for [Cyber Observable eXpression (CybOX™) Version 2.1](http://cyboxproject.github.io/releases/2.1/).
 * Added implementation of MAEC Capabilities, for capturing the set of high-level abilities that a malware instance may possess (please see the detailed release notes for details).
@@ -17,14 +17,14 @@ This is the current release of MAEC.
 * Made numerous vocabulary updates, tweaks, and changes.
 * There are also full [release notes](https://maec.mitre.org/language/version4.1/MAECv41releasenotes.pdf) available.
 
-####Specifications
+### Specifications
 
 * [MAEC Bundle Specification, Version 4.1](https://github.com/MAECProject/specifications/blob/master/documents/PDF/MAEC_Bundle_Spec_v4_1.pdf)
 * [MAEC Package Specification, Version 4.1](https://github.com/MAECProject/specifications/blob/master/documents/PDF/MAEC_Package_Spec_v2_1.pdf)
 * [MAEC Container Specification, Version 4.1](https://github.com/MAECProject/specifications/blob/master/documents/PDF/MAEC_Container_Spec_v2_1.pdf)
 * [MAEC Default Vocabularies Specification, Version 4.1](https://github.com/MAECProject/specifications/blob/master/documents/PDF/MAEC_Vocabs_Spec_v1_1.pdf)
 
-####Schema Downloads
+### Schema Downloads
 
 |File Name|Version|Schema|Documentation|
 |---------|-------|------|-------------|
@@ -36,7 +36,7 @@ This is the current release of MAEC.
 |MAEC Default Vocabularies|1.1|[xsd](https://maec.mitre.org/language/version4.1/maec_default_vocabularies.xsd)|[html](https://maec.mitre.org/language/version4.1/xsddocs/maec_default_vocabularies.html)|
 |MAEC Capabilities Hierarchy Diagram|n/a|n/a|[pdf](https://maec.mitre.org/language/version4.1/MAEC_4.1_Malware_Capabilities.pdf)|
 
-####Current Release Examples
+### Current Release Examples
 The variety of examples below for MAEC Version 4.1 illustrate the use of MAEC Bundles, Packages, and Containers, as well as the capture of specific malware-related attributes (e.g., clustering information, AV classifications, etc.).
 
 *IMPORTANT:* While the examples on this page are sourced from real-world analysis reports, they should be considered illustrative examples only and should not be used in real-world operations.
@@ -64,7 +64,7 @@ The variety of examples below for MAEC Version 4.1 illustrate the use of MAEC Bu
 |Package Multiple Analysis|Demonstrates how multiple analyses for the same Malware Subject (a Zeus binary) can be combined in a single Package using multiple Analysis entities|[xml](https://maec.mitre.org/language/version4.1/package_multiple_analysis_example.xml)|
 |Package Static Triage|Simple Package capturing basic static triage results|[xml](https://maec.mitre.org/language/version4.1/package_static_triage_example.xml)|
 
-**GitHub Repository Examples**      
+**GitHub Repository Examples**     
 The [MAEC release examples](https://github.com/MAECProject/schemas/tree/master/examples), as well as examples provided by the MAEC Community, are provided at [https://github.com/MAECProject/schemas/tree/master/examples](https://github.com/MAECProject/schemas/tree/master/examples).
 
 **STIX Examples**     
