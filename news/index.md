@@ -5,7 +5,7 @@ title: Latest MAEC News
 
 Follow the STIX-CybOX-TAXII-MAEC [Blog](http://stixproject.tumblr.com/), and/or subscribe the [MAEC Announce e-newsletter](https://maec.mitre.org/community/discussionlist.html), to receive MAEC news updates.
 
-##Our latest news:
+## Our latest news:
 
 **python-maec Version 4.1.0.13 Now Available**     
 python-maec Version 4.1.0.13 is now available for download from PyPI, and to view the source code in the MAECProject repository on GitHub.com. [More>>>](http://stixproject.tumblr.com/post/148854064442/python-maec-version-41013-now-available)
