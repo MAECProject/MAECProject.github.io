@@ -3,7 +3,7 @@ layout: flat
 title: About MAEC
 ---
 
-Malware Attribute Enumeration and Characterization (MAEC™) is a standardized language for sharing structured information about malware based upon attributes such as behaviors, artifacts, and attack patterns.
+[Malware Attribute Enumeration and Characterization (MAEC™)](http://maecproject.github.io/releases/4.1/) is a standardized language for sharing structured information about malware based upon attributes such as behaviors, artifacts, and attack patterns.
 
 The goal of the MAEC (pronounced "mike") effort is to provide a basis for transforming malware research and response. MAEC aims to eliminate the ambiguity and inaccuracy that currently exists in malware descriptions and to reduce reliance on signatures. In this way, MAEC seeks to improve human-to-human, human-to-tool, tool-to-tool, and tool-to-human communication about malware; reduce potential duplication of malware analysis efforts by researchers; and allow for the faster development of countermeasures by enabling the ability to leverage responses to previously observed malware instances. The MAEC Language enables correlation, integration, and automation.
 
@@ -35,26 +35,30 @@ Focusing on the attributes and behaviors of malware facilitates detection and an
 
 The adoption of MAEC for encoding high-fidelity information about malware has major benefits for the community:
 
-### Elimination of ambiguity and inaccuracy in malware descriptions
-
-MAEC allows for a vastly improved level of human-to-human, human-to-tool, tool-to-tool, and tool-to-human communication about anti-malware related information. This will positively impact all major stakeholders, including producers and consumers of malware analysis and related malware data, as well as the end-users of tools for malware prevention and mitigation.
-
-### Reduced duplication of malware analysis efforts
-
-A common method of characterizing malware along with a corresponding standard for malware analysis reporting will allow researchers and analysts to easily determine whether or not a particular malware instance has already been analyzed.
-
-### Improved general awareness of malware
-
-An adopted standard for characterizing malware will allow for increased public awareness of malware threats and activity due to its widespread usage throughout the entire anti-malware data producer to consumer chain.
-
-### Decreased overall response time to malware threats
-
-The standard method of describing malware behavior provided by MAEC will allow for the faster development of countermeasures based upon those developed for previously observed malware instances.
+* **Elimination of ambiguity and inaccuracy in malware descriptions** – MAEC allows for a vastly improved level of human-to-human, human-to-tool, tool-to-tool, and tool-to-human communication about anti-malware related information. This will positively impact all major stakeholders, including producers and consumers of malware analysis and related malware data, as well as the end-users of tools for malware prevention and mitigation.     
+      
+* **Reduced duplication of malware analysis efforts** – A common method of characterizing malware along with a corresponding standard for malware analysis reporting will allow researchers and analysts to easily determine whether or not a particular malware instance has already been analyzed.     
+     
+* **Improved general awareness of malware** – An adopted standard for characterizing malware will allow for increased public awareness of malware threats and activity due to its widespread usage throughout the entire anti-malware data producer to consumer chain.     
+     
+* **Decreased overall response time to malware threats** – The standard method of describing malware behavior provided by MAEC will allow for the faster development of countermeasures based upon those developed for previously observed malware instances.     
 
 ## MAEC Community
 
-MAEC is industry-endorsed by the many antivirus vendors, operating system vendors, software vendors, IT users, security services providers, and other members of the information security community that are currently participating in the MAEC effort on the [MAECProject GitHub Repositories](https://github.com/MAECProject/), MAEC Development Group on [Handshake](https://handshake.mitre.org/), and [MAEC Community Discussion List](/community#discussion-lists--archives).
+The [MAEC Community](/community) includes representatives from antivirus vendors, operating system vendors, software vendors, IT users, security services providers, and others from across the international cyber security community who have come together to help build this growing, open-source industry effort. 
 
-### Take the Next Step
+A few short cuts: 
 
-We encourage you to join the [MAEC Community](/community/) and help build this growing, open-source industry effort.
+•	**[MAEC Community Discussion List](http://maecproject.github.io/community#discussion-lists--archives)** – Where community members discuss the latest versions of the MAEC specifications, schemas, utilities, and other items integral to the ongoing development of MAEC. Online [sign-up](https://maec.mitre.org/community/discussionlist.html) on the MAEC Legacy Website is required.     
+     
+•	**[MAEC Development Group on MITRE’s Handshake Collaboration Website](https://handshake.mitre.org/)** – Allows the MAEC Community to more easily share and revise information and files, and to post items such as example content in a more secure environment. Send an [email](maec@mitre.org) to us to join the group.     
+     
+•	**[MAECProject GitHub Tools & Utilities](https://github.com/MAECProject/)** – The central location for MAEC Community members to make open-source contributions to MAEC development and manage issue tracking for the MAEC schemas, utilities, and other supporting information and items.     
+
+Feedback is welcome at [maec@mitre.org](maec@mitre.org).
+
+
+
+
+
+
