@@ -5,7 +5,7 @@ title: MAEC 5.0 Roadmap
 
 The roadmap for Version 5.0 of the MAEC Language is below. We welcome any feedback regarding our release plans, either at the GitHub issue tracker link below, or directly at <a href="mailto:maec@mitre.org">maec@mitre.org</a>. 
 
-We are currently actively hosting "<a href="/working-call)">MAEC 5.0 Working Session Calls</a>" focusing on this next version of the MAEC Language. Please visit the <a href="/working-call)">working call</a> page in the <a href="/community)">MAEC Community</a> section for details on how you can participate.
+Also, we are currently actively hosting "<a href="/working-call)">MAEC 5.0 Working Session Calls</a>" focusing on this next version of the MAEC Language. Please visit the <a href="/working-call)">working call</a> page in the <a href="/community)">MAEC Community</a> section for details on how you can participate.
 
 <div class="row">
   <div class="col-md-6">
