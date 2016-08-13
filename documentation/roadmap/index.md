@@ -1,34 +1,17 @@
 ---
 layout: flat
-title: MAEC Language Roadmap
+title: MAEC 5.0 Roadmap
 ---
 
-Documented here is the MAEC Language roadmap, taking into account the current release as well as our plans for the next. We welcome any feedback regarding our release plans, either at the GitHub issue tracker link below, or directly at <a href="mailto:maec@mitre.org">maec@mitre.org</a>. 
+The roadmap for Version 5.0 of the MAEC Language is below. We welcome any feedback regarding our release plans, either at the GitHub issue tracker link below, or directly at <a href="mailto:maec@mitre.org">maec@mitre.org</a>. 
+
+We are currently actively hosting "<a href="/working-call)">MAEC 5.0 Working Session Calls</a>" focusing on this next version of the MAEC Language. Please visit the <a href="/working-call)">working call</a> page in the <a href="/community)">MAEC Community</a> section for details on how you can participate.
 
 <div class="row">
   <div class="col-md-6">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"><b>MAEC v4.1</b></h3>
-      </div>
-      <div class="panel-body">
-		  <ul>
-			<li>Current release (February 11th, 2014)
-		      <ul>
-			    <li>Available <a href="http://maec.mitre.org/language/version4.1/">here</a></li>
-			  </ul>
-			</li>
-			<li>Initial release of Capabilities/Objectives</li>
-			<li>Incorporates support for <a href="http://cyboxproject.github.io/releases/2.1/">Cyber Observable eXpression (CybOX™) v2.1</a></li>
-			<li>Minor fixes and updates</li>
-		  </ul> 
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title"><b>MAEC v5.0</b></h3>
+        <h3 class="panel-title"><b>MAEC Version 5.0</b></h3>
       </div>
       <div class="panel-body">
         <ul>
@@ -40,14 +23,14 @@ Documented here is the MAEC Language roadmap, taking into account the current re
 		  </li>
 		  <li>New output format: JSON
 		    <ul>
-			  <li>Incorporation of CybOX 3.0</li>
-			</ul>
+			  <li>Incorporation of <a href="http://cyboxproject.github.io/">Cyber Observable eXpression (CybOX™) 3.0</a></li>
+                        </ul>
 		  </li>
 		  <li>Major refactoring of many structures for simplicity and ease-of-use</li>
 		  <li>Addition of structures for capturing function fingerprints</li>
 		  <li>Updates to existing vocabularies</li>
 			</ul>
-      </div>
+	</div>
     </div>
   </div>
 </div>
