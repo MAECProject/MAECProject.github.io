@@ -49,11 +49,11 @@ The [MAEC Community](/community) includes representatives from antivirus vendors
 
 A few short cuts: 
 
-•	**[MAEC Community Discussion List](http://maecproject.github.io/community#discussion-lists--archives)** – Where community members discuss the latest versions of the MAEC specifications, schemas, utilities, and other items integral to the ongoing development of MAEC. Online [sign-up](https://maec.mitre.org/community/discussionlist.html) on the MAEC Legacy Website is required.     
+* **[MAEC Community Discussion List](http://maecproject.github.io/community#discussion-lists--archives)** – Where community members discuss the latest versions of the MAEC specifications, schemas, utilities, and other items integral to the ongoing development of MAEC. Online [sign-up](https://maec.mitre.org/community/discussionlist.html) on the MAEC Legacy Website is required.     
      
-•	**[MAEC Development Group on MITRE’s Handshake Collaboration Website](https://handshake.mitre.org/)** – Allows the MAEC Community to more easily share and revise information and files, and to post items such as example content in a more secure environment. Send an [email](maec@mitre.org) to us to join the group.     
+* **[MAEC Development Group on MITRE’s Handshake Collaboration Website](https://handshake.mitre.org/)** – Allows the MAEC Community to more easily share and revise information and files, and to post items such as example content in a more secure environment. Send an [email](maec@mitre.org) to us to join the group.     
      
-•	**[MAECProject GitHub Tools & Utilities](https://github.com/MAECProject/)** – The central location for MAEC Community members to make open-source contributions to MAEC development and manage issue tracking for the MAEC schemas, utilities, and other supporting information and items.     
+* **[MAECProject GitHub Tools & Utilities](https://github.com/MAECProject/)** – The central location for MAEC Community members to make open-source contributions to MAEC development and manage issue tracking for the MAEC schemas, utilities, and other supporting information and items.     
 
 Feedback is welcome at [maec@mitre.org](maec@mitre.org).
 
