@@ -7,6 +7,11 @@ Follow the STIX-CybOX-TAXII-MAEC [Blog](http://stixproject.tumblr.com/), and/or 
 
 ## Our latest news:
 
+
+**MAEC to Hold Second Community Working Call for MAEC Version 5.0 on September 14**     
+We are hosting the second “Malware Attribute Enumeration and Characterization (MAEC™) 5.0 Working Session” community call focusing on the next version of MAEC Language on September 14, 2016. [More>>>](http://stixproject.tumblr.com/post/150092860697/call-details-final-agenda-for-2nd-maec-50)
+
+
 **python-maec Version 4.1.0.13 Now Available**     
 python-maec Version 4.1.0.13 is now available for download from PyPI, and to view the source code in the MAECProject repository on GitHub.com. [More>>>](http://stixproject.tumblr.com/post/148854064442/python-maec-version-41013-now-available)
 
