@@ -105,7 +105,7 @@ There are several opportunities to get involved. Visit the [MAEC Community](/com
 The [MAECProject repositories](https://github.com/MAECProject/) on GitHub.com are the central location for [MAEC Community](/community) members to make open-source contributions to MAEC development and manage issue tracking for the MAEC schemas, utilities, and other supporting information and items. Please visit the [MAECProject GitHub repositories](https://github.com/MAECProject/) or email [maec@mitre.org](mailto:maec@mitre.org) for further information.
 
 #### <a name="a12"></a> A12. How do I submit questions related to this effort?
-We encourage you to submit questions to the general [MAEC Community Email Discussion List](https://maec.mitre.org/community/discussionlist.html) which we actively read and monitor. You may also submit questions directly to [maec@mitre.org](mailto:maec@mitre.org) if you do not wish to hold the discussion in a public venue.
+We encourage you to submit questions to the general [MAEC Community Email Discussion List](/community/#discussion-lists--archives) which we actively read and monitor. You may also submit questions directly to [maec@mitre.org](mailto:maec@mitre.org) if you do not wish to hold the discussion in a public venue.
 
 ### <a name="b"></a> MAEC Language
 
@@ -117,7 +117,7 @@ MAEC releases are packaged in two different ways:
 <li>A zipped bundle to support local development, with local references and including copies of all imported or utilized schemas.</li>
 <li>A zipped bundle to support development with Internet access, with only remote references to imported schemas.</li>
 </ol> 
-Additionally, a version is hosted on the [MAEC legacy website](https://maec.mitre.org/language/version4.1/) to enable validation. 
+Additionally, a version is hosted on the [MAEC Legacy Website](https://maec.mitre.org/language/version4.1/) to enable validation. 
 
 #### <a name="b2"></a> B2. What tools or utilities are available to help me use or develop MAEC content?
 MAEC can be manipulated manually or programmatically. If using MAEC manually, such as to capture malware analysis results, no tools are currently provided, but use of an XML editor is recommended. 
@@ -187,10 +187,10 @@ While there are no definite rules for what is most appropriately captured with M
 #### <a name="e1"></a> E1. What is the role of the MAEC Community and how can I join?
 The [MAEC Community](/community) includes representatives from antivirus vendors, operating system vendors, software vendors, IT users, security services providers, and others from across the international cyber security community who have come together to help build this growing, open-source industry effort. 
 
-There are multiple options available for involvement including participating in the discussions
-on our dedicated email list, joining our development group, contributing to the MAEC GitHub repositories, and/or joining us on the working calls to help develop MAEC Version 5.0.
+There are multiple options available for involvement including participating in the conversations
+on our [dedicated email discussion list](/community/#discussion-lists--archives), joining our [development group](/community/#developers-group-on-handshake) on MITRE’s Handshake collaboration website, contributing to the development of [MAEC tools and utilities](/community/#tool--utility-development) on GitHub, and/or joining us on the [working calls to help develop MAEC Version 5.0](/community/#working-calls).
 
-Visit the [MAEC Community](/community) page to join or learn more.
+Visit the [MAEC Community](/community) page to learn more or to [join](/community) the MAEC effort.
 
 #### <a name="e2"></a> E2. What is MITRE?
 In partnership with government clients, [The MITRE Corporation](http://www.mitre.org/) (MITRE) is a not-for-profit corporation working in the public interest. It addresses issues of critical national importance, combining systems engineering and information technology to develop innovative solutions that make a difference. 
