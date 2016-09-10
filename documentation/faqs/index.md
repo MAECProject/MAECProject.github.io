@@ -84,7 +84,7 @@ MAEC was developed to eliminate the ambiguity and inaccuracy that currently exis
 
 #### <a name="a6"></a> A6. How was MAEC developed?
 
-MAEC is a community-developed effort and has received input from members of various communities, including those from industry, academia, and government. [The MITRE Corporation](http://www.mitre.org/) maintains MAEC and its public website presence and provides impartial technical guidance to the [MAEC Community]() throughout the process to ensure MAEC serves the public interest. MAEC is sponsored by the office of [Cybersecurity and Communications](http://www.dhs.gov/office-cybersecurity-and-communications/) at the [U.S. Department of Homeland Security](http://www.dhs.gov/).
+MAEC is a community-developed effort and has received input from members of various communities, including those from industry, academia, and government. [The MITRE Corporation](http://www.mitre.org/) maintains MAEC and its public website presence and provides impartial technical guidance to the [MAEC Community](/community) throughout the process to ensure MAEC serves the public interest. MAEC is sponsored by the office of [Cybersecurity and Communications](http://www.dhs.gov/office-cybersecurity-and-communications/) at the [U.S. Department of Homeland Security](http://www.dhs.gov/).
 
 #### <a name="a7"></a> A7. Where can I get MAEC?
 
@@ -96,28 +96,16 @@ MAEC is not currently being pursued in a formal standards body. However, once an
 
 #### <a name="a9"></a> A9. How is MAEC licensed?
 
-See the "[License]()" section of the [Terms of Use]().
+See the "License" section of the [Terms of Use](http://maecproject.github.io/Legal/).
 
 #### <a name="a10"></a> A10. How can my organization and I get involved?
-There are several opportunities to get involved. The [MAEC Community Email Discussion List]() is where community members discuss the latest drafts of the MAEC schemas, utilities and other items integral to the ongoing development of MAEC. 
-
-The [MAEC Development Group](https://handshake.mitre.org/) on MITRE's Handshake collaboration Web site allows the [MAEC Community]() to more easily share and revise information and files and to post items such as example content in a more secure environment. Please email [maec@mitre.org](mailto:maec@mitre.org) to join the Handshake group. 
-
-Visit the [MAEC Community]() page for additional information. 
+There are several opportunities to get involved. Visit the [MAEC Community](/community) page for additional information. 
 
 #### <a name="a11"></a> A11. How can I make contributions to MAEC development?
-The [MAECProject repositories](https://github.com/MAECProject/) on GitHub.com are the central location for [MAEC Community]() members to make open-source contributions to MAEC development and manage issue tracking for the MAEC schemas, utilities, and other supporting information and items. Please visit the [MAECProject GitHub repositories](https://github.com/MAECProject/) or email [maec@mitre.org](mailto:maec@mitre.org) for further information.
+The [MAECProject repositories](https://github.com/MAECProject/) on GitHub.com are the central location for [MAEC Community](/community) members to make open-source contributions to MAEC development and manage issue tracking for the MAEC schemas, utilities, and other supporting information and items. Please visit the [MAECProject GitHub repositories](https://github.com/MAECProject/) or email [maec@mitre.org](mailto:maec@mitre.org) for further information.
 
 #### <a name="a12"></a> A12. How do I submit questions related to this effort?
-We encourage you to submit questions to the general [MAEC Community Email Discussion List]() which we actively read and monitor. You may also submit questions directly to [maec@mitre.org](mailto:maec@mitre.org) if you do not wish to hold the discussion in a public venue.
-
-#### <a name="a13"></a> A13. What is MAEC Compatibility?
-[MAEC Compatibility]() provides for a product, service, or repository to be reviewed and registered as officially "MAEC-Compatible," thereby assisting organizations in understanding and leveraging the three different types of capabilities that can leverage the [MAEC Language](). 
-
-If your organization uses or is planning to use MAEC, please refer to the [MAEC Compatibility Program]() and [How to Make a Declaration]() for instructions on how to participate, and/or contact [maec@mitre.org](mailto:maec@mitre.org) for additional information. 
-
-#### <a name="a14"></a> A14. Is someone from MAEC available to speak or participate on panel discussion at industry-related events, meetings, etc.?
-Yes, contact [maec@mitre.org](mailto:maec@mitre.org) to have the MAEC Team present a briefing or participate in a panel discussion about MAEC and/or information sharing at your event.
+We encourage you to submit questions to the general [MAEC Community Email Discussion List](https://maec.mitre.org/community/discussionlist.html) which we actively read and monitor. You may also submit questions directly to [maec@mitre.org](mailto:maec@mitre.org) if you do not wish to hold the discussion in a public venue.
 
 ### <a name="b"></a> MAEC Language
 
@@ -129,7 +117,7 @@ MAEC releases are packaged in two different ways:
 <li>A zipped bundle to support local development, with local references and including copies of all imported or utilized schemas.</li>
 <li>A zipped bundle to support development with Internet access, with only remote references to imported schemas.</li>
 </ol> 
-Additionally, a version is hosted on [maec.mitre.org]() to enable validation. 
+Additionally, a version is hosted on the [MAEC legacy website](https://maec.mitre.org/language/version4.1/) to enable validation. 
 
 #### <a name="b2"></a> B2. What tools or utilities are available to help me use or develop MAEC content?
 MAEC can be manipulated manually or programmatically. If using MAEC manually, such as to capture malware analysis results, no tools are currently provided, but use of an XML editor is recommended. 
@@ -142,13 +130,15 @@ A GUI is not available at this time, but such a tool could be available in the f
 #### <a name="b4"></a> B4. Are there plans to support other forms of data interchange for MAEC (e.g., JSON, YAML, etc.)?
 Yes. Eventually, a formal MAEC implementation-independent specification will be produced, to include guidance for developing technology-specific implementations such as JavaScript Object Notation (JSON), Resource Description Framework (RDF)/Web Ontology Language (OWL), YAML Ain't Markup Language (YMAL), or other implementations. XML was used in the initial release to enable rapid development and implementation.
 
+Visit the [MAEC Version 5.0 Roadmap](/documentation/roadmap) for additional information.
+
 #### <a name="b5"></a> B5. Where can I find examples of MAEC data? Are there any MAEC repositories?
-See the [Examples](https://maec.mitre.org/language/examples.html) page on this MAEC Web site. 
+Visit the [Current Release](/releases/4.1) page for examples. 
 
 At present, there are no public repositories of MAEC data, nor are there plans by MITRE to establish one. However, community members interested in hosting a MAEC data repository are strongly encouraged to do so. 
 
 ### <a name="c"></a> Using MAEC
-Some of the FAQs in this section are somewhat technical in nature. Please refer to the "MAEC Language Specification" on the Documents page of this website for further information.
+Some of the FAQs in this section are somewhat technical in nature. Please refer to the [MAEC Language Specifications](/documentation/specs/) for further information.
 
 #### <a name="c1"></a> C1. MAEC seems complicated – is it too expansive for my use?
 The MAEC schema was developed to enable analysts to capture a full gamut of information about malware. However, a MAEC Bundle is valid with very little information: it is only necessary to define a unique identifier and to specify the MAEC schema version. All other fields are optional.
@@ -171,7 +161,7 @@ The xsi:type XML schema extension mechanism works by allowing for the substituti
 #### <a name="c4"></a> C4. What if I need to define something that isn't part of the MAEC schema?
 MAEC is very flexible and can accommodate custom fields and objects. For example, one can use the Custom Properties/Property fields at the root level of the larger [Cyber Observables Expression (CybOX™)](https://cyboxproject.github.io/) ObjectType specify a set of custom attributes that are not defined elsewhere. Accordingly, it is possible to define a new type of CybOX Object that can then be plugged into the Property field of the CybOX ObjectType using the xsi:type extension mechanism (e.g., xsi:type="CustomObj:CustomObjectType"). 
 
-In addition, the MAEC development team encourages the community to engage in the ongoing discussion so that new fields and fields can be defined and integrated into future versions of MAEC as necessary. Please consider joining the public MAEC Community Email Discussion List and/or the MAEC Development Group on Handshake (email [maec@mitre.org](mailto:maec@mitre.org) to request access). 
+In addition, the MAEC development team encourages the community to engage in the ongoing discussion so that new fields can be defined and integrated into future versions of MAEC as necessary. Please consider participating in the [MAEC Community](/community) to help with the development of MAEC. 
 
 #### <a name="c5"></a> C5. Can the same information be captured in multiple places in MAEC?
 Yes. MAEC is very flexible and there are often a multiple places that the same characterized information, e.g., a particular Action or Behavior, can be captured.
@@ -179,50 +169,47 @@ Yes. MAEC is very flexible and there are often a multiple places that the same c
 ### <a name="d"></a> Relationships to Other Efforts
 
 #### <a name="d1"></a> D1. What is the relationship between MAEC and CybOX?
-The [Cyber Observable eXpression (CybOX™)](https://cyboxproject.github.io/) is a related [U.S. Department of Homeland Security](http://www.dhs.gov/)–led effort of the office of [Cybersecurity and Communications](http://www.dhs.gov/office-cybersecurity-and-communications/) that provides a structured language for describing elements within the cyber operational environment. MAEC uses components of the CybOX language for characterizing cyber observables associated with malware. In particular, MAEC makes use of CybOX's Object and Action fields (which are extended in MAEC's MalwareActionType type) to characterize malware-related system artifacts and low-level behaviors, respectively.
+ [Cyber Observable eXpression (CybOX™)](https://cyboxproject.github.io/) provides a structured language for describing elements within the cyber operational environment. MAEC uses components of the CybOX language for characterizing cyber observables associated with malware. In particular, MAEC makes use of CybOX's Object and Action fields (which are extended in MAEC's MalwareActionType type) to characterize malware-related system artifacts and low-level behaviors, respectively.
 
 #### <a name="d2"></a> D2. What is the relationship between MAEC and STIX?
-The [Structured Threat Information eXpression (STIX™)](https://stixproject.github.io/) is a related [U.S. Department of Homeland Security](http://www.dhs.gov/)–led effort of the office of [Cybersecurity and Communications](http://www.dhs.gov/office-cybersecurity-and-communications/) to characterize a rich set of cyber threat information in a standardized and structured manner. STIX can describe malware using MAEC characterizations through use of the MAEC schema extension for the TTP schema and can also characterize indicators in a fashion similar to MAEC's Candidate Indicators.
+[Structured Threat Information eXpression (STIX™)](https://stixproject.github.io/) characterizes a rich set of cyber threat information in a standardized and structured manner. STIX can describe malware using MAEC characterizations through use of the MAEC schema extension for the TTP schema and can also characterize indicators in a fashion similar to MAEC's Candidate Indicators.
 
 #### <a name="d3"></a> D3. When would STIX be used to capture malware information and when would MAEC be used?
-[Structured Threat Information eXpression (STIX™)](https://stixproject.github.io/) is used to describe high-level cyber threat information to include indicators, as well as information about threat actors, campaigns, incidents, and other related entities. On the other hand, MAEC is used to describe malware attributes of one or more malware instances at various levels of abstraction. Certainly, there is overlap between the two languages, particularly when it comes to capturing indicator information (e.g., file sizes, file hashes) through the common use of [Cyber Observable eXpression (CybOX™)](https://cyboxproject.github.io/). 
+[STIX](https://stixproject.github.io/) is used to describe high-level cyber threat information to include indicators, as well as information about threat actors, campaigns, incidents, and other related entities. On the other hand, MAEC is used to describe malware attributes of one or more malware instances at various levels of abstraction. Certainly, there is overlap between the two languages, particularly when it comes to capturing indicator information (e.g., file sizes, file hashes) through the common use of [Cyber Observable eXpression (CybOX™)](https://cyboxproject.github.io/). 
 
 While there are no definite rules for what is most appropriately captured with MAEC versus STIX, MAEC will typically be used to capture malware information that is gathered through the analysis process, and STIX will be used to capture information related to the interpretation of the analysis results in a broader, threat-based context. For example, while MAEC would capture the particular details of the behaviors and artifacts associated with a malware instance, STIX would be used to capture additional details regarding the particular threat actors that may make use of the malware instance. Thus, when malware analysis information beyond simple indicator information is to be captured by STIX, the STIX schema extension for MAEC should be used to leverage the MAEC data model. 
 
 #### <a name="d4"></a> D4. What is the relationship between MAEC and TAXII?
-The [Trusted Automated eXchange of Indicator Information (TAXII™)](https://taxiiproject.github.io/) is a related [U.S. Department of Homeland Security](http://www.dhs.gov/)–led effort of the office of [Cybersecurity and Communications](http://www.dhs.gov/office-cybersecurity-and-communications/) to define a set of services and message exchanges for securely sharing automated cyber threat information. TAXII uses [Structured Threat Information eXpression (STIX™)](https://stixproject.github.io/) to represent cyber threat information in a standardized and structured manner (STIX characterizes what is being shared, while TAXII defines how the STIX payload is shared). STIX is one payload that TAXII can convey, and STIX can describe malware using MAEC.
+[Trusted Automated eXchange of Indicator Information (TAXII™)](https://taxiiproject.github.io/) defines a set of services and message exchanges for securely sharing automated cyber threat information. TAXII uses [Structured Threat Information eXpression (STIX™)](https://stixproject.github.io/) to represent cyber threat information in a standardized and structured manner (STIX characterizes what is being shared, while TAXII defines how the STIX payload is shared). STIX is one payload that TAXII can convey, and STIX can describe malware using MAEC.
 
 ### <a name="e"></a> MAEC Community
 
 #### <a name="e1"></a> E1. What is the role of the MAEC Community and how can I join?
-The [MAEC Community](https://maec.mitre.org/community/index.html) comprises members from across the international cyber security community who have come together to help build MAEC. There are multiple options available for involvement:
+The [MAEC Community](/community) includes representatives from antivirus vendors, operating system vendors, software vendors, IT users, security services providers, and others from across the international cyber security community who have come together to help build this growing, open-source industry effort. 
 
-* The [MAEC Community Email Discussion List](https://maec.mitre.org/community/discussionlist.html) is where community members discuss the latest drafts of the MAEC schemas, utilities, and other items integral to the ongoing development of MAEC.
+There are multiple options available for involvement including participating in the discussions
+on our dedicated email list, joining our development group, contributing to the MAEC GitHub repositories, and/or joining us on the working calls to help develop MAEC Version 5.0.
 
-* The [MAECProject GitHub repositories](https://github.com/MAECProject) are the central location for MAEC Community members to make open-source contributions to MAEC tool and API development and manage issue tracking for the MAEC schemas, utilities, and other supporting information and items.
-
-* The [MAEC Development Group](https://handshake.mitre.org/) on MITRE's Handshake collaboration Web site allows the MAEC Community to more easily share and revise information and files and to post items such as example content in a more secure environment. To join Handshake and the MAEC Development group, please email us at [maec@mitre.org](mailto:maec@mitre.org) for an invitation.
-
-For more information on the community and how to join, please visit the [MAEC Community](https://maec.mitre.org/community/index.html) page. 
+Visit the [MAEC Community](/community) page to join or learn more.
 
 #### <a name="e2"></a> E2. What is MITRE?
 In partnership with government clients, [The MITRE Corporation](http://www.mitre.org/) (MITRE) is a not-for-profit corporation working in the public interest. It addresses issues of critical national importance, combining systems engineering and information technology to develop innovative solutions that make a difference. 
 
-MITRE's work is focused within Federally Funded Research and Development Centers (FFRDCs) for the Department of Defense, Federal Aviation Administration, Internal Revenue Service and Department of Veterans Affairs, Department of Homeland Security, Administrative Office of the U.S. Courts; and the Centers for Medicare and Medicaid Services. 
+MITRE's work is focused within [Federally Funded Research and Development Centers (FFRDCs)](https://www.mitre.org/centers/we-operate-ffrdcs) for the Department of Defense, Federal Aviation Administration, Internal Revenue Service and Department of Veterans Affairs, Department of Homeland Security, Administrative Office of the U.S. Courts; and the Centers for Medicare and Medicaid Services. 
 
 #### <a name="e3"></a> E3. What is MITRE's role in MAEC?
-[MITRE](http://www.mitre.org/) manages the development of the MAEC Language, MAEC Web site, community engagement, and discussion lists to enable open and public collaboration with all stakeholders.
+[MITRE](http://www.mitre.org/) manages the development of the MAEC Language, MAEC website, community engagement, and discussion lists to enable open and public collaboration with all stakeholders.
 
 #### <a name="e4"></a> E4. Why is MITRE maintaining MAEC, and how long does MITRE plan to maintain it?
 In accordance with its mission, [MITRE](http://www.mitre.org/) has traditionally acted in the public interest. Its unique role allows it to provide an objective perspective to this effort. MITRE will maintain MAEC as long as it serves the community to do so.
 
 #### <a name="e5"></a> E5. Who pays for MAEC? Who is the Sponsor?
-MAEC is sponsored by the office of [Cybersecurity and Communications](http://www.dhs.gov/office-cybersecurity-and-communications/) at the U.S. Department of Homeland Security.
+MAEC is sponsored by the office of [Cybersecurity and Communications](http://www.dhs.gov/office-cybersecurity-and-communications/) at the [U.S. Department of Homeland Security](http://www.dhs.gov/).
 
 #### <a name="e6"></a> E6. What is the relationship between MAEC and DHS?
-MAEC is a [U.S. Department of Homeland Security](http://www.dhs.gov/)–led effort of the office of [Cybersecurity and Communications](http://www.dhs.gov/office-cybersecurity-and-communications/). 
+MAEC is a [DHS](http://www.dhs.gov/)-led effort of the office of [Cybersecurity and Communications](http://www.dhs.gov/office-cybersecurity-and-communications/). 
 
-[The MITRE Corporation](http://www.mitre.org/), operating as DHS's Federally Funded Research and Development Center (FFRDC), manages the development of the MAEC Language, MAEC Web site, community engagement, and discussion lists to enable open and public collaboration with all stakeholders. 
+[The MITRE Corporation](http://www.mitre.org/), operating as DHS's Federally Funded Research and Development Center (FFRDC), manages the development of the MAEC Language, MAEC website, community engagement, and discussion lists to enable open and public collaboration with all stakeholders. 
 
 
 
