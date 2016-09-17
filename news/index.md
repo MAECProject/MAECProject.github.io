@@ -7,6 +7,9 @@ Follow the STIX-CybOX-TAXII-MAEC [Blog](http://stixproject.tumblr.com/), and/or 
 
 ## Our latest news:
 
+**Materials from Second MAEC Version 5.0 Community Working Call Now Available**     
+The presentation slides, as well links to the specification documents and other materials, from the working call held on September 14, 2016 are now available. [More>>>](http://making-security-measurable.1364806.n2.nabble.com/Re-MAEC-MAEC-5-0-Working-Session-tc7589436.html#none)
+
 
 **MAEC to Hold Second Community Working Call for MAEC Version 5.0 on September 14**     
 We are hosting the second “Malware Attribute Enumeration and Characterization (MAEC™) 5.0 Working Session” community call focusing on the next version of MAEC Language on September 14, 2016. [More>>>](http://stixproject.tumblr.com/post/150092860697/call-details-final-agenda-for-2nd-maec-50)
