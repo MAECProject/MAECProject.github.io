@@ -6,25 +6,23 @@ title: MAEC Working Calls
 
 ## Next Working Call
 
-The next MAEC working call will be held on July 20th, 2016. 
+TBA 
 
 ### Agenda:
 
-* MAEC status/level-setting
-* MAEC 5.0 deep dive
-    * Development timeline
-    * Data model overview
-    * Relationship to OASIS efforts
-    * Open questions/issues
-* Semantic MediaWiki demo/discussion
+TBA
  
 ### Dial-in Info
-https://meet.mitre.org/ikirillov/50R7783G
+TBA
  
 Join by Phone
 +1 (781) 271-2020 
 +1 (703) 983-2020 
  
-Conference ID: 5269350
+Conference ID: TBA
  
+## Previous Working Calls
+
+* September 14, 2016 - [Details](http://stixproject.tumblr.com/post/150092860697/call-details-final-agenda-for-2nd-maec-50)/[Materials](http://making-security-measurable.1364806.n2.nabble.com/Re-MAEC-MAEC-5-0-Working-Session-td7589436.html#a7589449)
+* July 20, 2016 - [Details](http://stixproject.tumblr.com/post/147458851807/call-details-final-agenda-for-maec-50-working)
 
