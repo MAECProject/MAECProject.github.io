@@ -3,14 +3,17 @@ layout: flat
 title: MAEC Working Calls
 ---
 
+Beginning Wednesday, September 28, 2016, the MAEC Team will be hosting the first of a series of 1-hour, bi-weekly, working session calls for [MAEC Version 5.0](http://maecproject.github.io/documentation/roadmap/). 
 
-## Next Working Call
+Each bi-weekly call will focus on a particular topic. However, we very much welcome suggestions from our community, so please [let us know](maec@mitre.org) what you’d like to discuss for any meeting. Anything MAEC-related is relevant! 
 
-TBA 
+## Next Bi-Weekly Working Call
+
+September 28, 2016
 
 ### Agenda
 
-TBA
+The [Malware Family Object](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.c3b7rqfk03ax). 
  
 ### Dial-in Info
 
