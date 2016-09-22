@@ -3,9 +3,17 @@ layout: flat
 title: About MAEC
 ---
 
-[Malware Attribute Enumeration and Characterization (MAEC™)](http://maecproject.github.io/releases/4.1/) is a standardized language for sharing structured information about malware based upon attributes such as behaviors, artifacts, and attack patterns.
+[Malware Attribute Enumeration and Characterization (MAEC™)](/releases/4.1) (pronounced “mike”) is a community-developed structured language for encoding and communicating high-fidelity information about malware based upon attributes such as behaviors, artifacts, and attack patterns.
 
-The goal of the MAEC (pronounced "mike") effort is to provide a basis for transforming malware research and response. MAEC aims to eliminate the ambiguity and inaccuracy that currently exists in malware descriptions and to reduce reliance on signatures. In this way, MAEC seeks to improve human-to-human, human-to-tool, tool-to-tool, and tool-to-human communication about malware; reduce potential duplication of malware analysis efforts by researchers; and allow for the faster development of countermeasures by enabling the ability to leverage responses to previously observed malware instances. The MAEC Language enables correlation, integration, and automation.
+By eliminating the ambiguity and inaccuracy that currently exists in malware descriptions and by reducing reliance on signatures, MAEC aims to: 
+
+* Improve human-to-human, human-to-tool, tool-to-tool, and tool-to-human communication about malware.
+
+* Allow for the faster development of countermeasures by enabling the ability to leverage responses to previously observed malware instances.
+
+* Enable correlation, integration, and automation.
+
+* Reduce potential duplication of malware analysis efforts by researchers.
 
 ## Malware
 
@@ -19,17 +27,39 @@ There are currently several common methods utilized for malware detection, based
 
 ### Problem
 
-Modern methods for detecting and combating malware often rely on the characterization of malware attributes and behaviors. Typically, such behaviors and attributes are discovered through the use of static and dynamic analysis techniques. The combination of the two allows for an encompassing profile of malware to be constructed based upon its disassembled binary and observed run-time behavior. Yet, such techniques are hampered by the non-existence of a widely accepted standard for unambiguously characterizing malware.
+Modern methods for detecting and combating malware often rely on the characterization of malware attributes and behaviors. 
 
-The lack of such a standard means that there is no clear method for communicating the specific attributes detected in malware by the aforementioned analyses, nor for enumerating its fundamental makeup. Several major problems result from this, including non-interoperable and disparate malware reporting between organizations, disjointed or inaccurate malware attribution, the duplication of malware analysis efforts, increased difficulty in determining the severity of a malware threat, and a greater period of time between malware infection and detection/response, among others.
+Typically, such behaviors and attributes are discovered through the use of static and dynamic analysis techniques. The combination of the two allows for an encompassing profile of malware to be constructed based upon its disassembled binary and observed run-time behavior. 
 
-On this basis, it is clear that a standard for describing malware in terms of its attack patterns, artifacts, actions, and behaviors is needed to address such issues and allow for the clear communication of the information gained using static and dynamic analysis.
+Yet, the lack of an accepted standard for unambiguously characterizing malware before [MAEC](/releases/4.1) meant there was no clear method for communicating the specific malware attributes detected in malware by the analyses, nor for enumerating its fundamental makeup. The results were non-interoperable and disparate malware reporting between organizations, disjointed or inaccurate malware attribution, the duplication of malware analysis efforts, increased difficulty in determining the severity of a malware threat, and a greater period of time between malware infection and detection/response, among others.
 
 ### Solution
 
-MAEC solves these problems. The characterization of malware using abstract patterns offers a wide range of benefits over the usage of physical signatures. It allows for the accurate encoding of how malware operates and the specific actions that it performs. Such information can not only be used for malware detection but also for assessing the end-goal the malware is pursuing and the corresponding threat that it represents.
+[MAEC](/releases/4.1) solves these problems. The characterization of malware using abstract patterns offers a wide range of benefits over the usage of physical signatures, and allows for the accurate encoding of how malware operates and the specific actions that it performs. Such information can not only be used for malware detection, but also for assessing the end-goal the malware is pursuing and the corresponding threat that it represents. 
 
-Focusing on the attributes and behaviors of malware facilitates detection and analysis of emerging, sophisticated malware threats that circumvent the traditional signature-based and heuristic approaches. Characterizing malware in a standard way supports collaboration across organizations and the identification of common behavior, functionality, and code bases across instances of malware.
+Focusing on the attributes and behaviors of malware facilitates detection and analysis of emerging, sophisticated malware threats that circumvent the traditional signature-based and heuristic approaches. Characterizing malware in a standard way supports collaboration across organizations and the identification of common behavior, functionality, and code bases across instances of malware. 
+
+MAEC achieves this end result by utilizing three community-developed components to define the structured MAEC Language:
+
+* Element dictionaries.
+
+* Schemas for defining vocabulary syntax.
+
+* Standard output formats based on schemas.
+
+## The MAEC Language
+
+The [MAEC Language](/releases/4.1)) is comprised of the following: 
+
+* **MAEC Dictionaries** – a series of dictionaries for defining three distinct levels of malware elements—low-level actions, mid-level behaviors, and high-level mechanisms.
+
+* **MAEC Schemas** – a syntax for the vocabulary of actions, behaviors, and taxonomies, and an interchange format for structured information about these elements.
+
+* **MAEC Output Formats** – standard output formats that can be used for particular use cases, including the description of a malware instance, malware intrusion set, or malware families in terms of MAEC’s dictionaries and schemas.
+
+The MAEC Language is extremely flexible. Aside from a unique identifier and specifying the MAEC schema version, all objects are optional in MAEC. Users are able to capture exactly what they want and nothing more.
+
+Go to the [current release](/releases/4.1) of the MAEC Language.
 
 ## Benefits
 
@@ -56,9 +86,3 @@ A few short cuts:
 * **[MAECProject GitHub Tools & Utilities](https://github.com/MAECProject/)** – The central location for MAEC Community members to make open-source contributions to MAEC development and manage issue tracking for the MAEC schemas, utilities, and other supporting information and items.     
 
 Feedback is welcome at [maec@mitre.org](maec@mitre.org).
-
-
-
-
-
-
