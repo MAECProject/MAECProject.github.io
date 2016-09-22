@@ -49,7 +49,7 @@ MAEC achieves this end result by utilizing three community-developed components 
 
 ## The MAEC Language
 
-The [MAEC Language](/releases/4.1)) is comprised of the following: 
+The [MAEC Language](/releases/4.1) is comprised of the following: 
 
 * **MAEC Dictionaries** – a series of dictionaries for defining three distinct levels of malware elements—low-level actions, mid-level behaviors, and high-level mechanisms.
 
