@@ -7,6 +7,10 @@ Follow the STIX-CybOX-TAXII-MAEC [Blog](http://stixproject.tumblr.com/), and/or 
 
 ## Our latest news:
 
+**“MAEC 5.0 Working Session” Calls Moving to Bi-Weekly Schedule Beginning September 28**   
+Beginning September 28, 2016, the MAEC Team will be hosting the first of a series of 1-Hour, Bi-Weekly Working Session Calls for Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 that will each focus in-depth on a single discussion topic. [More>>>](http://stixproject.tumblr.com/post/150750948797/bi-weekly-maec-50-working-session-calls)
+
+
 **Materials from Second MAEC Version 5.0 Community Working Call Now Available**     
 The presentation slides, as well links to the specification documents and other materials, from the working call held on September 14, 2016 are now available. [More>>>](http://making-security-measurable.1364806.n2.nabble.com/Re-MAEC-MAEC-5-0-Working-Session-tc7589436.html#none)
 
