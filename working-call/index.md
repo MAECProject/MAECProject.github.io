@@ -17,7 +17,7 @@ The [Malware Family Object](https://docs.google.com/document/d/1cnjjZAPHITFjo_8x
  
 ### Dial-in Info
 
-**Online meeting:**  https://meet.mitre.org/ikirillov/7F073TTD          
+**Online meeting:**  [https://meet.mitre.org/ikirillov/7F073TTD](https://meet.mitre.org/ikirillov/7F073TTD)          
 **Conference ID:**   9326128          
 
 **Join by Phone:** 
