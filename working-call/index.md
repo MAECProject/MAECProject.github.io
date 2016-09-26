@@ -17,15 +17,12 @@ The [Malware Family Object](https://docs.google.com/document/d/1cnjjZAPHITFjo_8x
  
 ### Dial-in Info
 
-TBA
- 
-Join by Phone
+**Online meeting:**  https://meet.mitre.org/ikirillov/7F073TTD          
+**Conference ID:**   9326128          
+
+**Join by Phone:** 
 +1 (781) 271-2020 
 +1 (703) 983-2020 
- 
-Conference ID: 
-
-TBA
  
 ## Previous Working Calls
 
