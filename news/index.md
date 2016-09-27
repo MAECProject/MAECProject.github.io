@@ -7,6 +7,10 @@ Follow the STIX-CybOX-TAXII-MAEC [Blog](http://stixproject.tumblr.com/), and/or 
 
 ## Our latest news:
 
+**MAEC 5.0 Working Call on September 28 to Focus on “The Malware Family Object”**   
+The main topic of our first 1-hour bi-weekly community working call on September 28, 2016 for the developemnt of Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 is the Malware Family Object. [More>>>](http://stixproject.tumblr.com/post/150968749062/maec-50-working-call-on-september-28-to-focus-on)
+
+
 **“MAEC 5.0 Working Session” Calls Moving to Bi-Weekly Schedule Beginning September 28**   
 Beginning September 28, 2016, the MAEC Team will be hosting the first of a series of 1-Hour, Bi-Weekly Working Session Calls for Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 that will each focus in-depth on a single discussion topic. [More>>>](http://stixproject.tumblr.com/post/150750948797/bi-weekly-maec-50-working-session-calls)
 
