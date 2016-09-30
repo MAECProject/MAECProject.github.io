@@ -34,5 +34,5 @@ The MAECProject GitHub Repositories are the central location for MAEC Community 
 
 ### Help
 
-* maec@mitre.org
+* [maec@mitre.org](mailto:maec@mitre.org)
 
