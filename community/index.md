@@ -16,14 +16,14 @@ The MAEC Community is working on [MAEC 5.0](/documentation/roadmap/), the next v
 
 The MAEC Community Email Discussion List is where community members discuss the latest drafts of the MAEC schemas, utilities, and other items integral to the ongoing development of MAEC.
 
-* [Email us to join and participate](mailto:maec@mitre.org)
+* Email us at [maec@mitre.org](mailto:maec@mitre.org) to join and participate
 * [Archive](http://making-security-measurable.1364806.n2.nabble.com/MAEC-Malware-Attribute-Enumeration-and-Characterization-f4094903.html)
 
 ### MediaWiki
 
 The MAEC MediaWiki enables community collaboration to build our growing Semantic MediaWiki-based collection of malware capabilities, behaviors, and structural features, and their associated attributes.
 
-* [Email us to join and contribute](mailto:maec@mitre.org)
+* Email us at [maec@mitre.org](mailto:maec@mitre.org) to join and contribute
 * [MAEC MediaWiki](https://collaborate.mitre.org/maec/index.php/Malware_Attribute_Enumeration_and_Characterization)
 
 ### Tool & Utility Development
