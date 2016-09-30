@@ -8,11 +8,8 @@ title: About MAEC
 By eliminating the ambiguity and inaccuracy that currently exists in malware descriptions and by reducing reliance on signatures, MAEC aims to: 
 
 * Improve human-to-human, human-to-tool, tool-to-tool, and tool-to-human communication about malware.
-
 * Allow for the faster development of countermeasures by enabling the ability to leverage responses to previously observed malware instances.
-
 * Enable correlation, integration, and automation.
-
 * Reduce potential duplication of malware analysis efforts by researchers.
 
 ## Malware
@@ -79,10 +76,10 @@ The [MAEC Community](/community) includes representatives from antivirus vendors
 
 A few short cuts: 
 
-* **[MAEC Community Discussion List](http://maecproject.github.io/community#discussion-lists--archives)** – Where community members discuss the latest versions of the MAEC specifications, schemas, utilities, and other items integral to the ongoing development of MAEC. Online [sign-up](https://maec.mitre.org/community/discussionlist.html) on the MAEC Legacy Website is required.     
+* **[MAEC Community Discussion List](/community#discussion-lists--archives)** – Where community members discuss the latest versions of the MAEC specifications, schemas, utilities, and other items integral to the ongoing development of MAEC.      
      
-* **[MAEC Development Group on MITRE’s Handshake Collaboration Website](https://handshake.mitre.org/)** – Allows the MAEC Community to more easily share and revise information and files, and to post items such as example content in a more secure environment. Send an [email](maec@mitre.org) to us to join the group.     
+* **[MAEC MediaWiki](/community/#mediawiki)** – Enables the MAEC Community to more easily collaborate on building our Semantic MediaWiki of malware capabilities, behaviors, and structural features, and their associated attributes.    
      
 * **[MAECProject GitHub Tools & Utilities](https://github.com/MAECProject/)** – The central location for MAEC Community members to make open-source contributions to MAEC development and manage issue tracking for the MAEC schemas, utilities, and other supporting information and items.     
 
-Feedback is welcome at [maec@mitre.org](maec@mitre.org).
+Feedback is welcome at [maec@mitre.org](mailto:maec@mitre.org).
