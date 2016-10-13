@@ -3,16 +3,20 @@ layout: flat
 title: Latest MAEC News
 ---
 
-Follow the STIX-CybOX-TAXII-MAEC [Blog](http://stixproject.tumblr.com/), and/or subscribe the [MAEC Announce e-newsletter](https://maec.mitre.org/community/discussionlist.html), to receive MAEC news updates.
+Follow the STIX-CybOX-TAXII-MAEC [Blog](http://stixproject.tumblr.com/), and/or sign-up for the *MAEC Announce* e-newsletter by emailing us [maec@mitre.org](mailto:maec@mitre.org) to subscribe, to receive the latest MAEC news updates.
 
 ## Our latest news:
+
+**Next MAEC 5.0 Working Call Scheduled for October 26**   
+Due to scheduling issues the October 12 call was cancelled. Our next 1-hour bi-weekly community working call for the development of Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 will be held on October 26, 2016. Call details and the agenda topic will be announced closer to the day. [More>>>](http://making-security-measurable.1364806.n2.nabble.com/MAEC-October-12-Working-Session-Canceled-tp7589457.html)
+
 
 **Join Us at *Virus Bulletin International Conference 2016* on October 5-7, 2016**   
 Members of the MAEC Team will be attending *Virus Bulletin International Conference (VB2016)* on October 5-7, 2016 in Denver, Colorado, USA. We look forward to seeing you there! [More>>>](http://making-security-measurable.1364806.n2.nabble.com/MAEC-MAEC-Virus-Bulletin-Conference-tc7589456.html)
 
 
 **MAEC 5.0 Working Call on September 28 to Focus on “The Malware Family Object”**   
-The main topic of our first 1-hour bi-weekly community working call on September 28, 2016 for the developemnt of Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 is the Malware Family Object. [More>>>](http://stixproject.tumblr.com/post/150968749062/maec-50-working-call-on-september-28-to-focus-on)
+The main topic of our first 1-hour bi-weekly community working call on September 28, 2016 for the development of Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 is the Malware Family Object. [More>>>](http://stixproject.tumblr.com/post/150968749062/maec-50-working-call-on-september-28-to-focus-on)
 
 
 **“MAEC 5.0 Working Session” Calls Moving to Bi-Weekly Schedule Beginning September 28**   
