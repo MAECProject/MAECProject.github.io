@@ -56,7 +56,7 @@ The [MAEC Language](/releases/4.1) is comprised of the following:
 
 The MAEC Language is extremely flexible. Aside from a unique identifier and specifying the MAEC schema version, all objects are optional in MAEC. Users are able to capture exactly what they want and nothing more.
 
-Go to the [current release](/releases/4.1) of the MAEC Language.
+Learn about the [MAEC data models](/documentation/data_model_overview/), or go to the [current release](/releases/4.1) of the MAEC Language.
 
 ## Benefits
 
