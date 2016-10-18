@@ -3,7 +3,7 @@ layout: flat
 title: Common Features
 ---
 
-This page contains an alphabetized list of commonly characterized features - whether statically, dynamically, or manually identified in malware - along with their mappings to MAEC/CybOX object elements, the associated MAEC/CybOX types, the typical MAEC schema locations of the object elements (specified via a quasi-XPath like expression), and an explicit XML representation example. Note that all object elements are characterized through their Properties field, and that only the most commonly used object elements are listed for each feature (please refer to the applicable schemas for the complete lists).
+This page contains an alphabetized list of commonly characterized features - whether statically, dynamically, or manually identified in malware - along with their mappings to MAEC/<a href="https://cyboxproject.github.io/">Cyber Observable eXpression (CybOX™)</a> object elements, the associated MAEC/CybOX types, the typical MAEC schema locations of the object elements (specified via a quasi-XPath like expression), and an explicit XML representation example. Note that all object elements are characterized through their Properties field, and that only the most commonly used object elements are listed for each feature (please refer to the applicable schemas for the complete lists).
 
 <table class="table-features">
   <tr style="background-color:#0040FF">
@@ -110,7 +110,7 @@ This page contains an alphabetized list of commonly characterized features - whe
 
 <table class="table-features">
   <tr style="background-color:#0040FF">
-    <th colspan="2"><feature>CVE Identifier</feature></th>
+    <th colspan="2"><feature>Common Vulnerabilities and Exposures (CVE®) Identifier</feature></th>
   </tr>
   <tr style="background-color:#A9D0F5">
     <th>MAEC/CybOX Object Elements</th>
