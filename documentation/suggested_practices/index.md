@@ -48,14 +48,14 @@ MAEC has a number of constructs that REQUIRE the assignment of IDs in order to b
 * [Object Collection](/data-model/{{site.current_version}}/maecBundle/ObjectCollectionType)
 * [Candidate Indicator Collection](/data-model/{{site.current_version}}/maecBundle/CandidateIndicatorCollectionType)
 
-Accordingly, MAEC extends or makes direct use of a number of CybOX entities. In these entities, the assignment of IDs is not required as in MAEC; however, we highly recommend assigning IDs for these constructs, for consistency with the MAEC-defined constructs and also potential re-use and referencing:
+Accordingly, MAEC extends or makes direct use of a number of [Cyber Observable eXpression (CybOX™)](https://cyboxproject.github.io/) entities. In these entities, the assignment of IDs is not required as in MAEC; however, we highly recommend assigning IDs for these constructs, for consistency with the MAEC-defined constructs and also potential re-use and referencing:
 
 * [Malware Action](/data-model/{{site.current_version}}/maecBundle/MalwareActionType)
 * [CybOX Object](/data-model/{{site.current_version}}/cybox/ObjectType)
 
 ### Recommended Properties
 
-The MAEC schema was developed to enable analysts to capture a full gamut of information about malware. However, a MAEC Bundle or Package is valid with very little information: it is only necessary to define a unique identifier and to specify the MAEC schema version. While all other properties in MAEC are optional, it is recommended that the following fields are captured:
+The MAEC schema was developed to enable analysts to capture a full gamut of information about malware. However, a [MAEC Bundle](/documentation/data_model_overview/bundle/) or [MAEC Package](/documentation/data_model_overview/package/) is valid with very little information: it is only necessary to define a unique identifier and to specify the MAEC schema version. While all other properties in MAEC are optional, it is recommended that the following fields are captured:
 
 * Malware Instance Object Attributes field - this field should be used to provide the MAEC Bundle or Package recipient with the information they require about the malware instance object. Note that the Malware Instance Object Attributes field is defined both in the Bundle (BundleType) and in the Malware Subject of a Package (MalwareSubjectType).  The definitions are equivalent; however, the BundleType's Malware Instance Object Attributes field should only be used if the Bundle is used in a stand-alone fashion.  Otherwise, only the Package MalwareSubjectType's Malware Instance Object Attributes field should be used (note that when a Bundle is embedded in a Package, the defined_subject field of the Bundle must be set to `false`).
 
