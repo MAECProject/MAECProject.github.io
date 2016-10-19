@@ -16,7 +16,7 @@ Also, we are currently actively hosting "<a href="/working-call)">MAEC 5.0 Worki
       <div class="panel-body">
         <ul>
 		  <li>Next major release (backwards incompatible with current version)</li>
-		  <li>ETA: Fall 2016
+		  <li>ETA: Winter-Spring 2017
 		    <ul>
 			  <li>GitHub Milestone <a href="https://github.com/MAECProject/schemas/milestones/MAEC%205.0">here</a></li>
 			</ul>
