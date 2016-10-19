@@ -18,8 +18,6 @@ title: Frequently Asked Questions (FAQs)
 <li><a href="#a10">A10. How can my organization and I get involved?</a></li>
 <li><a href="#a11">A11. How can I make contributions to MAEC development?</a></li>
 <li><a href="#a12">A12. How do I submit questions related to this effort?</a></li>
-<li><a href="#a13">A13. What is MAEC Compatibility?</a></li>
-<li><a href="#a14">A14. Is someone from MAEC available to speak or participate on panel discussion at industry-related events, meetings, etc.?</a></li>
 </ul>
 
 ### <a href="#b">MAEC Language</a>
@@ -53,11 +51,8 @@ MAEC?</a></li>
 ### <a href="#e">MAEC Community</a>
 <ul style="font-weight:normal; font-size:100%;list-style:none">
 <li><a href="#e1">E1. What is the role of the MAEC Community and how can I join?</a></li>
-<li><a href="#e2">E2. What is MITRE?</a></li>
-<li><a href="#e3">E3. What is MITRE&#39;s role in MAEC?</a></li>
-<li><a href="#e4">E4. Why is MITRE maintaining MAEC, and how long does MITRE plan to maintain it?</a></li>
-<li><a href="#e5">E5. Who pays for MAEC? Who is the Sponsor?</a></li>
-<li><a href="#e6">E6. What is the relationship between MAEC and DHS?</a></li>
+<li><a href="#e2">E2. What is MITRE's role in MAEC? How long does MITRE plan to maintain it?</a></li>
+<li><a href="#e3">E3. Who sponsors MAEC? What is the relationship between MAEC and DHS?</a></li>
 </ul>
 
 ### <a name="a"></a>General
@@ -188,28 +183,14 @@ While there are no definite rules for what is most appropriately captured with M
 The [MAEC Community](/community) includes representatives from antivirus vendors, operating system vendors, software vendors, IT users, security services providers, and others from across the international cyber security community who have come together to help build this growing, open-source industry effort. 
 
 There are multiple options available for involvement including participating in the conversations
-on our [dedicated email discussion list](/community/#discussion-lists--archives), joining our [development group](/community/#developers-group-on-handshake) on MITRE’s Handshake collaboration website, contributing to the development of [MAEC tools and utilities](/community/#tool--utility-development) on GitHub, and/or joining us on the [working calls to help develop MAEC Version 5.0](/community/#working-calls).
+on our [dedicated email discussion list](/community/#discussion-lists--archives), contributing to the [MediaWiki](https://collaborate.mitre.org/maec/index.php/Malware_Attribute_Enumeration_and_Characterization) on MITRE’s collaboration website, contributing to the development of [MAEC tools and utilities](/community/#tool--utility-development) on GitHub, and/or joining us on the [working calls to help develop MAEC Version 5.0](/community/#working-calls).
 
 Visit the [MAEC Community](/community) page to learn more or to [join](/community) the MAEC effort.
 
-#### <a name="e2"></a> E2. What is MITRE?
-In partnership with government clients, [The MITRE Corporation](http://www.mitre.org/) (MITRE) is a not-for-profit corporation working in the public interest. It addresses issues of critical national importance, combining systems engineering and information technology to develop innovative solutions that make a difference. 
+#### <a name="e2"></a> E2. What is MITRE's role in MAEC? How long does MITRE plan to maintain it?
+The [MITRE Corporation (MITRE)](http://www.mitre.org/) manages and maintains the development of the MAEC Language, MAEC website, community engagement, and discussion lists to enable open and public collaboration with all stakeholders and provides neutral guidance throughout the process to ensure that MAEC serves the public interest.     
 
-MITRE's work is focused within [Federally Funded Research and Development Centers (FFRDCs)](https://www.mitre.org/centers/we-operate-ffrdcs) for the Department of Defense, Federal Aviation Administration, Internal Revenue Service and Department of Veterans Affairs, Department of Homeland Security, Administrative Office of the U.S. Courts; and the Centers for Medicare and Medicaid Services. 
+In accordance with its mission, MITRE has traditionally acted in the public interest. Its unique role allows it to provide an objective perspective to this effort. MITRE will maintain MAEC as long as it serves the community to do so.
 
-#### <a name="e3"></a> E3. What is MITRE's role in MAEC?
-[MITRE](http://www.mitre.org/) manages the development of the MAEC Language, MAEC website, community engagement, and discussion lists to enable open and public collaboration with all stakeholders.
-
-#### <a name="e4"></a> E4. Why is MITRE maintaining MAEC, and how long does MITRE plan to maintain it?
-In accordance with its mission, [MITRE](http://www.mitre.org/) has traditionally acted in the public interest. Its unique role allows it to provide an objective perspective to this effort. MITRE will maintain MAEC as long as it serves the community to do so.
-
-#### <a name="e5"></a> E5. Who pays for MAEC? Who is the Sponsor?
-MAEC is sponsored by the office of [Cybersecurity and Communications](http://www.dhs.gov/office-cybersecurity-and-communications/) at the [U.S. Department of Homeland Security](http://www.dhs.gov/).
-
-#### <a name="e6"></a> E6. What is the relationship between MAEC and DHS?
-MAEC is a [DHS](http://www.dhs.gov/)-led effort of the office of [Cybersecurity and Communications](http://www.dhs.gov/office-cybersecurity-and-communications/). 
-
-[The MITRE Corporation](http://www.mitre.org/), operating as DHS's Federally Funded Research and Development Center (FFRDC), manages the development of the MAEC Language, MAEC website, community engagement, and discussion lists to enable open and public collaboration with all stakeholders. 
-
-
-
+#### <a name="e3"></a> E3. Who sponsors MAEC? What is the relationship between MAEC and DHS?
+MAEC is a DHS-led and sponsored effort of the office of [Cybersecurity and Communications](http://www.dhs.gov/office-cybersecurity-and-communications/) at the [U.S. Department of Homeland Security (DHS)](http://www.dhs.gov/). [MITRE](http://www.mitre.org/), operating as DHS's Federally Funded Research and Development Center (FFRDC), manages the development of the MAEC Language, this MAEC website, community engagement, and discussion lists to enable open and public collaboration with all stakeholders.
