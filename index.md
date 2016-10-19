@@ -8,7 +8,7 @@ no_in_page_title: true
 <h1 class="site-title">Malware Attribute Enumeration and Characterization (MAEC™)</h1>
 
 <div class="jumbotron">
-  <h2><strong>Start here if you're new to MAEC!</strong></h2>
+  <h2><strong>Start here if you're new to MAEC</strong></h2>
   <p>Regardless of whether you're an analyst, developer, or manager, we have tutorials, walkthroughs, and exercises to help you become familiar
   with MAEC.</p>
   <p><a class="btn btn-primary btn-lg" role="button" href="/about-maec">About MAEC »</a>
