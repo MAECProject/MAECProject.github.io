@@ -8,25 +8,22 @@ title: Frequently Asked Questions (FAQs)
 
 <li><a href="#a1">A1. What is MAEC?</a></li>
 <li><a href="#a2">A2. How is &quot;MAEC&quot; pronounced?</a></li>
-<li><a href="#a3">A3. Is a specification available for the MAEC Language?</a></li>
-<li><a href="#a4">A4. Where can I find examples of what I can capture and do with MAEC?</a></li>
-<li><a href="#a5">A5. Why was MAEC developed?</a></li>
-<li><a href="#a6">A6. How was MAEC developed?</a></li>
-<li><a href="#a7">A7. Where can I get MAEC?</a></li>
-<li><a href="#a8">A8. Is MAEC a formal standard?</a></li>
-<li><a href="#a9">A9. How is MAEC licensed?</a></li>
-<li><a href="#a10">A10. How can my organization and I get involved?</a></li>
-<li><a href="#a11">A11. How can I make contributions to MAEC development?</a></li>
-<li><a href="#a12">A12. How do I submit questions related to this effort?</a></li>
+<li><a href="#a3">A3. Why and how was MAEC developed?</a></li>
+<li><a href="#a4">A4. Is MAEC a formal standard?</a></li>
+<li><a href="#a5">A5. How is MAEC licensed?</a></li>
+<li><a href="#a6">A6. How can I get involved? How can I make contributions to MAEC development?</a></li>
 </ul>
 
 ### <a href="#b">MAEC Language</a>
 <ul style="font-weight:normal; font-size:100%; list-style:none">
-<li><a href="#b1">B1. What is included in a MAEC release?</a></li>
-<li><a href="#b2">B2. What tools or utilities are available to help me use or develop MAEC content?</a></li>
-<li><a href="#b3">B3. Is there a GUI of some sort that will help me select MAEC elements?</a></li>
-<li><a href="#b4">B4. Are there plans to support other forms of data interchange for MAEC (e.g., JSON, YAML, etc.)?</a></li>
-<li><a href="#b5">B5. Where can I find examples of MAEC data? Are there any MAEC repositories?</a></li>
+<li><a href="#b1">B1. Where can I get the current version of MAEC?</a></li>
+<li><a href="#b2">B2. Is a specification available for the MAEC Language?</a></li>
+<li><a href="#b3">B3. Where can I find examples of what I can capture and do with MAEC?</a></li>
+<li><a href="#b4">B4. What tools or utilities are available to help me use or develop MAEC content?</a></li>
+<li><a href="#b5">B5. Is there a GUI of some sort that will help me select MAEC elements?</a></li>
+<li><a href="#b6">B6. Are there plans to support other forms of data interchange for MAEC (e.g., JSON, YAML, etc.)?</a></li>
+<li><a href="#b7">B7. Where can I find examples of MAEC data? Are there any MAEC repositories?</a></li>
+<li><a href="#b8">B8. What is included in a MAEC release?</a></li>
 </ul>
 
 ### <a href="#c">Using MAEC</a>
@@ -65,46 +62,60 @@ Malware Attribute Enumeration and Characterization (MAEC™) is a structured lan
 
 MAEC is pronounced as "mike." This pronunciation stems from classical Latin, in which the diphthong 'ae' is pronounced as a long 'i'. Examples of other words that use the same pronunciation are maestro and alumnae.
 
-#### <a name="a3"></a> A3. Is a specification available for the MAEC Language?
-
-Both PDF and Word versions of the current [MAEC Language Specifications](https://github.com/MAECProject/specifications) are available.
-
-#### <a name="a4"></a> A4. Where can I find examples of what I can capture and do with MAEC?
-
-Examples can be found in the [MAEC Schemas MAECProject repository](https://github.com/MAECProject/schemas/tree/master/examples) on GitHub.com.
-
-#### <a name="a5"></a> A5. Why was MAEC developed?
+#### <a name="a3"></a> A3. Why and how was MAEC developed?
 
 MAEC was developed to eliminate the ambiguity and inaccuracy that currently exists in malware descriptions. By reducing reliance on signatures, MAEC aims to improve human-to-tool, tool-to-tool, and tool-to-human communication about malware; allow for faster development of countermeasures by enabling the ability to leverage responses to previously observed malware instances; and reduce potential duplication of malware analysis efforts by researchers.
 
-#### <a name="a6"></a> A6. How was MAEC developed?
-
 MAEC is a community-developed effort and has received input from members of various communities, including those from industry, academia, and government. [The MITRE Corporation](http://www.mitre.org/) maintains MAEC and its public website presence and provides impartial technical guidance to the [MAEC Community](/community) throughout the process to ensure MAEC serves the public interest. MAEC is sponsored by the office of [Cybersecurity and Communications](http://www.dhs.gov/office-cybersecurity-and-communications/) at the [U.S. Department of Homeland Security](http://www.dhs.gov/).
 
-#### <a name="a7"></a> A7. Where can I get MAEC?
-
-The current MAEC schema, as well as example files, schematron rules, and related documentation, are available in the [MAEC Schemas in the MAECProject repository](https://github.com/MAECProject/schemas) on GitHub.com.
-
-#### <a name="a8"></a> A8. Is MAEC a formal standard?
+#### <a name="a4"></a> A4. Is MAEC a formal standard?
 
 MAEC is not currently being pursued in a formal standards body. However, once an appropriate level of maturity, stability, and use is achieved, international standardization will be sought.
 
-#### <a name="a9"></a> A9. How is MAEC licensed?
+#### <a name="a5"></a> A5. How is MAEC licensed?
 
-See the "License" section of the [Terms of Use](http://maecproject.github.io/Legal/).
+See the "License" section of the [Terms of Use](/Legal).
 
-#### <a name="a10"></a> A10. How can my organization and I get involved?
-There are several opportunities to get involved. Visit the [MAEC Community](/community) page for additional information. 
+#### <a name="a6"></a> A6. How can I get involved? How can I make contributions to MAEC development?
+There are several opportunities to get involved. See the [MAEC Community](/community) page for details, or contact us directly at [maec@mitre.org](mailto:maec@mitre.org). 
 
-#### <a name="a11"></a> A11. How can I make contributions to MAEC development?
-The [MAECProject repositories](https://github.com/MAECProject/) on GitHub.com are the central location for [MAEC Community](/community) members to make open-source contributions to MAEC development and manage issue tracking for the MAEC schemas, utilities, and other supporting information and items. Please visit the [MAECProject GitHub repositories](https://github.com/MAECProject/) or email [maec@mitre.org](mailto:maec@mitre.org) for further information.
-
-#### <a name="a12"></a> A12. How do I submit questions related to this effort?
-We encourage you to submit questions to the general [MAEC Community Email Discussion List](/community/#discussion-lists--archives) which we actively read and monitor. You may also submit questions directly to [maec@mitre.org](mailto:maec@mitre.org) if you do not wish to hold the discussion in a public venue.
+**NOTE:** The MAEC Community is actively working on [MAEC 5.0](/documentation/roadmap), the next version of the Malware Attribute Enumeration and Characterization (MAEC™) Language. Community members are encouraged to participate by joining in on our MAEC Community teleconference [working call](/working-call) meetings. 
 
 ### <a name="b"></a> MAEC Language
 
-#### <a name="b1"></a> B1. What is included in a MAEC release?
+#### <a name="b1"></a> B1. Where can I get the current version of MAEC?
+
+The current version of the Malware Attribute Enumeration and Characterization (MAEC™) Language is available on the [Current Release](/releases/4.1) page. In addition, the current MAEC schema, as well as example files, schematron rules, and related documentation, are available in the [MAEC Schemas in the MAECProject repository](https://github.com/MAECProject/schemas) on GitHub.com.
+
+**NOTE:** The MAEC Community is actively working on [MAEC 5.0](/documentation/roadmap), the next version of MAEC. We encourage you to participate by joining in on our regular MAEC Community teleconference [working call](/working-call) meetings. 
+
+#### <a name="b2"></a> B2. Is a specification available for the MAEC Language?
+
+Both PDF and Word versions of the current [MAEC Language Specifications](https://github.com/MAECProject/specifications) are available.
+
+#### <a name="b3"></a> B3. Where can I find examples of what I can capture and do with MAEC?
+
+Examples can be found in the [MAEC Schemas MAECProject repository](https://github.com/MAECProject/schemas/tree/master/examples) on GitHub.com.
+
+#### <a name="b4"></a> B4. What tools or utilities are available to help me use or develop MAEC content?
+MAEC can be manipulated manually or programmatically. If using MAEC manually, such as to capture malware analysis results, no tools are currently provided, but use of an XML editor is recommended. 
+
+For programmatic development and use, some MAEC scripts and translator utilities are hosted in separate [MAECProject GitHub repositories](https://github.com/MAECProject/). In addition, a Python API for parsing, manipulating, and generating MAEC content is hosted in the [MAECProject Python-MAEC GitHub repository](https://github.com/MAECProject/python-maec). 
+
+#### <a name="b5"></a> B5. Is there a GUI of some sort that will help me select MAEC elements?
+A GUI is not available at this time, but such a tool could be available in the future.
+
+#### <a name="b6"></a> B6. Are there plans to support other forms of data interchange for MAEC (e.g., JSON, YAML, etc.)?
+Yes. Eventually, a formal MAEC implementation-independent specification will be produced, to include guidance for developing technology-specific implementations such as JavaScript Object Notation (JSON), Resource Description Framework (RDF)/Web Ontology Language (OWL), YAML Ain't Markup Language (YMAL), or other implementations. XML was used in the initial release to enable rapid development and implementation.
+
+Visit the [MAEC Version 5.0 Roadmap](/documentation/roadmap) for additional information.
+
+#### <a name="b7"></a> B7. Where can I find examples of MAEC data? Are there any MAEC repositories?
+Visit the [Current Release](/releases/4.1) page for examples. 
+
+At present, there are no public repositories of MAEC data, nor are there plans by MITRE to establish one. However, community members interested in hosting a MAEC data repository are strongly encouraged to do so. 
+
+#### <a name="b8"></a> B8. What is included in a MAEC release?
 A MAEC release includes individually-versioned MAEC schemas (i.e., Bundle, Package, and Container schemas) and the latest versions of the independently-versioned MAEC vocabulary schemas. 
 
 MAEC releases are packaged in two different ways: 
@@ -112,25 +123,6 @@ MAEC releases are packaged in two different ways:
 <li>A zipped bundle to support local development, with local references and including copies of all imported or utilized schemas.</li>
 <li>A zipped bundle to support development with Internet access, with only remote references to imported schemas.</li>
 </ol> 
-Additionally, a version is hosted on the [MAEC Legacy Website](https://maec.mitre.org/language/version4.1/) to enable validation. 
-
-#### <a name="b2"></a> B2. What tools or utilities are available to help me use or develop MAEC content?
-MAEC can be manipulated manually or programmatically. If using MAEC manually, such as to capture malware analysis results, no tools are currently provided, but use of an XML editor is recommended. 
-
-For programmatic development and use, some MAEC scripts and translator utilities are hosted in separate [MAECProject GitHub repositories](https://github.com/MAECProject/). In addition, a Python API for parsing, manipulating, and generating MAEC content is hosted in the [MAECProject Python-MAEC GitHub repository](https://github.com/MAECProject/python-maec). 
-
-#### <a name="b3"></a> B3. Is there a GUI of some sort that will help me select MAEC elements?
-A GUI is not available at this time, but such a tool could be available in the future.
-
-#### <a name="b4"></a> B4. Are there plans to support other forms of data interchange for MAEC (e.g., JSON, YAML, etc.)?
-Yes. Eventually, a formal MAEC implementation-independent specification will be produced, to include guidance for developing technology-specific implementations such as JavaScript Object Notation (JSON), Resource Description Framework (RDF)/Web Ontology Language (OWL), YAML Ain't Markup Language (YMAL), or other implementations. XML was used in the initial release to enable rapid development and implementation.
-
-Visit the [MAEC Version 5.0 Roadmap](/documentation/roadmap) for additional information.
-
-#### <a name="b5"></a> B5. Where can I find examples of MAEC data? Are there any MAEC repositories?
-Visit the [Current Release](/releases/4.1) page for examples. 
-
-At present, there are no public repositories of MAEC data, nor are there plans by MITRE to establish one. However, community members interested in hosting a MAEC data repository are strongly encouraged to do so. 
 
 ### <a name="c"></a> Using MAEC
 Some of the FAQs in this section are somewhat technical in nature. Please refer to the [MAEC Language Specifications](/documentation/specs/) for further information.
