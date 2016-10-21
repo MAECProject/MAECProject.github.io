@@ -123,7 +123,6 @@ MAEC releases are packaged in two different ways:
 <li>A zipped bundle to support local development, with local references and including copies of all imported or utilized schemas.</li>
 <li>A zipped bundle to support development with Internet access, with only remote references to imported schemas.</li>
 </ol> 
-Additionally, a version is hosted on the [MAEC Legacy Website](https://maec.mitre.org/language/version4.1/) to enable validation. 
 
 ### <a name="c"></a> Using MAEC
 Some of the FAQs in this section are somewhat technical in nature. Please refer to the [MAEC Language Specifications](/documentation/specs/) for further information.
