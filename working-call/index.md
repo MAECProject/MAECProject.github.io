@@ -10,7 +10,7 @@ Each bi-weekly call will focus on a particular topic. However, we very much welc
 ## Next Bi-Weekly Working Call
 
 November 9, 2016          
-11:00 a.m. – 12:00 p.m. EDT
+11:00 a.m. – 12:00 p.m. EST
 
 ### Agenda
 
