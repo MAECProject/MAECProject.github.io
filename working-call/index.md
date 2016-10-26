@@ -9,7 +9,7 @@ Each bi-weekly call will focus on a particular topic. However, we very much welc
 
 ## Next Bi-Weekly Working Call
 
-November 9, 2016
+November 9, 2016          
 11:00 a.m. – 12:00 p.m. EDT
 
 ### Agenda
@@ -18,7 +18,8 @@ TBA
  
 ### Dial-in Info
 
-**Online meeting:**  https://meet.mitre.org/ikirillov/7F073TTD         
+**Online meeting:**  https://meet.mitre.org/ikirillov/7F073TTD    
+
 **Conference ID:**   9326128        
 
 **Join by Phone:** 
