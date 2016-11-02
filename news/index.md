@@ -7,6 +7,10 @@ Follow the STIX-CybOX-TAXII-MAEC [Blog](http://stixproject.tumblr.com/), and/or 
 
 ## Our latest news:
 
+**Next MAEC 5.0 Working Call Scheduled for November 9**   
+Our next 1-hour bi-weekly community working call for the development of Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 will be held on November 9, 2016. Call details and the agenda topic will be announced closer to the day. [More>>>](/working-call)
+
+
 **MAEC 5.0 Working Call on October 26 to Focus on the “Malware Instance Object”**   
 The main topic of our 1-hour bi-weekly community working call on October 26, 2016 for the development of Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 is the Malware Instance Object. [More>>>](http://stixproject.tumblr.com/post/152250179367/maec-50-working-call-on-october-26-to-focus-on)
 
