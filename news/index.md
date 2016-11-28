@@ -7,6 +7,10 @@ Follow the STIX-CybOX-TAXII-MAEC [Blog](http://stixproject.tumblr.com/), and/or 
 
 ## Our latest news:
 
+**MAEC 5.0 Working Call on November 30 to Focus on Two Topics: “Capabilities” and “Structural Features”**   
+The main topics of our 1-hour bi-weekly community working call on November 30, 2016 for the development of Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 are Capabilities and Structural Features. [More>>>](http://stixproject.tumblr.com/post/153785926217/maec-50-working-call-on-november-30-to-focus-on)
+
+
 **Next MAEC 5.0 Working Call Scheduled for November 30**   
 Our next 1-hour bi-weekly community working call for the development of Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 will be held on November 30, 2016. Call details and the agenda topic(s) will be announced closer to the day. [More>>>](/working-call)
 
