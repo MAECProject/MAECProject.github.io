@@ -14,7 +14,8 @@ November 30, 2016
 
 ### Agenda
 
-TBA
+* [Capabilities](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.5h5h6aw66ed4)          
+* [Structural Features](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.cihlvmac77qe)          
  
 ### Dial-in Info
 
