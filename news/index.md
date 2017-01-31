@@ -3,9 +3,24 @@ layout: flat
 title: Latest MAEC News
 ---
 
-Follow the STIX-CybOX-TAXII-MAEC [Blog](http://stixproject.tumblr.com/), and/or sign-up for the *MAEC Announce* e-newsletter by emailing us [maec@mitre.org](mailto:maec@mitre.org) to subscribe, to receive the latest MAEC news updates.
+Subscribe to our free *MAEC Announce* e-newsletter to receive information and updates directly in your mailbox. Please email us at [maec@mitre.org](mailto:maec@mitre.org) to subscribe.
 
 ## Our latest news:
+
+**MAEC 5.0 Working Call on February 1 to Focus on the “Malware Family Data Model”**         
+The main topic of our 1-hour bi-weekly community working call on February 1, 2017 for the development of Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 is the Malware Family data model. [More>>>](http://making-security-measurable.1364806.n2.nabble.com/MAEC-January-11-Working-Call-Agenda-tc7589487.html)
+
+
+**Next MAEC 5.0 Working Call Scheduled for February 1**           
+Our next 1-hour bi-weekly community working call for the development of Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 will be held on February 1, 2017. Call details and the agenda topic(s) will be announced closer to the day. [More>>>](/working-call)
+
+
+**MAEC 5.0 Working Call on January 11 Focused on the “Data Models Mind Map”** 
+The main topic of our 1-hour bi-weekly community working call on January 11, 2017 for the development of Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 was the mind map for the Data Models. [More>>>](http://making-security-measurable.1364806.n2.nabble.com/MAEC-January-11-Working-Call-Agenda-tc7589487.html)
+
+**MAEC 5.0 Working Call on December 14 Focused on the “Malware Instance”**  
+The main topic of our 1-hour bi-weekly community working call on December 14, 2016 for the development of Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 was the Malware Instance. [More>>>](http://making-security-measurable.1364806.n2.nabble.com/MAEC-December-14-Working-Session-Agenda-tc7589477.html)
+
 
 **MAEC 5.0 Working Call on November 30 to Focus on Two Topics: “Capabilities” and “Structural Features”**   
 The main topics of our 1-hour bi-weekly community working call on November 30, 2016 for the development of Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 are Capabilities and Structural Features. [More>>>](http://stixproject.tumblr.com/post/153785926217/maec-50-working-call-on-november-30-to-focus-on)
