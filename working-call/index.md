@@ -9,13 +9,12 @@ Each bi-weekly call will focus on one or so specific topics. However, we very mu
 
 ## Next Bi-Weekly Working Call
 
-November 30, 2016          
+February 1, 2017          
 11:00 a.m. – 12:00 p.m. EST
 
 ### Agenda
 
-* [Capabilities](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.5h5h6aw66ed4)          
-* [Structural Features](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.cihlvmac77qe)          
+* [Malware Family](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.t34bpqvzayl8) data model                
  
 ### Dial-in Info
 
@@ -28,7 +27,9 @@ November 30, 2016
 +1 (703) 983-2020 
  
 ## Previous Working Calls
-
+* January 11, 2017 - Topic: "Data Models Mind Map"/[Details](http://making-security-measurable.1364806.n2.nabble.com/MAEC-January-11-Working-Call-Agenda-tc7589487.html)/[Materials](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.5ob769orcztq)
+* December 14, 2016 - Topic: "Malware Instance"/[Details](http://making-security-measurable.1364806.n2.nabble.com/MAEC-December-14-Working-Session-Agenda-tc7589477.html)
+* November 30, 2016 - Topics: "Capabilities" & "Structural Features"/[Details](http://making-security-measurable.1364806.n2.nabble.com/MAEC-November-30-Working-Call-Agenda-tc7589470.html)
 * November 9, 2016 - Topics: "Malware Action" & "Behavior"/[Details](http://stixproject.tumblr.com/post/152866156897/maec-50-working-call-on-november-9-to-focus-on)
 * October 26, 2016 - Topic: "Malware Family Instance"/[Details](http://stixproject.tumblr.com/post/152250179367/maec-50-working-call-on-october-26-to-focus-on)/[Materials](http://making-security-measurable.1364806.n2.nabble.com/MAEC-MAEC-5-0-JSON-Examples-tc7589463.html)
 * September 28, 2016 - Topic: "Malware Family Object"/[Details](http://stixproject.tumblr.com/post/150968749062/maec-50-working-call-on-september-28-to-focus-on)
