@@ -8,7 +8,7 @@ Subscribe to our free *MAEC Announce* e-newsletter to receive information and up
 ## Our latest news:
 
 **MAEC 5.0 Working Call on February 1 to Focus on the “Malware Family Data Model”**         
-The main topic of our 1-hour bi-weekly community working call on February 1, 2017 for the development of Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 is the Malware Family data model. [More>>>](http://making-security-measurable.1364806.n2.nabble.com/MAEC-January-11-Working-Call-Agenda-tc7589487.html)
+The main topic of our 1-hour bi-weekly community working call on February 1, 2017 for the development of Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 is the Malware Family data model. [More>>>](http://making-security-measurable.1364806.n2.nabble.com/MAEC-February-1st-Working-Call-Agenda-tc7589491.html)
 
 
 **Next MAEC 5.0 Working Call Scheduled for February 1**           
