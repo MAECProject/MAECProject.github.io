@@ -9,7 +9,7 @@ Each bi-weekly call will focus on one or so specific topics. However, we very mu
 
 ## Next Bi-Weekly Working Call
 
-February 22, 2017          
+March 8, 2017          
 11:00 a.m. – 12:00 p.m. EST
 
 ### Agenda
@@ -18,15 +18,16 @@ TBA
  
 ### Dial-in Info
 
-**Online meeting:**  https://meet.mitre.org/ikirillov/C7H6BQ4D          
+**Online meeting:**  https://meet.mitre.org/ikirillov/6BDSF5B1          
 
-**Conference ID:**   6990616               
+**Conference ID:**   69525122               
 
 **Join by Phone:** 
 +1 (781) 271-2020 
 +1 (703) 983-2020 
  
 ## Previous Working Calls
+* February 27, 2017 - Topics: "Malware Instance Object: StaticFeaturesType & AnalysisMetadataType"/[Details](http://making-security-measurable.1364806.n2.nabble.com/MAEC-February-22nd-Working-Call-Agenda-tc7589493.html)
 * February 1, 2017 - Topic: "Malware Family"/[Details](http://making-security-measurable.1364806.n2.nabble.com/MAEC-February-1st-Working-Call-Agenda-tc7589491.html)/[Materials](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.t34bpqvzayl8)
 * January 11, 2017 - Topic: "Data Models Mind Map"/[Details](http://making-security-measurable.1364806.n2.nabble.com/MAEC-January-11-Working-Call-Agenda-tc7589487.html)/[Materials](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.5ob769orcztq)
 * December 14, 2016 - Topic: "Malware Instance"/[Details](http://making-security-measurable.1364806.n2.nabble.com/MAEC-December-14-Working-Session-Agenda-tc7589477.html)
