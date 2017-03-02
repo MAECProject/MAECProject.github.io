@@ -7,8 +7,8 @@ Subscribe to our free *MAEC Announce* e-newsletter to receive information and up
 
 ## Our latest news:
 
-**Next MAEC 5.0 Working Call Scheduled for March 8**   
-Our next 1-hour bi-weekly community working call for the development of Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 will be held on March 8, 2017. Call details and the agenda topic(s) will be announced closer to the day. [More>>>](/working-call)
+**Next MAEC 5.0 Working Call Scheduled for March 15**   
+Our next 1-hour bi-weekly community working call for the development of Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 will be held on March 15, 2017. Call details and the agenda topic(s) will be announced closer to the day. [More>>>](/working-call)
 
 
 **MAEC 5.0 Working Call on February 27 to Focus on the Malware Instance Object “StaticFeaturesType” & “AnalysisMetadataType”**         
