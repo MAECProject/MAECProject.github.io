@@ -9,7 +9,7 @@ Each bi-weekly call will focus on one or so specific topics. However, we very mu
 
 ## Next Bi-Weekly Working Call
 
-March 8, 2017          
+March 15, 2017          
 11:00 a.m. – 12:00 p.m. EST
 
 ### Agenda
@@ -18,7 +18,7 @@ TBA
  
 ### Dial-in Info
 
-**Online meeting:**  https://meet.mitre.org/ikirillov/6BDSF5B1          
+**Online meeting:**  https://meet.mitre.org/ikirillov/6BDSF5B1   
 
 **Conference ID:**   69525122               
 
