@@ -14,8 +14,10 @@ March 15, 2017
 
 ### Agenda
 
-TBA              
- 
+[Collections](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.5woi19amrl1s)     
+
+[Relationships](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.gesitk63h22l)     
+
 ### Dial-in Info
 
 **Online meeting:**  https://meet.mitre.org/ikirillov/6BDSF5B1   
