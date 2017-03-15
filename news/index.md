@@ -8,7 +8,7 @@ Subscribe to our free *MAEC Announce* e-newsletter to receive information and up
 ## Our latest news:
 
 **MAEC 5.0 Working Call on March 15 to Focus on “Collections” & “Relationships”**         
-The main topics of our 1-hour bi-weekly community working call on [March 15, 2017](http://making-security-measurable.1364806.n2.nabble.com/MAEC-March-15-Working-Call-Agenda-tc7589496.html) for the development of Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 be two top-level entities: [Collections](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.5woi19amrl1s) and [Relationships](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.gesitk63h22l).
+The main topics of our 1-hour bi-weekly community working call on [March 15, 2017](http://making-security-measurable.1364806.n2.nabble.com/MAEC-March-15-Working-Call-Agenda-tc7589496.html) for the development of Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 will be two top-level entities: [Collections](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.5woi19amrl1s) and [Relationships](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.gesitk63h22l).
 
 
 **Next MAEC 5.0 Working Call Scheduled for March 15**   
