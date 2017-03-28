@@ -14,9 +14,9 @@ March 29, 2017
 
 ### Agenda
 
-**[API call parameter values](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.bgw48ww0jje1)** – Should we capture the constant names (e.g., GENERIC_WRITE) or actual byte values?
+**[API Call Parameter Values](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.bgw48ww0jje1)** – Should we capture the constant names (e.g., GENERIC_WRITE) or actual byte values?
 
-**[Distance measures](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.e9yw7k904di4)** – Are there additional properties we should be capturing, or should we add a catch-all property (dictionary)?
+**[Distance Measures](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.e9yw7k904di4)** – Are there additional properties we should be capturing, or should we add a catch-all property (dictionary)?
 
 **[Actions](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.yn04yetlim3i)** – Should we capture a list of timestamps for when the (same) Action occurred, or should we limit the granularity of Actions to a singleton?
 
@@ -27,7 +27,7 @@ March 29, 2017
     
 ### Dial-in Info
 
-**Online meeting:**  https://meet.mitre.org/ikirillov/BGCJYGLY 
+**Online meeting:**  [https://meet.mitre.org/ikirillov/BGCJYGLY](https://meet.mitre.org/ikirillov/BGCJYGLY) 
 
 **Conference ID:**   5666311              
 
