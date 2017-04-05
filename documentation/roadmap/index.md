@@ -5,7 +5,7 @@ title: MAEC 5.0 Roadmap
 
 The roadmap for Version 5.0 of the MAEC Language is below. We welcome any feedback regarding the release, either at the GitHub issue tracker link below, or directly to <a href="mailto:maec@mitre.org">maec@mitre.org</a> or the <a href="http://maecproject.github.io/community/#discussion-lists--archives">MAEC Community Email Discussion List</a>. 
 
-Also, we are currently actively hosting "<a href="/working-call)">MAEC 5.0 Working Session Calls</a>" focusing on this next version of the MAEC Language. Please visit the <a href="/working-call)">working call</a> page in the <a href="/community)">MAEC Community</a> section for details on how you can participate.
+Also, we are currently actively hosting "<a href="/working-call">MAEC 5.0 Working Session Calls</a>" focusing on this next version of the MAEC Language. Please visit the <a href="/working-call">working call</a> page in the <a href="/community">MAEC Community</a> section for details on how you can participate.
 
 <div class="row">
   <div class="col-md-6">
@@ -16,7 +16,7 @@ Also, we are currently actively hosting "<a href="/working-call)">MAEC 5.0 Worki
       <div class="panel-body">
         <ul>
 		  <li>Next major release (backwards incompatible with current version)</li>
-		  <li>ETA: Winter-Spring 2017
+		  <li>ETA: Spring 2017
 		    <ul>
 			  <li>GitHub Milestone <a href="https://github.com/MAECProject/schemas/milestones/MAEC%205.0">here</a></li>
 			</ul>
