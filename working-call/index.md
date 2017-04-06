@@ -9,33 +9,25 @@ Each bi-weekly call will focus on one or so specific topics. However, we very mu
 
 ## Next Bi-Weekly Working Call
 
-March 29, 2017
+April 12, 2017
 11:00 a.m. – 12:00 p.m. EST
 
 ### Agenda
 
-**[API Call Parameter Values](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.bgw48ww0jje1)** – Should we capture the constant names (e.g., GENERIC_WRITE) or actual byte values?
-
-**[Distance Measures](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.e9yw7k904di4)** – Are there additional properties we should be capturing, or should we add a catch-all property (dictionary)?
-
-**[Actions](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.yn04yetlim3i)** – Should we capture a list of timestamps for when the (same) Action occurred, or should we limit the granularity of Actions to a singleton?
-
-**[Malware Instances](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.5ob769orcztq)** – Should we specify any restrictions on the Objects or properties of Objects referenced in the instance_object_refs property?
-
-**[Packages](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.efuhzu24o2t3)** – Should we have properties for classes of MAEC top-level entities (e.g., Actions, Behaviors, etc.) or just a single list that encompasses all MAEC entities (similar to the [Structured Threat Information Expression (STIX™)](https://oasis-open.github.io/cti-documentation/stix/about) Bundle)?
-
+TBA
     
 ### Dial-in Info
 
-**Online meeting:**  [https://meet.mitre.org/ikirillov/BGCJYGLY](https://meet.mitre.org/ikirillov/BGCJYGLY) 
+**Online meeting:**  [https://meet.mitre.org/ikirillov/CKJQ061S](https://meet.mitre.org/ikirillov/CKJQ061S) 
 
-**Conference ID:**   5666311              
+**Conference ID:**   6488349              
 
 **Join by Phone:** 
 +1 (781) 271-2020 
 +1 (703) 983-2020 
  
 ## Previous Working Calls
+* March 29, 2017 - Topics: "API call parameter values, Distance measures, Actions, Malware Instances, and Packages"/[Details](http://making-security-measurable.1364806.n2.nabble.com/MAEC-March-29-Working-Call-Agenda-tc7589500.html)
 * March 15, 2017 - Topics: "Top-level Entities: Collections & Relationships"/[Details](http://making-security-measurable.1364806.n2.nabble.com/MAEC-March-15-Working-Call-Agenda-tc7589496.html)
 * February 27, 2017 - Topics: "Malware Instance Object: StaticFeaturesType & AnalysisMetadataType"/[Details](http://making-security-measurable.1364806.n2.nabble.com/MAEC-February-22nd-Working-Call-Agenda-tc7589493.html)
 * February 1, 2017 - Topic: "Malware Family"/[Details](http://making-security-measurable.1364806.n2.nabble.com/MAEC-February-1st-Working-Call-Agenda-tc7589491.html)/[Materials](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.t34bpqvzayl8)
