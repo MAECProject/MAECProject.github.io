@@ -9,7 +9,7 @@ Each bi-weekly call will focus on one or so specific topics. However, we very mu
 
 ## Next Bi-Weekly Working Call
 
-April 12, 2017
+April 26, 2017
 11:00 a.m. – 12:00 p.m. EST
 
 ### Agenda
@@ -18,15 +18,16 @@ TBA
     
 ### Dial-in Info
 
-**Online meeting:**  [https://meet.mitre.org/ikirillov/CKJQ061S](https://meet.mitre.org/ikirillov/CKJQ061S) 
+**Online meeting:**  TBA
 
-**Conference ID:**   6488349              
+**Conference ID:**   TBA              
 
 **Join by Phone:** 
 +1 (781) 271-2020 
 +1 (703) 983-2020 
  
 ## Previous Working Calls
+* April 12, 2017 - Topic: "Vocabularies"/[Details](https://docs.google.com/document/d/1btZGq2H6xtSsjrweL6NMXx7KHg6B2yIZkz9nSe6JZfA/edit#)
 * March 29, 2017 - Topics: "API call parameter values, Distance measures, Actions, Malware Instances, and Packages"/[Details](http://making-security-measurable.1364806.n2.nabble.com/MAEC-March-29-Working-Call-Agenda-tc7589500.html)
 * March 15, 2017 - Topics: "Top-level Entities: Collections & Relationships"/[Details](http://making-security-measurable.1364806.n2.nabble.com/MAEC-March-15-Working-Call-Agenda-tc7589496.html)
 * February 27, 2017 - Topics: "Malware Instance Object: StaticFeaturesType & AnalysisMetadataType"/[Details](http://making-security-measurable.1364806.n2.nabble.com/MAEC-February-22nd-Working-Call-Agenda-tc7589493.html)
