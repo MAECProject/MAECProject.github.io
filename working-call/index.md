@@ -9,8 +9,7 @@ Each bi-weekly call will focus on one or so specific topics. However, we very mu
 
 ## Next Bi-Weekly Working Call
 
-April 26, 2017
-11:00 a.m. – 12:00 p.m. EST
+TBA
 
 ### Agenda
 
