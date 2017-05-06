@@ -3,29 +3,13 @@ layout: flat
 title: MAEC Working Calls
 ---
 
-The MAEC Team is hosting a series of 1-hour, bi-weekly, working session calls for [MAEC Version 5.0](http://maecproject.github.io/documentation/roadmap/). 
+As part of the development of [MAEC Version 5.0](http://maecproject.github.io/documentation/roadmap/), the MAEC Team hosted a series of working session calls with each call focusing on one or so specific topics about MAEC 5.0. An archive of those calls is below.
 
-Each bi-weekly call will focus on one or so specific topics. However, we very much welcome suggestions from our community, so please [let us know](maec@mitre.org) what you’d like to discuss for any meeting. Anything MAEC-related is relevant! 
+If any additional working calls are needed, they will be annouced on the [MAEC Community Discussion List](http://maecproject.github.io/community/#discussion-lists--archives) and on the [Latest MAEC News](http://maecproject.github.io/news/) page.
 
-## Next Bi-Weekly Working Call
-
-TBA
-
-### Agenda
-
-TBA
-    
-### Dial-in Info
-
-**Online meeting:**  TBA
-
-**Conference ID:**   TBA              
-
-**Join by Phone:** 
-+1 (781) 271-2020 
-+1 (703) 983-2020 
+Please send any questions or suggestions about MAEC 5.0 to [maec@mitre.org](maec@mitre.org). 
  
-## Previous Working Calls
+## MAEC 5.0 Working Calls Archive
 * April 12, 2017 - Topic: "Vocabularies"/[Details](https://docs.google.com/document/d/1btZGq2H6xtSsjrweL6NMXx7KHg6B2yIZkz9nSe6JZfA/edit#)
 * March 29, 2017 - Topics: "API call parameter values, Distance measures, Actions, Malware Instances, and Packages"/[Details](http://making-security-measurable.1364806.n2.nabble.com/MAEC-March-29-Working-Call-Agenda-tc7589500.html)
 * March 15, 2017 - Topics: "Top-level Entities: Collections & Relationships"/[Details](http://making-security-measurable.1364806.n2.nabble.com/MAEC-March-15-Working-Call-Agenda-tc7589496.html)
