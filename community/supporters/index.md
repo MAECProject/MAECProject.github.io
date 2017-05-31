@@ -1,6 +1,6 @@
 ---
 layout: flat
-title: MAEC Supporters List
+title: MAEC Supporters
 ---
 
 The vendors below have implemented MAEC in their products or services. To add your product to the list, please email us at [maec@mitre.org](mailto:maec@mitre.org).
