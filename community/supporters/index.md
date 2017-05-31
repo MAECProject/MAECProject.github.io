@@ -17,7 +17,7 @@ The vendors below have implemented MAEC in their products or services. To add yo
 
 |Offering|Vendor|Description|Reference|
 |--------|--------|------------|------------|
-|[Bromium Live Attack Visualization and Analysis (LAVA)](https://www.bromium.com/content/lava-overview.html)|[Bromium, Inc.](https://www.bromium.com/)|Bromium LAVA's malware intelligence can be shared via standardized STIX/MAEC reports|Cited in [white paper](https://www.bromium.com/unparalleled-attack-visibility.html?utm_campaign=krebs-jan2015&utm_source=krebsonsecurity.com&utm_medium=banner&utm_content=unparalleled-attack-visibility-728x90)|
+|[Bromium LAVA](https://www.bromium.com/content/lava-overview.html)|[Bromium, Inc.](https://www.bromium.com/)|Bromium LAVA's malware intelligence can be shared via standardized STIX/MAEC reports|Cited in [white paper](https://www.bromium.com/unparalleled-attack-visibility.html?utm_campaign=krebs-jan2015&utm_source=krebsonsecurity.com&utm_medium=banner&utm_content=unparalleled-attack-visibility-728x90)|
 
 ## Static Analysis
 
