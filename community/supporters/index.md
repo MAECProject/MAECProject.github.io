@@ -7,9 +7,9 @@ The vendors below have implemented MAEC in their products or services. To add yo
 
 ## Sandboxes
 
-|Offering|Vendor|Description|Reference|
-|--------|-----------------|------------|------------|
-[Joe Sandbox](https://www.joesecurity.org/joe-sandbox-cloud)|[Joe Security LLC](https://www.joesecurity.org/)|Joe Sandbox Cloud generates reports in MAEC, as well as other formats|Cited on [Key Features](https://www.joesecurity.org/joe-sandbox-cloud#key-features) and [FAQs](https://www.joesecurity.org/joe-sandbox-cloud#faq) pages on website, and in [Product Brochure](https://www.joesecurity.org/resources/Joe%20Sandbox%20Cloud%20Feature%20Sheet.pdf)|
+Offering|Vendor|Description|Reference
+--------|------|-----------|---------
+|[Joe Sandbox](https://www.joesecurity.org/joe-sandbox-cloud)|[Joe Security LLC](https://www.joesecurity.org/)|Joe Sandbox Cloud generates reports in MAEC, as well as other formats|Cited on [Key Features](https://www.joesecurity.org/joe-sandbox-cloud#key-features) and [FAQs](https://www.joesecurity.org/joe-sandbox-cloud#faq) pages on website, and in [Product Brochure](https://www.joesecurity.org/resources/Joe%20Sandbox%20Cloud%20Feature%20Sheet.pdf)|
 |[VXStream Sandbox](https://www.payload-security.com/products/vxstream-sandbox)|[Payload Security](https://www.payload-security.com/)|VXStream Sandbox includes malware indicator sharing using MAEC|Cited on [Product](https://www.payload-security.com/products/vxstream-sandbox) page and [Features Chart](https://www.payload-security.com/download/VxStream%20Feature%20Comparison.pdf) on website|
 |[Cuckoo Sandbox](https://cuckoosandbox.org/#about)|[Cuckoo Foundation](https://cuckoosandbox.org/)|The MAEC Cuckoo reporting module enables Cuckoo to output MAEC output natively|Cited in [user documentation](https://cuckoo.readthedocs.io/en/0.3.2/customization/reporting/) on Cuckoo's website; (NOTE: Our own [MAEC Cuckoo Sandbox Module](https://github.com/MAECProject/cuckoo) is available on our MAECProject GitHub site)|
 
