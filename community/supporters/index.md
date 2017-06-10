@@ -33,7 +33,7 @@ The vendors below have implemented MAEC in their products or services. To add yo
 <td class="borderbottomcellboarder" style="width: 15%"><a href="https://cuckoosandbox.org/#about" target="_blank">Cuckoo Sandbox</a></td>
 <td class="borderbottomcellboarder" style="width: 15%"><a href="https://cuckoosandbox.org/" target="_blank">Cuckoo Foundation</a></td>
 <td class="borderbottomcellboarder" style="width: 35%">The MAEC Cuckoo reporting module enables Cuckoo v1.x to output MAEC output natively. MAEC output in 2.x is forthcoming via a MITRE-developed output module</td>
-<td class="borderbottomcellboarder" style="width: 35%">Cited in <a target="_blank" href="http://docs.cuckoosandbox.org/en/1.2/installation/host/configuration/#reporting-conf">User Documentation</a> on Cuckoo's website; (NOTE: Our own <a target="_blank" href="https://github.com/MAECProject/cuckoo">MAEC Cuckoo Sandbox Module</a> is available on our MAECProject GitHub site</td>
+<td class="borderbottomcellboarder" style="width: 35%">Cited in <a target="_blank" href="http://docs.cuckoosandbox.org/en/1.2/installation/host/configuration/#reporting-conf">User Documentation</a> on Cuckoo's website; (<b>NOTE:</b> Our own <a target="_blank" href="https://github.com/MAECProject/cuckoo">MAEC Cuckoo Sandbox Module</a> is available on our MAECProject GitHub site)</td>
 </tr>
 </table>
 
