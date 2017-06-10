@@ -7,26 +7,86 @@ The vendors below have implemented MAEC in their products or services. To add yo
 
 ## Sandboxes
 
-|Offering|Vendor|Description|Reference|
-|--------|------|-----------|---------|
-|[Joe Sandbox](https://www.joesecurity.org/joe-sandbox-cloud)|[Joe Security LLC](https://www.joesecurity.org/)|Joe Sandbox Cloud generates reports in MAEC, as well as other formats|Cited on [Key Features](https://www.joesecurity.org/joe-sandbox-cloud#key-features) and [FAQs](https://www.joesecurity.org/joe-sandbox-cloud#faq) pages on website, and in [Product Brochure](https://www.joesecurity.org/resources/Joe%20Sandbox%20Cloud%20Feature%20Sheet.pdf)|
-|[VXStream Sandbox](https://www.payload-security.com/products/vxstream-sandbox)|[Payload Security](https://www.payload-security.com/)|VXStream Sandbox includes malware indicator sharing using MAEC|Cited on [Product](https://www.payload-security.com/products/vxstream-sandbox) page and [Features Chart](https://www.payload-security.com/download/VxStream%20Feature%20Comparison.pdf) on website|
-|[Cuckoo Sandbox](https://cuckoosandbox.org/#about)|[Cuckoo Foundation](https://cuckoosandbox.org/)|The MAEC Cuckoo reporting module enables Cuckoo to output MAEC output natively|Cited in [user documentation](https://cuckoo.readthedocs.io/en/0.3.2/customization/reporting/) on Cuckoo's website; (NOTE: Our own [MAEC Cuckoo Sandbox Module](https://github.com/MAECProject/cuckoo) is available on our MAECProject GitHub site)|
+<table>
+<tr class="cellboarder">
+<td class="borderbottomcellboarder" style="width: 30%"><b>Offering</b></td>
+<td class="borderbottomcellboarder" style="width: 30%"><b>Vendor</b></td>
+<td class="borderbottomcellboarder" style="width: 20%"><b>Description</b></td>
+<td class="borderbottomcellboarder" style="width: 20%"><b>Reference</b></td>
+</tr>
+
+<tr class="cellboarder">
+<td class="borderbottomcellboarder" style="width: 30%"><a href="https://www.joesecurity.org/joe-sandbox-cloud" target="_blank">Joe Sandbox</a></td>
+<td class="borderbottomcellboarder" style="width: 30%"><a href="https://www.joesecurity.org/" target="_blank">Joe Security LLC</a></td>
+<td class="borderbottomcellboarder" style="width: 20%">Joe Sandbox Cloud generates reports in MAEC, as well as other formats</td>
+<td class="borderbottomcellboarder" style="width: 20%">Cited on <a target="_blank" href="https://www.joesecurity.org/joe-sandbox-cloud#key-features">Key Features</a> and <a target="_blank" href="https://www.joesecurity.org/joe-sandbox-cloud#faq">FAQs</a> pages on website, and in <a target="_blank" href="https://www.joesecurity.org/resources/Joe%20Sandbox%20Cloud%20Feature%20Sheet.pdf">Product Brochure</a></td>
+</tr>
+
+<tr class="cellboarder">
+<td class="borderbottomcellboarder" style="width: 30%"><a href="https://www.payload-security.com/products/vxstream-sandbox" target="_blank">VXStream Sandbox</a></td>
+<td class="borderbottomcellboarder" style="width: 30%"><a href="https://www.payload-security.com/" target="_blank">Payload Security</a></td>
+<td class="borderbottomcellboarder" style="width: 20%">VXStream Sandbox includes malware indicator sharing using MAEC</td>
+<td class="borderbottomcellboarder" style="width: 20%">Cited on <a target="_blank" href="https://www.payload-security.com/products/vxstream-sandbox">Product</a> page and <a target="_blank" href="https://www.payload-security.com/download/VxStream%20Feature%20Comparison.pdf">Features Chart</a> on website</td>
+</tr>
+
+<tr class="cellboarder">
+<td class="borderbottomcellboarder" style="width: 30%"><a href="https://cuckoosandbox.org/#about" target="_blank">Cuckoo Sandbox</a></td>
+<td class="borderbottomcellboarder" style="width: 30%"><a href="https://cuckoosandbox.org/" target="_blank">Cuckoo Foundation</a></td>
+<td class="borderbottomcellboarder" style="width: 20%">The MAEC Cuckoo reporting module enables Cuckoo v1.x to output MAEC output natively. MAEC output in 2.x is forthcoming via a MITRE-developed output module</td>
+<td class="borderbottomcellboarder" style="width: 20%">Cited in <a target="_blank" href="http://docs.cuckoosandbox.org/en/1.2/installation/host/configuration/#reporting-conf">User Documentation</a> on Cuckoo's website; (NOTE: Our own <a target="_blank" href="https://github.com/MAECProject/cuckoo">MAEC Cuckoo Sandbox Module</a> is available on our MAECProject GitHub site</td>
+</tr>
+</table>
 
 ## Virtualization Sandboxing
 
-|Offering|Vendor|Description|Reference|
-|--------|--------|---------|---------|
-|[Bromium LAVA](https://www.bromium.com/content/lava-overview.html)|[Bromium, Inc.](https://www.bromium.com/)|Bromium LAVA's malware intelligence can be shared via standardized STIX/MAEC reports|Cited in [white paper](https://www.bromium.com/unparalleled-attack-visibility.html?utm_campaign=krebs-jan2015&utm_source=krebsonsecurity.com&utm_medium=banner&utm_content=unparalleled-attack-visibility-728x90)|
+<table>
+<tr class="cellboarder">
+<td class="borderbottomcellboarder" style="width: 30%"><b>Offering</b></td>
+<td class="borderbottomcellboarder" style="width: 30%"><b>Vendor</b></td>
+<td class="borderbottomcellboarder" style="width: 20%"><b>Description</b></td>
+<td class="borderbottomcellboarder" style="width: 20%"><b>Reference</b></td>
+</tr>
+
+<tr class="cellboarder">
+<td class="borderbottomcellboarder" style="width: 30%"><a href="https://www.bromium.com/content/lava-overview.html" target="_blank">Bromium LAVA</a></td>
+<td class="borderbottomcellboarder" style="width: 30%"><a href="https://www.bromium.com/" target="_blank">Bromium, Inc.</a></td>
+<td class="borderbottomcellboarder" style="width: 20%">Bromium LAVA's malware intelligence can be shared via standardized STIX/MAEC reports</td>
+<td class="borderbottomcellboarder" style="width: 20%">Cited in <a target="_blank" href="https://www.bromium.com/unparalleled-attack-visibility.html?utm_campaign=krebs-jan2015&utm_source=krebsonsecurity.com&utm_medium=banner&utm_content=unparalleled-attack-visibility-728x90">White Paper</a></td>
+</tr>
+</table>
 
 ## Static Analysis
 
-|Offering|Vendor|Description|Reference|
-|--------|--------|---------|---------|
-|[Titanium Core](https://www.reversinglabs.com/products/malware-analysis-solution.html)|[ReversingLabs](https://www.reversinglabs.com/)|Titanium Core results can be exported in MAEC, STIX, and IOC formats|Cited as feature on [Product](https://www.reversinglabs.com/products/malware-analysis-solution.html) page on website|
+<table>
+<tr class="cellboarder">
+<td class="borderbottomcellboarder" style="width: 30%"><b>Offering</b></td>
+<td class="borderbottomcellboarder" style="width: 30%"><b>Vendor</b></td>
+<td class="borderbottomcellboarder" style="width: 20%"><b>Description</b></td>
+<td class="borderbottomcellboarder" style="width: 20%"><b>Reference</b></td>
+</tr>
+
+<tr class="cellboarder">
+<td class="borderbottomcellboarder" style="width: 30%"><a href="https://www.reversinglabs.com/products/malware-analysis-solution.html" target="_blank">Titanium Core</a></td>
+<td class="borderbottomcellboarder" style="width: 30%"><a href="https://www.reversinglabs.com/products/malware-analysis-solution.html" target="_blank">ReversingLabs</a></td>
+<td class="borderbottomcellboarder" style="width: 20%">Titanium Core results can be exported in MAEC, STIX, and IOC formats</td>
+<td class="borderbottomcellboarder" style="width: 20%">Cited as feature on <a target="_blank" href="https://www.reversinglabs.com/products/malware-analysis-solution.html">Product</a> page on website</td>
+</tr>
+</table>
 
 ## Threat Intelligence Platform
 
-|Offering|Vendor|Description|Reference|
-|--------|----------------|-----------------|------|
-|[AutoFocus](https://www.paloaltonetworks.com/documentation/autofocus/autofocus/autofocus_api/about-the-autofocus-api/autofocus-api-stix-support)|[Palo Alto Networks, Inc.](https://www.paloaltonetworks.com/)|AutoFocus includes support for MAEC and STIX; to effectively provide the volume of data available through AutoFocus, responses contain embedded MAEC content|Cited on [AutoFocus API STIX Support](https://www.paloaltonetworks.com/documentation/autofocus/autofocus/autofocus_api/about-the-autofocus-api/autofocus-api-stix-support) product page on website| 
+<table>
+<tr class="cellboarder">
+<td class="borderbottomcellboarder" style="width: 30%"><b>Offering</b></td>
+<td class="borderbottomcellboarder" style="width: 30%"><b>Vendor</b></td>
+<td class="borderbottomcellboarder" style="width: 20%"><b>Description</b></td>
+<td class="borderbottomcellboarder" style="width: 20%"><b>Reference</b></td>
+</tr>
+
+<tr class="cellboarder">
+<td class="borderbottomcellboarder" style="width: 30%"><a href="https://www.paloaltonetworks.com/documentation/autofocus/autofocus/autofocus_api/about-the-autofocus-api/autofocus-api-stix-support" target="_blank">AutoFocus</a></td>
+<td class="borderbottomcellboarder" style="width: 30%"><a href="https://www.paloaltonetworks.com/" target="_blank">Palo Alto Networks, Inc.</a></td>
+<td class="borderbottomcellboarder" style="width: 20%">AutoFocus includes support for MAEC and STIX; to effectively provide the volume of data available through AutoFocus, responses contain embedded MAEC content</td>
+<td class="borderbottomcellboarder" style="width: 20%">Cited on <a target="_blank" href="https://www.paloaltonetworks.com/documentation/autofocus/autofocus/autofocus_api/about-the-autofocus-api/autofocus-api-stix-support">AutoFocus API STIX Support</a> product page on website</td>
+</tr>
+</table>
