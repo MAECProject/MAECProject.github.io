@@ -7,6 +7,17 @@ Subscribe to our free *MAEC Announce* e-newsletter to receive information and up
 
 ## Our latest news:
 
+**"MAEC Supporters" Page Added to MAEC Website**         
+A [MAEC Supporters](/community/supporters) page has been added to the MAEC website. The new page lists those vendors to-date that have implemented Malware Attribute Enumeration and Characterization (MAEC™) in their products or services: 
+
+* **[Sandboxes](/community/supporters/#sandboxes)** – 3 products from 3 vendors currently listed            
+* **[Virtualization Sandboxing](/community/supporters/#virtualization-sandboxing)** – 1 product currently listed          
+* **[Static Analysis](/community/supporters/#static-analysis)** – 1 product currently listed          
+* **[Threat Intelligence Platforms](/community/supporters/#threat-intelligence-platform)** – 1 product currently listed          
+
+To add your product to the [list](/community/supporters), please email us at [maec@mitre.org](maec@mitre.org).
+
+
 **MAEC 5.0 Working Call on April 12 to Focus on “Vocabularies”**         
 The main topic of our 1-hour bi-weekly community working call on [April 12, 2017](http://making-security-measurable.1364806.n2.nabble.com/MAEC-April-12-Working-Call-Agenda-tc7589517.html) for the development of Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0 will be the [Vocabularies](https://docs.google.com/document/d/1btZGq2H6xtSsjrweL6NMXx7KHg6B2yIZkz9nSe6JZfA/edit#).
 
