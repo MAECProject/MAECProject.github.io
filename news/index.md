@@ -8,7 +8,7 @@ Subscribe to our free *MAEC Announce* e-newsletter to receive information and up
 ## Our latest news:
 
 **"MAEC Supporters" Page Added to MAEC Website**         
-A [MAEC Supporters](/community/supporters) page has been added to the MAEC website. The new page lists those vendors to-date that have implemented Malware Attribute Enumeration and Characterization (MAEC™) in their products or services: 
+A [MAEC Supporters](/community/supporters) page has been added to the MAEC website. The new page lists those vendors to-date that have implemented [Malware Attribute Enumeration and Characterization (MAEC™)](/releases/4.1/) in their products or services: 
 
 * **[Sandboxes](/community/supporters/#sandboxes)** – 3 products from 3 vendors currently listed            
 * **[Virtualization Sandboxing](/community/supporters/#virtualization-sandboxing)** – 1 product currently listed          
