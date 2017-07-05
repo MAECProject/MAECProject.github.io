@@ -89,4 +89,11 @@ The vendors below have implemented MAEC in their products or services. To add yo
 <td class="borderbottomcellboarder" style="width: 35%">AutoFocus includes support for MAEC and STIX; to effectively provide the volume of data available through AutoFocus, responses contain embedded MAEC content</td>
 <td class="borderbottomcellboarder" style="width: 35%">Cited on <a target="_blank" href="https://www.paloaltonetworks.com/documentation/autofocus/autofocus/autofocus_api/about-the-autofocus-api/autofocus-api-stix-support">AutoFocus API STIX Support</a> product page on website</td>
 </tr>
+
+<tr class="cellboarder">
+<td class="borderbottomcellboarder" style="width: 15%"><a href="https://www.eclecticiq.com/platform" target="_blank">EclecticIQ Platform</a></td>
+<td class="borderbottomcellboarder" style="width: 15%"><a href="https://www.eclecticiq.com" target="_blank">EclecticIQ</a></td>
+<td class="borderbottomcellboarder" style="width: 35%">EclecticIQ Platform includes support for industry standards MAEC, STIX, TAXII, CIQ and CEF</td>
+<td class="borderbottomcellboarder" style="width: 35%">Cited on <a target="_blank" href="https://www.eclecticiq.com/platform/technology">EclecticIQ Platform technology overview</a> page on website</td>
+</tr>
 </table>
