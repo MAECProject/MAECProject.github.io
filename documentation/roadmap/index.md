@@ -3,7 +3,7 @@ layout: flat
 title: MAEC 5.0 Roadmap
 ---
 
-The roadmap for Version 5.0 of the MAEC Language is below. We welcome any feedback regarding the release, either at the GitHub issue tracker link below, or directly to <a href="mailto:maec@mitre.org">maec@mitre.org</a> or the <a href="http://maecproject.github.io/community/#discussion-lists--archives">MAEC Community Email Discussion List</a>. 
+The roadmap and resources for Version 5.0 of the MAEC Language is below. We welcome any feedback regarding the release, either at the GitHub issue tracker link below, or directly to <a href="mailto:maec@mitre.org">maec@mitre.org</a> or the <a href="http://maecproject.github.io/community/#discussion-lists--archives">MAEC Community Email Discussion List</a>. 
 
 We also recently hosted a series of "<a href="/working-call">MAEC 5.0 Working Session Calls</a>" focusing on this next version of the MAEC Language. Please visit the <a href="/working-call">working call</a> page in the <a href="/community">MAEC Community</a> section to review an <a href="/working-call/#maec-50-working-calls-archive">archive</a> of those calls.
 
@@ -16,17 +16,20 @@ We also recently hosted a series of "<a href="/working-call">MAEC 5.0 Working Se
       <div class="panel-body">
         <ul>
 		  <li>Next major release (backwards incompatible with current version)</li>
-		  <li>ETA: Spring 2017
-		    <ul>
-			  <li>GitHub Milestone <a href="https://github.com/MAECProject/schemas/milestones/MAEC%205.0">here</a></li>
-			</ul>
+		  <li>ETA: August 2017
 		  </li>
 		  <li>New output format: JSON
 		  </li>
 		  <li>Major refactoring of many structures for simplicity and ease-of-use</li>
 		  <li>Addition of structures for capturing function fingerprints</li>
 		  <li>Updates to existing vocabularies</li>
+	          <li>Resources
+		  	<ul>
+			  <li><a href="https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.2gtji7hk59te">Specification</a></li>
+			  <li><a href="https://docs.google.com/document/d/1btZGq2H6xtSsjrweL6NMXx7KHg6B2yIZkz9nSe6JZfA/edit#">Vocabularies</a></li>
 			</ul>
+		  </li>
+		</ul>
 	</div>
     </div>
   </div>
