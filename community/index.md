@@ -13,12 +13,12 @@ The MAEC Community Email Discussion List is where community members discuss the 
 * Email us at [maec@mitre.org](mailto:maec@mitre.org) to join and participate
 * [Review the discussion archive](http://making-security-measurable.1364806.n2.nabble.com/MAEC-Malware-Attribute-Enumeration-and-Characterization-f4094903.html)
 
-### MediaWiki
+### Encyclopedia of Malware Attributes
 
-The MAEC MediaWiki enables community collaboration to build our growing Semantic MediaWiki-based collection of malware capabilities, behaviors, and structural features, and their associated attributes.
+The Encyclopedia of Malware Attributes (EMA) mediawiki enables community collaboration to build our growing semantic mediawiki-based collection of malware capabilities, behaviors, and structural features, and their associated attributes.
 
 * Email us at [maec@mitre.org](mailto:maec@mitre.org) to join and contribute
-* [MAEC MediaWiki](https://collaborate.mitre.org/maec/index.php/Malware_Attribute_Enumeration_and_Characterization)
+* [Encyclopedia of Malware Attributes](https://collaborate.mitre.org/ema/index.php/ema:Main_Page)
 
 ### Tool & Utility Development
 
