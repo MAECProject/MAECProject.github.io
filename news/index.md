@@ -10,13 +10,13 @@ Subscribe to our free *[MAEC Announce](mailto:maec@mitre.org)* e-newsletter to r
 ## MAEC 5.0 Release Timeline Updated 
 The timeline for the release of [Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0](/documentation/roadmap/) has been updated:
 
-**Draft Release - August 2017**          
-* This will be a draft version of MAEC 5.0 that will still be open for comment and feedback.
-* Included will be the specification and vocabularies, JSON schemas, and Cuckoo 2.0.x output module.   
+* **Draft Release - August 2017**          
+  * This will be a draft version of MAEC 5.0 that will still be open for comment and feedback.
+  * Included will be the specification and vocabularies, JSON schemas, and Cuckoo 2.0.x output module.   
 
-**Final Release - September 2017**         
-* This is the final release version that will incorporate any comments/feedback during the draft phase.
-* Included will be the finalized specification and vocabularies, JSON schemas, and Cuckoo 2.0.x output module.
+* **Final Release - September 2017**         
+  * This is the final release version that will incorporate any comments/feedback during the draft phase.
+  * Included will be the finalized specification and vocabularies, JSON schemas, and Cuckoo 2.0.x output module.
 
 Please contact us at [maec@mitre.org](mailto:maec@mitre.org) with any comments or concerns.
 
