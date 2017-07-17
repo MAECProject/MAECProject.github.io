@@ -7,6 +7,26 @@ Subscribe to our free *[MAEC Announce](mailto:maec@mitre.org)* e-newsletter to r
 
 ### Our latest news:
 
+## MAEC 5.0 Release Timeline Updated 
+The timeline for the release of [Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0](/documentation/roadmap/) has been updated:
+
+**Draft Release - August 2017**          
+* This will be a draft version of MAEC 5.0 that will still be open for comment and feedback.
+* Included will be the specification and vocabularies, JSON schemas, and Cuckoo 2.0.x output module.   
+
+**Final Release - September 2017**         
+* This is the final release version that will incorporate any comments/feedback during the draft phase.
+* Included will be the finalized specification and vocabularies, JSON schemas, and Cuckoo 2.0.x output module.
+
+Please contact us at [maec@mitre.org](mailto:maec@mitre.org) with any comments or concerns.
+
+## 1 New Product Added to "MAEC Supporters" List from EclecticIQ  
+One additional product has been added to the [MAEC Supporters](/community/supporters) list on the MAEC website: (1) EclecticIQ's [Threat Intelligence Platform](http://maecproject.github.io/community/supporters/#threat-intelligence-platform).
+
+As cited on [EclecticIQ's website](https://www.eclecticiq.com/platform/technology), the EclecticIQ Platform includes support for industry standards such as [Malware Attribute Enumeration and Characterization (MAEC™)](http://maecproject.github.io/), [Structured Threat Information Expression (STIX™)](https://oasis-open.github.io/cti-documentation/), [Trusted Automated eXchange of Indicator Information (TAXII™)](https://oasis-open.github.io/cti-documentation/), and others.
+
+To add your product to the MAEC Supporters list, please email us at [maec@mitre.org](maec@mitre.org).
+
 ## "MAEC Supporters" Page Added to MAEC Website         
 A [MAEC Supporters](/community/supporters) page has been added to the MAEC website. The new page lists those vendors to-date that have implemented [Malware Attribute Enumeration and Characterization (MAEC™)](/releases/4.1/) in their products or services: 
 
