@@ -14,29 +14,31 @@ We also recently hosted a series of "<a href="/working-call">MAEC 5.0 Working Se
         <h3 class="panel-title"><b>MAEC Version 5.0</b></h3>
       </div>
       <div class="panel-body">
-      <strong>Highlights</strong>
-       <ul>
+<strong>Highlights</strong>
+ <p></p>      
+ <ul>
 		  <li>Next major release (backwards incompatible with current version)</li>
 		  <li>New output format: JSON</li>
 		  <li>Major refactoring of many structures for simplicity and ease-of-use</li>
 		  <li>Addition of structures for capturing function fingerprints</li>
 		  <li>Updates to existing vocabularies</li>
 	          <li>Resources:
-		  	<ul>
+		  <ul>
 			  <li><a href="https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.2gtji7hk59te">Specification</a></li>
 			  <li><a href="https://docs.google.com/document/d/1btZGq2H6xtSsjrweL6NMXx7KHg6B2yIZkz9nSe6JZfA/edit#">Vocabularies</a></li>
-			  </ul>
-			  </div>
-      <div class="panel-body">
-      <strong>Release Timeline</strong>
-      <p><strong>AUGUST 2017 - Draft Release</strong></p>
-                        <ul>
-			  <li>This will be a draft version of MAEC 5.0 that will still be open for comment and feedback.</li>
-			  <li>Included will be the specification and vocabularies, JSON schemas, and Cuckoo 2.0.x output module.</li>
-			</ul>
-       <p><strong>SEPTEMBER 2017 - Final Release</strong></p>
-                         <ul>
-			  <li>This is the final release version that will incorporate any comments/feedback during the draft phase.</li>
-			  <li>Included will be the finalized specification and vocabularies, JSON schemas, and Cuckoo 2.0.x output   module.</li>
-			  </ul>
+			  </ul></ul>
+			  
+<strong>Release Timeline</strong>
+<p></p>
+<p><strong>AUGUST 2017 - Draft Release</strong></p>
+       <ul style="list-style-type:disc">
+                  <li>This will be a draft version of MAEC 5.0 that will still be open for comment and feedback.</li>
+                  <li>Included will be the specification and vocabularies, JSON schemas, and Cuckoo 2.0.x output module.</li>
+       </ul>
+       
+<p><strong>SEPTEMBER 2017 - Final Release</strong></p> 
+       <ul style="list-style-type:disc">
+	         <li>This is the final release version that will incorporate any comments/feedback during the draft phase.</li>
+	         <li>Included will be the finalized specification and vocabularies, JSON schemas, and Cuckoo 2.0.x output module.</li>
+	</ul>
 
