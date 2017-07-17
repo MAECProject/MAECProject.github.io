@@ -78,7 +78,7 @@ A few short cuts:
 
 * **[MAEC Community Discussion List](/community#discussion-lists--archives)** – Where community members discuss the latest versions of the MAEC specifications, schemas, utilities, and other items integral to the ongoing development of MAEC.      
      
-* **[MAEC MediaWiki](/community/#mediawiki)** – Where the MAEC Community collaborates on building our Semantic MediaWiki of malware capabilities, behaviors, and structural features, and their associated attributes.    
+* **[Encyclopedia of Malware Attributes](/community/#ema)** – Where the MAEC Community collaborates on building our semantic mediawiki of malware capabilities, behaviors, and structural features, and their associated attributes.    
      
 * **[MAECProject GitHub Tools & Utilities](https://github.com/MAECProject/)** – The central location for MAEC Community members to make open-source contributions to MAEC development and manage issue tracking for the MAEC schemas, utilities, and other supporting information and items.     
 
