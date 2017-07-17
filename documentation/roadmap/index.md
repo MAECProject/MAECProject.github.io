@@ -28,7 +28,7 @@ We also recently hosted a series of "<a href="/working-call">MAEC 5.0 Working Se
 <p></p>
 <strong>Release Timeline</strong>
 <p></p>
-<p><AUGUST 2017 - Draft Release</p>
+<p>AUGUST 2017 - Draft Release</p>
        <ul style="list-style-type:disc">
                   <li>This will be a draft version of MAEC 5.0 that will still be open for comment and feedback.</li>
                   <li>Included will be the specification and vocabularies, JSON schemas, and Cuckoo 2.0.x output module.</li>
