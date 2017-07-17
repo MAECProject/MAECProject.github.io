@@ -25,7 +25,8 @@ We also recently hosted a series of "<a href="/working-call">MAEC 5.0 Working Se
 		  	<ul>
 			  <li><a href="https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#heading=h.2gtji7hk59te">Specification</a></li>
 			  <li><a href="https://docs.google.com/document/d/1btZGq2H6xtSsjrweL6NMXx7KHg6B2yIZkz9nSe6JZfA/edit#">Vocabularies</a></li>
-			  </ul></ul>
+			  </ul>
+			  </div>
       <div class="panel-body">
       <strong>Release Timeline</strong>
 	<ul>
