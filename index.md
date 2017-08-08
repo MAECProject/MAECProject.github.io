@@ -14,7 +14,7 @@ no_in_page_title: true
   <p><a class="btn btn-primary btn-lg" role="button" href="/about-maec">About MAEC »</a>
   <a class="btn btn-primary btn-lg" role="button" href="/getting-started">Get Started »</a></p>
     <p></p>
-    <p><span class="label label-success">New!</span>  <a href="/documentation/roadmap">MAEC 5.0</a> is under development.</p>
+    <p><span class="label label-success">New!</span>  <a href="/documentation/roadmap">MAEC 5.0</a> is under development. View the updated <a href="/documentation/roadmap">release timeline</a>.</p>
 </div>
 
 <div class="row">
