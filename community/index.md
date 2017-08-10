@@ -39,6 +39,12 @@ The MAEC Community is working on [MAEC 5.0](/documentation/roadmap/), the next v
 
 * [MAEC working calls archive](/working-call/)
 
+### Free Newsletter
+
+Subscribe to our free MAEC Announce e-newsletter to receive news and project updates directly in your mailbox. 
+
+* Email us at [maec@mitre.org](mailto:maec@mitre.org) to subscribe
+
 ### Help
 
 * [maec@mitre.org](mailto:maec@mitre.org)
