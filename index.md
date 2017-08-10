@@ -34,7 +34,7 @@ no_in_page_title: true
   <div class="col-md-4 text-center">
     <h2>Join Us!</h2>
     <p>Add your product to our growing <a href="/community/supporters">MAEC Supporters</a> list, and/or join the <a href="/community/#discussion-lists--archives">MAEC Community Discussion List</a>.</p>
-    <p>Visit <a href="/news">Latest MAEC News</a> for project updates or sign-up for our <a href="/news">free newsletter</a>.</p>
+    <p>Visit <a href="/news">Latest MAEC News</a> for project updates or sign-up for our <a href="/community/#free-newsletter">free newsletter</a>.</p>
     <p><a class="btn btn-primary btn-lg" role="button" href="/community">Community »</a></p>
   </div>
 </div>
