@@ -33,8 +33,8 @@ no_in_page_title: true
   </div>
   <div class="col-md-4 text-center">
     <h2>Join Us!</h2>
-    <p>Add your product to our growing <a href="/community/supporters">MAEC Supporters</a> list, and/or <a href="/community/#discussion-lists--archives">join the MAEC Email Discussion List</a> to help build this growing, open-source industry effort.</p>
-    <p>Please visit <a href="/news">Latest MAEC News</a>, or sign-up for our <a href="/news">free newsletter</a>, to get the latest MAEC news straight from the source.</p>
+    <p>Add your product to our growing <a href="/community/supporters">MAEC Supporters</a> list, and/or join the <a href="/community/#discussion-lists--archives">MAEC Community Discussion List</a>.</p>
+    <p>Visit <a href="/news">Latest MAEC News</a> and sign-up for our <a href="/news">free newsletter</a>.</p>
     <p><a class="btn btn-primary btn-lg" role="button" href="/community">Community »</a></p>
   </div>
 </div>
