@@ -18,7 +18,7 @@ The MAEC Community Email Discussion List is where community members discuss the 
 The MAEC Supporters page lists those vendors to-date that have implemented MAEC in their sandbox, virtualization sandboxing, static analysis, and/or threat intelligence platform products or services.
 
 * Email us at [maec@mitre.org](mailto:maec@mitre.org) to add your product to the list
-* [MAEC Supporters list](/community/supporters)
+* [MAEC Supporters list](/community/supporters/)
 
 ### Encyclopedia of Malware Attributes
 
