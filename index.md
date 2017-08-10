@@ -18,18 +18,24 @@ no_in_page_title: true
 </div>
 
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4 text-center">
     <h2>Documentation</h2>
     <p>Now that you have an idea of what MAEC is and how it can be used,
     learn about tools that support MAEC, suggested practices, and other in-depth
     documentation.</p>
     <p><a class="btn btn-primary btn-lg" role="button" href="/documentation">Documentation »</a></p>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-4 text-center">
     <h2>Use Cases</h2>
     <p>You can also see examples of common design patterns in MAEC and
     learn how to create and understand idiomatic MAEC content.</p>
     <p><a class="btn btn-primary btn-lg" role="button" href="/documentation/use_cases">Use Cases »</a></p>
+  </div>
+  <div class="col-md-4 text-center">
+    <h2>Join Us!</h2>
+    <p>Add your product to our growing <a href="/community/supporters">MAEC Supporters</a> list, and/or <a href="/community/#discussion-lists--archives">join the MAEC Email Discussion List</a> to help build this growing, open-source industry effort.</p>
+    <p>Please visit <a href="/news">Latest MAEC News</a>, or sign-up for our <a href="/news">free newsletter</a>, to get the latest MAEC news straight from the source.</p>
+    <p><a class="btn btn-primary btn-lg" role="button" href="/community">Community »</a></p>
   </div>
 </div>
 
