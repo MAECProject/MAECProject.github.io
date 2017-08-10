@@ -13,6 +13,13 @@ The MAEC Community Email Discussion List is where community members discuss the 
 * Email us at [maec@mitre.org](mailto:maec@mitre.org) to join and participate
 * [Review the discussion archive](http://making-security-measurable.1364806.n2.nabble.com/MAEC-Malware-Attribute-Enumeration-and-Characterization-f4094903.html)
 
+### MAEC Supporters
+
+The MAEC Supporters page lists those vendors to-date that have implemented MAEC in their sandbox, virtualization sandboxing, static analysis, and/or threat intelligence platform products or services.
+
+* Email us at [maec@mitre.org](mailto:maec@mitre.org) to add your product to the list
+* [MAEC Supporters list](/community/supporters)
+
 ### Encyclopedia of Malware Attributes
 
 The Encyclopedia of Malware Attributes (EMA) mediawiki enables community collaboration to build our growing semantic mediawiki-based collection of malware capabilities, behaviors, and structural features, and their associated attributes.
