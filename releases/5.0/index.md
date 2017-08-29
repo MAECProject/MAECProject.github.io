@@ -27,7 +27,7 @@ Read the MAEC 5.0 (Draft) [release announcement](http://making-security-measurab
 * [MAEC Core Specification, Version 5.0 (Draft)](https://docs.google.com/document/d/1cnjjZAPHITFjo_8xGVBo1mX9Qvo7pN-YJ4pRZwdsuL0/edit#)
 * [MAEC Vocabularies Specification, Version 5.0 (Draft)](https://docs.google.com/document/d/1btZGq2H6xtSsjrweL6NMXx7KHg6B2yIZkz9nSe6JZfA/edit#)
 
-### Schema Downloads     
+### JSON Schemas     
 
 * [JSON schemas, MAEC Version 5.0 (Draft)](https://github.com/MAECProject/schemas/tree/maec5.0-json)
 
@@ -35,5 +35,5 @@ Read the MAEC 5.0 (Draft) [release announcement](http://making-security-measurab
 
 The Cuckoo Sandbox 2.x reporting module produces native MAEC 5.0 output.
 
-* [https://github.com/MAECProject/cuckoo/blob/maec5.0-cuckoo2.0-rc2/modules/reporting/maecreport.py](https://github.com/MAECProject/cuckoo/blob/maec5.0-cuckoo2.0-rc2/modules/reporting/maecreport.py), MAEC Version 5.0 (Draft)
-* [https://github.com/MAECProject/cuckoo/blob/maec5.0-cuckoo2.0-rc2/modules/reporting/maec_api_call_mappings.json](https://github.com/MAECProject/cuckoo/blob/maec5.0-cuckoo2.0-rc2/modules/reporting/maec_api_call_mappings.json), MAEC Version 5.0 (Draft)
+* [https://github.com/MAECProject/cuckoo/blob/maec5.0-cuckoo2.0-rc2/modules/reporting/maecreport.py](https://github.com/MAECProject/cuckoo/blob/maec5.0-cuckoo2.0-rc2/modules/reporting/maecreport.py)
+* [https://github.com/MAECProject/cuckoo/blob/maec5.0-cuckoo2.0-rc2/modules/reporting/maec_api_call_mappings.json](https://github.com/MAECProject/cuckoo/blob/maec5.0-cuckoo2.0-rc2/modules/reporting/maec_api_call_mappings.json)
