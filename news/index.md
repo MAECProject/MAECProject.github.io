@@ -7,6 +7,21 @@ Subscribe to our free *[MAEC Announce](mailto:maec@mitre.org)* e-newsletter to r
 
 ### Our latest news:
 
+## "MAEC 5.0 (Draft)" Released for Community Review & Comment
+
+[MAEC 5.0 (Draft)](/releases/5.0/) is now available for community review and comment. All comments are **due by September 29, 2017**.
+
+MAEC 5.0 (Draft) includes the following:     
+
+* [MAEC 5.0 (Draft) "Core" Specification](/releases/5.0/#specifications)
+* [MAEC 5.0 (Draft) "Vocabularies" Specification](/releases/5.0/#specifications)
+* A full set of [JSON schemas](/releases/5.0/#json-schemas) that correspond with the specifications
+* A [Cuckoo Sandbox 2.x reporting module](/releases/5.0/#cuckoo-reporting-modules) that produces native MAEC 5.0 output     
+
+We are particularly interested in hearing about anything that might be confusing or under-specified in the specifications.
+
+Feedback is welcome on the [MAEC Community Email Discussion List](/community/#discussion-lists--archives), or directly to [maec@mitre.org](mailto:maec@mitre.org).      
+
 ## MAEC 5.0 Release Timeline Updated 
 The timeline for the release of [Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0](/documentation/roadmap/) has been updated:
 
