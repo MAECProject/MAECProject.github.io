@@ -7,6 +7,19 @@ Subscribe to our free *[MAEC Announce](mailto:maec@mitre.org)* e-newsletter to r
 
 ### Our latest news:
 
+## MAEC 5.0 Now Available!
+
+[MAEC 5.0](/releases/5.0/) is now available in the [Releases](/releases/5.0/) section of the MAEC website.
+
+MAEC 5.0 includes the following:     
+
+* [MAEC 5.0 "Core" Specification](/releases/5.0/#specifications)
+* [MAEC 5.0 "Vocabularies" Specification](/releases/5.0/#specifications)
+* A full set of [JSON schemas](/releases/5.0/#json-schemas) that correspond with the specifications
+* A [Cuckoo Sandbox 2.x reporting module](/releases/5.0/#cuckoo-reporting-modules) that produces native MAEC 5.0 output     
+
+Feedback or questions about this release are welcome on the [MAEC Community Email Discussion List](/community/#discussion-lists--archives), or directly to [maec@mitre.org](mailto:maec@mitre.org).    
+
 ## "MAEC 5.0 (Draft)" Released for Community Review & Comment
 
 [MAEC 5.0 (Draft)](/releases/5.0/) is now available for community review and comment. All comments are **due by September 29, 2017**.
