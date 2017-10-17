@@ -8,9 +8,9 @@ no_in_page_title: true
 <h1 class="site-title">Malware Attribute Enumeration and Characterization (MAEC™)</h1>
 
 <div class="jumbotron">
-  <p><h1><span class="label label-success">New!</span>  <a href="/releases/5.0">MAEC 5.0</a> now available!</h1></p>
+  <p><h2><span class="label label-success">New!</span>  <a href="/releases/5.0">MAEC 5.0</a> now available!</h2></p>
   <br>
-  <h2><strong>Start here if you're new to MAEC</strong></h2>
+  <h3><strong>Start here if you're new to MAEC</strong></h3>
   <p><a class="btn btn-primary btn-lg" role="button" href="/about-maec">About MAEC »</a>
   <a class="btn btn-primary btn-lg" role="button" href="/getting-started">Get Started »</a></p>
 </div>
