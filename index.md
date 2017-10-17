@@ -9,7 +9,6 @@ no_in_page_title: true
 
 <div class="jumbotron">
   <p><span class="label label-success">New!</span>  <a href="/releases/5.0">MAEC 5.0</a> now available!</p>
-  <br>
   <h2><strong>Start here if you're new to MAEC</strong></h2>
   <p><a class="btn btn-primary btn-lg" role="button" href="/about-maec">About MAEC »</a>
   <a class="btn btn-primary btn-lg" role="button" href="/getting-started">Get Started »</a></p>
