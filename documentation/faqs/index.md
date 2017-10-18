@@ -66,7 +66,7 @@ MAEC is pronounced as "mike." This pronunciation stems from classical Latin, in 
 
 MAEC was developed to eliminate the ambiguity and inaccuracy that currently exists in malware descriptions. By reducing reliance on signatures, MAEC aims to improve human-to-tool, tool-to-tool, and tool-to-human communication about malware; allow for faster development of countermeasures by enabling the ability to leverage responses to previously observed malware instances; and reduce potential duplication of malware analysis efforts by researchers.
 
-MAEC is a community-developed effort and has received input from members of various communities, including those from industry, academia, and government. [The MITRE Corporation](http://www.mitre.org/) maintains MAEC and its public website presence and provides impartial technical guidance to the [MAEC Community](/community) throughout the process to ensure MAEC serves the public interest. MAEC is sponsored by the office of [Cybersecurity and Communications](http://www.dhs.gov/office-cybersecurity-and-communications/) at the [U.S. Department of Homeland Security](http://www.dhs.gov/).
+MAEC is a community-developed effort and has received input from members of various communities, including those from industry, academia, and government. [The MITRE Corporation](https://www.mitre.org/) maintains MAEC and its public website presence and provides impartial technical guidance to the [MAEC Community](/community) throughout the process to ensure MAEC serves the public interest. MAEC is sponsored by the office of [Cybersecurity and Communications](https://www.dhs.gov/office-cybersecurity-and-communications/) at the [U.S. Department of Homeland Security](https://www.dhs.gov/).
 
 #### <a name="a4"></a> A4. Is MAEC a formal standard?
 
@@ -79,19 +79,15 @@ See the "License" section of the [Terms of Use](/Legal).
 #### <a name="a6"></a> A6. How can I get involved? How can I make contributions to MAEC development?
 There are several opportunities to get involved. See the [MAEC Community](/community) page for details, or contact us directly at [maec@mitre.org](mailto:maec@mitre.org). 
 
-**NOTE:** The MAEC Community is actively working on [MAEC 5.0](/documentation/roadmap), the next version of the Malware Attribute Enumeration and Characterization (MAEC™) Language. Community members are encouraged to participate by joining in on our MAEC Community teleconference [working call](/working-call) meetings. 
-
 ### <a name="b"></a> MAEC Language
 
 #### <a name="b1"></a> B1. Where can I get the current version of MAEC?
 
-The current version of the Malware Attribute Enumeration and Characterization (MAEC™) Language is available on the [Current Release](/releases/4.1) page. In addition, the current MAEC schema, as well as example files, schematron rules, and related documentation, are available in the [MAEC Schemas in the MAECProject repository](https://github.com/MAECProject/schemas) on GitHub.com.
-
-**NOTE:** The MAEC Community is actively working on [MAEC 5.0](/documentation/roadmap), the next version of MAEC. We encourage you to participate by joining in on our regular MAEC Community teleconference [working call](/working-call) meetings. 
+The current version of the Malware Attribute Enumeration and Characterization (MAEC™) Language is available on the [Current Release](/releases/5.0) page. In addition, the current MAEC schema, as well as example files, schematron rules, and related documentation, are available in the [MAEC Schemas in the MAECProject repository](https://github.com/MAECProject/schemas) on GitHub.com.
 
 #### <a name="b2"></a> B2. Is a specification available for the MAEC Language?
 
-Both PDF and Word versions of the current [MAEC Language Specifications](https://github.com/MAECProject/specifications) are available.
+See the [Specifications](http://maecproject.github.io/releases/5.0/#specifications) section on the [Current Release](/releases/5.0) page.
 
 #### <a name="b3"></a> B3. Where can I find examples of what I can capture and do with MAEC?
 
@@ -102,27 +98,23 @@ MAEC can be manipulated manually or programmatically. If using MAEC manually, su
 
 For programmatic development and use, some MAEC scripts and translator utilities are hosted in separate [MAECProject GitHub repositories](https://github.com/MAECProject/). In addition, a Python API for parsing, manipulating, and generating MAEC content is hosted in the [MAECProject Python-MAEC GitHub repository](https://github.com/MAECProject/python-maec). 
 
+Also see [MAEC Supporters](/community/supporters/) for a list of vendors that have implemented MAEC in their products or services. 
+
 #### <a name="b5"></a> B5. Is there a GUI of some sort that will help me select MAEC elements?
 A GUI is not available at this time, but such a tool could be available in the future.
 
 #### <a name="b6"></a> B6. Are there plans to support other forms of data interchange for MAEC (e.g., JSON, YAML, etc.)?
-Yes. Eventually, a formal MAEC implementation-independent specification will be produced, to include guidance for developing technology-specific implementations such as JavaScript Object Notation (JSON), Resource Description Framework (RDF)/Web Ontology Language (OWL), YAML Ain't Markup Language (YMAL), or other implementations. XML was used in the initial release to enable rapid development and implementation.
+[MAEC 5.0](/releases/5.0/) supports JavaScript Object Notation (JSON). See [http://maecproject.github.io/releases/5.0/#json-schemas](http://maecproject.github.io/releases/5.0/#json-schemas).
 
-Visit the [MAEC Version 5.0 Roadmap](/documentation/roadmap) for additional information.
+Support for Resource Description Framework (RDF)/Web Ontology Language (OWL), YAML Ain't Markup Language (YMAL), or other implementations may be added in the future. XML was used in the initial release to enable rapid development and implementation.
 
 #### <a name="b7"></a> B7. Where can I find examples of MAEC data? Are there any MAEC repositories?
-Visit the [Current Release](/releases/4.1) page for examples. 
+Visit the [Current Release](/releases/5.0) page for additional information. 
 
 At present, there are no public repositories of MAEC data, nor are there plans by MITRE to establish one. However, community members interested in hosting a MAEC data repository are strongly encouraged to do so. 
 
 #### <a name="b8"></a> B8. What is included in a MAEC release?
-A MAEC release includes individually-versioned MAEC schemas (i.e., Bundle, Package, and Container schemas) and the latest versions of the independently-versioned MAEC vocabulary schemas. 
-
-MAEC releases are packaged in two different ways: 
-<ol>
-<li>A zipped bundle to support local development, with local references and including copies of all imported or utilized schemas.</li>
-<li>A zipped bundle to support development with Internet access, with only remote references to imported schemas.</li>
-</ol> 
+Visit the [Current Release](/releases/5.0) page for details.
 
 ### <a name="c"></a> Using MAEC
 Some of the FAQs in this section are somewhat technical in nature. Please refer to the [MAEC Language Specifications](/documentation/specs/) for further information.
@@ -175,14 +167,14 @@ While there are no definite rules for what is most appropriately captured with M
 The [MAEC Community](/community) includes representatives from antivirus vendors, operating system vendors, software vendors, IT users, security services providers, and others from across the international cyber security community who have come together to help build this growing, open-source industry effort. 
 
 There are multiple options available for involvement including participating in the conversations
-on our [dedicated email discussion list](/community/#discussion-lists--archives), contributing to the [MediaWiki](https://collaborate.mitre.org/maec/index.php/Malware_Attribute_Enumeration_and_Characterization) on MITRE’s collaboration website, contributing to the development of [MAEC tools and utilities](/community/#tool--utility-development) on GitHub, and/or joining us on the [working calls to help develop MAEC Version 5.0](/community/#working-calls).
+on our [dedicated email discussion list](/community/#discussion-lists--archives), contributing to the [Encyclopedia of Malware Attributes](https://collaborate.mitre.org/ema/index.php/ema:Main_Page) on MITRE’s collaboration website, and/orcontributing to the development of [MAEC tools and utilities](/community/#tool--utility-development) on GitHub.
 
 Visit the [MAEC Community](/community) page to learn more or to [join](/community) the MAEC effort.
 
 #### <a name="e2"></a> E2. What is MITRE's role in MAEC? How long does MITRE plan to maintain it?
-The [MITRE Corporation (MITRE)](http://www.mitre.org/) manages and maintains the development of the MAEC Language, MAEC website, community engagement, and discussion lists to enable open and public collaboration with all stakeholders and provides neutral guidance throughout the process to ensure that MAEC serves the public interest.     
+The [MITRE Corporation (MITRE)](https://www.mitre.org/) manages and maintains the development of the MAEC Language, MAEC website, community engagement, and discussion lists to enable open and public collaboration with all stakeholders and provides neutral guidance throughout the process to ensure that MAEC serves the public interest.     
 
 In accordance with its mission, MITRE has traditionally acted in the public interest. Its unique role allows it to provide an objective perspective to this effort. MITRE will maintain MAEC as long as it serves the community to do so.
 
 #### <a name="e3"></a> E3. Who sponsors MAEC? What is the relationship between MAEC and DHS?
-MAEC is a DHS-led and sponsored effort of the office of [Cybersecurity and Communications](http://www.dhs.gov/office-cybersecurity-and-communications/) at the [U.S. Department of Homeland Security (DHS)](http://www.dhs.gov/). [MITRE](http://www.mitre.org/), operating as DHS's Federally Funded Research and Development Center (FFRDC), manages the development of the MAEC Language, this MAEC website, community engagement, and discussion lists to enable open and public collaboration with all stakeholders.
+MAEC is a DHS-led and sponsored effort of the office of [Cybersecurity and Communications](https://www.dhs.gov/office-cybersecurity-and-communications/) at the [U.S. Department of Homeland Security (DHS)](https://www.dhs.gov/). [MITRE](https://www.mitre.org/), operating as DHS's Federally Funded Research and Development Center (FFRDC), manages the development of the MAEC Language, this MAEC website, community engagement, and discussion lists to enable open and public collaboration with all stakeholders.
