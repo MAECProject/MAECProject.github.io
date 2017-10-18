@@ -7,9 +7,9 @@ Subscribe to our free *[MAEC Announce](mailto:maec@mitre.org)* e-newsletter to r
 
 ### Our latest news:
 
-## MAEC 5.0 Now Available!
+## "MAEC 5.0" Now Available!
 
-"[MAEC 5.0](/releases/5.0/)" is now available in the [Releases](/releases/5.0/) section of the MAEC website.
+[Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0](/releases/5.0/) is now available in the [Releases](/releases/5.0/) section of the MAEC website.
 
 MAEC 5.0 includes the following:     
 
