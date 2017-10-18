@@ -3,7 +3,7 @@ layout: flat
 title: About MAEC
 ---
 
-[Malware Attribute Enumeration and Characterization (MAEC™)](/releases/4.1) (pronounced “mike”) is a community-developed structured language for encoding and communicating high-fidelity information about malware based upon attributes such as behaviors, artifacts, and attack patterns.
+[Malware Attribute Enumeration and Characterization (MAEC™)](/releases/5.0) (pronounced “mike”) is a community-developed structured language for encoding and communicating high-fidelity information about malware based upon attributes such as behaviors, artifacts, and attack patterns.
 
 By eliminating the ambiguity and inaccuracy that currently exists in malware descriptions and by reducing reliance on signatures, MAEC aims to: 
 
@@ -28,11 +28,11 @@ Modern methods for detecting and combating malware often rely on the characteriz
 
 Typically, such behaviors and attributes are discovered through the use of static and dynamic analysis techniques. The combination of the two allows for an encompassing profile of malware to be constructed based upon its disassembled binary and observed run-time behavior. 
 
-Yet, the lack of an accepted standard for unambiguously characterizing malware before [MAEC](/releases/4.1) meant there was no clear method for communicating the specific malware attributes detected in malware by the analyses, nor for enumerating its fundamental makeup. The results were non-interoperable and disparate malware reporting between organizations, disjointed or inaccurate malware attribution, the duplication of malware analysis efforts, increased difficulty in determining the severity of a malware threat, and a greater period of time between malware infection and detection/response, among others.
+Yet, the lack of an accepted standard for unambiguously characterizing malware before [MAEC](/releases/5.0) meant there was no clear method for communicating the specific malware attributes detected in malware by the analyses, nor for enumerating its fundamental makeup. The results were non-interoperable and disparate malware reporting between organizations, disjointed or inaccurate malware attribution, the duplication of malware analysis efforts, increased difficulty in determining the severity of a malware threat, and a greater period of time between malware infection and detection/response, among others.
 
 ### Solution
 
-[MAEC](/releases/4.1) solves these problems. The characterization of malware using abstract patterns offers a wide range of benefits over the usage of physical signatures, and allows for the accurate encoding of how malware operates and the specific actions that it performs. Such information can not only be used for malware detection, but also for assessing the end-goal the malware is pursuing and the corresponding threat that it represents. 
+[MAEC](/releases/5.0) solves these problems. The characterization of malware using abstract patterns offers a wide range of benefits over the usage of physical signatures, and allows for the accurate encoding of how malware operates and the specific actions that it performs. Such information can not only be used for malware detection, but also for assessing the end-goal the malware is pursuing and the corresponding threat that it represents. 
 
 Focusing on the attributes and behaviors of malware facilitates detection and analysis of emerging, sophisticated malware threats that circumvent the traditional signature-based and heuristic approaches. Characterizing malware in a standard way supports collaboration across organizations and the identification of common behavior, functionality, and code bases across instances of malware. 
 
@@ -46,7 +46,7 @@ MAEC achieves this end result by utilizing three community-developed components 
 
 ## The MAEC Language
 
-The [MAEC Language](/releases/4.1) is comprised of the following: 
+The [MAEC Language](/releases/5.0) is comprised of the following: 
 
 * **MAEC Dictionaries** – a series of dictionaries for defining three distinct levels of malware elements—low-level actions, mid-level behaviors, and high-level mechanisms.
 
@@ -56,7 +56,7 @@ The [MAEC Language](/releases/4.1) is comprised of the following:
 
 The MAEC Language is extremely flexible. Aside from a unique identifier and specifying the MAEC schema version, all objects are optional in MAEC. Users are able to capture exactly what they want and nothing more.
 
-Learn about the [MAEC data models](/documentation/data_model_overview/), or go to the [current release](/releases/4.1) of the MAEC Language.
+Learn about the [MAEC Language](/documentation/overview/MAEC_Overview.pdf), or go to the [current release](/releases/5.0) of the MAEC Language.
 
 ## Benefits
 
