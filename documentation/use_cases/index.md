@@ -3,17 +3,17 @@ layout: flat
 title: MAEC Use Cases
 ---
 
-At its highest level, MAEC is a domain-specific language for non-signature based malware characterization.  Because MAEC provides a common vocabulary and grammar for the malware domain, it follows that the majority of the use cases for MAEC are motivated by the unambiguous and accurate communication of malware attributes enabled by MAEC.
+At its highest level, MAEC is a domain-specific language for non-signature based malware characterization.  Because MAEC provides a common vocabulary and grammar for the malware domain, it follows that most use cases for MAEC are motivated by the unambiguous and accurate communication of malware attributes enabled by MAEC.
 
 <div class="row">
   <div class="col-md-6">
     <div class="well">
       <h4>Malware Analysis</h4>
-      <p>Malware analysis-related use cases demonstrate how MAEC can be used to effectively capture the data obtained from malware analysis.  As we illustrate in the first use case, a malware instance is analyzed automatically or manually using either dynamic or static methods.  The results are then captured using the MAEC schema and either a single MAEC Package (with one or more MAEC Bundles) or one or more standalone MAEC Bundles.  </p>
+      <p>Malware analysis-related use cases demonstrate how MAEC can be used to effectively capture the data obtained from malware analysis. As we illustrate in the first use case, a malware instance is analyzed automatically or manually using either dynamic or static methods, the results are then captured in a MAEC Package.</p>
       <p>
         <a class="btn btn-primary" href="malware_analysis/static_dynamic_malware_analysis">Static and Dynamic Malware Analysis »</a>
       </p>
-      <p>MAEC Packages and MAEC Bundles can also be used to help with visualization, to capture data for storage in analysis-oriented repositories, and as a means for standardizing tool output.</p>
+      <p>MAEC can also be used to help with visualization, to capture data for storage in analysis-oriented repositories, and as a means for standardizing tool output.</p>
       <p>
         <a class="btn btn-primary" href="malware_analysis/malware_visualization">Malware Visualization »</a>
       </p>
@@ -22,13 +22,6 @@ At its highest level, MAEC is a domain-specific language for non-signature based
       </p>
       <p>
         <a class="btn btn-primary" href="malware_analysis/standardized_tool_output">Standardized Tool Output »</a>
-      </p>
-    </div>
-    <div class="well">
-      <h4>Intrusion Detection</h4>
-      <p>The intrusion detection use case demonstrates how MAEC can be used to characterize malware based on its attributes to provide actionable information for malware intrusion detection and assessment.</p>
-      <p>
-        <a class="btn btn-primary" href="intrusion_detection">Intrusion Detection »</a>
       </p>
     </div>
   </div>
@@ -45,7 +38,7 @@ At its highest level, MAEC is a domain-specific language for non-signature based
     </div>
     <div class="well">
       <h4>Incident Management</h4>
-      <p>Incident management-related use cases describe how a uniform malware reporting format, standardized malware repositories, and the ability to verify remediation procedures - all based on the MAEC data model - greatly enhance malware-related incident management efforts.</p>
+      <p>Incident management-related use cases describe how a uniform malware reporting format, standardized malware repositories, and the ability to verify remediation procedures&mdash;all based on the MAEC data model&mdash;greatly enhance malware-related incident management efforts.</p>
       <p>
         <a class="btn btn-primary" href="incident_management/uniform_malware_reporting_format">Uniform Malware Reporting Format »</a>
       </p>
