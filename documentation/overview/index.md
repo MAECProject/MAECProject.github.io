@@ -29,4 +29,4 @@ The example MAEC Package shown below captures results of static analysis perform
 
 More examples are given in the [MAEC Core Specification](/releases/5.0/MAEC_Core_Specification.pdf) and on the [Use Cases](/documentation/use_cases/) page.
 
- <img src="maec_example.png" alt="MAEC Example" class="text-align:center" height="900" width="600"/>
+ <img src="maec_example.png" alt="MAEC Example" class="text-align:center" height="1200" width="860"/>
