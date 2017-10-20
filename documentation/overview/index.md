@@ -28,5 +28,4 @@ See the full [MAEC Specification](/releases/5.0/#specifications) for more inform
 The example MAEC Package shown below captures results of static analysis performed with the PEiD tool on a malware instance. Even without a formal understanding of the MAEC data model, it should be clear that the information captured includes the entry point and subsystem defined in the PE headers of the file, as well as the version of the linker used in linking the code. 
 
 More examples are given in the [MAEC Core Specification](/releases/5.0/MAEC_Core_Specification.pdf) and on the [Use Cases](/documentation/use_cases/) page.
-
  <img src="maec_example.png" alt="MAEC Example" class="text-align:center" height="1200" width="860"/>
