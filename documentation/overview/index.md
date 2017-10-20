@@ -17,7 +17,7 @@ The goal of [Malware Attribute Enumeration and Characterization (MAEC™)](/rele
 
 As shown in the diagram, MAEC defines several top-level objects: Behaviors, Malware Actions, Malware Families, Malware Instances, and Collections. Relationships between objects (including [Structured Threat Information Expression (STIX™](https://oasis-open.github.io/cti-documentation/)) cyber observable objects) are depicted by directed edges in the diagram: embedded relationships (those that are specified directly on a top-level object as an object property) are labeled in black font (labels correspond to the property names), and direct relationships are labeled using a blue background (labels correspond to literal values for the relationship type).  
 
-<img src="maec_top_level_objects.png" alt="MAEC Top Level Objects" class="text-align:center" height="495" width="550"/>
+<img src="maec_top_level_objects.png" alt="MAEC Top Level Objects" class="text-align:center" height="495" width="750"/>
 
 See the full [MAEC Specification](/releases/5.0/#specifications) for more information about top-level objects and direct and embedded relationships. 
 
