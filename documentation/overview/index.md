@@ -21,7 +21,7 @@ As shown in the diagram, MAEC defines several top-level objects: Behaviors, Malw
 
 See the [MAEC Core Specification](/releases/5.0/MAEC_Core_Specification.pdf) for detailed information about top-level objects and direct and embedded relationships.
       
- ## Example
+## Example
 
 The example MAEC Package shown below captures results of static analysis performed with the PEiD tool on a malware instance. 
 
