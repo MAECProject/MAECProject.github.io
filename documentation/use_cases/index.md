@@ -40,6 +40,9 @@ At its highest level, MAEC is a domain-specific language for non-signature based
       <h4>Incident Management</h4>
       <p>Incident management-related use cases describe how a uniform malware reporting format, standardized malware repositories, and the ability to verify remediation procedures&mdash;all based on the MAEC data model&mdash;greatly enhance malware-related incident management efforts.</p>
       <p>
+        <a class="btn btn-primary" href="incident_management/malware_provenance">Malware Provenance »</a>
+      </p>
+      <p>
         <a class="btn btn-primary" href="incident_management/uniform_malware_reporting_format">Uniform Malware Reporting Format »</a>
       </p>
       <p>
