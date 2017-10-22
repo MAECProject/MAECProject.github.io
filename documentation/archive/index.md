@@ -33,7 +33,7 @@ title: Documentation Archive
       <a class="btn btn-primary" href="common_features">Go »</a>
     </div>
 	<div class="well">
-      <h4><a href="characterize_malware/Characterizing_Malware_MAEC_and_STIX_v1.0.pdf">Characterizing Malware with MAEC and STIX</a></h4>
+      <h4><a href="characterize_malware/Characterizing_Malware_MAEC_and_STIX_v1.0.pdf">Characterizing Malware with MAEC Version 4.1 and STIX</a></h4>
       <p>This document describes the use of the Malware Attribute Enumeration and Characterization (MAEC™) and Structured Threat Information eXpression (STIX™) languages in the context of malware characterization and malware metadata exchange. By describing the relationships between the languages and by providing details on each language's ability to capture malware-related information, this document answers the "When should I use MAEC Version 4.1, when should I use STIX, and when should I use both?" questions.</p>
       <a class="btn btn-primary" href="characterize_malware/Characterizing_Malware_MAEC_and_STIX_v1.0.pdf">Go »</a>
     </div>
