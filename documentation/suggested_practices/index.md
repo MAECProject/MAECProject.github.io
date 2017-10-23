@@ -1,6 +1,6 @@
 ---
 layout: flat
-title: Suggested Practices
+title: Suggested Practices for MAEC Version 4.1
 ---
 
 This page contains suggested practices (sometimes called best practices) for producing and consuming MAEC content. Following these practices will ensure the best conformance with the design goals of MAEC and the best compatibility with other MAEC tools. These are not requirements, however: in some cases, technical or business requirements will mean you can't comply with them and that's fine. Think of them as "do it this way unless you have a good reason not to."
