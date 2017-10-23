@@ -1,6 +1,6 @@
 ---
 layout: flat
-title: Common Features
+title: Common Features for MAEC Version 4.1
 ---
 
 This page contains an alphabetized list of commonly characterized features - whether statically, dynamically, or manually identified in malware - along with their mappings to MAEC/<a href="https://cyboxproject.github.io/">Cyber Observable eXpression (CybOX™)</a> object elements, the associated MAEC/CybOX types, the typical MAEC schema locations of the object elements (specified via a quasi-XPath like expression), and an explicit XML representation example. Note that all object elements are characterized through their Properties field, and that only the most commonly used object elements are listed for each feature (please refer to the applicable schemas for the complete lists).
