@@ -16,7 +16,7 @@ By eliminating the ambiguity and inaccuracy that currently exists in malware des
 
 Malicious software—also called "malware"—is responsible for a variety of malicious activities, ranging from spam email distribution via botnets to the theft of sensitive information via targeted social engineering attacks. Effectively an autonomous agent operating on behalf of an attacker, malware can perform any action that can be expressed in code, and consequently, poses a significant threat to cybersecurity..
 
-Therefore, the protection of computer systems from malware is a primary cuybersecurity concern for organizations and individuals, as even a single instance of uncaught malware can result in damaged systems and compromised data. 
+Therefore, the protection of computer systems from malware is a primary cybersecurity concern for organizations and individuals, as even a single instance of uncaught malware can result in damaged systems and compromised data. 
 
 To date, the majority of anti-malware efforts focus on early detection, where the most common methods are based on physical signatures and heuristics. While often effective, such methods have significant drawbacks. For example, signatures are unsuitable for dealing with zero-day, targeted, polymorphic, and other forms of emerging malware. Similarly, heuristic detection may generically detect certain types of malware, but it will miss those for which it does not have a pattern, such as kernel-level rootkits. Therefore, these methods cannot be exclusively relied upon to deal with the current influx of malware.
 
@@ -38,7 +38,7 @@ Focusing on the attributes and behaviors of malware facilitates detection and an
 
 ## The MAEC Language
 
-[MAEC](/releases/5.0) is defined by [two specification documents](http://maecproject.github.io/releases/5.0/#specifications). The core concepts document introduces MAEC, provides high-level use cases, and defines MAEC data types and top-level objects. The vocabularies document provides explicit values for each of the open vocabularies referenced in the core concepts document. In addition, non-normative [JSON schemas and examples](http://maecproject.github.io/releases/5.0/#json-schemas) are available on the [MAEC Project GitHub repository](https://github.com/MAECProject/schemas).
+The MAEC Language is defined by [two specification documents](http://maecproject.github.io/releases/5.0/#specifications). The core concepts document introduces MAEC, provides high-level use cases, and defines MAEC data types and top-level objects. The vocabularies document provides explicit values for each of the open vocabularies referenced in the core concepts document. In addition, non-normative [JSON schemas and examples](http://maecproject.github.io/releases/5.0/#json-schemas) are available on the [MAEC Project GitHub repository](https://github.com/MAECProject/schemas).
 
 The MAEC schema was developed to enable analysts to capture a full gamut of information about malware. However, a MAEC Package is valid with minimal information. It is only necessary to define four properties: the type (“package”), a unique identifier, the MAEC schema version, and one MAEC Object. All other properties are optional.
 
