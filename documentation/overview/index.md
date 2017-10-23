@@ -3,7 +3,7 @@ layout: flat
 title: MAEC Overview
 ---
 
-The goal of [Malware Attribute Enumeration and Characterization (MAEC™)](/releases/5.0), pronounced “mike,” is to provide a basis for transforming malware research and response. MAEC aims to eliminate the ambiguity and inaccuracy that currently exists in malware descriptions and to reduce reliance on signatures. In this way, MAEC seeks to transform malware research and response by improving communication, reducing potential duplication of malware analysis efforts, and allowing for faster development of countermeasures by enabling the ability to leverage responses to previously observed malware instances.
+The goal of [Malware Attribute Enumeration and Characterization (MAEC™)](/releases/5.0), pronounced “mike,” is to provide a basis for transforming malware research and response. By eliminating the ambiguity and inaccuracy that currently exists in malware descriptions and reducing reliance on signatures, MAEC aims to transform malware research and response by improving communication, reducing potential duplication of malware analysis efforts, and allowing for faster development of countermeasures by enabling the ability to leverage responses to previously observed malware instances.
 
 ## The MAEC Language
 
