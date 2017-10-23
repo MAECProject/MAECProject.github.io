@@ -35,23 +35,23 @@ This format provides high assurance that IDs will be both unique and meaningful,
 
 MAEC has a number of constructs that REQUIRE the assignment of IDs in order to be schema-valid:
 
-* [Package](/data-model/{{site.current_version}}/maecPackage/PackageType)
-* [Malware Subject](/data-model/{{site.current_version}}/maecPackage/MalwareSubjectType)
-* [Analysis](/data-model/{{site.current_version}}/maecPackage/AnalysisType)
-* [Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType)
-* [Capability](/data-model/{{site.current_version}}/maecBundle/CapabilityType)
-* [Process Tree Node](/data-model/{{site.current_version}}/maecBundle/ProcessTreeNodeType)
-* [Behavior](/data-model/{{site.current_version}}/maecBundle/BehaviorType)
-* [Candidate Indicator](/data-model/{{site.current_version}}/maecBundle/CandidateIndicatorType)
-* [Behavior Collection](/data-model/{{site.current_version}}/maecBundle/BehaviorCollectionType)
-* [Action Collection](/data-model/{{site.current_version}}/maecBundle/ActionCollectionType)
-* [Object Collection](/data-model/{{site.current_version}}/maecBundle/ObjectCollectionType)
-* [Candidate Indicator Collection](/data-model/{{site.current_version}}/maecBundle/CandidateIndicatorCollectionType)
+* [Package](/documentation/data-model/{{site.current_version}}/maecPackage/PackageType)
+* [Malware Subject](/documentation/data-model/{{site.current_version}}/maecPackage/MalwareSubjectType)
+* [Analysis](/documentation/data-model/{{site.current_version}}/maecPackage/AnalysisType)
+* [Bundle](/documentation/data-model/{{site.current_version}}/maecBundle/BundleType)
+* [Capability](/documentation/data-model/{{site.current_version}}/maecBundle/CapabilityType)
+* [Process Tree Node](/documentation/data-model/{{site.current_version}}/maecBundle/ProcessTreeNodeType)
+* [Behavior](/documentation/data-model/{{site.current_version}}/maecBundle/BehaviorType)
+* [Candidate Indicator](/documentation/data-model/{{site.current_version}}/maecBundle/CandidateIndicatorType)
+* [Behavior Collection](/documentation/data-model/{{site.current_version}}/maecBundle/BehaviorCollectionType)
+* [Action Collection](/documentation/data-model/{{site.current_version}}/maecBundle/ActionCollectionType)
+* [Object Collection](/documentation/data-model/{{site.current_version}}/maecBundle/ObjectCollectionType)
+* [Candidate Indicator Collection](/documentation/data-model/{{site.current_version}}/maecBundle/CandidateIndicatorCollectionType)
 
 Accordingly, MAEC extends or makes direct use of a number of [Cyber Observable eXpression (CybOX™)](https://cyboxproject.github.io/) entities. In these entities, the assignment of IDs is not required as in MAEC; however, we highly recommend assigning IDs for these constructs, for consistency with the MAEC-defined constructs and also potential re-use and referencing:
 
-* [Malware Action](/data-model/{{site.current_version}}/maecBundle/MalwareActionType)
-* [CybOX Object](/data-model/{{site.current_version}}/cybox/ObjectType)
+* [Malware Action](/documentation/data-model/{{site.current_version}}/maecBundle/MalwareActionType)
+* [CybOX Object](/documentation/data-model/{{site.current_version}}/cybox/ObjectType)
 
 ### Recommended Properties
 
@@ -70,7 +70,7 @@ Objects used in MAEC can be represented as embedded Objects (defined and nested 
 
 ### Tool References
 
-Typically, tool information should be defined inline within an Analysis using the Tool field (of [ToolInformationType](/data-model/{{site.current_version}}/cyboxCommon/ToolInformationType) defined in the CybOX Common data model).  For tools that are used in more than one analysis, there are two options: their definitions may be repeated in each Analysis field, or they may be defined once in one Analysis and then referenced in other Analyses by their ID.  We recommend the second approach to reduce duplication of data in a MAEC document.
+Typically, tool information should be defined inline within an Analysis using the Tool field (of [ToolInformationType](/documentation/data-model/{{site.current_version}}/cyboxCommon/ToolInformationType) defined in the CybOX Common data model).  For tools that are used in more than one analysis, there are two options: their definitions may be repeated in each Analysis field, or they may be defined once in one Analysis and then referenced in other Analyses by their ID.  We recommend the second approach to reduce duplication of data in a MAEC document.
 
 If an Analysis involves a single tool, then the implicit assumption is that the tool specified in the Analysis is responsible for all the findings in the Bundle that it references. However, if multiple tools are defined for an Analysis, then each Action and Object associated with the Analysis should reference its relevant tool (already defined in an Analysis element) via its CybOX Discovery_Method field.  Note that a tool cannot be defined inline within an Action or Object.
 
@@ -80,9 +80,9 @@ MAEC defines its own set of default vocabularies for certain entities, and these
 
 ### Collections
 
-[Collections](/data-model/{{site.current_version}}/maecBundle/CollectionsType) in a [MAEC Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType) can be used to organize groups of MAEC-defined entities around some particular context. For example, if multiple [Actions](/data-model/{{site.current_version}}/maecBundle/MalwareActionType) are captured in a Bundle, the Bundle [Action_Collections](/data-model/{{site.current_version}}/maecBundle/ActionCollectionListType) field could be used to group the Actions according to their type (e.g., “File Actions”). Similarly, if numerous [Objects](/data-model/{{site.current_version}}/cybox/ObjectType) are captured in a Bundle, the Bundle [Object_Collections](/data-model/{{site.current_version}}/maecBundle/ObjectCollectionListType) field can be used to group the Objects according to type.  
+[Collections](/documentation/data-model/{{site.current_version}}/maecBundle/CollectionsType) in a [MAEC Bundle](/documentation/data-model/{{site.current_version}}/maecBundle/BundleType) can be used to organize groups of MAEC-defined entities around some particular context. For example, if multiple [Actions](/documentation/data-model/{{site.current_version}}/maecBundle/MalwareActionType) are captured in a Bundle, the Bundle [Action_Collections](/documentation/data-model/{{site.current_version}}/maecBundle/ActionCollectionListType) field could be used to group the Actions according to their type (e.g., “File Actions”). Similarly, if numerous [Objects](/documentation/data-model/{{site.current_version}}/cybox/ObjectType) are captured in a Bundle, the Bundle [Object_Collections](/documentation/data-model/{{site.current_version}}/maecBundle/ObjectCollectionListType) field can be used to group the Objects according to type.  
 
 ### Extracted Features
-Features extracted from binaries should be captured in an Object created within a [MAEC Bundle](/data-model/{{site.current_version}}/maecBundle/BundleType).  For example, to capture the output of a packer detection tool (e.g., PEiD), one could create a Bundle with a single [CybOX Object](/data-model/{{site.current_version}}/cybox/ObjectType) inside of the Bundle's [Objects](/data-model/{{site.current_version}}/maecBundle/ObjectListType) field that uses the [Cybox File Object](/data-model/{{site.current_version}}/FileObj/FileObjectType) in its Properties extension field (by setting the *xsi:type* attribute) to capture the packer information. 
+Features extracted from binaries should be captured in an Object created within a [MAEC Bundle](/documentation/data-model/{{site.current_version}}/maecBundle/BundleType).  For example, to capture the output of a packer detection tool (e.g., PEiD), one could create a Bundle with a single [CybOX Object](/documentation/data-model/{{site.current_version}}/cybox/ObjectType) inside of the Bundle's [Objects](/documentation/data-model/{{site.current_version}}/maecBundle/ObjectListType) field that uses the [Cybox File Object](/documentation/data-model/{{site.current_version}}/FileObj/FileObjectType) in its Properties extension field (by setting the *xsi:type* attribute) to capture the packer information. 
 
-Note that when using this method, a separate [CybOX Object](/data-model/{{site.current_version}}/cybox/ObjectType) is created, which should not be mistakenly identified as a newly found file: it merely captures extracted features from the file already defined inside the Malware Instance Object Attributes field. To make this explicit, the content_type attribute of the Bundle that contains this Object should be set to `extracted from subject`.
+Note that when using this method, a separate [CybOX Object](/documentation/data-model/{{site.current_version}}/cybox/ObjectType) is created, which should not be mistakenly identified as a newly found file: it merely captures extracted features from the file already defined inside the Malware Instance Object Attributes field. To make this explicit, the content_type attribute of the Bundle that contains this Object should be set to `extracted from subject`.
