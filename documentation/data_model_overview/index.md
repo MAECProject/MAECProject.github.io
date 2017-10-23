@@ -1,11 +1,11 @@
 ---
 layout: flat
-title: Overview of the MAEC Data Models
+title: Overview of the MAEC Data Models for MAEC Version 4.1
 ---
 
 <table class="table-no-border">
 <tr>
-<td colspan="2">The MAEC Language is defined by three data models, each of which is implemented in its own XML schema.  There is also a default vocabularies schema, which defines a default set of controlled vocabularies used within MAEC.
+<td colspan="2">Version 4.1 of the MAEC Language is defined by three data models, each of which is implemented in its own XML schema.  There is also a default vocabularies schema, which defines a default set of controlled vocabularies used within MAEC.
 </td>
 </tr>
 <tr>
