@@ -6,9 +6,9 @@ title: Documentation
 <div class="row">
   <div class="col-md-6">
   	<div class="well">
-      <h4><a href="/documentation/overview">MAEC Overview</a></h4>
+      <h4><a href="/documentation/overview/">MAEC Overview</a></h4>
       <p>This document provides a brief introduction to Version 5.0 of the Malware Attribute Enumeration and Characterization (MAEC™) Language, an overview of the MAEC data models, a discussion of top-level objects, and an example MAEC Package.</p>
-      <a class="btn btn-primary" href="/documentation/overview">Go »</a>
+      <a class="btn btn-primary" href="/documentation/overview/">Go »</a>
     </div>
      <div class="well">
       <h4><a href="/releases/5.0/#specifications">Specifications</a></h4>
