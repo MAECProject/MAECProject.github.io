@@ -7,7 +7,7 @@ title: Documentation
   <div class="col-md-6">
   	<div class="well">
       <h4><a href="/documentation/overview">MAEC Overview</a></h4>
-      <p>This document provides an introduction to the Malware Attribute Enumeration and Characterization (MAEC™) Language, an overview of the MAEC data models, a discussion of top-level objects, and an example MAEC Package.</p>
+      <p>This document provides an introduction to Version 5.0 of the Malware Attribute Enumeration and Characterization (MAEC™) Language, an overview of the MAEC data models, a discussion of top-level objects, and an example MAEC Package.</p>
       <a class="btn btn-primary" href="/documentation/overview">Go »</a>
     </div>
      <div class="well">
@@ -22,19 +22,19 @@ title: Documentation
       Idioms are included as an Appendix in the MAEC Version 5.0 “Core” Specification.</p>
       <a class="btn btn-primary" href="/releases/5.0/MAEC_Core_Specification.pdf">Go »</a>
     </div>
-     <div class="col-md-6">
-    <div class="well">
+  </div>
+  <div class="col-md-6">
+  <div class="well">
       <h4><a href="use_cases">Use Cases</a></h4>
       <p>MAEC use cases illustrate how MAEC can be used in cybersecurity. High-level use cases are provided in three general areas:  malware analysis, cyber threat analysis, and incident management.</p>
       <a class="btn btn-primary" href="use_cases">Go »</a>
     </div>
-  </div>
-	<div class="well">
+      <div class="well">
       <h4><a href="utils">Utilities and Developer Resources</a></h4>
       <p>Various utilities and other developer resources have been developed for working with MAEC. The collection includes translators as well as bindings and APIs.</p>
       <a class="btn btn-primary" href="utils">Go »</a>
     </div>
-	<div class="well">
+      <div class="well">
       <h4><a href="faqs">FAQs</a></h4>
       <p>We provide answers to frequently asked questions.</p>
       <a class="btn btn-primary" href="faqs">Go »</a>
