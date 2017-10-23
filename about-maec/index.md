@@ -38,7 +38,7 @@ Focusing on the attributes and behaviors of malware facilitates detection and an
 
 ## The MAEC Language
 
-The MAEC Language is defined by [two specification documents](http://maecproject.github.io/releases/5.0/#specifications). The core concepts document introduces MAEC, provides high-level use cases, and defines MAEC data types and top-level objects. The vocabularies document provides explicit values for each of the open vocabularies referenced in the core concepts document. In addition, non-normative [JSON schemas and examples](http://maecproject.github.io/releases/5.0/#json-schemas) are available on the [MAEC Project GitHub repository](https://github.com/MAECProject/schemas).
+The MAEC Language is defined by [two specification documents](http://maecproject.github.io/releases/5.0/#specifications). The [core concepts](http://maecproject.github.io/releases/5.0/#specifications) document introduces MAEC, provides high-level use cases, and defines MAEC data types and top-level objects. The [vocabularies](http://maecproject.github.io/releases/5.0/#specifications) document provides explicit values for each of the open vocabularies referenced in the core concepts document. In addition, non-normative [JSON schemas and examples](http://maecproject.github.io/releases/5.0/#json-schemas) are also available.
 
 The MAEC schema was developed to enable analysts to capture a full gamut of information about malware. However, a MAEC Package is valid with minimal information. It is only necessary to define four properties: the type (“package”), a unique identifier, the MAEC schema version, and one MAEC Object. All other properties are optional.
 
