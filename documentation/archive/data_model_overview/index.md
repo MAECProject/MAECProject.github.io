@@ -13,7 +13,7 @@ title: Overview of the MAEC Data Models for MAEC Version 4.1
 As illustrated, “MAEC Bundle” is the (lowest) Tier 1 data model; “MAEC Package” is the (middle) Tier 2 data model; and “MAEC Container” is the (highest) Tier 3 data model.  All three data models offer a stand-alone output format, so a lower level model can be used without the higher tier data model (although each model level requires all lower tiers).  This three-tiered structure provides flexibility in the type and amount of information that can be shared.
 </td>
 <td width="50%">
-<img src="datamodels.png" alt="MAEC data models" height="237" width="350"/>
+<img src="/documentation/data_model_overview/datamodels.png" alt="MAEC data models" height="237" width="350"/>
 </td>
 </tr>
 </table> 
