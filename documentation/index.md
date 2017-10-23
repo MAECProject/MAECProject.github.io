@@ -18,7 +18,7 @@ title: Documentation
     <div class="well">
       <h4><a href="/releases/5.0/MAEC_Core_Specification.pdf">Idioms</a></h4>
       <p>MAEC idioms describe how common patterns in malware analysis (for instance, capturing dynamic analysis results) are represented in MAEC. They're similar to programming language idioms in that they document common patterns for representing content in MAEC.
-      <br>
+      <br><br>
       Idioms are included as an Appendix in the MAEC Version 5.0 “Core” Specification.</p>
       <a class="btn btn-primary" href="/releases/5.0/MAEC_Core_Specification.pdf">Go »</a>
     </div>
