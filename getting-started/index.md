@@ -6,9 +6,9 @@ title: Getting Started
 <div class="row">
 <div class="col-md-10">
     <div class="well">
-      <h4><a href="http://maecproject.github.io/documentation/overview/MAEC_Overview.pdf" target="_blank">MAEC Overview</a></h4>
+      <h4><a href="/documentation/overview" target="_blank">MAEC Overview</a></h4>
       <p>Provides an introduction to Version 5.0 of the Malware Attribute Enumeration and Characterization (MAEC™) Language, an overview of the MAEC data models, a discussion of top-level objects, and a MAEC Package example.</p>
-      <a class="btn btn-primary" href="documentation/overview/">Go »</a>
+      <a class="btn btn-primary" href="/documentation/overview">Go »</a>
     </div>
     <div class="well">
       <h4><a href="/releases/5.0/MAEC_Core_Specification.pdf">MAEC Core Specification, Version 5.0</a></h4>
