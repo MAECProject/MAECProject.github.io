@@ -1,6 +1,6 @@
 ---
 layout: flat
-title: Overview of the MAEC Container Data Model
+title: Overview of the MAEC Container Data Model for MAEC Version 4.1
 ---
 
 The MAEC Container data model enables a user to share any collection of MAEC characterized data.  Currently, the data model simply enables a user to share a collection of <a href="/documentation/data_model_overview/package/">MAEC Packages</a>.  The data model will be expanded and further defined to include other components as dictated by future needs.
