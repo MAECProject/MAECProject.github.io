@@ -12,7 +12,7 @@ title: Getting Started
     </div>
     <div class="well">
       <h4><a href="/releases/5.0/MAEC_Core_Specification.pdf">MAEC Core Specification, Version 5.0</a></h4>
-      <p>Provides an overview of the MAEC Language and four high-level use cases. Also provides detailed discussion of Common Data Types, MAEC-Specific Data Types, MAEC Top-Level Objects, MAEC Relationships, and the standard MAEC Package output format. 
+      <p>Provides an introduction to the MAEC Language and discusses three high-level use cases. Also provides detailed discussion of Common Data Types, MAEC-Specific Data Types, MAEC Top-Level Objects, MAEC Relationships, and the standard MAEC Package output format. 
       <br><br>
       MAEC Idioms, including Static Analysis Capture, Dynamic Analysis Capture, and In-depth Analysis Capture, are discussed in the appendix.</p>
       <a class="btn btn-primary" href="/releases/5.0/MAEC_Core_Specification.pdf">Go »</a>
