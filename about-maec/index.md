@@ -14,7 +14,7 @@ By eliminating the ambiguity and inaccuracy that currently exists in malware des
 
 ## Malware
 
-Malicious software—also called "malware"—is responsible for a variety of malicious activities, ranging from spam email distribution via botnets to the theft of sensitive information via targeted social engineering attacks. Effectively an autonomous agent operating on behalf of an attacker, malware can perform any action that can be expressed in code, and consequently, poses a significant threat to cybersecurity..
+Malicious software—also called "malware"—is responsible for a variety of malicious activities, ranging from spam email distribution via botnets to the theft of sensitive information via targeted social engineering attacks. Effectively an autonomous agent operating on behalf of an attacker, malware can perform any action that can be expressed in code, and consequently, poses a significant threat to cybersecurity.
 
 Therefore, the protection of computer systems from malware is a primary cybersecurity concern for organizations and individuals, as even a single instance of uncaught malware can result in damaged systems and compromised data. 
 
