@@ -124,7 +124,7 @@ MAEC cannot be directly customized, but because a MAEC Package can include relev
 
 In addition, the MAEC development team encourages the community to engage in the ongoing discussion so that new properties can be defined and integrated into future versions of MAEC as necessary. Please consider participating in the [MAEC Community](/community) to help with the development of MAEC. 
 
-#### <a name="c5"></a> C4. Can the same information be captured in multiple places in MAEC?
+#### <a name="c4"></a> C4. Can the same information be captured in multiple places in MAEC?
 In earlier versions of MAEC, it was possible to express the same concept in multiple ways, but rather than being a feature, the flexibility led to confusion. [MAEC 5.0](/releases/5.0/) recognizes the need for flexibility, but also recognizes the importance of simplicity, standardization, and reduced optionality. Therefore, MAEC 5.0 aims to capture malware analysis content in unique ways. 
 
 ### <a name="d"></a> Relationships to Other Efforts
