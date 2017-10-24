@@ -120,7 +120,7 @@ The MAEC schema was developed to enable analysts to capture a full gamut of info
 Many properties are optional in MAEC to make the language as flexible as possible, enabling users to capture exactly what they want and nothing more.
 
 #### <a name="c3"></a> C3. What if I need to define something that isn't part of the MAEC schema?
-MAEC cannot be directly customized, but because a MAEC Package can include relevant STIX Observable Objects, custom STIX Properties and Objects can be used to capture some content that is not defined in MAEC. 
+MAEC cannot be directly customized, but because a MAEC Package can include relevant [Structured Threat Information Expression (STIX™)](https://oasis-open.github.io/cti-documentation/) Observable Objects, custom STIX Properties and Objects can be used to capture some content that is not defined in MAEC. 
 
 In addition, the MAEC development team encourages the community to engage in the ongoing discussion so that new properties can be defined and integrated into future versions of MAEC as necessary. Please consider participating in the [MAEC Community](/community) to help with the development of MAEC. 
 
