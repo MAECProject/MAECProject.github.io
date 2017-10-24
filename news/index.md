@@ -7,6 +7,12 @@ Subscribe to our free *[MAEC Announce](mailto:maec@mitre.org)* e-newsletter to r
 
 ### Our latest news:
 
+## MAEC Website Updated for MAEC Version 5.0
+
+The MAEC website has been fully updated for [MAEC Version 5.0](/releases/5.0/), with new or revised content in the [Getting Started](http://maecproject.github.io/getting-started/), [Releases](http://maecproject.github.io/releases/5.0/), [Documentation](http://maecproject.github.io/documentation/), and [About MAEC](http://maecproject.github.io/about-maec/) sections. 
+
+Please check out the updated sections and let us know what you think on the [MAEC Community Email Discussion List](/community/#discussion-lists--archives), or directly to [maec@mitre.org](mailto:maec@mitre.org).
+
 ## "MAEC 5.0" Now Available!
 
 [Malware Attribute Enumeration and Characterization (MAEC™) Version 5.0](/releases/5.0/) is now available in the [Releases](/releases/5.0/) section of the MAEC website.
