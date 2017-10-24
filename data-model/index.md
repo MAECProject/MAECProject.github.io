@@ -1,6 +1,6 @@
 ---
 layout: flat
-title: Data Model Documentation
+title: Data Model Documentation for MAEC Version 4.1
 ---
 
 <link href="/css/data_model.css" rel="stylesheet"/>
