@@ -23,19 +23,19 @@ As illustrated, “MAEC Bundle” is the (lowest) Tier 1 data model; “MAEC Pac
 <div class="row">
   <div class="col-md-6">
     <div class="well">
-      <h4>MAEC Bundle Data Model</h4>
+      <h4>MAEC Bundle Data Model for MAEC Version 4.1</h4>
       <p>The MAEC Bundle data model provides the ability to capture and share data obtained from the analysis of a single malware instance.  </p>
 	  <a class="btn btn-primary" href="/documentation/data_model_overview/bundle">MAEC Bundle »</a>
     </div>
   	<div class="well">
-      <h4>MAEC Package Data Model</h4>
+      <h4>MAEC Package Data Model for MAEC Version 4.1</h4>
       <p>The MAEC Package data model enables a user to share MAEC characterized data for one or more Malware Subjects.</p>
       <a class="btn btn-primary" href="/documentation/data_model_overview/package">MAEC Package »</a>
     </div>
   </div>
   <div class="col-md-6">
   	<div class="well">
-      <h4>MAEC Container Data Model</h4>
+      <h4>MAEC Container Data Model for MAEC Version 4.1</h4>
       <p>The MAEC Container data model enables a user to share any collection of MAEC characterized data.</p>
 	  <a class="btn btn-primary" href="/documentation/data_model_overview/container">MAEC Container »</a>
     </div>
