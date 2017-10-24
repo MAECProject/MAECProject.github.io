@@ -7,7 +7,7 @@ title: Specifications
     <div class="col-md-10">
     <div class="well">
       <h4><a href="/releases/5.0/MAEC_Core_Specification.pdf">MAEC Core Specification, Version 5.0</a></h4>
-      <p>Provides an overview of the MAEC Language and four high-level use cases. Also provides detailed discussion of Common Data Types, MAEC-Specific Data Types, Cyber Observable Object Extensions, MAEC Top-Level Objects, and the standard MAEC Package output format. MAEC Idioms, including Static Analysis Capture, Dynamic Analysis Capture, and In-depth Analysis Capture, are discussed in the appendix. October 9, 2017.</p>
+      <p>Provides an introduction to the MAEC Language and discusses three high-level use cases. Also provides detailed discussion of Common Data Types, MAEC-Specific Data Types, Cyber Observable Object Extensions, MAEC Top-Level Objects, and the standard MAEC Package output format. MAEC Idioms, including Static Analysis Capture, Dynamic Analysis Capture, and In-depth Analysis Capture, are discussed in the appendix. October 9, 2017.</p>
       <a class="btn btn-primary" href="/releases/5.0/MAEC_Core_Specification.pdf">Go »</a>
     </div>
     <div class="well">
