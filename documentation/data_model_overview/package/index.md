@@ -1,6 +1,6 @@
 ---
 layout: flat
-title: Overview of the MAEC Package Data Model
+title: Overview of the MAEC Package Data Model for MAEC Version 4.1
 ---
 
 Before we discuss the MAEC Package data model, we must define the Malware Subject entity.  A Malware Subject contains details of a particular malware instance (e.g., a file as identified by MD5 and/or SHA1 hash), any minor variants of the same instance that may have been observed (e.g., the same file but with different names), along with all of the analyses that were performed on the instance, any findings generated from the analyses, and any other metadata.  As such, the Malware Subject is MAEC’s representation of a malware instance and all of the known data associated with it.
