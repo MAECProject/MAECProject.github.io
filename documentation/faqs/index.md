@@ -21,7 +21,7 @@ title: Frequently Asked Questions (FAQs)
 <li><a href="#b3">B3. Where can I find examples of what I can capture and do with MAEC?</a></li>
 <li><a href="#b4">B4. What tools or utilities are available to help me use or develop MAEC content?</a></li>
 <li><a href="#b5">B5. Is there a GUI of some sort that will help me select MAEC elements?</a></li>
-<li><a href="#b6">B6. Are there plans to support other forms of data interchange for MAEC (e.g., JSON, YAML, etc.)?</a></li>
+<li><a href="#b6">B6. Are there plans to support other forms of data interchange for MAEC (e.g., YAML, etc.)?</a></li>
 <li><a href="#b7">B7. Where can I find examples of MAEC data? Are there any MAEC repositories?</a></li>
 <li><a href="#b8">B8. What is included in a MAEC release?</a></li>
 </ul>
@@ -30,19 +30,15 @@ title: Frequently Asked Questions (FAQs)
 <ul style="font-weight:normal; font-size:100%; list-style:none">
 <li><a href="#c1">C1. MAEC seems complicated – is it too expansive for my use?</a></li>
 <li><a href="#c2">C2. Why are so many things optional in MAEC?</a></li>
-<li><a href="#c3">C3. How does the xsi:type extension mechanism work?</a></li>
-<li><a href="#c4">C4. What if I need to define something that isn&#39;t part of the 
-MAEC schema?</a></li>
-<li><a href="#c5">C5. Can the same information be captured in multiple places in 
-MAEC?</a></li>
+<li><a href="#c3">C3. What if I need to define something that isn&#39;t part of the MAEC schema?</a></li>
+<li><a href="#c4">C4. Can the same information be captured in multiple places in MAEC?</a></li>
 </ul>
 
 ### <a href="#d">Relationships to Other Efforts</a>
 <ul style="font-weight:normal; font-size:100%;list-style:none">
-<li><a href="#d1">D1. What is the relationship between MAEC and CybOX?</a></li>
-<li><a href="#d2">D2. What is the relationship between MAEC and STIX?</a></li>
-<li><a href="#d3">D3. When would STIX be used to capture malware information and when would MAEC be used?</a></li>
-<li><a href="#d4">D4. What is the relationship between MAEC and TAXII?</a></li>
+<li><a href="#d1">D1. What is the relationship between MAEC and STIX?</a></li>
+<li><a href="#d2">D2. When would STIX be used to capture malware information and when would MAEC be used?</a></li>
+<li><a href="#d3">D3. What is the relationship between MAEC and TAXII?</a></li>
 </ul>
 
 ### <a href="#e">MAEC Community</a>
@@ -56,7 +52,7 @@ MAEC?</a></li>
 
 #### <a name="a1"></a> A1. What is MAEC?
 
-Malware Attribute Enumeration and Characterization (MAEC™) is a structured language for encoding and communicating high fidelity information about malware based upon attributes such as behaviors, artifacts, and attack patterns.
+[Malware Attribute Enumeration and Characterization (MAEC™)](/releases/5.0) is a structured language for encoding and communicating high fidelity information about malware based upon attributes such as behaviors, artifacts, and relationships between malware samples.
 
 #### <a name="a2"></a> A2. How is "MAEC" pronounced?
 
@@ -70,7 +66,7 @@ MAEC is a community-developed effort and has received input from members of vari
 
 #### <a name="a4"></a> A4. Is MAEC a formal standard?
 
-MAEC is not currently being pursued in a formal standards body. However, once an appropriate level of maturity, stability, and use is achieved, international standardization will be sought.
+MAEC is not currently being pursued in a formal standards body. However, once an appropriate level of maturity, stability, and use is achieved, international standardization might be sought.
 
 #### <a name="a5"></a> A5. How is MAEC licensed?
 
@@ -83,83 +79,64 @@ There are several opportunities to get involved. See the [MAEC Community](/commu
 
 #### <a name="b1"></a> B1. Where can I get the current version of MAEC?
 
-The current version of the Malware Attribute Enumeration and Characterization (MAEC™) Language is available on the [Current Release](/releases/5.0) page. In addition, the current MAEC schema, as well as example files, schematron rules, and related documentation, are available in the [MAEC Schemas in the MAECProject repository](https://github.com/MAECProject/schemas) on GitHub.com.
+The current version of the Malware Attribute Enumeration and Characterization (MAEC™) Language is available on the [Current Release](/releases/5.0) page. In addition, non-normative JSON schemas and examples are available in the [MAECProject GitHub repository](https://github.com/MAECProject/schemas).
 
 #### <a name="b2"></a> B2. Is a specification available for the MAEC Language?
 
-See the [Specifications](http://maecproject.github.io/releases/5.0/#specifications) section on the [Current Release](/releases/5.0) page.
+See the [Specifications](https://maecproject.github.io/releases/5.0/#specifications) section on the [Current Release](/releases/5.0) page.
 
 #### <a name="b3"></a> B3. Where can I find examples of what I can capture and do with MAEC?
 
-Examples can be found in the [MAEC Schemas MAECProject repository](https://github.com/MAECProject/schemas/tree/master/examples) on GitHub.com.
+Examples can be found in the [MAECProject repository](https://github.com/MAECProject/schemas/tree/master/examples) on GitHub.com. Additional examples are given in the [MAEC 5.0 Core Specification](https://maecproject.github.io/releases/5.0/MAEC_Core_Specification.pdf).
 
 #### <a name="b4"></a> B4. What tools or utilities are available to help me use or develop MAEC content?
-MAEC can be manipulated manually or programmatically. If using MAEC manually, such as to capture malware analysis results, no tools are currently provided, but use of an XML editor is recommended. 
+MAEC can be manipulated manually or programmatically. If using MAEC manually, such as to capture malware analysis results, no tools are provided. Use of a JSON editor is recommended. 
 
 For programmatic development and use, some MAEC scripts and translator utilities are hosted in separate [MAECProject GitHub repositories](https://github.com/MAECProject/). In addition, a Python API for parsing, manipulating, and generating MAEC content is hosted in the [MAECProject Python-MAEC GitHub repository](https://github.com/MAECProject/python-maec). 
 
 Also see [MAEC Supporters](/community/supporters/) for a list of vendors that have implemented MAEC in their products or services. 
 
 #### <a name="b5"></a> B5. Is there a GUI of some sort that will help me select MAEC elements?
-A GUI is not available at this time, but such a tool could be available in the future.
+A GUI is not available, however, such a tool could be available in the future.
 
-#### <a name="b6"></a> B6. Are there plans to support other forms of data interchange for MAEC (e.g., JSON, YAML, etc.)?
-[MAEC 5.0](/releases/5.0/) supports JavaScript Object Notation (JSON). See [http://maecproject.github.io/releases/5.0/#json-schemas](http://maecproject.github.io/releases/5.0/#json-schemas).
-
-Support for Resource Description Framework (RDF)/Web Ontology Language (OWL), YAML Ain't Markup Language (YMAL), or other implementations may be added in the future. XML was used in the initial release to enable rapid development and implementation.
+#### <a name="b6"></a> B6. Are there plans to support other forms of data interchange for MAEC (e.g., YAML, etc.)?
+No. Rather than producing additional MAEC serializations or a formal implementation-independent specification, MAEC concepts will likely be migrated into the [Structured Threat Information Expression (STIX™)](https://oasis-open.github.io/cti-documentation/) 2.x Malware Object.
 
 #### <a name="b7"></a> B7. Where can I find examples of MAEC data? Are there any MAEC repositories?
 Visit the [Current Release](/releases/5.0) page for additional information. 
 
-At present, there are no public repositories of MAEC data, nor are there plans by MITRE to establish one. However, community members interested in hosting a MAEC data repository are strongly encouraged to do so. 
+At present, there are no public repositories of MAEC data, nor are there plans by MITRE to establish one. However, community members interested in hosting a MAEC data repository are encouraged to do so. 
 
 #### <a name="b8"></a> B8. What is included in a MAEC release?
-Visit the [Current Release](/releases/5.0) page for details.
+[MAEC 5.0](/releases/5.0) includes two specification documents (core concepts and vocabularies) and a corresponding set of non-normative JSON schemas and examples.
 
 ### <a name="c"></a> Using MAEC
-Some of the FAQs in this section are somewhat technical in nature. Please refer to the [MAEC Language Specifications](/documentation/specs/) for further information.
+Some of the FAQs in this section are somewhat technical in nature. Please refer to the [MAEC Language Specifications](/releases/5.0/#specifications) for further information.
 
 #### <a name="c1"></a> C1. MAEC seems complicated – is it too expansive for my use?
-The MAEC schema was developed to enable analysts to capture a full gamut of information about malware. However, a MAEC Bundle is valid with very little information: it is only necessary to define a unique identifier and to specify the MAEC schema version. All other fields are optional.
+The MAEC schema was developed to enable analysts to capture a full gamut of information about malware. However, a MAEC Package is valid with minimal information. It is only necessary to define four properties: the type (“package”), a unique identifier, the MAEC schema version, and one MAEC Object. All other properties are optional.
 
 #### <a name="c2"></a> C2. Why are so many things optional in MAEC?
-Aside from a unique identifier and the MAEC schema version, all objects are optional in MAEC. This was done to make the language as flexible as possible: a user is able to capture exactly what they want and nothing more.
+Many properties are optional in MAEC to make the language as flexible as possible, enabling users to capture exactly what they want and nothing more.
 
-#### <a name="c3"></a> C3. How does the xsi:type extension mechanism work?
-The xsi:type XML schema extension mechanism works by allowing for the substitution of types that are created as derivatives of an existing abstract type. As such, one must simply include the xsi:type attribute on an element that uses the parent abstract type, and accordingly specify the name of the type that one wishes to substitute for this element inside this attribute. For example, if one wishes to use the FileObj:FileObjectType type from [Cyber Observables Expression (CybOX™)](https://cyboxproject.github.io/) in the Properties element (which uses the abstract cyboxCommon:ObjectPropertiesType) of the Malware Instance Object Attributes in a MAEC Bundle, they would specify the xsi:type attribute on this element with the name of the object type inside: 
+#### <a name="c3"></a> C3. What if I need to define something that isn't part of the MAEC schema?
+MAEC cannot be directly customized, but because a MAEC Package can include relevant [Structured Threat Information Expression (STIX™)](https://oasis-open.github.io/cti-documentation/) Observable Objects, custom STIX Properties and Objects can be used to capture some content that is not defined in MAEC. 
 
-```xml
-<maecBundle:Malware_Instance_Object_Attributes>
-<cybox:Properties xsi:type="FileObj:FileObjectType">
-<FileObj:File_Name>dg003_improve_8080_V132.exe</FileObj:File_Name>
-<FileObj:Size_In_Bytes>196608</FileObj:Size_In_Bytes>
-</cybox:Properties>
-</maecBundle:Malware_Instance_Object_Attributes>
-```
+In addition, the MAEC development team encourages the community to engage in the ongoing discussion so that new properties can be defined and integrated into future versions of MAEC as necessary. Please consider participating in the [MAEC Community](/community) to help with the development of MAEC. 
 
-#### <a name="c4"></a> C4. What if I need to define something that isn't part of the MAEC schema?
-MAEC is very flexible and can accommodate custom fields and objects. For example, one can use the Custom Properties/Property fields at the root level of the larger [Cyber Observables Expression (CybOX™)](https://cyboxproject.github.io/) ObjectType specify a set of custom attributes that are not defined elsewhere. Accordingly, it is possible to define a new type of CybOX Object that can then be plugged into the Property field of the CybOX ObjectType using the xsi:type extension mechanism (e.g., xsi:type="CustomObj:CustomObjectType"). 
-
-In addition, the MAEC development team encourages the community to engage in the ongoing discussion so that new fields can be defined and integrated into future versions of MAEC as necessary. Please consider participating in the [MAEC Community](/community) to help with the development of MAEC. 
-
-#### <a name="c5"></a> C5. Can the same information be captured in multiple places in MAEC?
-Yes. MAEC is very flexible and there are often a multiple places that the same characterized information, e.g., a particular Action or Behavior, can be captured.
+#### <a name="c5"></a> C4. Can the same information be captured in multiple places in MAEC?
+In earlier versions of MAEC, it was possible to express the same concept in multiple ways, but rather than being a feature, the flexibility led to confusion. [MAEC 5.0](/releases/5.0/) recognizes the need for flexibility, but also recognizes the importance of simplicity, standardization, and reduced optionality. Therefore, MAEC 5.0 aims to capture malware analysis content in unique ways. 
 
 ### <a name="d"></a> Relationships to Other Efforts
 
-#### <a name="d1"></a> D1. What is the relationship between MAEC and CybOX?
- [Cyber Observable eXpression (CybOX™)](https://cyboxproject.github.io/) provides a structured language for describing elements within the cyber operational environment. MAEC uses components of the CybOX language for characterizing cyber observables associated with malware. In particular, MAEC makes use of CybOX's Object and Action fields (which are extended in MAEC's MalwareActionType type) to characterize malware-related system artifacts and low-level behaviors, respectively.
+#### <a name="d1"></a> D1. What is the relationship between MAEC and STIX?
+The MAEC Language directly imports and uses components of the OASIS [Structured Threat Information eXpression (STIX™)](https://oasis-open.github.io/cti-documentation/) language. More specifically, MAEC’s malware characterization relies on the common implementation (structure and content) that STIX Cyber Observables provide for expressing cyber observables. Thus, whereas MAEC provides coverage of malware analysis context, behaviors, and capabilities, STIX Cyber Observables provide the underpinnings necessary to broadly cover objects, such as files and network connections, used in the context of malware.
 
-#### <a name="d2"></a> D2. What is the relationship between MAEC and STIX?
-[Structured Threat Information eXpression (STIX™)](https://stixproject.github.io/) characterizes a rich set of cyber threat information in a standardized and structured manner. STIX can describe malware using MAEC characterizations through use of the MAEC schema extension for the TTP schema and can also characterize indicators in a fashion similar to MAEC's Candidate Indicators.
+#### <a name="d2"></a> D2. When would STIX be used to capture malware information and when would MAEC be used?
+MAEC is targeted toward malware analysts, and therefore provides a comprehensive, structured way of capturing detailed information about malware samples. By contrast, [STIX](https://oasis-open.github.io/cti-documentation/) targets a more diverse audience by capturing a broad spectrum of cyber-threat related information, including basic malware information. Consequently, an organization performing cyber threat analysis must consider their specific use case to determine whether MAEC or the STIX Malware Object is most appropriate.
 
-#### <a name="d3"></a> D3. When would STIX be used to capture malware information and when would MAEC be used?
-[STIX](https://stixproject.github.io/) is used to describe high-level cyber threat information to include indicators, as well as information about threat actors, campaigns, incidents, and other related entities. On the other hand, MAEC is used to describe malware attributes of one or more malware instances at various levels of abstraction. Certainly, there is overlap between the two languages, particularly when it comes to capturing indicator information (e.g., file sizes, file hashes) through the common use of [Cyber Observable eXpression (CybOX™)](https://cyboxproject.github.io/). 
-
-While there are no definite rules for what is most appropriately captured with MAEC versus STIX, MAEC will typically be used to capture malware information that is gathered through the analysis process, and STIX will be used to capture information related to the interpretation of the analysis results in a broader, threat-based context. For example, while MAEC would capture the particular details of the behaviors and artifacts associated with a malware instance, STIX would be used to capture additional details regarding the particular threat actors that may make use of the malware instance. Thus, when malware analysis information beyond simple indicator information is to be captured by STIX, the STIX schema extension for MAEC should be used to leverage the MAEC data model. 
-
-#### <a name="d4"></a> D4. What is the relationship between MAEC and TAXII?
-[Trusted Automated eXchange of Indicator Information (TAXII™)](https://taxiiproject.github.io/) defines a set of services and message exchanges for securely sharing automated cyber threat information. TAXII uses [Structured Threat Information eXpression (STIX™)](https://stixproject.github.io/) to represent cyber threat information in a standardized and structured manner (STIX characterizes what is being shared, while TAXII defines how the STIX payload is shared). STIX is one payload that TAXII can convey, and STIX can describe malware using MAEC.
+#### <a name="d3"></a> D3. What is the relationship between MAEC and TAXII?
+The OASIS [Trusted Automated eXchange of Indicator Information (TAXII™)](https://oasis-open.github.io/cti-documentation/) defines a set of services and message exchanges for securely sharing automated cyber threat information. Most commonly, TAXII uses [STIX](https://oasis-open.github.io/cti-documentation/) to represent cyber threat information where STIX characterizes <i>what</i> is being shared and TAXII defines <i>how</i> the STIX payload is shared. However, TAXII could use MAEC as its payload instead of STIX.
 
 ### <a name="e"></a> MAEC Community
 
@@ -167,7 +144,7 @@ While there are no definite rules for what is most appropriately captured with M
 The [MAEC Community](/community) includes representatives from antivirus vendors, operating system vendors, software vendors, IT users, security services providers, and others from across the international cyber security community who have come together to help build this growing, open-source industry effort. 
 
 There are multiple options available for involvement including participating in the conversations
-on our [dedicated email discussion list](/community/#discussion-lists--archives), contributing to the [Encyclopedia of Malware Attributes](https://collaborate.mitre.org/ema/index.php/ema:Main_Page) on MITRE’s collaboration website, and/orcontributing to the development of [MAEC tools and utilities](/community/#tool--utility-development) on GitHub.
+on our [dedicated email discussion list](/community/#discussion-lists--archives), contributing to the [Encyclopedia of Malware Attributes](https://collaborate.mitre.org/ema/index.php/ema:Main_Page) on MITRE’s collaboration website, and/or contributing to the development of [MAEC tools and utilities](/community/#tool--utility-development) on GitHub.
 
 Visit the [MAEC Community](/community) page to learn more or to [join](/community) the MAEC effort.
 
