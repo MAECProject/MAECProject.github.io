@@ -30,10 +30,10 @@ At its highest level, MAEC is a domain-specific language for non-signature based
       <h4>Cyber Threat Analysis</h4>
       <p>Cyber threat analysis-related use cases demonstrate how capturing cyber threat analysis information in MAEC will result in a threat being more readily understood and evaluated because the information will be more consistent across analysts and incidents.  Furthermore, MAEC's standardized encoding of the Capabilities exhibited by a malware instance will allow for the accurate discernment of the threat that the malware poses to an organization and its infrastructure.</p>
       <p>
-        <a class="btn btn-primary" href="cyber_threat_analysis/attribution">Attribution »</a>
+        <a class="btn btn-primary" href="incident_management/malware_provenance">Malware Provenance »</a>
       </p>
       <p>
-        <a class="btn btn-primary" href="incident_management/malware_provenance">Malware Provenance »</a>
+        <a class="btn btn-primary" href="cyber_threat_analysis/attribution">Attribution »</a>
       </p>
       <p>
         <a class="btn btn-primary" href="cyber_threat_analysis/malware_threat_scoring_system">Malware Threat Scoring System »</a>
