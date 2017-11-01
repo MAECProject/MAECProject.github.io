@@ -1,9 +1,7 @@
 ---
 layout: flat
-title: MAEC 4.1
+title: MAEC 4.1 (Archive)
 ---
-
-This is the current release of MAEC.
 
 **Note:** Version 4.1 is hosted on the [MAEC Legacy Site](https://maec.mitre.org/), and all files linked to below will redirect there.
 
