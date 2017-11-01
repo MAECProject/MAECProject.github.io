@@ -35,7 +35,7 @@ The MAECProject GitHub Repositories are the central location for MAEC Community 
 
 ### Working Calls
 
-The MAEC Community is working on [MAEC 5.0](/documentation/roadmap/), the next version of the Malware Attribute Enumeration and Characterization (MAEC™) Language. Community members participated by joining our MAEC Community teleconference working call meetings, an archive of which is available for review.
+The MAEC Community participated in teleconference working call meetings to participate in the development of [MAEC 5.0](/releases/5.0/), the current version of the Malware Attribute Enumeration and Characterization (MAEC™) Language, an archive of which is available for review.
 
 * [MAEC working calls archive](/working-call/)
 
