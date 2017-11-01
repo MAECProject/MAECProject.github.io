@@ -3,7 +3,7 @@ layout: flat
 title: MAEC 4.1 (Archive)
 ---
 
-**Note:** Version 4.1 is hosted on the [MAEC Legacy Site](https://maec.mitre.org/), and all files linked to below will redirect there.
+**Note:** MAEC Version 4.1 (Archive) is hosted on the [MAEC Legacy Site](https://maec.mitre.org/), and all files linked to below will redirect there.
 
 ### Release Notes
 
