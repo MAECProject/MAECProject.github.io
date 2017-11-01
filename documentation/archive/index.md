@@ -6,14 +6,14 @@ title: Documentation Archive
 <div class="row">
   <div class="col-md-6">
   	<div class="well">
-      <h4><a href="overview/MAEC_Overview.pdf">MAEC Version 4.1 Overview</a></h4>
+      <h4><a href="/documentation/overview/MAEC_Overview.pdf">MAEC Version 4.1 Overview</a></h4>
       <p>This document provides a detailed introduction to Version 4.1 of the Malware Attribute Enumeration and Characterization (MAEC™) Language, an overview of the MAEC Version 4.1 data models, a discussion of high-level use cases, requirements for Version 4.1 of the MAEC Language, and a discussion of open issues and challenges.</p>
-      <a class="btn btn-primary" href="overview/MAEC_Overview.pdf">Go »</a>
+      <a class="btn btn-primary" href="/documentation/overview/MAEC_Overview.pdf">Go »</a>
     </div>
     <div class="well">
-      <h4><a href="idioms">Idioms for MAEC Version 4.1</a></h4>
-      <p>MAEC idioms describe how common patterns in malware analysis (for instance, capturing dynamic analysis results) are represented in MAEC Version 4.1 . They're similar to programming language idioms in that they document common patterns for representing content in MAEC.</p>
-      <a class="btn btn-primary" href="idioms">Go »</a>
+      <h4><a href="/documentation/idioms/">Idioms for MAEC Version 4.1</a></h4>
+      <p>MAEC idioms describe how common patterns in malware analysis (for instance, capturing dynamic analysis results) are represented in MAEC Version 4.1. They're similar to programming language idioms in that they document common patterns for representing content in MAEC.</p>
+      <a class="btn btn-primary" href="/documentation/idioms/">Go »</a>
     </div>
     <div class="well">
       <h4><a href="suggested_practices">Suggested Practices for MAEC Version 4.1</a></h4>
