@@ -9,18 +9,24 @@ Subscribe to our free *[MAEC Announce](mailto:maec@mitre.org)* e-newsletter to r
 
 ## Changes to MAEC Email Subscriptions Coming in Early 2018
 
-
 The email server currently used for the [MAEC Community Email Discussion List](http://maecproject.github.io/community/#discussion-lists--archives) and [MAEC Announce e-newsletter](http://maecproject.github.io/community/#free-newsletter) is being replaced in early 2018. 
 
 Although you don’t need to do anything, this announcement is being made now so that you will be aware of the change since MAEC messages will be coming from a new email address. You will automatically be transferred to the new subscriber list.
 
 What will change:
 
-|Old Email List Sender Address|New Email List Sender Address|
-|---|---|
-|maec-discussion-list@lists.mitre.org|maec-discussion-list@mitre.org|
-|maec-announce-list@lists.mitre.org|maec-announce-list@mitre.org|
-| | |
+<table>
+  <th>Old Email List Sender Address</th>
+  <th>New Email List Sender Address</th>
+  <tr>
+     <td>maec-discussion-list@lists.mitre.org</td>
+     <td>maec-discussion-list@mitre.org</td>
+  </tr>
+  <tr>
+     <td>maec-announce-list@lists.mitre.org</td>
+     <td>maec-announce-list@mitre.org</td>
+  </tr>
+ </table>
 
 We will also send a message from each list after the changeover occurs, so you can add the new email address(es) to your safe senders list.
 
