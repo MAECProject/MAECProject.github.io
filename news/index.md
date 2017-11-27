@@ -20,6 +20,7 @@ What will change:
 |---|---|
 |maec-discussion-list@lists.mitre.org|maec-discussion-list@mitre.org|
 |maec-announce-list@lists.mitre.org|maec-announce-list@mitre.org|
+| | |
 
 We will also send a message from each list after the changeover occurs, so you can add the new email address(es) to your safe senders list.
 
