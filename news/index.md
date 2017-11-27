@@ -7,6 +7,26 @@ Subscribe to our free *[MAEC Announce](mailto:maec@mitre.org)* e-newsletter to r
 
 ### Our latest news:
 
+## Changes to MAEC Email Subscriptions Coming in Early 2018
+
+
+The email server currently used for the [MAEC Community Email Discussion List](http://maecproject.github.io/community/#discussion-lists--archives) and [MAEC Announce e-newsletter](http://maecproject.github.io/community/#free-newsletter) is being replaced in early 2018. 
+
+Although you don’t need to do anything, this announcement is being made now so that you will be aware of the change since MAEC messages will be coming from a new email address. You will automatically be transferred to the new subscriber list.
+
+What will change:
+
+|Old Email List Sender Address|New Email List Sender Address|
+|---|---|
+|maec-discussion-list@lists.mitre.org|maec-discussion-list@mitre.org|
+|maec-announce-list@lists.mitre.org|maec-announce-list@mitre.org|
+
+We will also send a message from each list after the changeover occurs, so you can add the new email address(es) to your safe senders list.
+
+In addition, we will create a new archive on Nabble for the new "maec-discussion-list@mitre.org" when the time comes so all new messages on the new email discussion list will continue to be publicly archived for review by the [MAEC Community](http://maecproject.github.io/community/). The [previous archive]( http://making-security-measurable.1364806.n2.nabble.com/MAEC-Malware-Attribute-Enumeration-and-Characterization-f4094903.html) will also be retained for historical purposes. We will notify you once the new discussion archive is created.
+
+Please contact [maec@mitre.org](mailto:maec@mitre.org) with any comments or concerns.  
+
 ## MAEC Version 5.0 Specifications Now Available in Slate
 
 The relevant portions of the [MAEC 5.0 Specifications](http://maecproject.github.io/releases/5.0/#specifications) have been ported into the [Slate API](https://github.com/lord/slate) document generator and are now available at: [http://maecproject.github.io/documentation/maec5-docs/](http://maecproject.github.io/documentation/maec5-docs/).
