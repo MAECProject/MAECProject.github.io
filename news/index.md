@@ -13,7 +13,7 @@ The relevant portions of the [MAEC 5.0 Specifications](http://maecproject.github
 
 This new section of the MAEC website presents key concepts from the MAEC 5.0 Core Concepts and Vocabularies specifications in an easy-to-read format, and is searchable. And while this version of the specifications in Slate is not meant to supplant the [complete versions of the specifications](http://maecproject.github.io/releases/5.0/#specifications), it will hopefully be a useful reference for [MAEC 5.0](http://maecproject.github.io/releases/5.0/).
 
-Please check out the new section and let us know what you think on the [MAEC Community Email Discussion List](/community/#discussion-lists--archives), or directly to [maec@mitre.org](mailto:maec@mitre.org).
+Please check out the [new section of the MAEC website](http://maecproject.github.io/documentation/maec5-docs/) and let us know what you think on the [MAEC Community Email Discussion List](/community/#discussion-lists--archives), or directly to [maec@mitre.org](mailto:maec@mitre.org).
 
 ## MAEC Website Updated for MAEC Version 5.0
 
