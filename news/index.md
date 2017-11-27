@@ -7,6 +7,14 @@ Subscribe to our free *[MAEC Announce](mailto:maec@mitre.org)* e-newsletter to r
 
 ### Our latest news:
 
+## MAEC Version 5.0 Specifications Now Available in Slate
+
+The relevant portions of the [MAEC 5.0 Specifications](http://maecproject.github.io/releases/5.0/#specifications) have been ported into the [Slate API](https://github.com/lord/slate) document generator and are now available at: [http://maecproject.github.io/documentation/maec5-docs/](http://maecproject.github.io/documentation/maec5-docs/).
+
+This new section of the MAEC website presents key concepts from the MAEC 5.0 Core Concepts and Vocabularies specifications in an easy-to-read format, and is searchable. And while this version of the specifications in Slate is not meant to supplant the [complete versions of the specifications](http://maecproject.github.io/releases/5.0/#specifications), it will hopefully be a useful reference for [MAEC 5.0](http://maecproject.github.io/releases/5.0/).
+
+Please check out the new section and let us know what you think on the [MAEC Community Email Discussion List](/community/#discussion-lists--archives), or directly to [maec@mitre.org](mailto:maec@mitre.org).
+
 ## MAEC Website Updated for MAEC Version 5.0
 
 The MAEC website has been fully updated for [MAEC Version 5.0](/releases/5.0/), with new or revised content in the [Getting Started](http://maecproject.github.io/getting-started/), [Releases](http://maecproject.github.io/releases/5.0/), [Documentation](http://maecproject.github.io/documentation/), and [About MAEC](http://maecproject.github.io/about-maec/) sections. 
