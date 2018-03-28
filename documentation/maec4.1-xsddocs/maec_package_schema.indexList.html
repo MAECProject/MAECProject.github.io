@@ -1,0 +1,619 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Schema documentation for namespace </title>
+      <link rel="stylesheet" href="docHtml.css" type="text/css" /><script type="text/javascript">
+         <!--
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        var button_prefix = 'button_';
+        
+        /**
+        * Returns an element in the current HTML document.
+        *
+        * @param elementID Identifier of HTML element
+        * @return               HTML element object
+        */
+        function getElementObject(elementID) {
+            var elemObj = null;
+            if (document.getElementById) {
+                elemObj = document.getElementById(elementID);
+            }
+            return elemObj;
+        }
+        
+        /**
+        * Switches the state of a collapseable box, e.g.
+        * if it's opened, it'll be closed, and vice versa.
+        *
+        * @param boxID Identifier of box
+        */
+        function switchState(boxID) {
+            var boxObj = getElementObject(boxID);
+            var buttonObj = getElementObject(button_prefix + boxID);
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else if (boxObj.style.display == "none") {
+                // Box is closed, so open it
+                openBox(boxObj, buttonObj);
+            } else if (boxObj.style.display == "block") {
+                // Box is opened, so close it
+                closeBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+        * Opens a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function openBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "block";
+                
+                // Change text of button
+                if (boxObj.style.display == "block") {
+                    buttonObj.src = "img/btM.gif";
+                }
+            }
+        }
+        
+        /**
+        * Closes a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function closeBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "none";
+                
+                // Change text of button
+                if (boxObj.style.display == "none") {
+                    buttonObj.src = "img/btP.gif";
+                }
+            }
+        }
+    
+       function switchStateForAll(buttonObj, boxList) {
+            if (buttonObj == null) {
+                // button not found
+            } else if (buttonObj.value == "+") {
+                // Expand all
+                expandAll(boxList);
+                buttonObj.value = "-";
+            } else if (buttonObj.value == "-") {
+                // Collapse all
+                collapseAll(boxList);
+                buttonObj.value = "+";
+            }
+        }
+        
+        /**
+        * Closes all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function collapseAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                closeBox(boxObj, buttonObj);
+            }
+        }
+            
+        /**
+        * Open all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function expandAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                openBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+         * Update the message presented in the title of the html page.
+         * - If the documentation was splited by namespace we present something like: "Documentation for namespace 'ns'"
+         * - If the documentation was splited by location we present somehing like: "Documentation for 'Schema.xsd'"
+         * - If no split we always present: "Documentation for 'MainSchema.xsd'"
+         */
+        function updatePageTitle(message) {
+            top.document.title = message;
+        }
+        
+          
+                    
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function findAndFloat(id, x_displacement, y_displacement){
+
+            var element = getElementObject(id);            
+            
+            window[id + "_obj"] = element;
+            
+            if(document.layers) {
+               element.style = element;
+            }
+            
+            element.current_y = y_displacement;      
+            element.first_time = true;
+         
+            element.floatElement = function(){
+               // It may be closed by an user action.
+                
+               // Target X and Y coordinates.
+               var x, y;
+               
+               var myWidth = 0, myHeight = 0;
+               if( typeof( window.innerWidth ) == 'number' ) {
+                  //Non-IE
+                  myWidth = window.innerWidth;
+                  myHeight = window.innerHeight;
+               } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+                  //IE 6+ in 'standards compliant mode'
+                  myWidth = document.documentElement.clientWidth;
+                  myHeight = document.documentElement.clientHeight;
+               } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+                  //IE 4 compatible
+                  myWidth = document.body.clientWidth;
+                  myHeight = document.body.clientHeight;
+               }
+               
+               
+               x = myWidth - x_displacement;
+               
+               var ns = (navigator.appName.indexOf("Netscape") != -1);               
+               y = ns ? pageYOffset : document.documentElement && document.documentElement.scrollTop ? 
+                  document.documentElement.scrollTop : document.body.scrollTop;               
+               y = y + y_displacement;               
+               
+               // The current y is the current coordinate of the floating element.
+               // This should be at the limit the y target coordinate.
+               this.current_y += (y - this.current_y)/1.25;
+               
+               // Add the pixels constant after the values
+               // and move the element.
+               var px = document.layers ? "" : "px";
+               this.style.left =  x + px;
+               this.style.top =  this.current_y + px;
+                              
+               setTimeout(this.id + "_obj.floatElement()", 100);
+            }
+            
+            element.floatElement();
+            return element;
+          }
+
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function selectTOCGroupBy(id, isChunked, indexFileLocation, indexFileNamespace, indexFileComponent){
+
+            if (!isChunked) {
+             var selectIds = new Array('toc_group_by_namespace', 'toc_group_by_location', 'toc_group_by_component_type');
+             // Make all the tabs invisible.
+               for (i = 0; i < 3; i++){
+                  var tab = getElementObject(selectIds[i]);
+                  tab.style.display = 'none';
+               }
+               var selTab = getElementObject(id);
+               selTab.style.display = 'block';
+            } else {
+             if (id == 'toc_group_by_namespace') {
+               parent.indexFrame.location = indexFileNamespace;
+             } else  if (id == 'toc_group_by_location') {
+               parent.indexFrame.location = indexFileLocation;
+             } else  if (id == 'toc_group_by_component_type') {
+              parent.indexFrame.location = indexFileComponent;
+             }
+            }
+         }
+          
+
+    --></script></head>
+   <body>
+      <h2><a id="INDEX">Table of Contents</a></h2>
+      <div class="toc">
+         <form action="none">
+            <div><span> Group by: <select id="selectTOC" onchange="selectTOCGroupBy(this.options[this.selectedIndex].value, true, 'maec_package_schema.indexList.html', 'maec_package_schema.indexListns.html', 'maec_package_schema.indexListcomp.html');">
+                     <option value="toc_group_by_namespace">Namespace</option>
+                     <option value="toc_group_by_location" selected="selected">Location</option>
+                     <option value="toc_group_by_component_type">Component Type</option></select></span></div>
+         </form>
+         <div class="level1" id="toc_group_by_location" style="display:block">
+            <div>
+               <div class="level2">
+                  <p><input id="button_gr_maec_package_schema.xsd" type="image" value="-" src="img/btM.gif" onclick="switchState('gr_maec_package_schema.xsd');" class="control" /><span class="indexGroupTitle">maec_package_schema.xsd</span></p>
+                  <div id="gr_maec_package_schema.xsd" style="display:block">
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_maec_package_schema.xsdElement" type="image" value="-" src="img/btM.gif" onclick="switchState('gr_maec_package_schema.xsdElement');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Elements</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_maec_package_schema.xsdElement" class="componentGroup" style="display:block">
+                                                <div><b><a href="maec-package-2.html#ActionEquivalenceListType_Action_Equivalence" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ActionEquivalenceListType/maecPackage:Action_Equivalence</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ActionEquivalenceType_Action_Reference" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ActionEquivalenceType/maecPackage:Action_Reference</a></b></div>
+                                                <div><b><a href="maec-package-2.html#AnalysisEnvironmentType_Analysis_Systems" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisEnvironmentType/maecPackage:Analysis_Systems</a></b></div>
+                                                <div><b><a href="maec-package-2.html#AnalysisEnvironmentType_Hypervisor_Host_System" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisEnvironmentType/maecPackage:Hypervisor_Host_System</a></b></div>
+                                                <div><b><a href="maec-package-2.html#AnalysisEnvironmentType_Network_Infrastructure" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisEnvironmentType/maecPackage:Network_Infrastructure</a></b></div>
+                                                <div><b><a href="maec-package-2.html#AnalysisListType_Analysis" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisListType/maecPackage:Analysis</a></b></div>
+                                                <div><b><a href="maec-package-2.html#AnalysisSystemListType_Analysis_System" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisSystemListType/maecPackage:Analysis_System</a></b></div>
+                                                <div><b><a href="maec-package-2.html#AnalysisSystemType_Installed_Programs" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisSystemType/maecPackage:Installed_Programs</a></b></div>
+                                                <div><b><a href="maec-package-2.html#AnalysisType_Analysis_Environment" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisType/maecPackage:Analysis_Environment</a></b></div>
+                                                <div><b><a href="maec-package-2.html#AnalysisType_Analysts" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisType/maecPackage:Analysts</a></b></div>
+                                                <div><b><a href="maec-package-2.html#AnalysisType_Comments" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisType/maecPackage:Comments</a></b></div>
+                                                <div><b><a href="maec-package-2.html#AnalysisType_Dynamic_Analysis_Metadata" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisType/maecPackage:Dynamic_Analysis_Metadata</a></b></div>
+                                                <div><b><a href="maec-package-2.html#AnalysisType_Findings_Bundle_Reference" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisType/maecPackage:Findings_Bundle_Reference</a></b></div>
+                                                <div><b><a href="maec-package-2.html#AnalysisType_Report" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisType/maecPackage:Report</a></b></div>
+                                                <div><b><a href="maec-package-2.html#AnalysisType_Source" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisType/maecPackage:Source</a></b></div>
+                                                <div><b><a href="maec-package-2.html#AnalysisType_Summary" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisType/maecPackage:Summary</a></b></div>
+                                                <div><b><a href="maec-package-2.html#AnalysisType_Tools" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisType/maecPackage:Tools</a></b></div>
+                                                <div><b><a href="maec-package-2.html#CapturedProtocolListType_Protocol" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:CapturedProtocolListType/maecPackage:Protocol</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ClusterCompositionType_Edge_Node_Pair" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ClusterCompositionType/maecPackage:Edge_Node_Pair</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ClusterEdgeNodePairType_Malware_Subject_Node_A" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ClusterEdgeNodePairType/maecPackage:Malware_Subject_Node_A</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ClusterEdgeNodePairType_Malware_Subject_Node_B" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ClusterEdgeNodePairType/maecPackage:Malware_Subject_Node_B</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ClusteringAlgorithmParametersType_Distance_Threshold" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ClusteringAlgorithmParametersType/maecPackage:Distance_Threshold</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ClusteringAlgorithmParametersType_Number_of_Iterations" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ClusteringAlgorithmParametersType/maecPackage:Number_of_Iterations</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ClusteringMetadataType_Algorithm_Name" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ClusteringMetadataType/maecPackage:Algorithm_Name</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ClusteringMetadataType_Algorithm_Parameters" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ClusteringMetadataType/maecPackage:Algorithm_Parameters</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ClusteringMetadataType_Algorithm_Version" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ClusteringMetadataType/maecPackage:Algorithm_Version</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ClusteringMetadataType_Cluster_Composition" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ClusteringMetadataType/maecPackage:Cluster_Composition</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ClusteringMetadataType_Cluster_Description" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ClusteringMetadataType/maecPackage:Cluster_Description</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ClusteringMetadataType_Cluster_Size" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ClusteringMetadataType/maecPackage:Cluster_Size</a></b></div>
+                                                <div><b><a href="maec-package-2.html#CommentListType_Comment" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:CommentListType/maecPackage:Comment</a></b></div>
+                                                <div><b><a href="maec-package-2.html#DynamicAnalysisMetadataType_Analysis_Duration" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:DynamicAnalysisMetadataType/maecPackage:Analysis_Duration</a></b></div>
+                                                <div><b><a href="maec-package-2.html#DynamicAnalysisMetadataType_Command_Line" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:DynamicAnalysisMetadataType/maecPackage:Command_Line</a></b></div>
+                                                <div><b><a href="maec-package-2.html#DynamicAnalysisMetadataType_Exit_Code" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:DynamicAnalysisMetadataType/maecPackage:Exit_Code</a></b></div>
+                                                <div><b><a href="maec-package-2.html#DynamicAnalysisMetadataType_Raised_Exception" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:DynamicAnalysisMetadataType/maecPackage:Raised_Exception</a></b></div>
+                                                <div><b><a href="maec-package-2.html#FindingsBundleListType_Bundle" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:FindingsBundleListType/maecPackage:Bundle</a></b></div>
+                                                <div><b><a href="maec-package-2.html#FindingsBundleListType_Bundle_External_Reference" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:FindingsBundleListType/maecPackage:Bundle_External_Reference</a></b></div>
+                                                <div><b><a href="maec-package-2.html#FindingsBundleListType_Meta_Analysis" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:FindingsBundleListType/maecPackage:Meta_Analysis</a></b></div>
+                                                <div><b><a href="maec-package-2.html#GroupingRelationshipListType_Grouping_Relationship" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:GroupingRelationshipListType/maecPackage:Grouping_Relationship</a></b></div>
+                                                <div><b><a href="maec-package-2.html#GroupingRelationshipType_Clustering_Metadata" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:GroupingRelationshipType/maecPackage:Clustering_Metadata</a></b></div>
+                                                <div><b><a href="maec-package-2.html#GroupingRelationshipType_Malware_Family_Name" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:GroupingRelationshipType/maecPackage:Malware_Family_Name</a></b></div>
+                                                <div><b><a href="maec-package-2.html#GroupingRelationshipType_Malware_Toolkit_Name" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:GroupingRelationshipType/maecPackage:Malware_Toolkit_Name</a></b></div>
+                                                <div><b><a href="maec-package-2.html#GroupingRelationshipType_Type" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:GroupingRelationshipType/maecPackage:Type</a></b></div>
+                                                <div><b><a href="maec-package-2.html#HypervisorHostSystemType_VM_Hypervisor" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:HypervisorHostSystemType/maecPackage:VM_Hypervisor</a></b></div>
+                                                <div><b><a href="maec-package-2.html#InstalledProgramsType_Program" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:InstalledProgramsType/maecPackage:Program</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MAEC_Package" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MAEC_Package</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareBinaryConfigurationStorageDetailsType_File_Offset" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareBinaryConfigurationStorageDetailsType/maecPackage:File_Offset</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareBinaryConfigurationStorageDetailsType_Section_Name" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareBinaryConfigurationStorageDetailsType/maecPackage:Section_Name</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareBinaryConfigurationStorageDetailsType_Section_Offset" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareBinaryConfigurationStorageDetailsType/maecPackage:Section_Offset</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareConfigurationDetailsType_Configuration_Parameter" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareConfigurationDetailsType/maecPackage:Configuration_Parameter</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareConfigurationDetailsType_Obfuscation" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareConfigurationDetailsType/maecPackage:Obfuscation</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareConfigurationDetailsType_Storage" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareConfigurationDetailsType/maecPackage:Storage</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareConfigurationObfuscationAlgorithmType_Algorithm_Name" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareConfigurationObfuscationAlgorithmType/maecPackage:Algorithm_Name</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareConfigurationObfuscationAlgorithmType_Key" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareConfigurationObfuscationAlgorithmType/maecPackage:Key</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareConfigurationObfuscationDetailsType_Algorithm_Details" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareConfigurationObfuscationDetailsType/maecPackage:Algorithm_Details</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareConfigurationParameterType_Name" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareConfigurationParameterType/maecPackage:Name</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareConfigurationParameterType_Value" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareConfigurationParameterType/maecPackage:Value</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareConfigurationStorageDetailsType_File" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareConfigurationStorageDetailsType/maecPackage:File</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareConfigurationStorageDetailsType_Malware_Binary" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareConfigurationStorageDetailsType/maecPackage:Malware_Binary</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareConfigurationStorageDetailsType_URL" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareConfigurationStorageDetailsType/maecPackage:URL</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareDevelopmentEnvironmentType_Debugging_File" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareDevelopmentEnvironmentType/maecPackage:Debugging_File</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareDevelopmentEnvironmentType_Tools" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareDevelopmentEnvironmentType/maecPackage:Tools</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareExceptionType_Description" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareExceptionType/maecPackage:Description</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareExceptionType_Exception_Code" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareExceptionType/maecPackage:Exception_Code</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareExceptionType_Faulting_Address" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareExceptionType/maecPackage:Faulting_Address</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareSubjectListType_Malware_Subject" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareSubjectListType/maecPackage:Malware_Subject</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareSubjectRelationshipListType_Relationship" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareSubjectRelationshipListType/maecPackage:Relationship</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareSubjectRelationshipType_Malware_Subject_Reference" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareSubjectRelationshipType/maecPackage:Malware_Subject_Reference</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareSubjectRelationshipType_Type" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareSubjectRelationshipType/maecPackage:Type</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareSubjectType_Analyses" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareSubjectType/maecPackage:Analyses</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareSubjectType_Compatible_Platform" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareSubjectType/maecPackage:Compatible_Platform</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareSubjectType_Configuration_Details" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareSubjectType/maecPackage:Configuration_Details</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareSubjectType_Development_Environment" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareSubjectType/maecPackage:Development_Environment</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareSubjectType_Field_Data" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareSubjectType/maecPackage:Field_Data</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareSubjectType_Findings_Bundles" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareSubjectType/maecPackage:Findings_Bundles</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareSubjectType_Label" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareSubjectType/maecPackage:Label</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareSubjectType_Malware_Instance_Object_Attributes" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareSubjectType/maecPackage:Malware_Instance_Object_Attributes</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareSubjectType_Minor_Variants" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareSubjectType/maecPackage:Minor_Variants</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareSubjectType_Relationships" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareSubjectType/maecPackage:Relationships</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MetaAnalysisType_Action_Equivalences" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MetaAnalysisType/maecPackage:Action_Equivalences</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MetaAnalysisType_Object_Equivalences" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MetaAnalysisType/maecPackage:Object_Equivalences</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MinorVariantListType_Minor_Variant" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MinorVariantListType/maecPackage:Minor_Variant</a></b></div>
+                                                <div><b><a href="maec-package-2.html#NetworkInfrastructureType_Captured_Protocols" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:NetworkInfrastructureType/maecPackage:Captured_Protocols</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ObjectEquivalenceListType_Object_Equivalence" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ObjectEquivalenceListType/maecPackage:Object_Equivalence</a></b></div>
+                                                <div><b><a href="maec-package-2.html#PackageType_Grouping_Relationships" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:PackageType/maecPackage:Grouping_Relationships</a></b></div>
+                                                <div><b><a href="maec-package-2.html#PackageType_Malware_Subjects" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:PackageType/maecPackage:Malware_Subjects</a></b></div>
+                                                <div><b><a href="maec-package-2.html#SourceType_Method" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:SourceType/maecPackage:Method</a></b></div>
+                                                <div><b><a href="maec-package-2.html#SourceType_Name" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:SourceType/maecPackage:Name</a></b></div>
+                                                <div><b><a href="maec-package-2.html#SourceType_Organization" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:SourceType/maecPackage:Organization</a></b></div>
+                                                <div><b><a href="maec-package-2.html#SourceType_Reference" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:SourceType/maecPackage:Reference</a></b></div>
+                                                <div><b><a href="maec-package-2.html#SourceType_URL" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:SourceType/maecPackage:URL</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ToolListType_Tool" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ToolListType/maecPackage:Tool</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_maec_package_schema.xsdComplex_Type" type="image" value="-" src="img/btM.gif" onclick="switchState('gr_maec_package_schema.xsdComplex_Type');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Complex Types</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_maec_package_schema.xsdComplex_Type" class="componentGroup" style="display:block">
+                                                <div><b><a href="maec-package-2.html#ActionEquivalenceListType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ActionEquivalenceListType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ActionEquivalenceType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ActionEquivalenceType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#AnalysisEnvironmentType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisEnvironmentType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#AnalysisListType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisListType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#AnalysisSystemListType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisSystemListType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#AnalysisSystemType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisSystemType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#AnalysisType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#CapturedProtocolListType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:CapturedProtocolListType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#CapturedProtocolType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:CapturedProtocolType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ClusterCompositionType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ClusterCompositionType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ClusterEdgeNodePairType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ClusterEdgeNodePairType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ClusteringAlgorithmParametersType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ClusteringAlgorithmParametersType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ClusteringMetadataType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ClusteringMetadataType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#CommentListType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:CommentListType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#CommentType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:CommentType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#DynamicAnalysisMetadataType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:DynamicAnalysisMetadataType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#FindingsBundleListType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:FindingsBundleListType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#GroupingRelationshipListType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:GroupingRelationshipListType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#GroupingRelationshipType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:GroupingRelationshipType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#HypervisorHostSystemType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:HypervisorHostSystemType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#InstalledProgramsType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:InstalledProgramsType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareBinaryConfigurationStorageDetailsType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareBinaryConfigurationStorageDetailsType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareConfigurationDetailsType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareConfigurationDetailsType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareConfigurationObfuscationAlgorithmType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareConfigurationObfuscationAlgorithmType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareConfigurationObfuscationDetailsType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareConfigurationObfuscationDetailsType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareConfigurationParameterType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareConfigurationParameterType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareConfigurationStorageDetailsType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareConfigurationStorageDetailsType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareDevelopmentEnvironmentType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareDevelopmentEnvironmentType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareExceptionType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareExceptionType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareSubjectListType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareSubjectListType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareSubjectReferenceType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareSubjectReferenceType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareSubjectRelationshipListType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareSubjectRelationshipListType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareSubjectRelationshipType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareSubjectRelationshipType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MalwareSubjectType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MalwareSubjectType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MetaAnalysisType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MetaAnalysisType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#MinorVariantListType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:MinorVariantListType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#NetworkInfrastructureType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:NetworkInfrastructureType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ObjectEquivalenceListType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ObjectEquivalenceListType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ObjectEquivalenceType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ObjectEquivalenceType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#PackageType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:PackageType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#SourceType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:SourceType</a></b></div>
+                                                <div><b><a href="maec-package-2.html#ToolListType" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:ToolListType</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_maec_package_schema.xsdSimple_Type" type="image" value="-" src="img/btM.gif" onclick="switchState('gr_maec_package_schema.xsdSimple_Type');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Simple Types</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_maec_package_schema.xsdSimple_Type" class="componentGroup" style="display:block">
+                                                <div><b><a href="maec-package-2.html#AnalysisMethodEnum" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisMethodEnum</a></b></div>
+                                                <div><b><a href="maec-package-2.html#AnalysisTypeEnum" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:AnalysisTypeEnum</a></b></div>
+                                                <div><b><a href="maec-package-2.html#InteractionLevelEnum" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:InteractionLevelEnum</a></b></div>
+                                                <div><b><a href="maec-package-2.html#Layer4ProtocolEnum" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:Layer4ProtocolEnum</a></b></div>
+                                                <div><b><a href="maec-package-2.html#Layer7ProtocolEnum" target="mainFrame" title="http://maec.mitre.org/XMLSchema/maec-package-2" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/XMLSchema/maec-package-2')">maecPackage:Layer7ProtocolEnum</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="horizontalLayout">
+                        <table class="rt">
+                           <tr>
+                              <td class="rt_cornerTopLeft"></td>
+                              <td class="rt_lineTop"></td>
+                              <td class="rt_cornerTopRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_lineLeft"></td>
+                              <td class="rt_content">
+                                 <table class="componentGroup">
+                                    <tbody>
+                                       <tr>
+                                          <td class="componentGroup"><input id="button_gr_maec_package_schema.xsdAttribute" type="image" value="-" src="img/btM.gif" onclick="switchState('gr_maec_package_schema.xsdAttribute');" class="control" /></td>
+                                          <td class="componentGroup">
+                                             <div class="componentGroupTitle">Attributes</div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="componentGroup"></td>
+                                          <td class="componentGroup">
+                                             <div id="gr_maec_package_schema.xsdAttribute" class="componentGroup" style="display:block">
+                                                <div><b><a href="NO_NAMESPACE.html#ActionEquivalenceType_id" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:ActionEquivalenceType/@id</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#AnalysisType_complete_datetime" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:AnalysisType/@complete_datetime</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#AnalysisType_id" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:AnalysisType/@id</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#AnalysisType_lastupdate_datetime" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:AnalysisType/@lastupdate_datetime</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#AnalysisType_method" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:AnalysisType/@method</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#AnalysisType_ordinal_position" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:AnalysisType/@ordinal_position</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#AnalysisType_start_datetime" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:AnalysisType/@start_datetime</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#AnalysisType_type" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:AnalysisType/@type</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#CapturedProtocolType_interaction_level" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:CapturedProtocolType/@interaction_level</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#CapturedProtocolType_layer4_protocol" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:CapturedProtocolType/@layer4_protocol</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#CapturedProtocolType_layer7_protocol" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:CapturedProtocolType/@layer7_protocol</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#CapturedProtocolType_port_number" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:CapturedProtocolType/@port_number</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#ClusterCompositionType_score_type" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:ClusterCompositionType/@score_type</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#ClusterEdgeNodePairType_similarity_distance" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:ClusterEdgeNodePairType/@similarity_distance</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#ClusterEdgeNodePairType_similarity_index" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:ClusterEdgeNodePairType/@similarity_index</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#CommentType_author" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:CommentType/@author</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#CommentType_observation_name" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:CommentType/@observation_name</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#CommentType_timestamp" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:CommentType/@timestamp</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#MalwareConfigurationObfuscationAlgorithmType_ordinal_position" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:MalwareConfigurationObfuscationAlgorithmType/@ordinal_position</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#MalwareConfigurationObfuscationDetailsType_is_encoded" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:MalwareConfigurationObfuscationDetailsType/@is_encoded</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#MalwareConfigurationObfuscationDetailsType_is_encrypted" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:MalwareConfigurationObfuscationDetailsType/@is_encrypted</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#MalwareExceptionType_is_fatal" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:MalwareExceptionType/@is_fatal</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#MalwareSubjectReferenceType_malware_subject_idref" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:MalwareSubjectReferenceType/@malware_subject_idref</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#MalwareSubjectType_id" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:MalwareSubjectType/@id</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#ObjectEquivalenceType_id" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:ObjectEquivalenceType/@id</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#PackageType_id" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:PackageType/@id</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#PackageType_schema_version" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:PackageType/@schema_version</a></b></div>
+                                                <div><b><a href="NO_NAMESPACE.html#PackageType_timestamp" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">maecPackage:PackageType/@timestamp</a></b></div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                              <td class="rt_lineRight"></td>
+                           </tr>
+                           <tr>
+                              <td class="rt_cornerBottomLeft"></td>
+                              <td class="rt_lineBottom"></td>
+                              <td class="rt_cornerBottomRight"></td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div style="clear:left"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer">
+         <hr />
+         <div align="center">XML Schema documentation generated by <a href="http://www.oxygenxml.com" target="_parent"><span class="oXygenLogo"><span class="redX">&lt;</span>o<span class="redX">X</span>ygen<span class="redX">/&gt;</span></span></a><sup>®</sup> XML Editor.
+         </div>
+      </div><script type="text/javascript">
+         <!--                     
+                     // The namespace is the selected option in the TOC combo.
+                    
+                     // Floats the toolbar.
+                     var globalControls = getElementObject("global_controls"); 
+                     
+                     if(globalControls != null){
+	                     var browser=navigator.appName;
+						 var version = parseFloat(navigator.appVersion.split('MSIE')[1]);
+						 
+						 var IE6 = false;
+						 if ((browser=="Microsoft Internet Explorer") && (version < 7)){
+						 	IE6 = true;
+						 }
+	
+	                     //alert (IE6 + " |V| " + version);
+	                     
+	                     if(IE6){
+	                     	// On IE 6 the 'fixed' property is not supported. We must use javascript. 
+	                         globalControls.style.position='absolute';                         
+	                         // The global controls will do not exist in the TOC frame, when chunking.
+	                         findAndFloat("global_controls", 225, 30);    
+	                     } else {
+	                      	  globalControls.style.position='fixed';                     	
+	                     }
+	                     
+	                     globalControls.style.right='0';                       
+                     }
+                --></script></body>
+</html>

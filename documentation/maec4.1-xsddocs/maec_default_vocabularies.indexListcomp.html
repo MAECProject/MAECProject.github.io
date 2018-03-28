@@ -1,0 +1,540 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Schema documentation for </title>
+      <link rel="stylesheet" href="docHtml.css" type="text/css" /><script type="text/javascript">
+         <!--
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        var button_prefix = 'button_';
+        
+        /**
+        * Returns an element in the current HTML document.
+        *
+        * @param elementID Identifier of HTML element
+        * @return               HTML element object
+        */
+        function getElementObject(elementID) {
+            var elemObj = null;
+            if (document.getElementById) {
+                elemObj = document.getElementById(elementID);
+            }
+            return elemObj;
+        }
+        
+        /**
+        * Switches the state of a collapseable box, e.g.
+        * if it's opened, it'll be closed, and vice versa.
+        *
+        * @param boxID Identifier of box
+        */
+        function switchState(boxID) {
+            var boxObj = getElementObject(boxID);
+            var buttonObj = getElementObject(button_prefix + boxID);
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else if (boxObj.style.display == "none") {
+                // Box is closed, so open it
+                openBox(boxObj, buttonObj);
+            } else if (boxObj.style.display == "block") {
+                // Box is opened, so close it
+                closeBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+        * Opens a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function openBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "block";
+                
+                // Change text of button
+                if (boxObj.style.display == "block") {
+                    buttonObj.src = "img/btM.gif";
+                }
+            }
+        }
+        
+        /**
+        * Closes a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function closeBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "none";
+                
+                // Change text of button
+                if (boxObj.style.display == "none") {
+                    buttonObj.src = "img/btP.gif";
+                }
+            }
+        }
+    
+       function switchStateForAll(buttonObj, boxList) {
+            if (buttonObj == null) {
+                // button not found
+            } else if (buttonObj.value == "+") {
+                // Expand all
+                expandAll(boxList);
+                buttonObj.value = "-";
+            } else if (buttonObj.value == "-") {
+                // Collapse all
+                collapseAll(boxList);
+                buttonObj.value = "+";
+            }
+        }
+        
+        /**
+        * Closes all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function collapseAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                closeBox(boxObj, buttonObj);
+            }
+        }
+            
+        /**
+        * Open all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function expandAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                openBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+         * Update the message presented in the title of the html page.
+         * - If the documentation was splited by namespace we present something like: "Documentation for namespace 'ns'"
+         * - If the documentation was splited by location we present somehing like: "Documentation for 'Schema.xsd'"
+         * - If no split we always present: "Documentation for 'MainSchema.xsd'"
+         */
+        function updatePageTitle(message) {
+            top.document.title = message;
+        }
+        
+          
+                    
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function findAndFloat(id, x_displacement, y_displacement){
+
+            var element = getElementObject(id);            
+            
+            window[id + "_obj"] = element;
+            
+            if(document.layers) {
+               element.style = element;
+            }
+            
+            element.current_y = y_displacement;      
+            element.first_time = true;
+         
+            element.floatElement = function(){
+               // It may be closed by an user action.
+                
+               // Target X and Y coordinates.
+               var x, y;
+               
+               var myWidth = 0, myHeight = 0;
+               if( typeof( window.innerWidth ) == 'number' ) {
+                  //Non-IE
+                  myWidth = window.innerWidth;
+                  myHeight = window.innerHeight;
+               } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+                  //IE 6+ in 'standards compliant mode'
+                  myWidth = document.documentElement.clientWidth;
+                  myHeight = document.documentElement.clientHeight;
+               } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+                  //IE 4 compatible
+                  myWidth = document.body.clientWidth;
+                  myHeight = document.body.clientHeight;
+               }
+               
+               
+               x = myWidth - x_displacement;
+               
+               var ns = (navigator.appName.indexOf("Netscape") != -1);               
+               y = ns ? pageYOffset : document.documentElement && document.documentElement.scrollTop ? 
+                  document.documentElement.scrollTop : document.body.scrollTop;               
+               y = y + y_displacement;               
+               
+               // The current y is the current coordinate of the floating element.
+               // This should be at the limit the y target coordinate.
+               this.current_y += (y - this.current_y)/1.25;
+               
+               // Add the pixels constant after the values
+               // and move the element.
+               var px = document.layers ? "" : "px";
+               this.style.left =  x + px;
+               this.style.top =  this.current_y + px;
+                              
+               setTimeout(this.id + "_obj.floatElement()", 100);
+            }
+            
+            element.floatElement();
+            return element;
+          }
+
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function selectTOCGroupBy(id, isChunked, indexFileLocation, indexFileNamespace, indexFileComponent){
+
+            if (!isChunked) {
+             var selectIds = new Array('toc_group_by_namespace', 'toc_group_by_location', 'toc_group_by_component_type');
+             // Make all the tabs invisible.
+               for (i = 0; i < 3; i++){
+                  var tab = getElementObject(selectIds[i]);
+                  tab.style.display = 'none';
+               }
+               var selTab = getElementObject(id);
+               selTab.style.display = 'block';
+            } else {
+             if (id == 'toc_group_by_namespace') {
+               parent.indexFrame.location = indexFileNamespace;
+             } else  if (id == 'toc_group_by_location') {
+               parent.indexFrame.location = indexFileLocation;
+             } else  if (id == 'toc_group_by_component_type') {
+              parent.indexFrame.location = indexFileComponent;
+             }
+            }
+         }
+          
+
+    --></script></head>
+   <body>
+      <h2><a id="INDEX">Table of Contents</a></h2>
+      <div class="toc">
+         <form action="none">
+            <div><span> Group by: <select id="selectTOC" onchange="selectTOCGroupBy(this.options[this.selectedIndex].value, true, 'maec_default_vocabularies.indexList.html', 'maec_default_vocabularies.indexListns.html', 'maec_default_vocabularies.indexListcomp.html');">
+                     <option value="toc_group_by_namespace">Namespace</option>
+                     <option value="toc_group_by_location">Location</option>
+                     <option value="toc_group_by_component_type" selected="selected">Component Type</option></select></span></div>
+         </form>
+         <div class="level1" id="toc_group_by_component_type" style="display:block">
+            <div>
+               <div class="horizontalLayout">
+                  <table class="rt">
+                     <tr>
+                        <td class="rt_cornerTopLeft"></td>
+                        <td class="rt_lineTop"></td>
+                        <td class="rt_cornerTopRight"></td>
+                     </tr>
+                     <tr>
+                        <td class="rt_lineLeft"></td>
+                        <td class="rt_content">
+                           <table class="componentGroup">
+                              <tbody>
+                                 <tr>
+                                    <td class="componentGroup"><input id="button_Complex_Type" type="image" value="-" src="img/btM.gif" onclick="switchState('Complex_Type');" class="control" /></td>
+                                    <td class="componentGroup">
+                                       <div class="componentGroupTitle">Complex Types</div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="componentGroup"></td>
+                                    <td class="componentGroup">
+                                       <div id="Complex_Type" class="componentGroup" style="display:block">
+                                          <div><b><a href="default_vocabularies-1.html#ActionObjectAssociationTypeVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:ActionObjectAssociationTypeVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AntiBehavioralAnalysisPropertiesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AntiBehavioralAnalysisPropertiesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AntiBehavioralAnalysisStrategicObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AntiBehavioralAnalysisStrategicObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AntiBehavioralAnalysisTacticalObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AntiBehavioralAnalysisTacticalObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AntiCodeAnalysisStrategicObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AntiCodeAnalysisStrategicObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AntiCodeAnalysisTacticalObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AntiCodeAnalysisTacticalObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AntiDetectionStrategicObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AntiDetectionStrategicObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AntiDetectionTacticalObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AntiDetectionTacticalObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AntiRemovalStrategicObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AntiRemovalStrategicObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AntiRemovalTacticalObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AntiRemovalTacticalObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AvailabilityViolationPropertiesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AvailabilityViolationPropertiesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AvailabilityViolationStrategicObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AvailabilityViolationStrategicObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AvailabilityViolationTacticalObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AvailabilityViolationTacticalObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#CapabilityObjectiveRelationshipTypeVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:CapabilityObjectiveRelationshipTypeVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#CommandandControlPropertiesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:CommandandControlPropertiesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#CommandandControlStrategicObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:CommandandControlStrategicObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#CommandandControlTacticalObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:CommandandControlTacticalObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#CommonCapabilityPropertiesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:CommonCapabilityPropertiesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DNSActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DNSActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DataExfiltrationPropertiesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DataExfiltrationPropertiesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DataExfiltrationStrategicObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DataExfiltrationStrategicObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DataExfiltrationTacticalObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DataExfiltrationTacticalObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DataTheftPropertiesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DataTheftPropertiesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DataTheftStrategicObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DataTheftStrategicObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DataTheftTacticalObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DataTheftTacticalObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DebuggingActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DebuggingActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DestructionPropertiesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DestructionPropertiesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DestructionStrategicObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DestructionStrategicObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DestructionTacticalObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DestructionTacticalObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DeviceDriverActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DeviceDriverActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DeviceDriverActionNameVocab-1.1" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DeviceDriverActionNameVocab-1.1</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DirectoryActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DirectoryActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DirectoryActionNameVocab-1.1" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DirectoryActionNameVocab-1.1</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DiskActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DiskActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DiskActionNameVocab-1.1" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DiskActionNameVocab-1.1</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#FTPActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:FTPActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#FileActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:FileActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#FileActionNameVocab-1.1" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:FileActionNameVocab-1.1</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#FraudStrategicObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:FraudStrategicObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#FraudTacticalObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:FraudTacticalObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#GUIActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:GUIActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#GroupingRelationshipTypeVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:GroupingRelationshipTypeVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#HTTPActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:HTTPActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#HookingActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:HookingActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#HookingActionNameVocab-1.1" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:HookingActionNameVocab-1.1</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#IPCActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:IPCActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#IRCActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:IRCActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#ImportanceTypeVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:ImportanceTypeVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#InfectionPropagationPropertiesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:InfectionPropagationPropertiesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#InfectionPropagationStrategicObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:InfectionPropagationStrategicObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#InfectionPropagationTacticalObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:InfectionPropagationTacticalObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#IntegrityViolationStrategicObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:IntegrityViolationStrategicObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#IntegrityViolationTacticalObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:IntegrityViolationTacticalObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#LibraryActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:LibraryActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#LibraryActionNameVocab-1.1" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:LibraryActionNameVocab-1.1</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#MachineAccessControlPropertiesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:MachineAccessControlPropertiesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#MachineAccessControlStrategicObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:MachineAccessControlStrategicObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#MachineAccessControlTacticalObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:MachineAccessControlTacticalObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#MalwareCapabilityVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:MalwareCapabilityVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#MalwareConfigurationParameterVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:MalwareConfigurationParameterVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#MalwareDevelopmentToolVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:MalwareDevelopmentToolVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#MalwareEntityTypeVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:MalwareEntityTypeVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#MalwareLabelVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:MalwareLabelVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#MalwareSubjectRelationshipTypeVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:MalwareSubjectRelationshipTypeVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#MalwareSubjectRelationshipTypeVocab-1.1" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:MalwareSubjectRelationshipTypeVocab-1.1</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#NetworkActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:NetworkActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#NetworkActionNameVocab-1.1" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:NetworkActionNameVocab-1.1</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#NetworkShareActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:NetworkShareActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#PersistencePropertiesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:PersistencePropertiesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#PersistenceStrategicObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:PersistenceStrategicObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#PersistenceTacticalObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:PersistenceTacticalObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#PrivilegeEscalationPropertiesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:PrivilegeEscalationPropertiesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#PrivilegeEscalationStrategicObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:PrivilegeEscalationStrategicObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#PrivilegeEscalationTacticalObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:PrivilegeEscalationTacticalObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#ProbingStrategicObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:ProbingStrategicObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#ProbingTacticalObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:ProbingTacticalObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#ProcessActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:ProcessActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#ProcessMemoryActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:ProcessMemoryActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#ProcessThreadActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:ProcessThreadActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#RegistryActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:RegistryActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#RemoteMachineManipulationStrategicObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:RemoteMachineManipulationStrategicObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#RemoteMachineManipulationTacticalObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:RemoteMachineManipulationTacticalObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SecondaryOperationPropertiesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SecondaryOperationPropertiesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SecondaryOperationStrategicObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SecondaryOperationStrategicObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SecondaryOperationTacticalObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SecondaryOperationTacticalObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SecurityDegradationPropertiesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SecurityDegradationPropertiesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SecurityDegradationStrategicObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SecurityDegradationStrategicObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SecurityDegradationTacticalObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SecurityDegradationTacticalObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#ServiceActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:ServiceActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#ServiceActionNameVocab-1.1" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:ServiceActionNameVocab-1.1</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SocketActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SocketActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SpyingStrategicObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SpyingStrategicObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SpyingTacticalObjectivesVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SpyingTacticalObjectivesVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SynchronizationActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SynchronizationActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SystemActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SystemActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#UserActionNameVocab-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:UserActionNameVocab-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#UserActionNameVocab-1.1" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:UserActionNameVocab-1.1</a></b></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                        <td class="rt_lineRight"></td>
+                     </tr>
+                     <tr>
+                        <td class="rt_cornerBottomLeft"></td>
+                        <td class="rt_lineBottom"></td>
+                        <td class="rt_cornerBottomRight"></td>
+                     </tr>
+                  </table>
+               </div>
+               <div class="horizontalLayout">
+                  <table class="rt">
+                     <tr>
+                        <td class="rt_cornerTopLeft"></td>
+                        <td class="rt_lineTop"></td>
+                        <td class="rt_cornerTopRight"></td>
+                     </tr>
+                     <tr>
+                        <td class="rt_lineLeft"></td>
+                        <td class="rt_content">
+                           <table class="componentGroup">
+                              <tbody>
+                                 <tr>
+                                    <td class="componentGroup"><input id="button_Simple_Type" type="image" value="-" src="img/btM.gif" onclick="switchState('Simple_Type');" class="control" /></td>
+                                    <td class="componentGroup">
+                                       <div class="componentGroupTitle">Simple Types</div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="componentGroup"></td>
+                                    <td class="componentGroup">
+                                       <div id="Simple_Type" class="componentGroup" style="display:block">
+                                          <div><b><a href="default_vocabularies-1.html#ActionObjectAssociationTypeEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:ActionObjectAssociationTypeEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AntiBehavioralAnalysisPropertiesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AntiBehavioralAnalysisPropertiesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AntiBehavioralAnalysisStrategicObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AntiBehavioralAnalysisStrategicObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AntiBehavioralAnalysisTacticalObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AntiBehavioralAnalysisTacticalObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AntiCodeAnalysisStrategicObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AntiCodeAnalysisStrategicObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AntiCodeAnalysisTacticalObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AntiCodeAnalysisTacticalObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AntiDetectionStrategicObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AntiDetectionStrategicObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AntiDetectionTacticalObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AntiDetectionTacticalObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AntiRemovalStrategicObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AntiRemovalStrategicObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AntiRemovalTacticalObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AntiRemovalTacticalObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AvailabilityViolationPropertiesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AvailabilityViolationPropertiesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AvailabilityViolationStrategicObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AvailabilityViolationStrategicObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#AvailabilityViolationTacticalObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:AvailabilityViolationTacticalObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#CapabilityObjectiveRelationshipEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:CapabilityObjectiveRelationshipEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#CommandandControlPropertiesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:CommandandControlPropertiesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#CommandandControlStrategicObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:CommandandControlStrategicObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#CommandandControlTacticalObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:CommandandControlTacticalObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#CommonCapabilityPropertiesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:CommonCapabilityPropertiesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DNSActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DNSActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DataExfiltrationPropertiesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DataExfiltrationPropertiesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DataExfiltrationStrategicObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DataExfiltrationStrategicObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DataExfiltrationTacticalObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DataExfiltrationTacticalObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DataTheftPropertiesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DataTheftPropertiesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DataTheftStrategicObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DataTheftStrategicObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DataTheftTacticalObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DataTheftTacticalObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DebuggingActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DebuggingActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DestructionPropertiesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DestructionPropertiesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DestructionStrategicObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DestructionStrategicObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DestructionTacticalObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DestructionTacticalObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DeviceDriverActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DeviceDriverActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DeviceDriverActionNameEnum-1.1" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DeviceDriverActionNameEnum-1.1</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DirectoryActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DirectoryActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DirectoryActionNameEnum-1.1" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DirectoryActionNameEnum-1.1</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DiskActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DiskActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#DiskActionNameEnum-1.1" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:DiskActionNameEnum-1.1</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#FTPActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:FTPActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#FileActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:FileActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#FileActionNameEnum-1.1" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:FileActionNameEnum-1.1</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#FraudStrategicObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:FraudStrategicObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#FraudTacticalObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:FraudTacticalObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#GUIActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:GUIActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#GroupingRelationshipEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:GroupingRelationshipEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#HTTPActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:HTTPActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#HookingActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:HookingActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#HookingActionNameEnum-1.1" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:HookingActionNameEnum-1.1</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#IPCActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:IPCActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#IRCActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:IRCActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#ImportanceTypeEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:ImportanceTypeEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#InfectionPropagationPropertiesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:InfectionPropagationPropertiesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#InfectionPropagationStrategicObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:InfectionPropagationStrategicObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#InfectionPropagationTacticalObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:InfectionPropagationTacticalObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#IntegrityViolationStrategicObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:IntegrityViolationStrategicObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#IntegrityViolationTacticalObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:IntegrityViolationTacticalObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#LibraryActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:LibraryActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#LibraryActionNameEnum-1.1" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:LibraryActionNameEnum-1.1</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#MachineAccessControlPropertiesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:MachineAccessControlPropertiesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#MachineAccessControlStrategicObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:MachineAccessControlStrategicObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#MachineAccessControlTacticalObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:MachineAccessControlTacticalObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#MalwareCapabilityEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:MalwareCapabilityEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#MalwareConfigurationParameterEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:MalwareConfigurationParameterEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#MalwareDevelopmentToolEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:MalwareDevelopmentToolEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#MalwareEntityTypeEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:MalwareEntityTypeEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#MalwareLabelEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:MalwareLabelEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#MalwareSubjectRelationshipEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:MalwareSubjectRelationshipEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#MalwareSubjectRelationshipEnum-1.1" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:MalwareSubjectRelationshipEnum-1.1</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#NetworkActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:NetworkActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#NetworkActionNameEnum-1.1" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:NetworkActionNameEnum-1.1</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#NetworkShareActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:NetworkShareActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#PersistencePropertiesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:PersistencePropertiesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#PersistenceStrategicObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:PersistenceStrategicObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#PersistenceTacticalObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:PersistenceTacticalObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#PrivilegeEscalationPropertiesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:PrivilegeEscalationPropertiesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#PrivilegeEscalationStrategicObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:PrivilegeEscalationStrategicObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#PrivilegeEscalationTacticalObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:PrivilegeEscalationTacticalObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#ProbingStrategicObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:ProbingStrategicObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#ProbingTacticalObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:ProbingTacticalObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#ProcessActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:ProcessActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#ProcessMemoryActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:ProcessMemoryActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#ProcessThreadActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:ProcessThreadActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#RegistryActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:RegistryActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#RemoteMachineManipulationStrategicObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:RemoteMachineManipulationStrategicObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#RemoteMachineManipulationTacticalObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:RemoteMachineManipulationTacticalObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SecondaryOperationPropertiesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SecondaryOperationPropertiesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SecondaryOperationStrategicObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SecondaryOperationStrategicObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SecondaryOperationTacticalObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SecondaryOperationTacticalObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SecurityDegradationPropertiesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SecurityDegradationPropertiesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SecurityDegradationStrategicObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SecurityDegradationStrategicObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SecurityDegradationTacticalObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SecurityDegradationTacticalObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#ServiceActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:ServiceActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#ServiceActionNameEnum-1.1" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:ServiceActionNameEnum-1.1</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SocketActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SocketActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SpyingStrategicObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SpyingStrategicObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SpyingTacticalObjectivesEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SpyingTacticalObjectivesEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SynchronizationActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SynchronizationActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#SystemActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:SystemActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#UserActionNameEnum-1.0" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:UserActionNameEnum-1.0</a></b></div>
+                                          <div><b><a href="default_vocabularies-1.html#UserActionNameEnum-1.1" target="mainFrame" title="http://maec.mitre.org/default_vocabularies-1" onclick="updatePageTitle('Schema documentation for namespace http://maec.mitre.org/default_vocabularies-1')">maecVocabs:UserActionNameEnum-1.1</a></b></div>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                        <td class="rt_lineRight"></td>
+                     </tr>
+                     <tr>
+                        <td class="rt_cornerBottomLeft"></td>
+                        <td class="rt_lineBottom"></td>
+                        <td class="rt_cornerBottomRight"></td>
+                     </tr>
+                  </table>
+               </div>
+               <div style="clear:left"></div>
+            </div>
+         </div>
+      </div>
+      <div class="footer">
+         <hr />
+         <div align="center">XML Schema documentation generated by <a href="http://www.oxygenxml.com" target="_parent"><span class="oXygenLogo"><span class="redX">&lt;</span>o<span class="redX">X</span>ygen<span class="redX">/&gt;</span></span></a><sup>®</sup> XML Editor.
+         </div>
+      </div>
+   </body>
+</html>
