@@ -28,10 +28,10 @@ title: MAEC 4.1 (Archive)
 |---------|-------|------|-------------|
 |All Files|n/a|[zip](https://maec.mitre.org/language/version4.1/maec_4.1.zip)|n/a|
 |All Files (offline, with examples and documentation)|n/a|[zip](https://maec.mitre.org/language/version4.1/maec_4.1_offline.zip)|n/a|
-|MAEC Bundle|4.1|[xsd](https://maec.mitre.org/language/version4.1/maec_bundle_schema.xsd)|[html](https://maec.mitre.org/language/version4.1/xsddocs/maec_bundle_schema.html)|
-|MAEC Package|2.1|[xsd](https://maec.mitre.org/language/version4.1/maec_package_schema.xsd)|[html](https://maec.mitre.org/language/version4.1/xsddocs/maec_package_schema.html)|
-|MAEC Container|2.1|[xsd](https://maec.mitre.org/language/version4.1/maec_container_schema.xsd)|[html](https://maec.mitre.org/language/version4.1/xsddocs/maec_container_schema.html)|
-|MAEC Default Vocabularies|1.1|[xsd](https://maec.mitre.org/language/version4.1/maec_default_vocabularies.xsd)|[html](https://maec.mitre.org/language/version4.1/xsddocs/maec_default_vocabularies.html)|
+|MAEC Bundle|4.1|[xsd](https://maec.mitre.org/language/version4.1/maec_bundle_schema.xsd)|[html](/documentation/maec4.1-xsddocs/maec_bundle_schema.html)|
+|MAEC Package|2.1|[xsd](https://maec.mitre.org/language/version4.1/maec_package_schema.xsd)|[html](/documentation/maec4.1-xsddocs/maec_package_schema.html)|
+|MAEC Container|2.1|[xsd](https://maec.mitre.org/language/version4.1/maec_container_schema.xsd)|[html](/documentation/maec4.1-xsddocs/maec_container_schema.html)|
+|MAEC Default Vocabularies|1.1|[xsd](https://maec.mitre.org/language/version4.1/maec_default_vocabularies.xsd)|[html](/documentation/maec4.1-xsddocs/maec_default_vocabularies.html)|
 |MAEC Capabilities Hierarchy Diagram|n/a|n/a|[pdf](https://maec.mitre.org/language/version4.1/MAEC_4.1_Malware_Capabilities.pdf)|
 
 ### Current Release Examples
