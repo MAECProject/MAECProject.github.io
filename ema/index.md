@@ -19,3 +19,4 @@ EMA entries are in **bold**.
 |---|---|---|[Modify Registry](https://attack.mitre.org/wiki/Technique/T1112)|---|---|---|---|---|---|---|---|
 |---|---|---|[Obfuscated File or Information](https://attack.mitre.org/wiki/Technique/T1027)|---|---|---|---|---|---|---|---|
 |---|---|---|[Process Injection](https://attack.mitre.org/wiki/Technique/T1055)|---|---|---|---|---|---|---|[Process Injection](https://attack.mitre.org/wiki/Technique/T1055)|
+|---|---|---|[Software Packing](https://attack.mitre.org/wiki/Technique/T1045)|---|---|---|---|---|---|---|---|
