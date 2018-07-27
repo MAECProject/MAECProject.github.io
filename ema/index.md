@@ -20,11 +20,11 @@ EMA entries are in **bold**.
 |[**Detect Analysis Tool**](https://collaborate.mitre.org/ema/index.php/Ema-1005)|---|[Data from Network Shared Drive](https://attack.mitre.org/wiki/Technique/T1039)|[Custom Cryptographic Protocol](https://attack.mitre.org/wiki/Technique/T1024)|[Obfuscated File or Information](https://attack.mitre.org/wiki/Technique/T1027)|---|---|---|---|---|---|[**Re-instantiate Self**](https://collaborate.mitre.org/ema/index.php/Ema-1212)|---|
 |[**Detect Debugger**](https://collaborate.mitre.org/ema/index.php/Ema-1253)|---|[Email Collection](https://attack.mitre.org/wiki/Technique/T1114)|[Data Encoding](https://attack.mitre.org/wiki/Technique/T1132)|[Process Injection](https://attack.mitre.org/wiki/Technique/T1055)|---|---|---|---|---|---|---|---|
 |[**Detect VM**](https://collaborate.mitre.org/ema/index.php/Ema-1239)|---|---|[Data Obfuscation](https://attack.mitre.org/wiki/Technique/T1001)|[Software Packing](https://attack.mitre.org/wiki/Technique/T1045)|---|---|---|---|---|---|---|---|
-|---|---|---|[Web Service](https://attack.mitre.org/wiki/Technique/T1102)|[Web Service](https://attack.mitre.org/wiki/Technique/T1102)|---|---|---|---|---|---|---|---|
-|---|---|---|[**Check for Payload**](https://collaborate.mitre.org/ema/index.php/Ema-1236)|---|---|---|---|---|---|---|---|---|
-|---|---|---|[**Control Malware Via Remote Command**](https://collaborate.mitre.org/ema/index.php/Ema-1241)|---|---|---|---|---|---|---|---|---|
-|---|---|---|[**Generate C2 Domain Names**](https://collaborate.mitre.org/ema/index.php/Ema-1244)|---|---|---|---|---|---|---|---|---|
-|---|---|---|[**Request Email Address List**](https://collaborate.mitre.org/ema/index.php/Ema-1123)|---|---|---|---|---|---|---|---|---|
-|---|---|---|[**Request Email Template**](https://collaborate.mitre.org/ema/index.php/Ema-1124)|---|---|---|---|---|---|---|---|---|
-|---|---|---|[**Send System Information**](https://collaborate.mitre.org/ema/index.php/Ema-1238)|---|---|---|---|---|---|---|---|---|
-|---|---|---|[**Update Configuration**](https://collaborate.mitre.org/ema/index.php/Ema-1240)|---|---|---|---|---|---|---|---|---|
+|[**Embedded File Hooking**](https://collaborate.mitre.org/ema/index.php/Ema-1048)|---|---|[Web Service](https://attack.mitre.org/wiki/Technique/T1102)|[Web Service](https://attack.mitre.org/wiki/Technique/T1102)|---|---|---|---|---|---|---|---|
+|[**Fingerprint Host**](https://collaborate.mitre.org/ema/index.php/Ema-1121)|---|---|[**Check for Payload**](https://collaborate.mitre.org/ema/index.php/Ema-1236)|---|---|---|---|---|---|---|---|---|
+|[**Generate Polymorphic Code**](https://collaborate.mitre.org/ema/index.php/Ema-1032)|---|---|[**Control Malware Via Remote Command**](https://collaborate.mitre.org/ema/index.php/Ema-1241)|---|---|---|---|---|---|---|---|---|
+|[**Hardware Detection**](https://collaborate.mitre.org/ema/index.php/Ema-1022)|---|---|[**Generate C2 Domain Names**](https://collaborate.mitre.org/ema/index.php/Ema-1244)|---|---|---|---|---|---|---|---|---|
+|[**Hide Arbitrary Virtual Memory**](https://collaborate.mitre.org/ema/index.php/Ema-1172)|---|---|---|[**Request Email Address List**](https://collaborate.mitre.org/ema/index.php/Ema-1123)|---|---|---|---|---|---|---|---|---|
+|[**Inhibit Debugger**](https://collaborate.mitre.org/ema/index.php/Ema-1024)|---|---|[**Request Email Template**](https://collaborate.mitre.org/ema/index.php/Ema-1124)|---|---|---|---|---|---|---|---|---|
+|[**Inhibit Memory Dumping**](https://collaborate.mitre.org/ema/index.php/Ema-1173)|---|---|---|[**Send System Information**](https://collaborate.mitre.org/ema/index.php/Ema-1238)|---|---|---|---|---|---|---|---|---|
+|[**Overload Sandbox**](https://collaborate.mitre.org/ema/index.php/Ema-1235)|---|---|---|[**Update Configuration**](https://collaborate.mitre.org/ema/index.php/Ema-1240)|---|---|---|---|---|---|---|---|---|
