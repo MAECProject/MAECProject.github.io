@@ -35,3 +35,4 @@ EMA entries are in **bold**.
 |[**User Interaction Detection**](https://collaborate.mitre.org/ema/index.php/Ema-1021)|---|---|---|---|---|---|---|---|---|---|---|---|
 |[**Virtualize Code**](https://collaborate.mitre.org/ema/index.php/Ema-1046)|---|---|---|---|---|---|---|---|---|---|---|---|
 |[**Virtualize Packer**](https://collaborate.mitre.org/ema/index.php/Ema-1047)|---|---|---|---|---|---|---|---|---|---|---|---|
+|[**Defeat Emulator**](https://collaborate.mitre.org/ema/index.php/Ema-1268)|---|---|---|---|---|---|---|---|---|---|---|---|
