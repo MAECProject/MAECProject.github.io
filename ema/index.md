@@ -28,3 +28,10 @@ EMA entries are in **bold**.
 |[**Inhibit Debugger**](https://collaborate.mitre.org/ema/index.php/Ema-1024)|---|---|[**Request Email Template**](https://collaborate.mitre.org/ema/index.php/Ema-1124)|---|---|---|---|---|---|---|---|---|
 |[**Inhibit Memory Dumping**](https://collaborate.mitre.org/ema/index.php/Ema-1173)|---|---|[**Send System Information**](https://collaborate.mitre.org/ema/index.php/Ema-1238)|---|---|---|---|---|---|---|---|---|
 |[**Overload Sandbox**](https://collaborate.mitre.org/ema/index.php/Ema-1235)|---|---|[**Update Configuration**](https://collaborate.mitre.org/ema/index.php/Ema-1240)|---|---|---|---|---|---|---|---|---|
+|[**Prevent Debugging**](https://collaborate.mitre.org/ema/index.php/Ema-1230)|---|---|---|---|---|---|---|---|---|---|---|---|
+|[**Protect Process**](https://collaborate.mitre.org/ema/index.php/Ema-1034)|---|---|---|---|---|---|---|---|---|---|---|---|
+|[**Stall Execution**](https://collaborate.mitre.org/ema/index.php/Ema-1013)|---|---|---|---|---|---|---|---|---|---|---|---|
+|[**Tool Limitation**](https://collaborate.mitre.org/ema/index.php/Ema-1050)|---|---|---|---|---|---|---|---|---|---|---|---|
+|[**User Interaction Detection**](https://collaborate.mitre.org/ema/index.php/Ema-1021)|---|---|---|---|---|---|---|---|---|---|---|---|
+|[**Virtualize Code**](https://collaborate.mitre.org/ema/index.php/Ema-1046)|---|---|---|---|---|---|---|---|---|---|---|---|
+|[**Virtualize Packer**](https://collaborate.mitre.org/ema/index.php/Ema-1047)|---|---|---|---|---|---|---|---|---|---|---|---|
