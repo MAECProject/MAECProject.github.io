@@ -24,7 +24,7 @@ EMA entries are in **bold**.
 |[**Fingerprint Host**](https://collaborate.mitre.org/ema/index.php/Ema-1121)|---|---|[**Check for Payload**](https://collaborate.mitre.org/ema/index.php/Ema-1236)|---|---|---|---|---|---|---|---|---|
 |[**Generate Polymorphic Code**](https://collaborate.mitre.org/ema/index.php/Ema-1032)|---|---|[**Control Malware Via Remote Command**](https://collaborate.mitre.org/ema/index.php/Ema-1241)|---|---|---|---|---|---|---|---|---|
 |[**Hardware Detection**](https://collaborate.mitre.org/ema/index.php/Ema-1022)|---|---|[**Generate C2 Domain Names**](https://collaborate.mitre.org/ema/index.php/Ema-1244)|---|---|---|---|---|---|---|---|---|
-|[**Hide Arbitrary Virtual Memory**](https://collaborate.mitre.org/ema/index.php/Ema-1172)|---|---|---|[**Request Email Address List**](https://collaborate.mitre.org/ema/index.php/Ema-1123)|---|---|---|---|---|---|---|---|---|
+|[**Hide Arbitrary Virtual Memory**](https://collaborate.mitre.org/ema/index.php/Ema-1172)|---|---|[**Request Email Address List**](https://collaborate.mitre.org/ema/index.php/Ema-1123)|---|---|---|---|---|---|---|---|---|
 |[**Inhibit Debugger**](https://collaborate.mitre.org/ema/index.php/Ema-1024)|---|---|[**Request Email Template**](https://collaborate.mitre.org/ema/index.php/Ema-1124)|---|---|---|---|---|---|---|---|---|
-|[**Inhibit Memory Dumping**](https://collaborate.mitre.org/ema/index.php/Ema-1173)|---|---|---|[**Send System Information**](https://collaborate.mitre.org/ema/index.php/Ema-1238)|---|---|---|---|---|---|---|---|---|
-|[**Overload Sandbox**](https://collaborate.mitre.org/ema/index.php/Ema-1235)|---|---|---|[**Update Configuration**](https://collaborate.mitre.org/ema/index.php/Ema-1240)|---|---|---|---|---|---|---|---|---|
+|[**Inhibit Memory Dumping**](https://collaborate.mitre.org/ema/index.php/Ema-1173)|---|---|[**Send System Information**](https://collaborate.mitre.org/ema/index.php/Ema-1238)|---|---|---|---|---|---|---|---|---|
+|[**Overload Sandbox**](https://collaborate.mitre.org/ema/index.php/Ema-1235)|---|---|[**Update Configuration**](https://collaborate.mitre.org/ema/index.php/Ema-1240)|---|---|---|---|---|---|---|---|---|
