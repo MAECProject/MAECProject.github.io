@@ -20,3 +20,4 @@ EMA entries are in **bold**.
 |---|---|[Custom Cryptographic Protocol](https://attack.mitre.org/wiki/Technique/T1024)|[Obfuscated File or Information](https://attack.mitre.org/wiki/Technique/T1027)|---|---|---|---|---|---|---|---|
 |---|---|[Data Encoding](https://attack.mitre.org/wiki/Technique/T1132)|[Process Injection](https://attack.mitre.org/wiki/Technique/T1055)|---|---|---|---|---|---|---|---|
 |---|---|[Data Obfuscation](https://attack.mitre.org/wiki/Technique/T1001)|[Software Packing](https://attack.mitre.org/wiki/Technique/T1045)|---|---|---|---|---|---|---|---|
+|---|---|[Web Service](https://attack.mitre.org/wiki/Technique/T1102)|[Web Service](https://attack.mitre.org/wiki/Technique/T1102)|---|---|---|---|---|---|---|---|
