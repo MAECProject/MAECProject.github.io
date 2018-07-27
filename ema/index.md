@@ -16,7 +16,7 @@ EMA entries are in **bold**.
 |---|[Network Sniffing](https://attack.mitre.org/wiki/Technique/T1040)|[Remote File Copy](https://attack.mitre.org/wiki/Technique/T1105)|[File Deletion](https://attack.mitre.org/wiki/Technique/T1107)|---|[System Information Discovery](https://attack.mitre.org/wiki/Technique/T1082)|---|---|---|---|---|---|
 |---|---|[Standard Non-Application Layer Protocol](https://attack.mitre.org/wiki/Technique/T1095)|[Hidden File and Directories](https://attack.mitre.org/wiki/Technique/T1158)|---|[System Time Discovery](https://attack.mitre.org/wiki/Technique/T1124)|---|---|---|---|[Hidden File and Directories](https://attack.mitre.org/wiki/Technique/T1158)|---|
 |---|---|[Standard Cryptographic Protocol](https://attack.mitre.org/wiki/Technique/T1032)|[Masquerading](https://attack.mitre.org/wiki/Technique/T1036)|---|[System Owner/User Discovery](https://attack.mitre.org/wiki/Technique/T1033)|---|---|---|---|---|---|
-|---|---|---|[Modify Registry](https://attack.mitre.org/wiki/Technique/T1112)|---|[System Network Configuration Discovery](https://attack.mitre.org/wiki/Technique/T1016)|---|---|---|---|---|---|
-|---|---|---|[Obfuscated File or Information](https://attack.mitre.org/wiki/Technique/T1027)|---|---|---|---|---|---|---|---|
-|---|---|---|[Process Injection](https://attack.mitre.org/wiki/Technique/T1055)|---|---|---|---|---|---|---|---|
-|---|---|---|[Software Packing](https://attack.mitre.org/wiki/Technique/T1045)|---|---|---|---|---|---|---|---|
+|---|---|[Custom Command and Control Protocol](https://attack.mitre.org/wiki/Technique/T1094)|[Modify Registry](https://attack.mitre.org/wiki/Technique/T1112)|---|[System Network Configuration Discovery](https://attack.mitre.org/wiki/Technique/T1016)|---|---|---|---|---|---|
+|---|---|[Custom Cryptographic Protocol](https://attack.mitre.org/wiki/Technique/T1024)|[Obfuscated File or Information](https://attack.mitre.org/wiki/Technique/T1027)|---|---|---|---|---|---|---|---|
+|---|---|[Data Encoding](https://attack.mitre.org/wiki/Technique/T1132)|[Process Injection](https://attack.mitre.org/wiki/Technique/T1055)|---|---|---|---|---|---|---|---|
+|---|---|[Data Obfuscation](https://attack.mitre.org/wiki/Technique/T1001)|[Software Packing](https://attack.mitre.org/wiki/Technique/T1045)|---|---|---|---|---|---|---|---|
