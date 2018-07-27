@@ -21,3 +21,4 @@ EMA entries are in **bold**.
 |[**Detect Debugger**](https://collaborate.mitre.org/ema/index.php/Ema-1253)|---|[Email Collection](https://attack.mitre.org/wiki/Technique/T1114)|[Data Encoding](https://attack.mitre.org/wiki/Technique/T1132)|[Process Injection](https://attack.mitre.org/wiki/Technique/T1055)|---|---|---|---|---|---|---|---|
 |[**Detect VM**](https://collaborate.mitre.org/ema/index.php/Ema-1239)|---|---|[Data Obfuscation](https://attack.mitre.org/wiki/Technique/T1001)|[Software Packing](https://attack.mitre.org/wiki/Technique/T1045)|---|---|---|---|---|---|---|---|
 |---|---|---|[Web Service](https://attack.mitre.org/wiki/Technique/T1102)|[Web Service](https://attack.mitre.org/wiki/Technique/T1102)|---|---|---|---|---|---|---|---|
+|---|---|---|[**Check for Payload**](https://collaborate.mitre.org/ema/index.php/Ema-1236)|---|---|---|---|---|---|---|---|---|
