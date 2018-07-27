@@ -26,13 +26,20 @@ EMA entries are in **bold**.
 |[**Hardware Detection**](https://collaborate.mitre.org/ema/index.php/Ema-1022)|---|---|[**Generate C2 Domain Names**](https://collaborate.mitre.org/ema/index.php/Ema-1244)|[**Disable OS Security Alerts**](https://collaborate.mitre.org/ema/index.php/Ema-1147)|---|---|---|---|---|---|---|---|
 |[**Hide Arbitrary Virtual Memory**](https://collaborate.mitre.org/ema/index.php/Ema-1172)|---|---|[**Request Email Address List**](https://collaborate.mitre.org/ema/index.php/Ema-1123)|[**Disable System File Overwrite Protection**](https://collaborate.mitre.org/ema/index.php/Ema-1149)|---|---|---|---|---|---|---|---|
 |[**Inhibit Debugger**](https://collaborate.mitre.org/ema/index.php/Ema-1024)|---|---|[**Request Email Template**](https://collaborate.mitre.org/ema/index.php/Ema-1124)|[**Encrypt Self**](https://collaborate.mitre.org/ema/index.php/Ema-1165)|---|---|---|---|---|---|---|---|
-|[**Inhibit Memory Dumping**](https://collaborate.mitre.org/ema/index.php/Ema-1173)|---|---|[**Send System Information**](https://collaborate.mitre.org/ema/index.php/Ema-1238)|---|---|---|---|---|---|---|---|---|
-|[**Overload Sandbox**](https://collaborate.mitre.org/ema/index.php/Ema-1235)|---|---|[**Update Configuration**](https://collaborate.mitre.org/ema/index.php/Ema-1240)|---|---|---|---|---|---|---|---|---|
-|[**Prevent Debugging**](https://collaborate.mitre.org/ema/index.php/Ema-1230)|---|---|---|---|---|---|---|---|---|---|---|---|
-|[**Protect Process**](https://collaborate.mitre.org/ema/index.php/Ema-1034)|---|---|---|---|---|---|---|---|---|---|---|---|
-|[**Stall Execution**](https://collaborate.mitre.org/ema/index.php/Ema-1013)|---|---|---|---|---|---|---|---|---|---|---|---|
-|[**Tool Limitation**](https://collaborate.mitre.org/ema/index.php/Ema-1050)|---|---|---|---|---|---|---|---|---|---|---|---|
-|[**User Interaction Detection**](https://collaborate.mitre.org/ema/index.php/Ema-1021)|---|---|---|---|---|---|---|---|---|---|---|---|
-|[**Virtualize Code**](https://collaborate.mitre.org/ema/index.php/Ema-1046)|---|---|---|---|---|---|---|---|---|---|---|---|
-|[**Virtualize Packer**](https://collaborate.mitre.org/ema/index.php/Ema-1047)|---|---|---|---|---|---|---|---|---|---|---|---|
-|[**Defeat Emulator**](https://collaborate.mitre.org/ema/index.php/Ema-1268)|---|---|---|---|---|---|---|---|---|---|---|---|
+|[**Inhibit Memory Dumping**](https://collaborate.mitre.org/ema/index.php/Ema-1173)|---|---|[**Send System Information**](https://collaborate.mitre.org/ema/index.php/Ema-1238)|[**Evade Static Heuristic**](https://collaborate.mitre.org/ema/index.php/Ema-1252)|---|---|---|---|---|---|---|---|
+|[**Overload Sandbox**](https://collaborate.mitre.org/ema/index.php/Ema-1235)|---|---|[**Update Configuration**](https://collaborate.mitre.org/ema/index.php/Ema-1240)|[**Execute Before/External to Kernel/Hypervisor**](https://collaborate.mitre.org/ema/index.php/Ema-1225)|---|---|---|---|---|---|---|---|
+|[**Prevent Debugging**](https://collaborate.mitre.org/ema/index.php/Ema-1230)|---|---|---|[**Execute Stealthy Code**](https://collaborate.mitre.org/ema/index.php/Ema-1223)|---|---|---|---|---|---|---|---|
+|[**Protect Process**](https://collaborate.mitre.org/ema/index.php/Ema-1034)|---|---|---|[**Hide Kernel Modules**](https://collaborate.mitre.org/ema/index.php/Ema-1015)|---|---|---|---|---|---|---|---|
+|[**Stall Execution**](https://collaborate.mitre.org/ema/index.php/Ema-1013)|---|---|---|[**Hide Processes**](https://collaborate.mitre.org/ema/index.php/Ema-1224)|---|---|---|---|---|---|---|---|
+|[**Tool Limitation**](https://collaborate.mitre.org/ema/index.php/Ema-1050)|---|---|---|[**Hide Services**](https://collaborate.mitre.org/ema/index.php/Ema-1219)|---|---|---|---|---|---|---|---|
+|[**User Interaction Detection**](https://collaborate.mitre.org/ema/index.php/Ema-1021)|---|---|---|[**Hide Threads**](https://collaborate.mitre.org/ema/index.php/Ema-1218)|---|---|---|---|---|---|---|---|
+|[**Virtualize Code**](https://collaborate.mitre.org/ema/index.php/Ema-1046)|---|---|---|[**Hide Userspace Libraries**](https://collaborate.mitre.org/ema/index.php/Ema-1222)|---|---|---|---|---|---|---|---|
+|[**Virtualize Packer**](https://collaborate.mitre.org/ema/index.php/Ema-1047)|---|---|---|[**Inventory Security Products**](https://collaborate.mitre.org/ema/index.php/Ema-1246)|---|---|---|---|---|---|---|---|
+|[**Defeat Emulator**](https://collaborate.mitre.org/ema/index.php/Ema-1268)|---|---|---|[**Prevent API Unhooking**](https://collaborate.mitre.org/ema/index.php/Ema-1180)|---|---|---|---|---|---|---|---|
+|---|---|---|---|[**Prevent File Access**](https://collaborate.mitre.org/ema/index.php/Ema-1184)|---|---|---|---|---|---|---|---|
+|---|---|---|---|[**Prevent File Deletion**](https://collaborate.mitre.org/ema/index.php/Ema-1181)|---|---|---|---|---|---|---|---|
+|---|---|---|---|[**Prevent Memory Access**](https://collaborate.mitre.org/ema/index.php/Ema-1183)|---|---|---|---|---|---|---|---|
+|---|---|---|---|[**Prevent Native API Hooking**](https://collaborate.mitre.org/ema/index.php/Ema-1226)|---|---|---|---|---|---|---|---|
+|---|---|---|---|[**Prevent Registry Access**](https://collaborate.mitre.org/ema/index.php/Ema-1185)|---|---|---|---|---|---|---|---|
+|---|---|---|---|[**Prevent Registry Deletion**](https://collaborate.mitre.org/ema/index.php/Ema-1182)|---|---|---|---|---|---|---|---|
+|---|---|---|---|[**Remove SMS Warning Messages**](https://collaborate.mitre.org/ema/index.php/Ema-1141)|---|---|---|---|---|---|---|---|
