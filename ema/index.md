@@ -22,3 +22,9 @@ EMA entries are in **bold**.
 |[**Detect VM**](https://collaborate.mitre.org/ema/index.php/Ema-1239)|---|---|[Data Obfuscation](https://attack.mitre.org/wiki/Technique/T1001)|[Software Packing](https://attack.mitre.org/wiki/Technique/T1045)|---|---|---|---|---|---|---|---|
 |---|---|---|[Web Service](https://attack.mitre.org/wiki/Technique/T1102)|[Web Service](https://attack.mitre.org/wiki/Technique/T1102)|---|---|---|---|---|---|---|---|
 |---|---|---|[**Check for Payload**](https://collaborate.mitre.org/ema/index.php/Ema-1236)|---|---|---|---|---|---|---|---|---|
+|---|---|---|[**Control Malware Via Remote Command**](https://collaborate.mitre.org/ema/index.php/Ema-1241)|---|---|---|---|---|---|---|---|---|
+|---|---|---|[**Generate C2 Domain Names**](https://collaborate.mitre.org/ema/index.php/Ema-1244)|---|---|---|---|---|---|---|---|---|
+|---|---|---|[**Request Email Address List**](https://collaborate.mitre.org/ema/index.php/Ema-1123)|---|---|---|---|---|---|---|---|---|
+|---|---|---|[**Request Email Template**](https://collaborate.mitre.org/ema/index.php/Ema-1124)|---|---|---|---|---|---|---|---|---|
+|---|---|---|[**Send System Information**](https://collaborate.mitre.org/ema/index.php/Ema-1238)|---|---|---|---|---|---|---|---|---|
+|---|---|---|[**Update Configuration**](https://collaborate.mitre.org/ema/index.php/Ema-1240)|---|---|---|---|---|---|---|---|---|
