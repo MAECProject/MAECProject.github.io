@@ -3,7 +3,9 @@ layout: flat
 title: Malware ATT&CK/EMA Matrix
 ---
 
-EMA entries are in **bold**.
+Enterprise ATT&CK techniques are in regular font.
+Mobile ATT&CK techniques are in *italic* font. 
+EMA entries are in **bold** font.
 
 |Anti-Behavioral Analysis|Anti-Static Analysis|Collection|C2|Defense Evasion|Destruction|Discovery|Execution|Exfiltration|Fraud|Lateral Movement|Persistence|Privilege Escalation|
 |------------------------|--------------------|----------|--|---------------|-----------|---------|---------|------------|-----|----------------|-----------|--------------------|
