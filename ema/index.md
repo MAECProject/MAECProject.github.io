@@ -6,7 +6,7 @@ title: Malware ATT&CK/EMA Matrix
 Notation:
 * Enterprise ATT&CK techniques are in regular font.
 * Mobile ATT&CK techniques are in *italic* font.
-* Two links are given for techniques defined in both both Enterprise ([E]) and Mobile ATT&CK ([M])
+* Two links are given for techniques defined in both ATT&CK profiles ("E" or "M")
 * EMA behaviors are in **bold** font.
 
 |Anti-Behavioral Analysis|Anti-Static Analysis|Collection|C2|Defense Evasion|Destruction|Discovery|Execution|Exfiltration|Fraud|Lateral Movement|Persistence|Privilege Escalation|
