@@ -1,7 +1,8 @@
 ---
 layout: flat
-title: Malware ATT&CK/EMA Matrix
+title: Malware ATT&CK
 ---
+A collection of ATT&CK techniques and EMA behaviors relevant to malware analysis.
 
 **Notation:**
 * Enterprise ATT&CK techniques are in regular font.
