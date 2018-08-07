@@ -6,7 +6,7 @@ A collection of [ATT&CK](https://attack.mitre.org) techniques and [EMA](https://
 
 **Notation:**
 * Enterprise ATT&CK techniques are in regular font.
-* Mobile ATT&CK techniques are in *italic* font; links to mobile versions of Enterprise ATT&CK techniques are denoted by "*MOB*."
+* Mobile ATT&CK techniques are in *italic* font ("*MOB*" denotes links to Mobile versions of Enterprise techniques).
 * EMA behaviors are in **bold** font.
 
 |Anti-Behavioral Analysis|Anti-Static Analysis|Collection|Command and Control|Credential Access|Defense Evasion|Discovery|Effects|Execution|Exfiltration|Lateral Movement|Persistence|Privilege Escalation|
