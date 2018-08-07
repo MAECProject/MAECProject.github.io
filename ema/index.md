@@ -5,10 +5,10 @@ title: Malware ATT&CK
 A collection of [ATT&CK](https://attack.mitre.org) techniques and [EMA](https://collaborate.mitre.org/ema/index.php/ema:Main_Page) behaviors relevant to malware analysis.
 
 **Notation:**
-* Enterprise ATT&CK techniques are in regular font
-* Mobile ATT&CK techniques are in *italic* font
-* "*MOB*" denotes links to Mobile versions of Enterprise techniques
-* EMA behaviors are in **bold** font
+* Enterprise ATT&CK techniques are in regular font.
+* Mobile ATT&CK techniques are in *italic* font.
+* "*MOB*" denotes links to Mobile versions of Enterprise techniques.
+* EMA behaviors are in **bold** font.
 
 |Anti-Behavioral Analysis|Anti-Static Analysis|Collection|Command and Control|Credential Access|Defense Evasion|Discovery|Effects|Execution|Exfiltration|Lateral Movement|Persistence|Privilege Escalation|
 |------------------------|--------------------|----------|-------------------|-----------------|---------------|---------|-------|---------|------------|----------------|-----------|--------------------|
