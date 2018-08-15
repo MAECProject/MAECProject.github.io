@@ -45,7 +45,7 @@ A collection of [ATT&CK](https://attack.mitre.org) techniques and [EMA](https://
 |---|---|---|---|---|[Indicator Blocking](https://attack.mitre.org/wiki/Technique/T1054)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Indirect Command Execution](https://attack.mitre.org/wiki/Technique/T1202)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Install Root Certificate](https://attack.mitre.org/wiki/Technique/T1130)|---|---|---|---|---|---|---|
-|---|---|---|---|---|[**Inventory Security Products**](https://collaborate.mitre.org/ema/index.php/Ema-1246)|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Masquerading](https://attack.mitre.org/wiki/Technique/T1036)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Modify Registry](https://attack.mitre.org/wiki/Technique/T1112)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[*Modify Trusted Execution Environment*](https://attack.mitre.org/mobile/index.php/Technique/MOB-T1002)|---|---|---|---|---|---|---|
