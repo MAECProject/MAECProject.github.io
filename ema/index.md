@@ -1,6 +1,6 @@
 ---
 layout: flat
-title: Malware ATT&CK
+title: Malware Behavior Matrix
 ---
 A collection of [ATT&CK](https://attack.mitre.org) techniques and [EMA](https://collaborate.mitre.org/ema/index.php/ema:Main_Page) behaviors relevant to malware analysis.
 
