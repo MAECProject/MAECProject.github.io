@@ -49,7 +49,7 @@ A collection of [ATT&CK](https://attack.mitre.org) techniques and [EMA](https://
 |---|---|---|---|---|[Masquerading](https://attack.mitre.org/wiki/Technique/T1036)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Modify Registry](https://attack.mitre.org/wiki/Technique/T1112)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[*Modify Trusted Execution Environment*](https://attack.mitre.org/mobile/index.php/Technique/MOB-T1002)|---|---|---|---|---|---|---|
-|---|---|---|---|---|[Obfuscated File or Information](https://attack.mitre.org/wiki/Technique/T1027)|---|---|---|---|---|---|---|
+|---|---|---|---|---|[Obfuscated Files or Information](https://attack.mitre.org/wiki/Technique/T1027)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Port Knocking](https://attack.mitre.org/wiki/Technique/T1205)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[**Prevent API Unhooking**](https://collaborate.mitre.org/ema/index.php/Ema-1180)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[**Prevent File Access**](https://collaborate.mitre.org/ema/index.php/Ema-1184)|---|---|---|---|---|---|---|
