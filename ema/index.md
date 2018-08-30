@@ -10,6 +10,7 @@ A collection of [ATT&CK](https://attack.mitre.org) techniques and [EMA](https://
 * "*MOB*" denotes links to Mobile versions of Enterprise techniques.
 * ATT&CK techniques under EMA tactics are in CAPS.
 * EMA behaviors are in **bold** font.
+* If an ATT&CK technique can replace an EMA behavior with malware-related content, they are concatenated.
 
 |Anti-Behavioral Analysis|Anti-Static Analysis|Collection|Command and Control|Credential Access|Defense Evasion|Discovery|Effects|Execution|Exfiltration|Lateral Movement|Persistence|Privilege Escalation|
 |------------------------|--------------------|----------|-------------------|-----------------|---------------|---------|-------|---------|------------|----------------|-----------|--------------------|
