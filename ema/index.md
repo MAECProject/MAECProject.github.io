@@ -65,4 +65,3 @@ A collection of [ATT&CK](https://attack.mitre.org) techniques and [EMA](https://
 |---|---|---|---|---|[**Remove SMS Warning Messages**](https://collaborate.mitre.org/ema/index.php/Ema-1141)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Software Packing](https://attack.mitre.org/wiki/Technique/T1045)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Web Service](https://attack.mitre.org/wiki/Technique/T1102)|---|---|---|---|---|---|---|
-|---|---|---|---|---|[**Block Security Websites**](https://collaborate.mitre.org/ema/index.php/Ema-1154)|---|---|---|---|---|---|---|
