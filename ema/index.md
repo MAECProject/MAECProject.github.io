@@ -8,7 +8,7 @@ A collection of [ATT&CK](https://attack.mitre.org) techniques and [EMA](https://
 * Enterprise ATT&CK techniques are in regular font.
 * Mobile ATT&CK techniques are in *italic* font.
 * "*MOB*" denotes links to Mobile versions of Enterprise techniques.
-* ATT&CK techniques under EMA tactics are in CAPS.
+* ATT&CK techniques that apply to EMA tactics are in CAPS.
 * EMA behaviors are in **bold** font.
 * If an ATT&CK technique can replace an EMA behavior with addition of malware-related content, the technique is appended to the behavior.
 
