@@ -39,7 +39,7 @@ A collection of [ATT&CK](https://attack.mitre.org) techniques and [EMA](https://
 |---|---|---|---|---|[Modify Registry](https://attack.mitre.org/wiki/Technique/T1112)|---|---|---|---|---|[Redundant Access](https://attack.mitre.org/wiki/Technique/T1108)|---|
 |---|---|---|---|---|[*Modify Trusted Execution Environment*](https://attack.mitre.org/mobile/index.php/Technique/MOB-T1002)|---|---|---|---|---|[Registry Run Keys / Start Folder](https://attack.mitre.org/wiki/Technique/T1060)|---|
 |---|---|---|---|---|[Obfuscated Files or Information](https://attack.mitre.org/wiki/Technique/T1027)|---|---|---|---|---|[Scheduled Task](https://attack.mitre.org/wiki/Technique/T1053)|---|
-|---|---|---|---|---|[**Polymorphic Code**](https://collaborate.mitre.org/ema/index.php/Ema-1032) -> [OBFUSCATED FILE OR INFORMATION](https://attack.mitre.org/wiki/Technique/T1027)|---|---|---|---|---|[**+ Surreptitious Application Installation**](https://collaborate.mitre.org/ema/index.php/Ema-1022)|---|
+|---|---|---|---|---|[**Polymorphic Code**](https://collaborate.mitre.org/ema/index.php/Ema-1032)|---|---|---|---|---|[**+ Surreptitious Application Installation**](https://collaborate.mitre.org/ema/index.php/Ema-1022)|---|
 |---|---|---|---|---|[Port Knocking](https://attack.mitre.org/wiki/Technique/T1205)|---|---|---|---|---|[Timestomp](https://attack.mitre.org/wiki/Technique/T1099)|---|
 |---|---|---|---|---|[Process Injection](https://attack.mitre.org/wiki/Technique/T1055)|---|---|---|---|---|[**+ Windows Shutdown Event**](https://collaborate.mitre.org/ema/index.php/Ema-1030)|---|
 |---|---|---|---|---|[Redundant Access](https://attack.mitre.org/wiki/Technique/T1108)|---|---|---|---|---|---|---|
