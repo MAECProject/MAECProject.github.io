@@ -1,16 +1,17 @@
 ---
 layout: flat
-title: Malware Behavior Matrix
+title: Malware Behavior Catalog Matrix
 ---
-A collection of [ATT&CK](https://attack.mitre.org) techniques and [EMA](https://collaborate.mitre.org/ema/index.php/ema:Main_Page) behaviors relevant to malware analysis.
+# Malware Behavior Catalog #
+The [Malware Behavior Catalog (MBC)](https://github.com/MAECProject/malware-behaviors) is a catalog of malware Objectives and Behaviors.
 
-**Notation:**
-* Enterprise ATT&CK techniques are in regular font.
-* Mobile ATT&CK techniques are in *italic* font.
-* "*MOB*" denotes links to Mobile versions of Enterprise techniques.
-* EMA behaviors are in **bold** font.
-* An **&** marks ATT&CK techniques that would apply to malware with the addition of malware-related content.
-* A **+** marks EMA behaviors that could apply more generally to an Enterprise or Mobile environment.
+### Objectives (Columns) ###
+Malware Objectives are based on [ATT&CK Tactics](https://attack.mitre.org/tactics/enterprise/), tailored for the malware analysis use case. Two malware analysis-specific Objectives (Anti-Behavioral Analysis and Anti-Static Analysis) are also defined. 
+
+### Behaviors (Rows) ###
+Under each Objective, the MBC captures all Behaviors relating to malware analysis. Malware Behaviors draw from [ATT&CK Techniques](https://attack.mitre.org/techniques/enterprise/) when possible. Details are available in the [MBC]((https://github.com/MAECProject/malware-behaviors).
+
+# MATRIX UPDATES IN PROGRESS #
 
 |[Anti-Behavioral Analysis](https://github.com/MAECProject/malware-behaviors/blob/master/anti-behavioral-analysis/)|[Anti-Static Analysis](https://github.com/MAECProject/malware-behaviors/blob/master/anti-static-analysis/)|[Collection](https://github.com/MAECProject/malware-behaviors/blob/master/collection/)|Command and Control|Credential Access|Defense Evasion|Discovery|Effects|Execution|Exfiltration|Lateral Movement|Persistence|Privilege Escalation|
 |------------------------|--------------------|----------|-------------------|-----------------|---------------|---------|-------|---------|------------|----------------|-----------|--------------------|
