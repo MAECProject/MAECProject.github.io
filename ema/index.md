@@ -1,6 +1,3 @@
----
-layout: flat
-
 # Malware Behavior Catalog Matrix #
 The [Malware Behavior Catalog (MBC)](https://github.com/MAECProject/malware-behaviors) is a catalog of malware Objectives and Behaviors.
 
