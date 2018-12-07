@@ -37,7 +37,7 @@ Under each Objective, the MBC captures all Behaviors relating to malware analysi
 |---|---|---|---|---|[*Modify Trusted Execution Environment*](https://attack.mitre.org/mobile/index.php/Technique/MOB-T1002)|---|---|---|---|---|[Registry Run Keys / Startup Folder](https://attack.mitre.org/wiki/Technique/T1060)|---|
 |---|---|---|---|---|[Obfuscated Files or Information](https://attack.mitre.org/wiki/Technique/T1027)|---|---|---|---|---|[Scheduled Task](https://attack.mitre.org/wiki/Technique/T1053)|---|
 |---|---|---|---|---|[**Polymorphic Code**](https://collaborate.mitre.org/ema/index.php/Ema-1032)|---|---|---|---|---|[**+Surreptitious Application Installation**](https://collaborate.mitre.org/ema/index.php/Ema-1022)|---|
-|---|---|---|---|---|[Port Knocking](https://attack.mitre.org/wiki/Technique/T1205)|---|---|---|---|---|[Timestomp](https://attack.mitre.org/wiki/Technique/T1099)|---|
+|---|---|---|---|---|[Port Knocking](https://attack.mitre.org/wiki/Technique/T1205)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Process Injection](https://attack.mitre.org/wiki/Technique/T1055)|---|---|---|---|---|[**+Windows Shutdown Event**](https://collaborate.mitre.org/ema/index.php/Ema-1030)|---|
 |---|---|---|---|---|[Redundant Access](https://attack.mitre.org/wiki/Technique/T1108)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Regsvr32](https://attack.mitre.org/wiki/Technique/T1117)|---|---|---|---|---|---|---|
@@ -45,3 +45,4 @@ Under each Objective, the MBC captures all Behaviors relating to malware analysi
 |---|---|---|---|---|[**Secondary CPU Execution**](https://collaborate.mitre.org/ema/index.php/Ema-1221)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Software Packing](https://attack.mitre.org/wiki/Technique/T1045)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Web Service](https://attack.mitre.org/wiki/Technique/T1102)|---|---|---|---|---|---|---|
+|---|---|---|---|---|[Timestomp](https://attack.mitre.org/wiki/Technique/T1099)|---|---|---|---|---|---|---|
