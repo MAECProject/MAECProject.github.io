@@ -42,7 +42,7 @@ Under each Objective, the MBC captures all Behaviors relating to malware analysi
 |---|---|---|---|---|[Redundant Access](https://attack.mitre.org/wiki/Technique/T1108)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Regsvr32](https://attack.mitre.org/wiki/Technique/T1117)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[&Rootkit](https://collaborate.mitre.org/ema/index.php/Ema-1015)|---|---|---|---|---|---|---|
-|---|---|---|---|---|[**Secondary CPU Execution**](https://collaborate.mitre.org/ema/index.php/Ema-1221)|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Software Packing](https://attack.mitre.org/wiki/Technique/T1045)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Web Service](https://attack.mitre.org/wiki/Technique/T1102)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Timestomp](https://attack.mitre.org/wiki/Technique/T1099)|---|---|---|---|---|---|---|
