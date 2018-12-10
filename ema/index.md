@@ -5,7 +5,7 @@ The [Malware Behavior Catalog (MBC)](https://github.com/MAECProject/malware-beha
 Malware Objectives are based on [ATT&CK Tactics](https://attack.mitre.org/tactics/enterprise/), tailored for the malware analysis use case. Two malware analysis-specific Objectives (Anti-Behavioral Analysis and Anti-Static Analysis) are also defined. 
 
 ### Behaviors (Rows) ###
-Under each Objective, the MBC captures all Behaviors relating to malware analysis. Malware Behaviors draw from [ATT&CK Techniques](https://attack.mitre.org/techniques/enterprise/) when possible. Details are available in the [MBC](https://github.com/MAECProject/malware-behaviors).
+Under each Objective, the MBC captures all Behaviors and code characteristics relating to malware analysis. Malware Behaviors draw from [ATT&CK Techniques](https://attack.mitre.org/techniques/enterprise/) when possible. Details are available in the [MBC](https://github.com/MAECProject/malware-behaviors).
 
 # MATRIX UPDATES IN PROGRESS #
 
