@@ -41,8 +41,8 @@ Under each Objective, the MBC captures all Behaviors and code characteristics di
 |---|---|---|---|---|[Process Injection](https://attack.mitre.org/wiki/Technique/T1055)|---|---|---|---|---|[**+Windows Shutdown Event**](https://collaborate.mitre.org/ema/index.php/Ema-1030)|---|
 |---|---|---|---|---|[Redundant Access](https://attack.mitre.org/wiki/Technique/T1108)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Regsvr32](https://attack.mitre.org/wiki/Technique/T1117)|---|---|---|---|---|---|---|
-|---|---|---|---|---|[&Rootkit](https://collaborate.mitre.org/ema/index.php/Ema-1015)|---|---|---|---|---|---|---|
+|---|---|---|---|---|[Rootkit Behavior](https://github.com/MAECProject/malware-behaviors/blob/master/defense-evasion/rootkit-behavior.md)|---|---|---|---|---|---|---|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-|---|---|---|---|---|[Software Packing](https://attack.mitre.org/wiki/Technique/T1045)|---|---|---|---|---|---|---|
-|---|---|---|---|---|[Web Service](https://attack.mitre.org/wiki/Technique/T1102)|---|---|---|---|---|---|---|
-|---|---|---|---|---|[Timestomp](https://attack.mitre.org/wiki/Technique/T1099)|---|---|---|---|---|---|---|
+|---|---|---|---|---|[Software Packing](https://github.com/MAECProject/malware-behaviors/blob/master/anti-static-analysis/software-packing.md)|---|---|---|---|---|---|---|
+|---|---|---|---|---|[Web Service](https://github.com/MAECProject/malware-behaviors/blob/master/command-and-control/web-service.md)|---|---|---|---|---|---|---|
+|---|---|---|---|---|[Timestomp](https://github.com/MAECProject/malware-behaviors/blob/master/anti-static-analysis/timestomp.md)|---|---|---|---|---|---|---|
