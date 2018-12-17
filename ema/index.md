@@ -45,4 +45,4 @@ Under each Objective, the MBC captures all Behaviors and code characteristics di
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Software Packing](https://github.com/MAECProject/malware-behaviors/blob/master/anti-static-analysis/software-packing.md)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Web Service](https://github.com/MAECProject/malware-behaviors/blob/master/command-and-control/web-service.md)|---|---|---|---|---|---|---|
-|---|---|---|---|---|[Timestomp](https://github.com/MAECProject/malware-behaviors/blob/master/anti-static-analysis/timestomp.md)|---|---|---|---|---|---|---|
+|---|---|---|---|---|[Timestomp](https://github.com/MAECProject/malware-behaviors/blob/master/defense-evasion/timestomp.md)|---|---|---|---|---|---|---|
