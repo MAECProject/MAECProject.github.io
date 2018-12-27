@@ -41,6 +41,7 @@ Under each Objective, the MBC captures all Behaviors and code characteristics di
 |---|---|---|---|---|[Redundant Access](https://github.com/MAECProject/malware-behaviors/blob/master/defense-evasion/redundant-access.md)|---|---|---|---|---|[**+Windows Shutdown Event**](https://collaborate.mitre.org/ema/index.php/Ema-1030)|---|
 |---|---|---|---|---|[Regsvr32](https://github.com/MAECProject/malware-behaviors/blob/master/defense-evasion/regsvr32.md)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Rootkit Behavior](https://github.com/MAECProject/malware-behaviors/blob/master/defense-evasion/rootkit-behavior.md)|---|---|---|---|---|---|---|
+|---|---|---|---|---|[Scripting](https://github.com/MAECProject/malware-behaviors/blob/master/execution/scripting.md)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Software Packing](https://github.com/MAECProject/malware-behaviors/blob/master/anti-static-analysis/software-packing.md)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Timestomp](https://github.com/MAECProject/malware-behaviors/blob/master/defense-evasion/timestomp.md)|---|---|---|---|---|---|---|
 |---|---|---|---|---|[Web Service](https://github.com/MAECProject/malware-behaviors/blob/master/command-and-control/web-service.md)|---|---|---|---|---|---|---|
