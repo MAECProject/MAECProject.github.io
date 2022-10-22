@@ -5,7 +5,7 @@ title: MAEC Supporters
 
 The vendors below have implemented MAEC in their products or services. To add your product to the list, please email us at [maec@mitre.org](mailto:maec@mitre.org).
 
-## Sandboxes
+## Sandboxes and Malware Analysis Services
 
 <table>
 <tr class="cellboarder">
@@ -30,6 +30,13 @@ The vendors below have implemented MAEC in their products or services. To add yo
 </tr>
 
 <tr class="cellboarder">
+<td class="borderbottomcellboarder" style="width: 15%"><a href="https://www.paloaltonetworks.com/network-security/wildfire" target="_blank">WildFire</a></td>
+<td class="borderbottomcellboarder" style="width: 15%"><a href="https://www.paloaltonetworks.com/" target="_blank">Palo Alto Networks, Inc.</a></td>
+<td class="borderbottomcellboarder" style="width: 35%">The cloud-delivered WildFire® malware analysis service uses data and threat intelligence and applies advanced analysis to automatically identify unknown threats.</td>
+<td class="borderbottomcellboarder" style="width: 35%">Cited on <a target="_blank" href="https://www.paloaltonetworks.com/resources/datasheets/wildfire">WildFire Datasheet</a></td>
+</tr>
+  
+<tr class="cellboarder">
 <td class="borderbottomcellboarder" style="width: 15%"><a href="https://cuckoosandbox.org/#about" target="_blank">Cuckoo Sandbox</a></td>
 <td class="borderbottomcellboarder" style="width: 15%"><a href="https://cuckoosandbox.org/" target="_blank">Cuckoo Foundation</a></td>
 <td class="borderbottomcellboarder" style="width: 35%">The MAEC Cuckoo reporting module enables Cuckoo v1.x to output MAEC output natively. MAEC output in 2.x is forthcoming via a MITRE-developed output module.</td>
@@ -52,24 +59,6 @@ The vendors below have implemented MAEC in their products or services. To add yo
 <td class="borderbottomcellboarder" style="width: 15%"><a href="https://www.reversinglabs.com/products/malware-analysis-solution.html" target="_blank">ReversingLabs</a></td>
 <td class="borderbottomcellboarder" style="width: 35%">Titanium Core results can be exported in MAEC, STIX, and IOC formats.</td>
 <td class="borderbottomcellboarder" style="width: 35%">Cited as feature on <a target="_blank" href="https://www.reversinglabs.com/products/malware-analysis-solution.html">Product</a> page on website</td>
-</tr>
-</table>
-
-## Threat Analysis Service
-
-<table>
-<tr class="cellboarder">
-<td class="borderbottomcellboarder" style="width: 15%"><b>Offering</b></td>
-<td class="borderbottomcellboarder" style="width: 15%"><b>Vendor</b></td>
-<td class="borderbottomcellboarder" style="width: 35%"><b>Description</b></td>
-<td class="borderbottomcellboarder" style="width: 35%"><b>Reference</b></td>
-</tr>
-
-<tr class="cellboarder">
-<td class="borderbottomcellboarder" style="width: 15%"><a href="https://www.paloaltonetworks.com/network-security/wildfire" target="_blank">WildFire</a></td>
-<td class="borderbottomcellboarder" style="width: 15%"><a href="https://www.paloaltonetworks.com/" target="_blank">Palo Alto Networks, Inc.</a></td>
-<td class="borderbottomcellboarder" style="width: 35%">The cloud-delivered WildFire® malware analysis service uses data and threat intelligence and applies advanced analysis to automatically identify unknown threats.</td>
-<td class="borderbottomcellboarder" style="width: 35%">Cited on <a target="_blank" href="https://www.paloaltonetworks.com/resources/datasheets/wildfire">WildFire Datasheet</a></td>
 </tr>
 </table>
 
